@@ -1,0 +1,45 @@
+# .NET / C#
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+.vs/
+
+# Godot 4
+.godot/
+.import/
+client/builds/
+*.translation
+export.cfg
+export_presets.cfg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Saves / local
+saves/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Logs
+*.log
+logs/
+
+# web client
+web/node_modules
+web/dist
+web/public/_framework
+web/test-results
+web/engine-host/bin
+web/engine-host/obj
+
+# scratch / local tooling
+tmp/
+.claude/settings.local.json

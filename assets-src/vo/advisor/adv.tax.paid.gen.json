@@ -1,0 +1,113 @@
+{
+  "id": "adv.tax.paid",
+  "role": "advisor",
+  "text": "The tax bill is paid. Remember, it's what we keep that counts.",
+  "sentText": "The tax bill is paid. Remember, it's what we keep that counts.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.936
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:25:55.901Z",
+  "file": "adv.tax.paid.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.78,
+  "speechSec": 3.54,
+  "wpm": 203.4,
+  "syllables": 14,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.3,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 380,
+  "samplePeakDbfs": -5,
+  "truePeakDbtp": -5,
+  "lufsI": -21.6,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 305
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The tax bill is paid. Remember, it's what we keep that counts.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.018,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 186.5,
+      "paceWpm": 146.1,
+      "maxGapMs": 390,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "The tax bill is paid. Remember, it's what we keep that counts.",
+      "score": {
+        "hard": 0,
+        "soft": 0.504,
+        "flags": [
+          "pace 146.1 wpm-eq, 3.63 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.tax.paid/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.906
+      },
+      "wpm": 194.6,
+      "paceWpm": 152.4,
+      "maxGapMs": 380,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "The tax bill is paid. Remember, it's what we keep that counts.",
+      "score": {
+        "hard": 0,
+        "soft": 0.051,
+        "flags": []
+      },
+      "file": "_takes/adv.tax.paid/t2.wav"
+    }
+  ],
+  "lineHash": "737e8e0b52176e058be8bbaa"
+}

@@ -1,0 +1,9 @@
+{
+  "method": "loans",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": [],
+    "revision": 28
+  }
+}

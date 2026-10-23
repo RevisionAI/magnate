@@ -1,0 +1,125 @@
+{
+  "method": "incomeStatement",
+  "args": {
+    "period": {
+      "preset": "last12"
+    },
+    "byMonth": true
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "period": {
+        "from": {
+          "year": 2026,
+          "month": 1
+        },
+        "to": {
+          "year": 2026,
+          "month": 8
+        },
+        "months": 8,
+        "preset": "last12"
+      },
+      "companyId": 1,
+      "revenue": 540000,
+      "productSales": 540000,
+      "exportSales": 0,
+      "royaltyIncome": 0,
+      "cogs": 295680,
+      "grossProfit": 244320,
+      "opex": 3761725.74,
+      "operatingCosts": 2933253.52,
+      "advertising": 350000,
+      "royaltyExpense": 0,
+      "netIncome": -30338933.52,
+      "grossMargin": 0.4524444444444445,
+      "netMargin": -56.183210229024695,
+      "months": [
+        {
+          "month": {
+            "year": 2026,
+            "month": 1
+          },
+          "revenue": 0,
+          "cogs": 0,
+          "opex": 0,
+          "netIncome": 0
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 2
+          },
+          "revenue": 0,
+          "cogs": 0,
+          "opex": 54309.54,
+          "netIncome": -54309.54
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 3
+          },
+          "revenue": 0,
+          "cogs": 0,
+          "opex": 54309.54,
+          "netIncome": -54309.54
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 4
+          },
+          "revenue": 0,
+          "cogs": 0,
+          "opex": 155229.54,
+          "netIncome": -155229.54
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 5
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "opex": 338098.43,
+          "netIncome": -277018.43
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 6
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "opex": 645485.2,
+          "netIncome": -584405.2
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "opex": 1178939.65,
+          "netIncome": -1117859.65
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "opex": 1335353.83,
+          "netIncome": -28095801.61
+        }
+      ],
+      "depreciation": 478472.22,
+      "otherIncome": -26821527.78
+    },
+    "revision": 25
+  }
+}

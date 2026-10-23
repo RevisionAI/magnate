@@ -1,0 +1,15 @@
+{
+  "method": "holdings",
+  "args": {},
+  "envelope": {
+    "ok": false,
+    "error": {
+      "code": "feature_unavailable",
+      "message": "This feature is not available yet.",
+      "details": {
+        "feature": "stockMarket"
+      }
+    },
+    "revision": 30
+  }
+}

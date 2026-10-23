@@ -1,0 +1,21 @@
+{
+  "id": "portbay",
+  "name": "Portbay",
+  "population": 150000,
+  "demographics": {
+    "low":    0.50,
+    "middle": 0.40,
+    "high":   0.10
+  },
+  "grid": {
+    "width":  50,
+    "height": 50
+  },
+  "geography": {
+    "coastal":     true,
+    "arable":      false,
+    "mineralRich": false,
+    "oilRich":     true
+  },
+  "baseLandPrice": 80.0
+}

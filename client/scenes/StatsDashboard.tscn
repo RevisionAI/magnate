@@ -1,0 +1,81 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/StatsDashboard.cs" id="1_stats"]
+
+[node name="StatsDashboard" type="Node"]
+script = ExtResource("1_stats")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scroll" type="ScrollContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="HeaderStrip" type="RichTextLabel" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+text = "Statistics Dashboard"
+
+[node name="SparklineHost" type="VBoxContainer" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="HeatmapLabel" type="Label" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+text = "Market Share Heatmap — player's portfolio (cool → warm → hot)"
+theme_override_font_sizes/font_size = 16
+
+[node name="HeatmapHost" type="GridContainer" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+columns = 1
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+
+[node name="RDLeaderboardText" type="RichTextLabel" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BrandText" type="RichTextLabel" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="TopRevenueText" type="RichTextLabel" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="TopOpexText" type="RichTextLabel" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BackButton" type="Button" parent="Panel/Scroll/VBox"]
+layout_mode = 2
+text = "Back"

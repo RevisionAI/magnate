@@ -1,0 +1,38 @@
+{
+  "id": "first_hundred_million",
+  "name": "The Quarter-Billion Club",
+  "description": "Grow a startup into a company worth a quarter of a billion dollars within five years, against an incumbent with three times your capital. Borrowing is allowed — and lenders will grade you for it.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "Startup Inc",
+    "startingCash": 45000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "BigCo",
+      "startingCash": 150000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": [
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $250M. Value rewards earnings, not size: a store earning less than investors require is worth less than it cost.",
+      "threshold": 250000000
+    },
+    {
+      "id": "investment-grade",
+      "type": "creditRating",
+      "description": "Earn an investment-grade credit rating (BBB or better). Ratings are reviewed every quarter once the company is a year old; interest cover, debt against earnings and company size all count.",
+      "rating": "BBB"
+    }
+  ]
+}

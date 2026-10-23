@@ -1,0 +1,115 @@
+{
+  "id": "vo_building_first_mine_well",
+  "role": "advisor",
+  "text": "We're producing our own raw materials now. Price shocks will hurt us less.",
+  "sentText": "We're producing our own raw materials now. Price shocks will hurt us less.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.823
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:37:34.690Z",
+  "file": "vo_building_first_mine_well.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.96,
+  "speechSec": 4.72,
+  "wpm": 165.3,
+  "syllables": 19,
+  "sylPerSec": 4.03,
+  "paceWpm": 162.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -6.24,
+  "truePeakDbtp": -6.2,
+  "lufsI": -22,
+  "lra": 1.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 405
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're producing our own raw materials now. Price shocks will hurt us less.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.246,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 169.9,
+      "paceWpm": 166.7,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "We're producing our own raw materials now. Price shocks will hurt us less.",
+      "score": {
+        "hard": 0,
+        "soft": 0.462,
+        "flags": [
+          "pace 166.7 wpm-eq, 4.14 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_building_first_mine_well/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.794
+      },
+      "wpm": 145,
+      "paceWpm": 142.2,
+      "maxGapMs": 510,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "We're producing our own raw materials now. Price shocks will hurt us less.",
+      "score": {
+        "hard": 0,
+        "soft": 1.208,
+        "flags": [
+          "pace 142.2 wpm-eq, 3.53 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_building_first_mine_well/t2.wav"
+    }
+  ],
+  "lineHash": "4e8dcbb5fa1ede827d4dcee6"
+}

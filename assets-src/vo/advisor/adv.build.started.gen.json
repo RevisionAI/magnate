@@ -1,0 +1,111 @@
+{
+  "id": "adv.build.started",
+  "role": "advisor",
+  "text": "Ground is broken. That capital is committed, so let's make it earn.",
+  "sentText": "Ground is broken. That capital is committed, so let's make it earn.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:16:01.554Z",
+  "file": "adv.build.started.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.55,
+  "speechSec": 4.31,
+  "wpm": 167.1,
+  "syllables": 17,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 400,
+  "samplePeakDbfs": -4.01,
+  "truePeakDbtp": -4,
+  "lufsI": -22,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 400
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Ground is broken. That capital is committed, so let's make it earn.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.013,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.825
+      },
+      "wpm": 163.3,
+      "paceWpm": 155.2,
+      "maxGapMs": 430,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Ground is broken. That capital is committed, so let's make it earn.",
+      "score": {
+        "hard": 0,
+        "soft": 0.098,
+        "flags": []
+      },
+      "file": "_takes/adv.build.started/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.835
+      },
+      "wpm": 165.1,
+      "paceWpm": 157,
+      "maxGapMs": 420,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Ground is broken. That capital is committed, so let's make it earn.",
+      "score": {
+        "hard": 0,
+        "soft": 0.055,
+        "flags": []
+      },
+      "file": "_takes/adv.build.started/t3.wav"
+    }
+  ],
+  "lineHash": "b7de90095c49e9674a92a238"
+}

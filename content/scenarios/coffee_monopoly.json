@@ -1,0 +1,74 @@
+{
+  "id": "coffee_monopoly",
+  "name": "Coffee Monopoly",
+  "description": "One bean, one cup, one vertically integrated empire. Stand up plantations and roasters, put coffee on shelves in two cities, and export enough roasted coffee to fund the next wave. A rival chain starts one step ahead — close the gap before the end of 2029.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2029,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 66000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "BrewHaus",
+      "startingCash": 75000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": [
+    {
+      "id": "plantations",
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 plantations — the bean supply is the foundation of the chain.",
+      "category": "plantation",
+      "count": 2
+    },
+    {
+      "id": "factories",
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 factories — roast and bottle in-house instead of paying world-market prices.",
+      "category": "factory",
+      "count": 2
+    },
+    {
+      "id": "retail",
+      "type": "productRetailed",
+      "description": "Put coffee drinks on a shelf — the chain is not real until it reaches a customer.",
+      "product": "coffee_drink"
+    },
+    {
+      "id": "share-metropolis",
+      "type": "marketShare",
+      "description": "Sell 35% of the coffee drinks bought in Metropolis (trailing three months).",
+      "product": "coffee_drink",
+      "city": "metropolis",
+      "threshold": 0.35
+    },
+    {
+      "id": "share-eastside",
+      "type": "marketShare",
+      "description": "Sell 30% of the coffee drinks bought in Eastside — proof the chain scales.",
+      "product": "coffee_drink",
+      "city": "eastside",
+      "threshold": 0.3
+    },
+    {
+      "id": "exports",
+      "type": "exportRevenue",
+      "description": "Earn $100M of export revenue in total — roughly two roasting lines selling to the world market for most of the scenario. Export prices fall as you flood the world market, so watch the margin.",
+      "amount": 100000000
+    },
+    {
+      "id": "net-income",
+      "type": "netIncome",
+      "description": "Earn $30M of net income in total since the start — after depreciation, interest and tax.",
+      "amount": 30000000
+    }
+  ]
+}

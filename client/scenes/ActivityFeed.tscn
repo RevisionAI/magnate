@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ActivityFeed.cs" id="1_feed"]
+
+[node name="ActivityFeed" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_feed")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Activity Feed"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="FilterRow" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SearchRow" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SearchLabel" type="Label" parent="Panel/VBox/SearchRow"]
+layout_mode = 2
+text = "Search:"
+
+[node name="SearchEdit" type="LineEdit" parent="Panel/VBox/SearchRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Filter events by text…"
+
+[node name="ClearSearch" type="Button" parent="Panel/VBox/SearchRow"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FeedText" type="RichTextLabel" parent="Panel/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

@@ -1,0 +1,24 @@
+{
+  "method": "previewAdCampaign",
+  "args": {
+    "productId": "soft_drink",
+    "cityId": "metropolis",
+    "channel": "radio",
+    "monthlyBudget": 20000
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "currentBrand": 32.759950250996,
+      "projectedBrand": 35.96097706118192,
+      "lift": 1.4942233277556445,
+      "costPerPoint": 9000,
+      "mediaBonus": 1,
+      "effectiveBudget": 20000,
+      "saturation": 0.6724004974900399,
+      "existingBudget": 0,
+      "hasRetailPresence": true
+    },
+    "revision": 23
+  }
+}

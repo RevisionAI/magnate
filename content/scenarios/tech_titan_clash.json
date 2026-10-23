@@ -1,0 +1,49 @@
+{
+  "id": "tech_titan_clash",
+  "name": "Tech Titan Clash",
+  "description": "A premium-brand rival with twice your capital is flooding the high-income aisles with flagship televisions and cars, priced well above the market. Out-engineer them in the Eastside car market, out-sell them on Metropolis televisions, and still be standing — and worth more — when the five years are up.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "NovaTech",
+    "startingCash": 75000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "Zenith Labs",
+      "startingCash": 150000000,
+      "strategy": "techLeader"
+    }
+  ],
+  "goals": [
+    {
+      "id": "share-car",
+      "type": "marketShare",
+      "description": "Sell 30% of the cars bought in Eastside (trailing three months) — the rival's first stronghold.",
+      "product": "car",
+      "city": "eastside",
+      "threshold": 0.3
+    },
+    {
+      "id": "share-tv",
+      "type": "marketShare",
+      "description": "Sell 25% of the televisions bought in Metropolis — deny the titan a clean sweep of the densest market.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.25
+    },
+    {
+      "id": "value-at-deadline",
+      "type": "corporateValue",
+      "mode": "holdAtDeadline",
+      "description": "Be worth at least $125M when the scenario ends in December 2030 — survive the spending war and come out ahead.",
+      "threshold": 125000000
+    }
+  ]
+}

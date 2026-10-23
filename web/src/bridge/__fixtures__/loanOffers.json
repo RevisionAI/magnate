@@ -1,0 +1,55 @@
+{
+  "method": "loanOffers",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": [
+      {
+        "offerId": "12m-1157050300",
+        "amount": 11570503,
+        "termMonths": 12,
+        "annualRate": 0.0586,
+        "monthlyPayment": 995087.49,
+        "rating": "BBB",
+        "totalInterest": 370546.93
+      },
+      {
+        "offerId": "36m-1157050300",
+        "amount": 11570503,
+        "termMonths": 36,
+        "annualRate": 0.0611,
+        "monthlyPayment": 352574.09,
+        "rating": "BBB",
+        "totalInterest": 1122164.39
+      },
+      {
+        "offerId": "60m-1157050300",
+        "amount": 11570503,
+        "termMonths": 60,
+        "annualRate": 0.0636,
+        "monthlyPayment": 225632.21,
+        "rating": "BBB",
+        "totalInterest": 1967429.23
+      },
+      {
+        "offerId": "120m-1157050300",
+        "amount": 11570503,
+        "termMonths": 120,
+        "annualRate": 0.0661,
+        "monthlyPayment": 132029.23,
+        "rating": "BBB",
+        "totalInterest": 4273004.62
+      },
+      {
+        "offerId": "240m-1157050300",
+        "amount": 11570503,
+        "termMonths": 240,
+        "annualRate": 0.0686,
+        "monthlyPayment": 88736.24,
+        "rating": "BBB",
+        "totalInterest": 9726194.83
+      }
+    ],
+    "revision": 28
+  }
+}

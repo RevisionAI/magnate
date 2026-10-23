@@ -1,0 +1,1164 @@
+{
+  "$comment": "VO line registry: every line of the a2 voice-over batch (assets-src/vo/manifest.json: 60 advisor + 13 anchor lines of audio-plan section 5.2, the 17 UX section 9 lines, 13 templated lines, 5 legacy tutorial steps; 2 held). text = subtitle (identical to the manifest; a unit test keeps them in sync). Routing metadata: priority 0-3 (P0 critical ... P3 hint), tutorial (P1.T: plays when advisor frequency is 'important'), oncePerGame, gameMonthCooldown (game months between plays), firstFree (the first N plays per game ignore the cooldown), every (after firstFree, only every Nth occurrence speaks), majorPriority (priority when raised by Major news), held (no take yet: subtitle only). The recorded take is the manifest asset 'vo.<id>'. Which events raise which line: data/audio-events.json.",
+  "lines": [
+    {
+      "id": "adv.onboard.welcome",
+      "text": "Welcome aboard. Let's build a company that lasts.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "legacyAlias": "vo_welcome",
+      "trigger": "gameStarted (new game) after the opening camera move",
+      "limit": "once per profile; tutorial: once per save",
+      "delivery": "warm, welcoming"
+    },
+    {
+      "id": "adv.onboard.first_plot",
+      "text": "Pick a plot near busy roads. Traffic brings customers through the door.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_t1_build"
+      ],
+      "trigger": "Build mode opened with 0 player buildings (tutorial step build)",
+      "limit": "once per save",
+      "delivery": "helpful"
+    },
+    {
+      "id": "adv.onboard.first_store",
+      "text": "Every empire starts with one good store. Let's place ours.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial step build-store, or first hover on Retail in Build mode",
+      "limit": "once per save",
+      "delivery": "encouraging"
+    },
+    {
+      "id": "adv.onboard.set_price",
+      "text": "Set a price with a healthy margin, but keep an eye on rivals.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_t1_price"
+      ],
+      "trigger": "inspector Setup opened on the first retail line",
+      "limit": "once per save",
+      "delivery": "practical"
+    },
+    {
+      "id": "adv.onboard.restock",
+      "text": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first retail line still has no stock policy 20 s after Setup opened",
+      "limit": "once per save",
+      "delivery": "practical"
+    },
+    {
+      "id": "adv.onboard.press_play",
+      "text": "Press play and let a month run. The books will tell the story.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "tutorial setup complete and the game paused ≥ 10 s",
+      "limit": "once per save",
+      "delivery": "light"
+    },
+    {
+      "id": "adv.onboard.read_books",
+      "text": "Revenue is vanity, profit is sanity, and cash is king.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_t1_books"
+      ],
+      "trigger": "first month close, then Reports opened (or tutorial step books)",
+      "limit": "once per save",
+      "delivery": "wry"
+    },
+    {
+      "id": "adv.onboard.first_ad",
+      "text": "Nobody buys what they've never heard of. Let's advertise.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_t1_advertise",
+        "vo_campaign_first"
+      ],
+      "trigger": "tutorial step run-campaign, or month ≥ 4 with no campaign and brand < 10",
+      "limit": "once per save",
+      "delivery": "confident"
+    },
+    {
+      "id": "adv.onboard.complete",
+      "text": "You've got the fundamentals. From here, every decision compounds.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "legacyAlias": "vo_tutorial_complete",
+      "trigger": "tutorial chapter complete",
+      "limit": "once per save",
+      "delivery": "proud"
+    },
+    {
+      "id": "adv.build.started",
+      "text": "Ground is broken. That capital is committed, so let's make it earn.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "firstFree": 2,
+      "trigger": "constructionStarted* by the player",
+      "limit": "first 2 per game, then ≤ 1 per 12 game-months",
+      "delivery": "brisk"
+    },
+    {
+      "id": "adv.build.started_tight",
+      "text": "That build stretches our cash thin. Make sure it pays back fast.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "constructionStarted* with post-build runway < 4 months (replaces build.started)",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "cautious"
+    },
+    {
+      "id": "adv.build.complete",
+      "text": "Construction complete. Staff it, stock it, and put it to work.",
+      "voice": "advisor",
+      "priority": 2,
+      "firstFree": 3,
+      "every": 5,
+      "trigger": "constructionCompleted* (not a factory)",
+      "limit": "first 3 per game, then every 5th",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "adv.build.factory_complete",
+      "text": "The factory is finished. Line up supply so it never sits idle.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_building_first_factory"
+      ],
+      "trigger": "first factory completed",
+      "limit": "once per game",
+      "delivery": "practical"
+    },
+    {
+      "id": "adv.sales.first",
+      "text": "Our first sale! Small number, big moment. Now let's make it repeatable.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_first_sale"
+      ],
+      "trigger": "firstSale*",
+      "limit": "once per game",
+      "delivery": "delighted"
+    },
+    {
+      "id": "adv.sales.record_month",
+      "text": "Record revenue this month. Watch our margins as we scale.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "aliases": [
+        "vo_record_month"
+      ],
+      "trigger": "recordMonth* (NI > previous max × 1.10 and ≥ $100K)",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "proud"
+    },
+    {
+      "id": "adv.ops.stockout",
+      "text": "We're selling out. Empty shelves send customers straight to competitors.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "firstFree": 1,
+      "aliases": [
+        "vo_stockout"
+      ],
+      "trigger": "stockOut* (a line lost > 5% of demand)",
+      "limit": "first per game, then ≤ 1 per 6 game-months",
+      "delivery": "urgent, not alarmed"
+    },
+    {
+      "id": "adv.ops.overstock",
+      "text": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+      "voice": "advisor",
+      "priority": 3,
+      "gameMonthCooldown": 12,
+      "trigger": "overstock* (cover > 3 months)",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "measured"
+    },
+    {
+      "id": "adv.cash.runway_low",
+      "text": "Our cash runway is getting short. Trim costs or line up financing.",
+      "voice": "advisor",
+      "priority": 1,
+      "aliases": [
+        "vo_low_runway"
+      ],
+      "trigger": "lowRunway (cashRunwayMonths < 3, entering)",
+      "limit": "once per episode; re-arm at runway > 6 or null",
+      "delivery": "concerned"
+    },
+    {
+      "id": "adv.cash.negative",
+      "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+      "voice": "advisor",
+      "priority": 0,
+      "tts": "We're overdrawn. Every month in the red costs interest, and credibility.",
+      "aliases": [
+        "vo_cash_negative"
+      ],
+      "trigger": "cashNegative (month-end cash < 0, entering)",
+      "limit": "once per episode; re-arm after 2 months ≥ 0",
+      "delivery": "serious"
+    },
+    {
+      "id": "adv.cash.recovered",
+      "text": "Cash is positive again. Nicely done. Let's keep a healthy buffer.",
+      "voice": "advisor",
+      "priority": 2,
+      "trigger": "cashRecovered* (cash ≥ 0 after an episode and runway ≥ 3 or null)",
+      "limit": "once per episode",
+      "delivery": "relieved"
+    },
+    {
+      "id": "adv.loan.approved",
+      "text": "Loan approved. Borrowed money is a tool; make it earn more than it costs.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "firstFree": 2,
+      "aliases": [
+        "vo_loan_approved"
+      ],
+      "trigger": "loanApproved*",
+      "limit": "first 2 per game, then ≤ 1 per 12 game-months",
+      "delivery": "confident"
+    },
+    {
+      "id": "adv.loan.denied",
+      "text": "The bank said no. Strengthen our margins and credit, then ask again.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "loanDenied*",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "frank"
+    },
+    {
+      "id": "adv.loan.repaid",
+      "text": "Loan repaid in full. Less interest, stronger balance sheet.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "trigger": "loanRepaid* (fully repaid)",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "adv.credit.downgrade",
+      "text": "Our credit rating was downgraded. Borrowing just got more expensive.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 3,
+      "trigger": "creditRatingChanged* with to < from",
+      "limit": "each; ≥ 3 game-months apart",
+      "delivery": "serious"
+    },
+    {
+      "id": "adv.credit.upgrade",
+      "text": "Credit rating upgraded. Lenders like what they see.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "creditRatingChanged* with to > from",
+      "limit": "≥ 6 game-months apart",
+      "delivery": "pleased"
+    },
+    {
+      "id": "adv.rates.up",
+      "text": "Interest rates are climbing. Our variable-rate debt just got pricier.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "trigger": "policyRateChanged* by ≥ +0.5 pp while the player holds variable-rate debt",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "matter-of-fact"
+    },
+    {
+      "id": "adv.ipo.eligible",
+      "text": "We qualify for a public listing. An IPO could fund real growth.",
+      "voice": "advisor",
+      "priority": 2,
+      "tts": "We qualify for a public listing. An I.P.O. could fund real growth.",
+      "oncePerGame": true,
+      "trigger": "ipoEligible*",
+      "limit": "once per game",
+      "delivery": "enticing"
+    },
+    {
+      "id": "adv.ipo.complete",
+      "text": "We're officially public. From now on, every quarter is a report card.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "aliases": [
+        "vo_ipo"
+      ],
+      "trigger": "ipoCompleted* (chained after news.ipo_debut)",
+      "limit": "once per game",
+      "delivery": "elated, controlled"
+    },
+    {
+      "id": "adv.stock.surge",
+      "text": "Our share price is surging. The market believes in our story.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "sharePriceMove* 1-month ≥ +15%",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "upbeat"
+    },
+    {
+      "id": "adv.stock.crash",
+      "text": "Our shares took a beating. Stay calm, and let earnings do the talking.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "sharePriceMove* 1-month ≤ −20%",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "steady, reassuring"
+    },
+    {
+      "id": "adv.dividend.declared",
+      "text": "Dividend declared. Shareholders love a steady, reliable return.",
+      "voice": "advisor",
+      "priority": 3,
+      "gameMonthCooldown": 12,
+      "firstFree": 1,
+      "trigger": "dividendDeclared* (first time, or the payout ratio changed)",
+      "limit": "first + ≤ 1 per 12 game-months",
+      "delivery": "warm"
+    },
+    {
+      "id": "adv.stock.takeover_threat",
+      "text": "Someone is quietly buying up our shares. Watch for a takeover bid.",
+      "voice": "advisor",
+      "priority": 1,
+      "trigger": "stakeAlert* rival stake ≥ 20% (again at 35%)",
+      "limit": "once per threshold",
+      "delivery": "alert"
+    },
+    {
+      "id": "adv.market.competitor_entered",
+      "text": "A new competitor just entered one of our markets. Expect pressure on price.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "aliases": [
+        "vo_rival_enters"
+      ],
+      "trigger": "rivalEnteredMarket (first per rival × city)",
+      "limit": "≤ 1 per 6 game-months globally",
+      "delivery": "alert"
+    },
+    {
+      "id": "adv.market.share_10",
+      "text": "We've captured ten percent of this market. That's a real foothold.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "shareMilestone* 10%, first in the game",
+      "limit": "once per game",
+      "delivery": "pleased"
+    },
+    {
+      "id": "adv.market.share_25",
+      "text": "A quarter of this market is ours. Competitors will be noticing.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "shareMilestone* 25%",
+      "limit": "once per game",
+      "delivery": "pleased"
+    },
+    {
+      "id": "adv.market.share_50",
+      "text": "We own half this market now. Defend it with quality and brand.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "trigger": "shareMilestone* 50%",
+      "limit": "once per game",
+      "delivery": "proud, firm"
+    },
+    {
+      "id": "adv.market.leader",
+      "text": "We're the market leader here. Now the hard part: staying there.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "aliases": [
+        "vo_overtake"
+      ],
+      "trigger": "marketLeaderGained*",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "proud"
+    },
+    {
+      "id": "adv.market.lost_lead",
+      "text": "We've lost market leadership here. Time to review price and quality.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "marketLeaderLost*",
+      "limit": "≤ 1 per 6 game-months",
+      "delivery": "determined"
+    },
+    {
+      "id": "adv.market.price_war",
+      "text": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 12,
+      "firstFree": 1,
+      "aliases": [
+        "vo_price_war"
+      ],
+      "trigger": "priceUndercut* (rival ≥ 5% below us and our share −5 pts)",
+      "limit": "first per game, then ≤ 1 per 12 game-months",
+      "delivery": "firm"
+    },
+    {
+      "id": "adv.rnd.breakthrough",
+      "text": "Research breakthrough! Our technology just moved up a level.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 3,
+      "aliases": [
+        "vo_tech_up"
+      ],
+      "trigger": "techLevelUp* (player): first time, and at max − 1",
+      "limit": "≥ 3 game-months apart",
+      "delivery": "excited"
+    },
+    {
+      "id": "adv.rnd.patent_granted",
+      "text": "Patent granted. For now, that technology is ours alone.",
+      "voice": "advisor",
+      "priority": 1,
+      "aliases": [
+        "vo_patent"
+      ],
+      "trigger": "patentGranted* (player)",
+      "limit": "each",
+      "delivery": "triumphant, light"
+    },
+    {
+      "id": "adv.rnd.rival_patent",
+      "text": "A rival patented that technology. We'll need a license or a new path.",
+      "voice": "advisor",
+      "priority": 1,
+      "aliases": [
+        "vo_patent_blocked"
+      ],
+      "trigger": "patentBlocked* (first blocked month)",
+      "limit": "once per product",
+      "delivery": "pragmatic"
+    },
+    {
+      "id": "adv.macro.recession",
+      "text": "A recession is here. Conserve cash and protect our core markets.",
+      "voice": "advisor",
+      "priority": 1,
+      "trigger": "climateChanged* → recession or panic (chained after news.recession)",
+      "limit": "each",
+      "delivery": "calm, serious"
+    },
+    {
+      "id": "adv.macro.recovery",
+      "text": "The economy is recovering. Assets are cheap; a good time to invest.",
+      "voice": "advisor",
+      "priority": 2,
+      "trigger": "climateChanged* recession/panic → normal or better",
+      "limit": "each",
+      "delivery": "hopeful"
+    },
+    {
+      "id": "adv.macro.boom",
+      "text": "The economy is booming. Demand is strong, so let's add capacity.",
+      "voice": "advisor",
+      "priority": 2,
+      "trigger": "climateChanged* → boom",
+      "limit": "each",
+      "delivery": "energised"
+    },
+    {
+      "id": "adv.quarter.good",
+      "text": "Strong quarter. Revenue and profit are both up. The board is pleased.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "quarterClosed* NI > 0, revenue QoQ ≥ +5% and NI QoQ ≥ +5%",
+      "limit": "≤ 1 per 2 quarters",
+      "delivery": "pleased"
+    },
+    {
+      "id": "adv.quarter.bad",
+      "text": "A tough quarter. We lost money. Let's find what's dragging us down.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "quarterClosed* NI < 0 after a profitable quarter, or revenue QoQ ≤ −10%",
+      "limit": "≤ 1 per 2 quarters",
+      "delivery": "candid"
+    },
+    {
+      "id": "adv.quarter.record",
+      "text": "Best quarterly profit yet. That's disciplined execution.",
+      "voice": "advisor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "trigger": "quarterClosed* all-time-high NI with ≥ 4 quarters played (replaces quarter.good)",
+      "limit": "≤ 1 per 4 quarters",
+      "delivery": "proud"
+    },
+    {
+      "id": "adv.tax.paid",
+      "text": "The tax bill is paid. Remember, it's what we keep that counts.",
+      "voice": "advisor",
+      "priority": 3,
+      "gameMonthCooldown": 12,
+      "trigger": "taxPaid*: first time, then only when tax ≥ 25% of cash",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "wry"
+    },
+    {
+      "id": "adv.bankruptcy.warning",
+      "text": "We're edging toward bankruptcy. Raise cash now: borrow, cut costs, or sell assets.",
+      "voice": "advisor",
+      "priority": 0,
+      "trigger": "insolvencyWarning* monthsLeft ≤ 3 (under any insolvency rule)",
+      "limit": "once per episode",
+      "delivery": "urgent"
+    },
+    {
+      "id": "adv.bankruptcy.final",
+      "text": "One more month in the red and the creditors take control.",
+      "voice": "advisor",
+      "priority": 0,
+      "trigger": "insolvencyWarning* monthsLeft = 1",
+      "limit": "once per episode",
+      "delivery": "grave"
+    },
+    {
+      "id": "adv.end.victory",
+      "text": "Every objective met. That's a business built to last. Congratulations.",
+      "voice": "advisor",
+      "priority": 0,
+      "oncePerGame": true,
+      "legacyAlias": "vo_victory",
+      "trigger": "scenarioWon",
+      "limit": "once",
+      "delivery": "proud, warm"
+    },
+    {
+      "id": "adv.end.defeat_bankrupt",
+      "text": "The creditors have taken over. Every great magnate has a second act.",
+      "voice": "advisor",
+      "priority": 0,
+      "tts": "The creditors have taken over. Every great mag-nate has a second act.",
+      "oncePerGame": true,
+      "legacyAlias": "vo_defeat_bankrupt",
+      "trigger": "scenarioLost reason insolvency",
+      "limit": "once",
+      "delivery": "kind"
+    },
+    {
+      "id": "adv.end.defeat_timeup",
+      "text": "Time's up. We missed the targets, but the lessons are ours to keep.",
+      "voice": "advisor",
+      "priority": 0,
+      "oncePerGame": true,
+      "legacyAlias": "vo_defeat_timeup",
+      "trigger": "scenarioLost reason deadline",
+      "limit": "once",
+      "delivery": "kind"
+    },
+    {
+      "id": "adv.hint.idle_cash",
+      "text": "We're sitting on idle cash. Money that isn't invested isn't working.",
+      "voice": "advisor",
+      "priority": 3,
+      "trigger": "cash > 35% of total assets, no capex for 6 game-months, ≥ 12 months played",
+      "limit": "hint rules (§4.11)",
+      "delivery": "curious"
+    },
+    {
+      "id": "adv.hint.no_ads",
+      "text": "Our brand awareness is fading. A modest ad campaign would help.",
+      "voice": "advisor",
+      "priority": 3,
+      "trigger": "selling in a (product, city) with brand < 20 and no campaign for 3 game-months",
+      "limit": "hint rules",
+      "delivery": "suggestive"
+    },
+    {
+      "id": "adv.hint.no_rnd",
+      "text": "Rivals are out-innovating us. Consider building an R&D center.",
+      "voice": "advisor",
+      "priority": 3,
+      "tts": "Rivals are out-innovating us. Consider building an R and D center.",
+      "trigger": "advisor rule Tech gap (rival tech ≥ ours + 2, contested product) and no R&D building",
+      "limit": "hint rules",
+      "delivery": "suggestive"
+    },
+    {
+      "id": "adv.hint.idle_factory",
+      "text": "One of our factories is idle. Idle capacity is pure overhead.",
+      "voice": "advisor",
+      "priority": 3,
+      "trigger": "advisor activateIdle on a factory, or utilization 0 for 2 months",
+      "limit": "hint rules",
+      "delivery": "frank"
+    },
+    {
+      "id": "adv.hint.new_city",
+      "text": "This city is working well. Consider expanding into another one.",
+      "voice": "advisor",
+      "priority": 3,
+      "trigger": "≥ 12 months played, one city only, trailing-6-month NI > 0, cash > 2 × supermarket cost",
+      "limit": "hint rules",
+      "delivery": "ambitious"
+    },
+    {
+      "id": "adv.hint.make_vs_buy",
+      "text": "Suppliers are taking a fat margin. Could we make it ourselves?",
+      "voice": "advisor",
+      "priority": 3,
+      "trigger": "a purchased input > 20% of COGS for 3 months and no owned upstream producer",
+      "limit": "hint rules",
+      "delivery": "shrewd"
+    },
+    {
+      "id": "news.intro",
+      "text": "Good evening. Here's what's moving the markets tonight.",
+      "voice": "anchor",
+      "priority": 1,
+      "oncePerGame": true,
+      "trigger": "first anchor line of a session (prefixes the first Major news item)",
+      "limit": "once per session",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.recession",
+      "text": "Breaking news: the economy has officially entered a recession.",
+      "voice": "anchor",
+      "priority": 1,
+      "trigger": "climateChanged* → recession or panic",
+      "limit": "each",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.recovery",
+      "text": "Economists say the recession is over as hiring picks up nationwide.",
+      "voice": "anchor",
+      "priority": 2,
+      "trigger": "climateChanged* recession/panic → normal or prosperous",
+      "limit": "each",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.boom",
+      "text": "Consumer spending hits a record high as the boom rolls on.",
+      "voice": "anchor",
+      "priority": 2,
+      "trigger": "climateChanged* → boom",
+      "limit": "each",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.rates_up",
+      "text": "The central bank has raised interest rates, effective immediately.",
+      "voice": "anchor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "policyRateChanged* Δ ≥ +0.5 pp",
+      "limit": "≥ 6 game-months apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.rates_down",
+      "text": "The central bank cuts interest rates to kick-start growth.",
+      "voice": "anchor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "policyRateChanged* Δ ≤ −0.5 pp",
+      "limit": "≥ 6 game-months apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.market_crash",
+      "text": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "voice": "anchor",
+      "priority": 1,
+      "gameMonthCooldown": 6,
+      "trigger": "market index 1-month ≤ −10%, or climate → panic",
+      "limit": "≥ 6 game-months apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.market_rally",
+      "text": "Stocks close sharply higher in a broad market rally.",
+      "voice": "anchor",
+      "priority": 2,
+      "gameMonthCooldown": 6,
+      "trigger": "market index 1-month ≥ +8%",
+      "limit": "≥ 6 game-months apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.commodity_spike",
+      "text": "Commodity prices spike as supply shortages hit world markets.",
+      "voice": "anchor",
+      "priority": 2,
+      "majorPriority": 1,
+      "trigger": "news with a price multiplier > 1 and severity ≥ Notable (content: cocoa_blight ×1.5, tariff_announcement ×1.2, wheat_drought ×1.35)",
+      "limit": "≥ 90 s real time apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.commodity_drop",
+      "text": "Commodity prices tumble on a global supply glut.",
+      "voice": "anchor",
+      "priority": 2,
+      "majorPriority": 1,
+      "trigger": "news with a price multiplier < 1 (oil_glut ×0.7, cotton_harvest_bumper ×0.75)",
+      "limit": "≥ 90 s apart",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.ipo_debut",
+      "text": "A hotly anticipated newcomer debuts on the exchange today.",
+      "voice": "anchor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "trigger": "any IPO; for the player's own it chains into adv.ipo.complete",
+      "limit": "≤ 1 per 12 game-months for AI IPOs",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.corporate_bankruptcy",
+      "text": "Another corporate bankruptcy rattles investors this morning.",
+      "voice": "anchor",
+      "priority": 2,
+      "trigger": "an AI company is liquidated (companyBankrupt*)",
+      "limit": "each",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "news.tech_breakthrough",
+      "text": "Scientists unveil a breakthrough that could reshape the industry.",
+      "voice": "anchor",
+      "priority": 2,
+      "gameMonthCooldown": 12,
+      "trigger": "content event tech_breakthrough (headline), or a rival reaches max tech (techMax*)",
+      "limit": "≤ 1 per 12 game-months",
+      "delivery": "steady broadcaster"
+    },
+    {
+      "id": "vo_t1_intro",
+      "text": "Six million dollars and one city. Let's turn it into a company worth ten.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "held": true,
+      "trigger": "tutorial briefing (UX section 7, 0:00)",
+      "limit": "once per save",
+      "delivery": "confident, inviting"
+    },
+    {
+      "id": "vo_t1_city",
+      "text": "Metropolis: half a million people. The glowing districts are where thirsty customers live.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial flyover (UX section 7, 0:40)",
+      "limit": "once per save",
+      "delivery": "warm, scene-setting"
+    },
+    {
+      "id": "vo_t1_speed",
+      "text": "Construction takes time. Speed things up while the crane works.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: construction under way (UX section 7, 2:00)",
+      "limit": "once per save",
+      "delivery": "light"
+    },
+    {
+      "id": "vo_t1_readstore",
+      "text": "Sold against demand: if those numbers ever split, we ran out of stock.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: read your store (UX section 7, 3:15)",
+      "limit": "once per save",
+      "delivery": "explanatory"
+    },
+    {
+      "id": "vo_t1_sharedrop",
+      "text": "We lost a third of our customers. We can cut price, advertise, or wait.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: the month after the rival arrives (UX section 7, 4:40)",
+      "limit": "once per save",
+      "delivery": "concerned, steady"
+    },
+    {
+      "id": "vo_t1_loan",
+      "text": "Borrowing is fine if the new business earns more than the interest.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: borrow to grow (UX section 7, 8:00)",
+      "limit": "once per save",
+      "delivery": "reassuring"
+    },
+    {
+      "id": "vo_t1_expand",
+      "text": "Same store, new line. More products share the same rent.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: expand (UX section 7, 9:15)",
+      "limit": "once per save",
+      "delivery": "practical"
+    },
+    {
+      "id": "vo_t1_almost",
+      "text": "Almost there. Keep the shelves full and the brand warm.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "trigger": "tutorial: last goal at 90% (UX section 7, 13:30)",
+      "limit": "once per save",
+      "delivery": "encouraging"
+    },
+    {
+      "id": "vo_victory_t1",
+      "text": "Ten million. You've built a real company. Next, we make our own products.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "held": true,
+      "trigger": "tutorial chapter won",
+      "limit": "once per save",
+      "delivery": "proud, warm"
+    },
+    {
+      "id": "vo_below_cost",
+      "text": "We're selling below cost. Every sale loses money.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "trigger": "belowCostPrice (player line priced under unit cost)",
+      "limit": "once per game",
+      "delivery": "firm"
+    },
+    {
+      "id": "vo_brand_milestone",
+      "text": "People are starting to recognise our name.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "brandMilestone threshold 30",
+      "limit": "once per game",
+      "delivery": "pleased"
+    },
+    {
+      "id": "vo_brand_household",
+      "text": "We're a household name in this city.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "brandMilestone threshold 70",
+      "limit": "once per game",
+      "delivery": "proud"
+    },
+    {
+      "id": "vo_news_major",
+      "text": "Big news. Check how it hits our costs.",
+      "voice": "advisor",
+      "priority": 1,
+      "gameMonthCooldown": 12,
+      "trigger": "Major commodity news: chained after the anchor line",
+      "limit": "<= 1 per 12 game-months",
+      "delivery": "alert"
+    },
+    {
+      "id": "vo_loan_missed",
+      "text": "We missed a loan payment. The bank is not amused.",
+      "voice": "advisor",
+      "priority": 0,
+      "trigger": "loanPaymentMissed",
+      "limit": "each",
+      "delivery": "grave, dry"
+    },
+    {
+      "id": "vo_goal_generic",
+      "text": "Objective complete.",
+      "voice": "advisor",
+      "priority": 1,
+      "trigger": "goalAchieved",
+      "limit": "each goal",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "vo_deadline_12",
+      "text": "One year left on the clock.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "client: scenario deadline 12 months away (snapshot.scenario.monthsRemaining)",
+      "limit": "once per game",
+      "delivery": "matter-of-fact"
+    },
+    {
+      "id": "vo_deadline_3",
+      "text": "Three months to go. Make them count.",
+      "voice": "advisor",
+      "priority": 1,
+      "oncePerGame": true,
+      "trigger": "client: scenario deadline 3 months away",
+      "limit": "once per game",
+      "delivery": "urgent, focused"
+    },
+    {
+      "id": "vo_building_first_retail",
+      "text": "Our first store. Price it smartly and keep those shelves stocked.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group retail (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "encouraging"
+    },
+    {
+      "id": "vo_building_first_farm",
+      "text": "Our first farm. Growing our own inputs protects our margins.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group farm (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "vo_building_first_mine_well",
+      "text": "We're producing our own raw materials now. Price shocks will hurt us less.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group mine_well (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "shrewd"
+    },
+    {
+      "id": "vo_building_first_warehouse",
+      "text": "Our first warehouse. Buffer stock keeps our stores supplied when demand jumps.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group warehouse (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "practical"
+    },
+    {
+      "id": "vo_building_first_rd",
+      "text": "Our first R&D center. Better technology means better products and margins.",
+      "voice": "advisor",
+      "priority": 2,
+      "tts": "Our first R and D center. Better technology means better products and margins.",
+      "oncePerGame": true,
+      "trigger": "first player building of group rd (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "enthusiastic"
+    },
+    {
+      "id": "vo_building_first_media",
+      "text": "Our first media outlet. Let's put it to work building our brand.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group media (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "confident"
+    },
+    {
+      "id": "vo_building_first_seaport",
+      "text": "Our own seaport. Imported goods now come straight to our door.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "first player building of group seaport (buildingConstructed / constructionStarted)",
+      "limit": "once per game",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "vo_milestone_1m",
+      "text": "Our first million in revenue. Now let's make the next one faster.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "revenueMilestone 1m lifetime revenue",
+      "limit": "once per game",
+      "delivery": "delighted"
+    },
+    {
+      "id": "vo_milestone_10m",
+      "text": "Ten million in revenue. The business has real momentum now.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "revenueMilestone 10m lifetime revenue",
+      "limit": "once per game",
+      "delivery": "pleased"
+    },
+    {
+      "id": "vo_milestone_100m",
+      "text": "A hundred million in revenue. We're a serious player now.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "revenueMilestone 100m lifetime revenue",
+      "limit": "once per game",
+      "delivery": "proud"
+    },
+    {
+      "id": "vo_milestone_1b",
+      "text": "A billion in revenue. That's the mark of a true magnate.",
+      "voice": "advisor",
+      "priority": 2,
+      "tts": "A billion in revenue. That's the mark of a true mag-nate.",
+      "oncePerGame": true,
+      "trigger": "revenueMilestone 1b lifetime revenue",
+      "limit": "once per game",
+      "delivery": "proud, warm"
+    },
+    {
+      "id": "vo_upgrade_first",
+      "text": "Our first upgrade is complete. More capacity, same address.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "buildingUpgraded (player), first time",
+      "limit": "once per game",
+      "delivery": "satisfied"
+    },
+    {
+      "id": "vo_tech_max",
+      "text": "Our technology is the best on the market. Now let's protect that lead.",
+      "voice": "advisor",
+      "priority": 2,
+      "oncePerGame": true,
+      "trigger": "techLevelUp (player) reaching the product maximum",
+      "limit": "once per game",
+      "delivery": "proud, firm"
+    },
+    {
+      "id": "adv.legacy.tutorial_step1",
+      "text": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "legacyOnly": true,
+      "legacyAlias": "vo_tutorial_step1",
+      "trigger": "legacy Godot tutorial step 1 (build-store)",
+      "limit": "once per save",
+      "delivery": "encouraging"
+    },
+    {
+      "id": "adv.legacy.tutorial_step2",
+      "text": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "legacyOnly": true,
+      "legacyAlias": "vo_tutorial_step2",
+      "trigger": "legacy Godot tutorial step (superseded by UX section 7; kept for the old names and the AudioLab)",
+      "limit": "once per save",
+      "delivery": "practical"
+    },
+    {
+      "id": "adv.legacy.tutorial_step3",
+      "text": "Time is your engine. Press play and let three months run. Watch the cash begin to flow.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "legacyOnly": true,
+      "legacyAlias": "vo_tutorial_step3",
+      "trigger": "legacy Godot tutorial step (superseded by UX section 7; kept for the old names and the AudioLab)",
+      "limit": "once per save",
+      "delivery": "light"
+    },
+    {
+      "id": "adv.legacy.tutorial_step4",
+      "text": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+      "voice": "advisor",
+      "priority": 1,
+      "tutorial": true,
+      "oncePerGame": true,
+      "legacyOnly": true,
+      "legacyAlias": "vo_tutorial_step4",
+      "trigger": "legacy Godot tutorial step (superseded by UX section 7; kept for the old names and the AudioLab)",
+      "limit": "once per save",
+      "delivery": "confident"
+    },
+    {
+      "id": "adv.legacy.tutorial_step5",
+      "text": "Now scale. Grow your corporate value to $20 million. Your rivals are already moving.",
+      "voice": "advisor",
+      "priority": 1,
+      "tts": "Now scale. Grow your corporate value to twenty million dollars. Your rivals are already moving.",
+      "tutorial": true,
+      "oncePerGame": true,
+      "legacyOnly": true,
+      "legacyAlias": "vo_tutorial_step5",
+      "trigger": "legacy Godot tutorial step 5 (grow-value)",
+      "limit": "once per save",
+      "delivery": "driven"
+    }
+  ]
+}

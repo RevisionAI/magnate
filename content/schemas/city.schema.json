@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://magnate.game/schemas/city.schema.json",
+  "title": "City",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "population",
+    "demographics",
+    "grid",
+    "geography"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population": {
+      "type": "integer",
+      "minimum": 1000
+    },
+    "demographics": {
+      "type": "object",
+      "required": [
+        "low",
+        "middle",
+        "high"
+      ],
+      "additionalProperties": false,
+      "description": "Population share per income bracket; must sum to 1.0 (checked by engine).",
+      "properties": {
+        "low": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "middle": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "high": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "grid": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 20,
+          "maximum": 200
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 20,
+          "maximum": 200
+        }
+      }
+    },
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "coastal": {
+          "type": "boolean",
+          "default": false
+        },
+        "arable": {
+          "type": "boolean",
+          "default": true
+        },
+        "mineralRich": {
+          "type": "boolean",
+          "default": false
+        },
+        "oilRich": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "baseLandPrice": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "default": 100.0
+    },
+    "wageIndex": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 5,
+      "description": "City wage index applied to base wages (econ-audit §4.5). Default 1."
+    },
+    "priceIndex": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 5,
+      "description": "City price index applied to reference prices (P1). Default 1."
+    }
+  }
+}

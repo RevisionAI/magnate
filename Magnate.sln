@@ -1,0 +1,58 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magnate.Engine", "engine\Magnate.Engine\Magnate.Engine.csproj", "{8F3A1E01-0001-4A10-9D90-0000000000A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magnate.Engine.Tests", "engine\Magnate.Engine.Tests\Magnate.Engine.Tests.csproj", "{8F3A1E01-0001-4A10-9D90-0000000000A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentValidator", "tools\ContentValidator\ContentValidator.csproj", "{8F3A1E01-0001-4A10-9D90-0000000000A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagnateSim", "tools\MagnateSim\MagnateSim.csproj", "{8F3A1E01-0001-4A10-9D90-0000000000A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magnate.Client", "client\Magnate.Client.csproj", "{8F3A1E01-0001-4A10-9D90-0000000000A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "engine", "engine", "{5ED46225-9B2B-44A5-B79D-3387F0BFCFED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magnate.Bridge", "engine\Magnate.Bridge\Magnate.Bridge.csproj", "{5145A92E-83AC-4890-BE92-A631BA564A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magnate.Bridge.Tests", "engine\Magnate.Bridge.Tests\Magnate.Bridge.Tests.csproj", "{74C0E83B-10AC-495D-8C40-884AF44228D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F3A1E01-0001-4A10-9D90-0000000000A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1E01-0001-4A10-9D90-0000000000A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5145A92E-83AC-4890-BE92-A631BA564A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5145A92E-83AC-4890-BE92-A631BA564A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5145A92E-83AC-4890-BE92-A631BA564A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5145A92E-83AC-4890-BE92-A631BA564A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C0E83B-10AC-495D-8C40-884AF44228D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C0E83B-10AC-495D-8C40-884AF44228D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C0E83B-10AC-495D-8C40-884AF44228D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C0E83B-10AC-495D-8C40-884AF44228D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5145A92E-83AC-4890-BE92-A631BA564A32} = {5ED46225-9B2B-44A5-B79D-3387F0BFCFED}
+		{74C0E83B-10AC-495D-8C40-884AF44228D3} = {5ED46225-9B2B-44A5-B79D-3387F0BFCFED}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,63 @@
+{
+  "method": "saveGame",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "data": "\u003Cweb save envelope elided\u003E",
+      "schemaVersion": 10,
+      "scenarioId": "tutorial",
+      "scenarioName": "Tutorial \u2014 Your First Company",
+      "companyName": "Your Corp",
+      "date": {
+        "year": 2026,
+        "month": 8
+      },
+      "cash": 153957574.14,
+      "meta": {
+        "formatVersion": 1,
+        "engineSchemaVersion": 10,
+        "gameId": "405ea8d2326daadf06273f63c3f9a152",
+        "scenarioId": "tutorial",
+        "scenarioName": "Tutorial \u2014 Your First Company",
+        "companyName": "Your Corp",
+        "date": {
+          "year": 2026,
+          "month": 8
+        },
+        "elapsedMonths": 7,
+        "cash": 153957574.14,
+        "startingCapital": 225600000,
+        "corporateValue": 177190788.58,
+        "buildingsByCategory": [
+          {
+            "id": "convenience_store",
+            "count": 3
+          },
+          {
+            "id": "factory",
+            "count": 1
+          },
+          {
+            "id": "supermarket",
+            "count": 1
+          }
+        ],
+        "topProducts": [
+          {
+            "productId": "soft_drink",
+            "revenue": 540000
+          }
+        ],
+        "goalsAchieved": 6,
+        "goalsTotal": 8,
+        "outcomeStatus": "playing",
+        "contentHash": "a54f27fbdb4cdb346556e888dd42d04cd727663113136f94b934695e0b23ed6e",
+        "slotKind": "manual",
+        "rawBytes": 94264,
+        "compressedBytes": 0
+      }
+    },
+    "revision": 25
+  }
+}

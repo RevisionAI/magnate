@@ -1,0 +1,373 @@
+{
+  "method": "activityFeed",
+  "args": {
+    "limit": 20
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "events": [
+        {
+          "kind": "constructionCompleted",
+          "severity": "success",
+          "message": "Your Corp opened a Supermarket in Metropolis.",
+          "amount": 10000000,
+          "buildingId": 1,
+          "cityId": "metropolis",
+          "seq": 24,
+          "month": {
+            "year": 2026,
+            "month": 5
+          },
+          "priority": 2,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "supermarket",
+          "placement": {
+            "px": 47,
+            "pz": 47,
+            "rotation": 270,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "constructionCompleted",
+          "severity": "info",
+          "message": "LocalCo opened a Supermarket in Metropolis.",
+          "amount": 10000000,
+          "buildingId": 5,
+          "cityId": "metropolis",
+          "seq": 25,
+          "month": {
+            "year": 2026,
+            "month": 5
+          },
+          "priority": 1,
+          "companyId": 2,
+          "isPlayer": false,
+          "typeId": "supermarket",
+          "placement": {
+            "px": 48,
+            "pz": 29,
+            "rotation": 180,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "quarterClosed",
+          "severity": "warning",
+          "message": "Q2 2026: revenue $270,000, net income -$1,016,653.",
+          "amount": -1016653.18,
+          "seq": 28,
+          "month": {
+            "year": 2026,
+            "month": 6
+          },
+          "priority": 1,
+          "reason": "Q2 2026",
+          "newValue": 270000,
+          "months": 3
+        },
+        {
+          "kind": "constructionCompleted",
+          "severity": "success",
+          "message": "Your Corp opened a Small Factory in Metropolis.",
+          "amount": 18500000,
+          "buildingId": 2,
+          "cityId": "metropolis",
+          "seq": 29,
+          "month": {
+            "year": 2026,
+            "month": 6
+          },
+          "priority": 2,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "factory_small",
+          "placement": {
+            "px": 72,
+            "pz": 68,
+            "rotation": 270,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "techLevelUp",
+          "severity": "success",
+          "message": "Soft Drink technology reached level 2.",
+          "productId": "soft_drink",
+          "seq": 32,
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "priority": 2,
+          "companyId": 1,
+          "isPlayer": true,
+          "level": 2,
+          "maxLevel": 8
+        },
+        {
+          "kind": "lossStreak",
+          "severity": "warning",
+          "message": "6 losing months in a row.",
+          "amount": -1117859.65,
+          "seq": 33,
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "priority": 2,
+          "months": 6
+        },
+        {
+          "kind": "constructionCompleted",
+          "severity": "success",
+          "message": "Your Corp opened a R\u0026D Center in Metropolis.",
+          "amount": 25000000,
+          "buildingId": 4,
+          "cityId": "metropolis",
+          "seq": 34,
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "priority": 2,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "rd_center",
+          "placement": {
+            "px": 63,
+            "pz": 70,
+            "rotation": 0,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "constructionStarted",
+          "severity": "success",
+          "message": "Construction of a Convenience Store in Metropolis started; it opens in 2 months.",
+          "amount": 570563,
+          "buildingId": 6,
+          "cityId": "metropolis",
+          "seq": 36,
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "convenience_store",
+          "months": 2,
+          "placement": {
+            "px": 37,
+            "pz": 29,
+            "rotation": 180,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "news",
+          "severity": "info",
+          "message": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 37,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "typeId": "viral_ad_spot",
+          "newsSeq": 2,
+          "reason": "info"
+        },
+        {
+          "kind": "brandMilestone",
+          "severity": "success",
+          "message": "Soft Drink brand awareness in Metropolis passed 30.",
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 39,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "threshold": 30
+        },
+        {
+          "kind": "inputShortage",
+          "severity": "warning",
+          "message": "Small Factory #2 ran short of Wheat and worked at 0% capacity.",
+          "buildingId": 2,
+          "cityId": "metropolis",
+          "productId": "wheat",
+          "seq": 40,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "newValue": 0
+        },
+        {
+          "kind": "goalAchieved",
+          "severity": "success",
+          "message": "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+          "seq": 41,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 3,
+          "goalId": "brand-30"
+        },
+        {
+          "kind": "constructionStarted",
+          "severity": "success",
+          "message": "Construction of a Convenience Store in Metropolis started; it opens in 2 months.",
+          "amount": 540687,
+          "buildingId": 7,
+          "cityId": "metropolis",
+          "productId": "bread",
+          "seq": 43,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "convenience_store",
+          "months": 2,
+          "placement": {
+            "px": 52,
+            "pz": 27,
+            "rotation": 0,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "goalAchieved",
+          "severity": "success",
+          "message": "Add a second product line. Use the loan to put bread on a free unit of your supermarket (or open a second store). More lines spread the store\u0027s fixed costs over more sales.",
+          "seq": 44,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 3,
+          "goalId": "second-line"
+        },
+        {
+          "kind": "constructionStarted",
+          "severity": "success",
+          "message": "Construction of a Convenience Store in Metropolis started; it opens in 2 months.",
+          "amount": 586726,
+          "buildingId": 8,
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 45,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true,
+          "typeId": "convenience_store",
+          "months": 2,
+          "placement": {
+            "px": 40,
+            "pz": 27,
+            "rotation": 0,
+            "source": "engine"
+          }
+        },
+        {
+          "kind": "buildingUpgraded",
+          "severity": "success",
+          "message": "Supermarket #1 upgraded to level 2.",
+          "amount": 6000000,
+          "buildingId": 1,
+          "cityId": "metropolis",
+          "seq": 49,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true,
+          "level": 2,
+          "maxLevel": 3
+        },
+        {
+          "kind": "buildingDemolished",
+          "severity": "info",
+          "message": "Demolished R\u0026D Center in Metropolis for 189\u00A0724 (loss 24\u00A0843\u00A0750)",
+          "amount": 189724,
+          "buildingId": 4,
+          "seq": 50,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true
+        },
+        {
+          "kind": "buildingDemolished",
+          "severity": "info",
+          "message": "Sold Small Warehouse in Metropolis for 3\u00A0111\u00A0332 (loss 1\u00A0977\u00A0778)",
+          "amount": 3111331.66,
+          "buildingId": 3,
+          "seq": 51,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "companyId": 1,
+          "isPlayer": true
+        },
+        {
+          "kind": "campaignStarted",
+          "severity": "info",
+          "message": "Started a radio campaign for Soft Drink in Metropolis.",
+          "amount": 20000,
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 52,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "reason": "radio"
+        },
+        {
+          "kind": "campaignCancelled",
+          "severity": "info",
+          "message": "Stopped the radio campaign for Soft Drink in Metropolis.",
+          "amount": 0,
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 53,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "reason": "radio",
+          "oldValue": 20000
+        }
+      ],
+      "latestSeq": 53
+    },
+    "revision": 25
+  }
+}

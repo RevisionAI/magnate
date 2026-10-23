@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/FinancialStatements.cs" id="1_finstmt"]
+
+[node name="FinancialStatements" type="Node"]
+script = ExtResource("1_finstmt")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Financial Statements"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="PeriodBar" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="PeriodLabel" type="Label" parent="Panel/VBox/PeriodBar"]
+layout_mode = 2
+text = "Income-statement period:"
+
+[node name="PeriodOption" type="OptionButton" parent="Panel/VBox/PeriodBar"]
+layout_mode = 2
+
+[node name="Tabs" type="TabContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Income Statement" type="ScrollContainer" parent="Panel/VBox/Tabs"]
+layout_mode = 2
+
+[node name="IncomeText" type="RichTextLabel" parent="Panel/VBox/Tabs/Income Statement"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="Balance Sheet" type="ScrollContainer" parent="Panel/VBox/Tabs"]
+visible = false
+layout_mode = 2
+
+[node name="BalanceText" type="RichTextLabel" parent="Panel/VBox/Tabs/Balance Sheet"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="Cash Flow" type="ScrollContainer" parent="Panel/VBox/Tabs"]
+visible = false
+layout_mode = 2
+
+[node name="CashFlowText" type="RichTextLabel" parent="Panel/VBox/Tabs/Cash Flow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="PlaybackBar" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="PlayButton" type="Button" parent="Panel/VBox/PlaybackBar"]
+layout_mode = 2
+text = "Play"
+
+[node name="AdvanceButton" type="Button" parent="Panel/VBox/PlaybackBar"]
+layout_mode = 2
+text = "Advance 1 Month"
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

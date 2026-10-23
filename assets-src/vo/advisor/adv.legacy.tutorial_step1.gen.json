@@ -1,0 +1,115 @@
+{
+  "id": "adv.legacy.tutorial_step1",
+  "role": "advisor",
+  "text": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+  "sentText": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.871
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:41:05.511Z",
+  "file": "adv.legacy.tutorial_step1.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 7.19,
+  "speechSec": 6.95,
+  "wpm": 146.8,
+  "syllables": 28,
+  "sylPerSec": 4.03,
+  "paceWpm": 162.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 590,
+  "samplePeakDbfs": -2.42,
+  "truePeakDbtp": -2.4,
+  "lufsI": -21.9,
+  "lra": 1.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 400
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.522,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 139.7,
+      "paceWpm": 154.5,
+      "maxGapMs": 630,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+      "score": {
+        "hard": 1,
+        "soft": 0.03,
+        "flags": [
+          "internal pause 630 ms"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step1/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.856
+      },
+      "wpm": 142.3,
+      "paceWpm": 157.3,
+      "maxGapMs": 620,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+      "score": {
+        "hard": 1,
+        "soft": 0.002,
+        "flags": [
+          "internal pause 620 ms"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step1/t2.wav"
+    }
+  ],
+  "lineHash": "e232952b35513189aa105d41"
+}

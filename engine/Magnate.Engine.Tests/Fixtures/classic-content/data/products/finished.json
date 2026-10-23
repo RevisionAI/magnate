@@ -1,0 +1,210 @@
+[
+  {
+    "id": "soft_drink",
+    "name": "Soft Drink",
+    "tier": "finished",
+    "category": "beverage",
+    "unit": "bottle",
+    "baseWorldMarketPrice": 1.50,
+    "priceElasticity": 0.7,
+    "maxTechLevel": 8,
+    "baseDemandPerCapita": {
+      "low":    5.0,
+      "middle": 6.0,
+      "high":   4.0
+    },
+    "reservationPrice": {
+      "low":    8.0,
+      "middle": 50.0
+    },
+    "recipe": {
+      "outputQuantity": 1000.0,
+      "laborUnits": 4.0,
+      "inputs": [
+        { "productId": "sugar",   "quantity": 20.0 },
+        { "productId": "plastic", "quantity": 5.0  }
+      ]
+    }
+  },
+  {
+    "id": "bread",
+    "name": "Bread",
+    "tier": "finished",
+    "category": "food",
+    "unit": "loaf",
+    "baseWorldMarketPrice": 2.5,
+    "priceElasticity": 0.5,
+    "maxTechLevel": 7,
+    "baseDemandPerCapita": {
+      "low":    8.0,
+      "middle": 7.0,
+      "high":   5.0
+    },
+    "recipe": {
+      "outputQuantity": 200.0,
+      "laborUnits": 3.0,
+      "inputs": [
+        { "productId": "flour", "quantity": 50.0 }
+      ]
+    }
+  },
+  {
+    "id": "t_shirt",
+    "name": "T-Shirt",
+    "tier": "finished",
+    "category": "apparel",
+    "unit": "unit",
+    "baseWorldMarketPrice": 15.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 9,
+    "baseDemandPerCapita": {
+      "low":    0.3,
+      "middle": 0.5,
+      "high":   0.7
+    },
+    "recipe": {
+      "outputQuantity": 30.0,
+      "laborUnits": 5.0,
+      "inputs": [
+        { "productId": "cotton_fabric", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "television",
+    "name": "Television",
+    "tier": "finished",
+    "category": "electronics",
+    "unit": "unit",
+    "baseWorldMarketPrice": 400.0,
+    "priceElasticity": 1.3,
+    "maxTechLevel": 12,
+    "baseDemandPerCapita": {
+      "low":    0.002,
+      "middle": 0.005,
+      "high":   0.010
+    },
+    "reservationPrice": {
+      "low":    300.0,
+      "middle": 2000.0
+    },
+    "recipe": {
+      "outputQuantity": 5.0,
+      "laborUnits": 8.0,
+      "inputs": [
+        { "productId": "electronic_parts", "quantity": 15.0 },
+        { "productId": "plastic",          "quantity": 3.0  },
+        { "productId": "steel",            "quantity": 0.05 }
+      ]
+    }
+  },
+  {
+    "id": "car",
+    "name": "Car",
+    "tier": "finished",
+    "category": "automotive",
+    "unit": "unit",
+    "baseWorldMarketPrice": 18000.0,
+    "priceElasticity": 1.5,
+    "maxTechLevel": 12,
+    "baseDemandPerCapita": {
+      "low":    0.001,
+      "middle": 0.003,
+      "high":   0.008
+    },
+    "reservationPrice": {
+      "low":    0.0,
+      "middle": 30000.0
+    },
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 20.0,
+      "inputs": [
+        { "productId": "steel",            "quantity": 1.2  },
+        { "productId": "plastic",          "quantity": 80.0 },
+        { "productId": "electronic_parts", "quantity": 30.0 }
+      ]
+    }
+  },
+  {
+    "id": "beer",
+    "name": "Beer",
+    "tier": "finished",
+    "category": "beverage",
+    "unit": "bottle",
+    "baseWorldMarketPrice": 3.0,
+    "priceElasticity": 1.1,
+    "maxTechLevel": 9,
+    "baseDemandPerCapita": {
+      "low":    2.5,
+      "middle": 3.0,
+      "high":   2.0
+    },
+    "reservationPrice": {
+      "low":    12.0,
+      "middle": 60.0
+    },
+    "recipe": {
+      "outputQuantity": 1000.0,
+      "laborUnits": 5.0,
+      "inputs": [
+        { "productId": "malt",    "quantity": 20.0 },
+        { "productId": "hops",    "quantity": 0.01 },
+        { "productId": "plastic", "quantity": 3.0  }
+      ]
+    }
+  },
+  {
+    "id": "coffee_drink",
+    "name": "Coffee Drink",
+    "tier": "finished",
+    "category": "beverage",
+    "unit": "cup",
+    "baseWorldMarketPrice": 4.0,
+    "priceElasticity": 1.1,
+    "maxTechLevel": 8,
+    "baseDemandPerCapita": {
+      "low":    1.0,
+      "middle": 5.0,
+      "high":   8.0
+    },
+    "reservationPrice": {
+      "low":    10.0,
+      "middle": 30.0
+    },
+    "recipe": {
+      "outputQuantity": 1000.0,
+      "laborUnits": 5.0,
+      "inputs": [
+        { "productId": "roasted_coffee", "quantity": 5.0 },
+        { "productId": "plastic",        "quantity": 2.0 }
+      ]
+    }
+  },
+  {
+    "id": "designer_jeans",
+    "name": "Designer Jeans",
+    "tier": "finished",
+    "category": "apparel",
+    "unit": "unit",
+    "baseWorldMarketPrice": 120.0,
+    "priceElasticity": 0.7,
+    "maxTechLevel": 10,
+    "baseDemandPerCapita": {
+      "low":    0.0,
+      "middle": 0.0008,
+      "high":   0.003
+    },
+    "reservationPrice": {
+      "low":    0.0,
+      "middle": 150.0
+    },
+    "recipe": {
+      "outputQuantity": 10.0,
+      "laborUnits": 6.0,
+      "inputs": [
+        { "productId": "denim_fabric", "quantity": 2.0 }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "rd_center",
+    "name": "R&D Center",
+    "category": "rd_center",
+    "constructionCost": 25000000,
+    "monthlyOperatingCost": 80000,
+    "footprint": {
+      "width": 3,
+      "height": 3
+    },
+    "maxUnits": 4,
+    "targetHeadcount": {
+      "min": 10,
+      "max": 40
+    },
+    "staff": {
+      "fixed": 10,
+      "fixedRole": "admin",
+      "perSlot": 15,
+      "slotRole": "scientist"
+    },
+    "buildMonths": 6
+  }
+]

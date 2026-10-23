@@ -1,0 +1,113 @@
+{
+  "id": "adv.onboard.first_ad",
+  "role": "advisor",
+  "text": "Nobody buys what they've never heard of. Let's advertise.",
+  "sentText": "Nobody buys what they've never heard of. Let's advertise.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.914
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:15:47.413Z",
+  "file": "adv.onboard.first_ad.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.81,
+  "speechSec": 3.57,
+  "wpm": 151.3,
+  "syllables": 14,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 370,
+  "samplePeakDbfs": -0.9,
+  "truePeakDbtp": -0.8,
+  "lufsI": -22.4,
+  "lra": 2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 330
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Nobody buys what they've never heard of. Let's advertise.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 141,
+      "paceWpm": 147.2,
+      "maxGapMs": 410,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Nobody buys what they've never heard of. Let's advertise.",
+      "score": {
+        "hard": 0,
+        "soft": 0.408,
+        "flags": [
+          "pace 147.2 wpm-eq, 3.66 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.onboard.first_ad/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.899
+      },
+      "wpm": 150,
+      "paceWpm": 156.6,
+      "maxGapMs": 360,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "Nobody buys what they've never heard of. Let's advertise.",
+      "score": {
+        "hard": 0,
+        "soft": 0.009,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.first_ad/t2.wav"
+    }
+  ],
+  "lineHash": "7b92d7a0a8d827cb01af1c8c"
+}

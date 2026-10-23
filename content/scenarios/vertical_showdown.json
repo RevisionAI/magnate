@@ -1,0 +1,66 @@
+{
+  "id": "vertical_showdown",
+  "name": "Vertical Showdown",
+  "description": "A rival with more than twice your capital is building its own supply chain from farm to shelf. You cannot outspend it, so out-manoeuvre it: build a two-tier chain of your own, win the Metropolis television aisle, and keep the company growing for four years.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 60000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "ChainLink Industries",
+      "startingCash": 135000000,
+      "strategy": "verticalIntegrator"
+    }
+  ],
+  "goals": [
+    {
+      "id": "factory",
+      "type": "ownsBuilding",
+      "description": "Operate at least one factory — own the conversion step instead of paying world-market prices for every television.",
+      "category": "factory",
+      "count": 1
+    },
+    {
+      "id": "farm",
+      "type": "ownsBuilding",
+      "description": "Operate at least one farm — a raw-material source of your own makes the chain two tiers deep.",
+      "category": "farm",
+      "count": 1
+    },
+    {
+      "id": "retail-tv",
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — prove the chain reaches the customer.",
+      "product": "television"
+    },
+    {
+      "id": "share-tv",
+      "type": "marketShare",
+      "description": "Sell 30% of the televisions bought in Metropolis (trailing three months) — a chain that does not sell is a cost centre.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.3
+    },
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $90M.",
+      "threshold": 90000000
+    },
+    {
+      "id": "endurance",
+      "type": "elapsedMonths",
+      "description": "Stay in business for 48 months — endurance matters when the rival out-banks you.",
+      "months": 48
+    }
+  ]
+}

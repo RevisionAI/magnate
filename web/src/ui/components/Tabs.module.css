@@ -1,0 +1,122 @@
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-1);
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1_5);
+  flex: none;
+  padding: 0 var(--space-3);
+  height: 2.25rem;
+  border: none;
+  background: transparent;
+  color: var(--c-muted);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+
+.tab:hover:not(:disabled) {
+  color: var(--c-text);
+}
+
+.tab:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tab[aria-selected='true'] {
+  color: var(--c-gold-bright);
+}
+
+/* underline variant */
+.underline {
+  border-bottom: 1px solid var(--c-hairline);
+}
+
+.underline .tab::after {
+  content: '';
+  position: absolute;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: -1px;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  background: linear-gradient(90deg, var(--c-gold-deep), var(--c-gold-bright), var(--c-gold-deep));
+  box-shadow: 0 0 10px rgba(215, 183, 102, 0.55);
+  transform: scaleX(0);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.underline .tab[aria-selected='true']::after {
+  transform: scaleX(1);
+}
+
+/* pill variant */
+.pills {
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--r-md);
+  background: rgba(5, 9, 13, 0.35);
+  border: 1px solid var(--c-hairline);
+}
+
+.pills .tab {
+  height: 1.875rem;
+  border-radius: var(--r-sm);
+}
+
+.pills .tab[aria-selected='true'] {
+  background: linear-gradient(180deg, rgba(215, 183, 102, 0.22), rgba(215, 183, 102, 0.1));
+  box-shadow: inset 0 0 0 1px rgba(215, 183, 102, 0.4);
+}
+
+/* vertical (settings navigation) */
+.vertical {
+  flex-direction: column;
+  overflow: visible;
+  gap: 2px;
+}
+
+.vertical .tab {
+  justify-content: flex-start;
+  height: 2.375rem;
+  padding: 0 var(--space-3);
+  border-radius: var(--r-sm);
+  font-size: var(--fs-base);
+}
+
+.vertical .tab[aria-selected='true'] {
+  background: linear-gradient(90deg, rgba(215, 183, 102, 0.18), rgba(215, 183, 102, 0.02));
+  box-shadow: inset 2px 0 0 var(--c-gold);
+}
+
+.sm .tab {
+  height: 1.875rem;
+  font-size: var(--fs-sm);
+  padding: 0 var(--space-2);
+}
+
+.icon {
+  display: inline-flex;
+  opacity: 0.85;
+}
+
+.badge {
+  margin-left: 2px;
+}

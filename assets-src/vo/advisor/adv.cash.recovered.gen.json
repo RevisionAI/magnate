@@ -1,0 +1,111 @@
+{
+  "id": "adv.cash.recovered",
+  "role": "advisor",
+  "text": "Cash is positive again. Nicely done. Let's keep a healthy buffer.",
+  "sentText": "Cash is positive again. Nicely done. Let's keep a healthy buffer.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.861
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:18:02.956Z",
+  "file": "adv.cash.recovered.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.54,
+  "speechSec": 4.3,
+  "wpm": 153.5,
+  "syllables": 17,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 330,
+  "samplePeakDbfs": -5.73,
+  "truePeakDbtp": -5.7,
+  "lufsI": -22.3,
+  "lra": 0.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 375
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Cash is positive again. Nicely done. Let's keep a healthy buffer.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.017,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 146,
+      "paceWpm": 151.5,
+      "maxGapMs": 340,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Cash is positive again, nicely done. Let's keep a healthy buffer.",
+      "score": {
+        "hard": 0,
+        "soft": 0.06,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.recovered/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.873
+      },
+      "wpm": 155.3,
+      "paceWpm": 161.1,
+      "maxGapMs": 340,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "Cash is positive again, nicely done. Let's keep a healthy buffer.",
+      "score": {
+        "hard": 0,
+        "soft": 0.036,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.recovered/t2.wav"
+    }
+  ],
+  "lineHash": "89c529aefb1f6db7c51e9702"
+}

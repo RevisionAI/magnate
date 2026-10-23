@@ -1,0 +1,96 @@
+{
+  "method": "balanceSheet",
+  "args": {
+    "drilldown": true
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "asOf": {
+        "year": 2026,
+        "month": 8
+      },
+      "companyId": 1,
+      "cash": 153957574.14,
+      "inventoryValue": 784380,
+      "buildingValue": 34233333.34,
+      "totalAssets": 195261066.48,
+      "liabilities": 0,
+      "equity": 195261066.48,
+      "startingCapital": 225600000,
+      "retainedEarnings": -30338933.52,
+      "engineBuildingValue": 34233333.34,
+      "drift": 0,
+      "booksClose": true,
+      "buildings": [
+        {
+          "buildingId": 1,
+          "typeName": "Supermarket",
+          "cityId": "metropolis",
+          "constructionCost": 10000000,
+          "upgradeCost": 6000000,
+          "bookValue": 15875000.02
+        },
+        {
+          "buildingId": 2,
+          "typeName": "Small Factory",
+          "cityId": "metropolis",
+          "constructionCost": 18500000,
+          "upgradeCost": 0,
+          "bookValue": 18358333.32
+        },
+        {
+          "buildingId": 6,
+          "typeName": "Convenience Store",
+          "cityId": "metropolis",
+          "constructionCost": 0,
+          "upgradeCost": 0,
+          "bookValue": 0
+        },
+        {
+          "buildingId": 7,
+          "typeName": "Convenience Store",
+          "cityId": "metropolis",
+          "constructionCost": 0,
+          "upgradeCost": 0,
+          "bookValue": 0
+        },
+        {
+          "buildingId": 8,
+          "typeName": "Convenience Store",
+          "cityId": "metropolis",
+          "constructionCost": 0,
+          "upgradeCost": 0,
+          "bookValue": 0
+        }
+      ],
+      "inventoryByBuilding": [
+        {
+          "buildingId": 2,
+          "typeName": "Small Factory",
+          "cityId": "metropolis",
+          "rows": [
+            {
+              "productId": "flour",
+              "name": "Flour",
+              "tier": "intermediate",
+              "quantity": 2000000,
+              "cost": 784380,
+              "unitCost": 0.3922,
+              "quality": 50
+            }
+          ],
+          "total": 784380
+        }
+      ],
+      "liabilityLines": [],
+      "landValue": 4885779,
+      "accumulatedDepreciation": 266666.66,
+      "cip": 1400000,
+      "grossPpe": 34500000,
+      "termLoans": 0,
+      "revolver": 0
+    },
+    "revision": 25
+  }
+}

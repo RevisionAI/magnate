@@ -1,0 +1,306 @@
+{
+  "method": "worldMap",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "cities": [
+        {
+          "cityId": "metropolis",
+          "name": "Metropolis",
+          "population": 500000,
+          "demographics": {
+            "low": 0.45,
+            "middle": 0.4,
+            "high": 0.15
+          },
+          "geography": {
+            "coastal": true,
+            "arable": true,
+            "mineralRich": false,
+            "oilRich": false
+          },
+          "gridW": 80,
+          "gridH": 80,
+          "baseLandPrice": 150,
+          "buildingsByOwner": [
+            {
+              "companyId": 1,
+              "count": 5
+            },
+            {
+              "companyId": 2,
+              "count": 1
+            }
+          ],
+          "playerBuildings": 5,
+          "totalBuildings": 6,
+          "playerAvgShare": 1,
+          "topDemand": [
+            {
+              "productId": "soft_drink",
+              "quantity": 12250000
+            },
+            {
+              "productId": "beer",
+              "quantity": 6125000
+            },
+            {
+              "productId": "coffee_drink",
+              "quantity": 3400000
+            },
+            {
+              "productId": "bread",
+              "quantity": 3037500
+            },
+            {
+              "productId": "t_shirt",
+              "quantity": 670000
+            },
+            {
+              "productId": "designer_jeans",
+              "quantity": 31000
+            },
+            {
+              "productId": "television",
+              "quantity": 5625
+            },
+            {
+              "productId": "car",
+              "quantity": 1927.5
+            }
+          ]
+        },
+        {
+          "cityId": "riverside",
+          "name": "Riverside",
+          "population": 250000,
+          "demographics": {
+            "low": 0.35,
+            "middle": 0.45,
+            "high": 0.2
+          },
+          "geography": {
+            "coastal": false,
+            "arable": true,
+            "mineralRich": true,
+            "oilRich": false
+          },
+          "gridW": 60,
+          "gridH": 60,
+          "baseLandPrice": 100,
+          "buildingsByOwner": [],
+          "playerBuildings": 0,
+          "totalBuildings": 0,
+          "playerAvgShare": 0,
+          "topDemand": [
+            {
+              "productId": "soft_drink",
+              "quantity": 6125000
+            },
+            {
+              "productId": "beer",
+              "quantity": 3062500
+            },
+            {
+              "productId": "coffee_drink",
+              "quantity": 1850000
+            },
+            {
+              "productId": "bread",
+              "quantity": 1493750
+            },
+            {
+              "productId": "t_shirt",
+              "quantity": 342500
+            },
+            {
+              "productId": "designer_jeans",
+              "quantity": 19000
+            },
+            {
+              "productId": "television",
+              "quantity": 2937.5
+            },
+            {
+              "productId": "car",
+              "quantity": 1041.25
+            }
+          ]
+        },
+        {
+          "cityId": "eastside",
+          "name": "Eastside",
+          "population": 200000,
+          "demographics": {
+            "low": 0.25,
+            "middle": 0.4,
+            "high": 0.35
+          },
+          "geography": {
+            "coastal": false,
+            "arable": true,
+            "mineralRich": false,
+            "oilRich": false
+          },
+          "gridW": 55,
+          "gridH": 55,
+          "baseLandPrice": 180,
+          "buildingsByOwner": [],
+          "playerBuildings": 0,
+          "totalBuildings": 0,
+          "playerAvgShare": 0,
+          "topDemand": [
+            {
+              "productId": "soft_drink",
+              "quantity": 4820000
+            },
+            {
+              "productId": "beer",
+              "quantity": 2410000
+            },
+            {
+              "productId": "coffee_drink",
+              "quantity": 1680000
+            },
+            {
+              "productId": "bread",
+              "quantity": 1155000
+            },
+            {
+              "productId": "t_shirt",
+              "quantity": 284000
+            },
+            {
+              "productId": "designer_jeans",
+              "quantity": 20400
+            },
+            {
+              "productId": "television",
+              "quantity": 2530
+            },
+            {
+              "productId": "car",
+              "quantity": 951
+            }
+          ]
+        },
+        {
+          "cityId": "portbay",
+          "name": "Portbay",
+          "population": 150000,
+          "demographics": {
+            "low": 0.5,
+            "middle": 0.4,
+            "high": 0.1
+          },
+          "geography": {
+            "coastal": true,
+            "arable": false,
+            "mineralRich": false,
+            "oilRich": true
+          },
+          "gridW": 50,
+          "gridH": 50,
+          "baseLandPrice": 80,
+          "buildingsByOwner": [],
+          "playerBuildings": 0,
+          "totalBuildings": 0,
+          "playerAvgShare": 0,
+          "topDemand": [
+            {
+              "productId": "soft_drink",
+              "quantity": 3690000
+            },
+            {
+              "productId": "beer",
+              "quantity": 1845000
+            },
+            {
+              "productId": "coffee_drink",
+              "quantity": 960000
+            },
+            {
+              "productId": "bread",
+              "quantity": 922500
+            },
+            {
+              "productId": "t_shirt",
+              "quantity": 198000
+            },
+            {
+              "productId": "designer_jeans",
+              "quantity": 7800
+            },
+            {
+              "productId": "television",
+              "quantity": 1635
+            },
+            {
+              "productId": "car",
+              "quantity": 544.5
+            }
+          ]
+        },
+        {
+          "cityId": "hilltown",
+          "name": "Hilltown",
+          "population": 100000,
+          "demographics": {
+            "low": 0.2,
+            "middle": 0.4,
+            "high": 0.4
+          },
+          "geography": {
+            "coastal": false,
+            "arable": true,
+            "mineralRich": false,
+            "oilRich": false
+          },
+          "gridW": 40,
+          "gridH": 40,
+          "baseLandPrice": 250,
+          "buildingsByOwner": [],
+          "playerBuildings": 0,
+          "totalBuildings": 0,
+          "playerAvgShare": 0,
+          "topDemand": [
+            {
+              "productId": "soft_drink",
+              "quantity": 2400000
+            },
+            {
+              "productId": "beer",
+              "quantity": 1200000
+            },
+            {
+              "productId": "coffee_drink",
+              "quantity": 880000
+            },
+            {
+              "productId": "bread",
+              "quantity": 570000
+            },
+            {
+              "productId": "t_shirt",
+              "quantity": 144000
+            },
+            {
+              "productId": "designer_jeans",
+              "quantity": 11200
+            },
+            {
+              "productId": "television",
+              "quantity": 1300
+            },
+            {
+              "productId": "car",
+              "quantity": 498
+            }
+          ]
+        }
+      ]
+    },
+    "revision": 12
+  }
+}

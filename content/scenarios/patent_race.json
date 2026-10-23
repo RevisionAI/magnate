@@ -1,0 +1,58 @@
+{
+  "id": "patent_race",
+  "name": "Patent Race",
+  "description": "A short technology sprint. A rival is pouring every spare dollar into car research and flanking with televisions. Put both products on your shelves, crack the Eastside car market, and finish ahead on value before the end of 2029.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2029,
+    "month": 12
+  },
+  "player": {
+    "name": "Player",
+    "startingCash": 60000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "Vanguard R&D",
+      "startingCash": 120000000,
+      "strategy": "techLeader"
+    }
+  ],
+  "goals": [
+    {
+      "id": "retail-tv",
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — an electronics supply chain is the price of admission.",
+      "product": "television"
+    },
+    {
+      "id": "retail-car",
+      "type": "productRetailed",
+      "description": "Put cars on a shelf — meet the rival's flagship product head to head.",
+      "product": "car"
+    },
+    {
+      "id": "share-car",
+      "type": "marketShare",
+      "description": "Sell 20% of the cars bought in Eastside (trailing three months) — the high-income stronghold the rival prices at a premium.",
+      "product": "car",
+      "city": "eastside",
+      "threshold": 0.2
+    },
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $90M — finish ahead on value, not just on shelves.",
+      "threshold": 90000000
+    },
+    {
+      "id": "stay-the-course",
+      "type": "elapsedMonths",
+      "description": "Stay in the race for 42 months — patents and brand take time to pay off.",
+      "months": 42
+    }
+  ]
+}

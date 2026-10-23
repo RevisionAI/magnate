@@ -1,0 +1,111 @@
+{
+  "id": "adv.sales.first",
+  "role": "advisor",
+  "text": "Our first sale! Small number, big moment. Now let's make it repeatable.",
+  "sentText": "Our first sale! Small number, big moment. Now let's make it repeatable.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.88
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:16:58.483Z",
+  "file": "adv.sales.first.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.81,
+  "speechSec": 4.57,
+  "wpm": 157.5,
+  "syllables": 18,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 390,
+  "samplePeakDbfs": -5.62,
+  "truePeakDbtp": -5.6,
+  "lufsI": -22,
+  "lra": 1.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 380
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our first sale, small number, big moment. Now let's make it repeatable.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.011,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 151.9,
+      "paceWpm": 152.9,
+      "maxGapMs": 430,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Our first sale, small number, big moment. Now let's make it repeatable.",
+      "score": {
+        "hard": 0,
+        "soft": 0.121,
+        "flags": []
+      },
+      "file": "_takes/adv.sales.first/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.865
+      },
+      "wpm": 155.8,
+      "paceWpm": 156.9,
+      "maxGapMs": 410,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Our first sale, small number, big moment. Now let's make it repeatable.",
+      "score": {
+        "hard": 0,
+        "soft": 0.031,
+        "flags": []
+      },
+      "file": "_takes/adv.sales.first/t2.wav"
+    }
+  ],
+  "lineHash": "40a3f43344c15828d42d3811"
+}

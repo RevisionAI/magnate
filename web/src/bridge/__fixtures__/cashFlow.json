@@ -1,0 +1,118 @@
+{
+  "method": "cashFlow",
+  "args": {
+    "period": {
+      "preset": "sinceStart"
+    }
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "period": {
+        "from": {
+          "year": 2026,
+          "month": 1
+        },
+        "to": {
+          "year": 2026,
+          "month": 8
+        },
+        "months": 8,
+        "preset": "sinceStart"
+      },
+      "companyId": 1,
+      "beginningCash": 0,
+      "operating": {
+        "lines": [
+          {
+            "category": "inputPurchases",
+            "amount": -784150
+          },
+          {
+            "category": "retailRestock",
+            "amount": -295680
+          },
+          {
+            "category": "productSales",
+            "amount": 540000
+          },
+          {
+            "category": "advertising",
+            "amount": -350000
+          },
+          {
+            "category": "otherMaterials",
+            "amount": -40000
+          },
+          {
+            "category": "productionEnergy",
+            "amount": -12880
+          },
+          {
+            "category": "wages",
+            "amount": -1907892
+          },
+          {
+            "category": "utilities",
+            "amount": -555000
+          },
+          {
+            "category": "maintenance",
+            "amount": -223333.33
+          },
+          {
+            "category": "insurance",
+            "amount": -41750
+          },
+          {
+            "category": "propertyTax",
+            "amount": -197178.19
+          },
+          {
+            "category": "retailVariable",
+            "amount": -8100
+          }
+        ],
+        "net": -3875963.52
+      },
+      "investing": {
+        "lines": [
+          {
+            "category": "upgrades",
+            "amount": -6000000
+          },
+          {
+            "category": "landPurchases",
+            "amount": -5167518
+          },
+          {
+            "category": "construction",
+            "amount": -56400000
+          },
+          {
+            "category": "equipment",
+            "amount": -3500000
+          },
+          {
+            "category": "assetSales",
+            "amount": 3301055.66
+          }
+        ],
+        "net": -67766462.34
+      },
+      "financing": {
+        "lines": [
+          {
+            "category": "equityInjections",
+            "amount": 225600000
+          }
+        ],
+        "net": 225600000
+      },
+      "netChange": 153957574.14,
+      "endingCash": 153957574.14,
+      "reconciles": true
+    },
+    "revision": 25
+  }
+}

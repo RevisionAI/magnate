@@ -1,0 +1,11 @@
+{
+  "_doc": "Pronunciation rules from audio-plan §3.5. Used two ways: (1) as an ElevenLabs alias dictionary (POST /v1/pronunciation-dictionaries/add-from-rules) when the key is allowed to create one, attached with pronunciation_dictionary_locators; (2) always baked into the `tts` text by parse-script.mjs (`ttsAlias`), so the fix survives a 401 on the dictionary endpoint and also reaches Kokoro. Whole-word, case-sensitive matches.",
+  "dictionaryName": "magnate-vo",
+  "rules": [
+    { "match": "Magnate", "dictAlias": "Mag-nate", "ttsAlias": "Mag-nate" },
+    { "match": "magnate", "dictAlias": "mag-nate", "ttsAlias": "mag-nate" },
+    { "match": "CFO", "dictAlias": "C F O", "ttsAlias": "C.F.O." },
+    { "match": "IPO", "dictAlias": "I P O", "ttsAlias": "I.P.O." },
+    { "match": "R&D", "dictAlias": "R and D", "ttsAlias": "R and D" }
+  ]
+}

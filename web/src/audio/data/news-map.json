@@ -1,0 +1,55 @@
+{
+  "$comment": "Content news event -> anchor line (audio-plan section 5.2 mapping). price_multiplier > 1 -> news.commodity_spike, < 1 -> news.commodity_drop, tech_breakthrough -> news.tech_breakthrough, brand_shift and Info headlines -> no anchor (notify_info only). Matched on GameEventDto.typeId when the bridge sends the content id, else on the headline (message). A unit test checks this table against content/data/events/seed.json.",
+  "events": {
+    "cocoa_blight": {
+      "headline": "Cocoa blight strikes Riverside — wholesale prices spike",
+      "severity": "notable",
+      "line": "news.commodity_spike"
+    },
+    "oil_glut": {
+      "headline": "OPEC oversupply triggers oil glut — wholesale crude tanks",
+      "severity": "major",
+      "line": "news.commodity_drop"
+    },
+    "viral_ad_spot": {
+      "headline": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+      "severity": "info",
+      "line": null
+    },
+    "tariff_announcement": {
+      "headline": "Tariff announcement on imported steel — input costs rise",
+      "severity": "major",
+      "line": "news.commodity_spike"
+    },
+    "tech_breakthrough": {
+      "headline": "Lab announces room-temperature superconductor; tech industry abuzz",
+      "severity": "notable",
+      "line": "news.tech_breakthrough"
+    },
+    "cotton_harvest_bumper": {
+      "headline": "Bumper cotton harvest crashes textile feedstock prices",
+      "severity": "notable",
+      "line": "news.commodity_drop"
+    },
+    "soft_drink_health_scare": {
+      "headline": "Health study sours public on soft drinks in Eastside",
+      "severity": "notable",
+      "line": null
+    },
+    "wheat_drought": {
+      "headline": "Wheat-belt drought lifts grain futures",
+      "severity": "notable",
+      "line": "news.commodity_spike"
+    },
+    "trade_summit_optimism": {
+      "headline": "Trade summit concludes — diplomats cautiously upbeat",
+      "severity": "info",
+      "line": null
+    },
+    "consumer_electronics_craze": {
+      "headline": "TV-buying craze sweeps Metropolis as new model debuts",
+      "severity": "info",
+      "line": null
+    }
+  }
+}

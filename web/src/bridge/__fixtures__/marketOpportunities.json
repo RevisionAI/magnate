@@ -1,0 +1,34 @@
+{
+  "method": "marketOpportunities",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "enter": [
+        {
+          "cityId": "riverside",
+          "productId": "soft_drink",
+          "potentialDemand": 6125000,
+          "rivalCount": 0,
+          "score": 6125000
+        },
+        {
+          "cityId": "eastside",
+          "productId": "soft_drink",
+          "potentialDemand": 4820000,
+          "rivalCount": 0,
+          "score": 4820000
+        },
+        {
+          "cityId": "portbay",
+          "productId": "soft_drink",
+          "potentialDemand": 3690000,
+          "rivalCount": 0,
+          "score": 3690000
+        }
+      ],
+      "defend": []
+    },
+    "revision": 25
+  }
+}

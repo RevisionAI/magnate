@@ -1,0 +1,52 @@
+{
+  "id": "monopolist",
+  "name": "The Monopolist",
+  "description": "You inherit a beverage operation and a mandate: build a dominant, profitable, internationally known soft-drink company. Beat the domestic leader FizzCorp on brand, export enough to fund the expansion, and stay profitable for two full years running.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2031,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 75000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "FizzCorp",
+      "startingCash": 120000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": [
+    {
+      "id": "brand",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for soft drinks in Metropolis — become the household name.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "id": "exports",
+      "type": "exportRevenue",
+      "description": "Earn $150M of export revenue in total — roughly two bottling lines selling abroad for most of the six years.",
+      "amount": 150000000
+    },
+    {
+      "id": "profit-streak",
+      "type": "consecutiveProfitable",
+      "description": "Post 24 consecutive months of positive net income — monopolists compound, they do not spike.",
+      "months": 24
+    },
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $125M — the capstone on a finished empire.",
+      "threshold": 125000000
+    }
+  ]
+}

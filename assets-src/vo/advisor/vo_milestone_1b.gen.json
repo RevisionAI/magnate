@@ -1,0 +1,117 @@
+{
+  "id": "vo_milestone_1b",
+  "role": "advisor",
+  "text": "A billion in revenue. That's the mark of a true magnate.",
+  "tts": "A billion in revenue. That's the mark of a true mag-nate.",
+  "sentText": "A billion in revenue. That's the mark of a true mag-nate.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.77
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:40:14.474Z",
+  "file": "vo_milestone_1b.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.53,
+  "speechSec": 4.29,
+  "wpm": 153.8,
+  "syllables": 16,
+  "sylPerSec": 3.73,
+  "paceWpm": 150.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 440,
+  "samplePeakDbfs": -4.76,
+  "truePeakDbtp": -4.3,
+  "lufsI": -22,
+  "lra": 0.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 240,
+    "tailTrimmedMs": 405
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "A billion in revenue. That's the mark of a true magnate.",
+    "wer": 0,
+    "cer": 0,
+    "magnate": "ok"
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.173,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 187,
+      "paceWpm": 182.5,
+      "maxGapMs": 420,
+      "lufsI": -21.5,
+      "cer": 0,
+      "transcript": "A billion in revenue. That's the mark of a true magnate.",
+      "score": {
+        "hard": 0,
+        "soft": 2.05,
+        "flags": [
+          "pace 182.5 wpm-eq, 4.53 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_1b/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.725
+      },
+      "wpm": 145.1,
+      "paceWpm": 141.6,
+      "maxGapMs": 460,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "A billion in revenue. That's the mark of a true magnate.",
+      "score": {
+        "hard": 0,
+        "soft": 1.149,
+        "flags": [
+          "pace 141.6 wpm-eq, 3.52 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_1b/t2.wav"
+    }
+  ],
+  "lineHash": "af0ff4b504186305f13b8fa9"
+}

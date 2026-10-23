@@ -1,0 +1,13 @@
+{
+  "method": "ping",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "pong": "pong",
+      "revision": 9,
+      "hasGame": true
+    },
+    "revision": 9
+  }
+}

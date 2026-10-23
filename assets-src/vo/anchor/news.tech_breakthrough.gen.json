@@ -1,0 +1,111 @@
+{
+  "id": "news.tech_breakthrough",
+  "role": "anchor",
+  "text": "Scientists unveil a breakthrough that could reshape the industry.",
+  "sentText": "Scientists unveil a breakthrough that could reshape the industry.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.184
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:46:40.171Z",
+  "file": "news.tech_breakthrough.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.77,
+  "speechSec": 3.53,
+  "wpm": 153,
+  "syllables": 16,
+  "sylPerSec": 4.53,
+  "paceWpm": 155.4,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 190,
+  "samplePeakDbfs": -4.32,
+  "truePeakDbtp": -4.3,
+  "lufsI": -21.4,
+  "lra": 0.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 100,
+    "tailTrimmedMs": 305
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Scientists unveil a breakthrough that could reshape the industry.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 151.7,
+      "paceWpm": 154.1,
+      "maxGapMs": 190,
+      "lufsI": -21.4,
+      "cer": 0,
+      "transcript": "Scientists unveil a breakthrough that could reshape the industry.",
+      "score": {
+        "hard": 0,
+        "soft": 0.009,
+        "flags": []
+      },
+      "file": "_takes/news.tech_breakthrough/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.195
+      },
+      "wpm": 155.2,
+      "paceWpm": 157.6,
+      "maxGapMs": 170,
+      "lufsI": -21.5,
+      "cer": 0,
+      "transcript": "Scientists unveil a breakthrough that could reshape the industry.",
+      "score": {
+        "hard": 0,
+        "soft": 0.026,
+        "flags": []
+      },
+      "file": "_takes/news.tech_breakthrough/t2.wav"
+    }
+  ],
+  "lineHash": "38d70eb01ffb3dd23c85c516"
+}

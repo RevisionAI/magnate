@@ -1,0 +1,124 @@
+{
+  "_doc": "Proof that the Kokoro fallback works on this machine: 3 lines per role rendered locally by tools/voice/generate.mjs --provider kokoro --samples (best of the speed takes), transcribed by faster-whisper base.en.",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "runtime": "kokoro-js + onnxruntime-node (CPU)",
+  "samples": [
+    {
+      "id": "news.intro",
+      "role": "anchor",
+      "file": "anchor/news.intro.am_michael.wav",
+      "text": "Good evening. Here's what's moving the markets tonight.",
+      "sentText": "Good evening. Here's what's moving the markets tonight.",
+      "voice": "am_michael",
+      "speed": 1.142,
+      "durationSec": 2.87,
+      "wpm": 182.5,
+      "paceWpm": 156.4,
+      "sylPerSec": 4.56,
+      "maxGapMs": 260,
+      "lufsI": -22.8,
+      "truePeakDbtp": -3.9,
+      "transcript": "Good evening, here's what's moving the markets tonight.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 186.8,
+          "paceWpm": 160.1,
+          "cer": 0
+        },
+        {
+          "speed": 1.142,
+          "wpm": 182.5,
+          "paceWpm": 156.4,
+          "cer": 0
+        },
+        {
+          "speed": 1.127,
+          "wpm": 182.5,
+          "paceWpm": 156.4,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "news.recession",
+      "role": "anchor",
+      "file": "anchor/news.recession.am_michael.wav",
+      "text": "Breaking news: the economy has officially entered a recession.",
+      "sentText": "Breaking news: the economy has officially entered a recession.",
+      "voice": "am_michael",
+      "speed": 0.974,
+      "durationSec": 4.38,
+      "wpm": 130.4,
+      "paceWpm": 157.3,
+      "sylPerSec": 4.59,
+      "maxGapMs": 430,
+      "lufsI": -23.2,
+      "truePeakDbtp": -3.7,
+      "transcript": "Breaking news, the economy has officially entered a recession.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 155.6,
+          "paceWpm": 187.7,
+          "cer": 0
+        },
+        {
+          "speed": 0.974,
+          "wpm": 130.4,
+          "paceWpm": 157.3,
+          "cer": 0
+        },
+        {
+          "speed": 0.959,
+          "wpm": 127.4,
+          "paceWpm": 153.6,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "news.market_crash",
+      "role": "anchor",
+      "file": "anchor/news.market_crash.am_michael.wav",
+      "text": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "sentText": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "voice": "am_michael",
+      "speed": 1.18,
+      "durationSec": 3.52,
+      "wpm": 182.9,
+      "paceWpm": 146.3,
+      "sylPerSec": 4.27,
+      "maxGapMs": 0,
+      "lufsI": -23.3,
+      "truePeakDbtp": -0.4,
+      "transcript": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 182.9,
+          "paceWpm": 146.3,
+          "cer": 0
+        },
+        {
+          "speed": 1.25,
+          "wpm": 194.2,
+          "paceWpm": 155.3,
+          "cer": 0.06
+        },
+        {
+          "speed": 1.24,
+          "wpm": 191.7,
+          "paceWpm": 153.4,
+          "cer": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "news.market_crash",
+  "role": "anchor",
+  "text": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+  "sentText": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.18
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 6,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:11:53.270Z",
+  "file": "news.market_crash.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.77,
+  "speechSec": 3.53,
+  "wpm": 170,
+  "syllables": 14,
+  "sylPerSec": 3.97,
+  "paceWpm": 136,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 220,
+  "samplePeakDbfs": -4.78,
+  "truePeakDbtp": -4.8,
+  "lufsI": -21.4,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 110,
+    "tailTrimmedMs": 320
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.59,
+    "flags": [
+      "pace 136 wpm-eq, 3.97 syl/s (target 140–170)"
+    ]
+  },
+  "flags": [
+    "pace 136 wpm-eq, 3.97 syl/s (target 140–170)"
+  ],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.345
+      },
+      "wpm": 221.4,
+      "paceWpm": 177.1,
+      "maxGapMs": 170,
+      "lufsI": -21.3,
+      "cer": 0,
+      "transcript": "stocks plunge in heavy trading as panic sweeps the exchange.",
+      "score": {
+        "hard": 0,
+        "soft": 0.931,
+        "flags": [
+          "pace 177.1 wpm-eq, 5.17 syl/s (target 140–170)"
+        ]
+      },
+      "file": "_takes/news.market_crash/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.256
+      },
+      "wpm": 182.9,
+      "paceWpm": 146.3,
+      "maxGapMs": 200,
+      "lufsI": -21.5,
+      "cer": 0.06,
+      "transcript": "Doc's plunge in heavy trading as panic sweeps the exchange.",
+      "score": {
+        "hard": 0,
+        "soft": 1.287,
+        "flags": []
+      },
+      "file": "_takes/news.market_crash/t3.wav"
+    },
+    {
+      "take": 4,
+      "seed": null,
+      "settings": {
+        "speed": 1.281
+      },
+      "wpm": 185.8,
+      "paceWpm": 148.6,
+      "maxGapMs": 190,
+      "lufsI": -21.4,
+      "cer": 0.06,
+      "transcript": "Doc's plunge in heavy trading as panic sweeps the exchange.",
+      "score": {
+        "hard": 0,
+        "soft": 1.264,
+        "flags": []
+      },
+      "file": "_takes/news.market_crash/t4.wav"
+    },
+    {
+      "take": 5,
+      "seed": null,
+      "settings": {
+        "speed": 1.295
+      },
+      "wpm": 186.9,
+      "paceWpm": 149.5,
+      "maxGapMs": 190,
+      "lufsI": -21.4,
+      "cer": 0.06,
+      "transcript": "Doc's plunge in heavy trading as panic sweeps the exchange.",
+      "score": {
+        "hard": 0,
+        "soft": 1.255,
+        "flags": []
+      },
+      "file": "_takes/news.market_crash/t5.wav"
+    },
+    {
+      "take": 6,
+      "seed": null,
+      "settings": {
+        "speed": 1.305
+      },
+      "wpm": 188.1,
+      "paceWpm": 150.5,
+      "maxGapMs": 190,
+      "lufsI": -21.4,
+      "cer": 0.06,
+      "transcript": "Doc's plunge in heavy trading as panic sweeps the exchange.",
+      "score": {
+        "hard": 0,
+        "soft": 1.245,
+        "flags": []
+      },
+      "file": "_takes/news.market_crash/t6.wav"
+    }
+  ],
+  "lineHash": "874a2debcc83d117b551c51b"
+}

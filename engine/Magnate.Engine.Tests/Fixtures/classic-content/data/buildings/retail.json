@@ -1,0 +1,40 @@
+[
+  {
+    "id": "convenience_store",
+    "name": "Convenience Store",
+    "category": "convenience_store",
+    "constructionCost": 200000,
+    "monthlyOperatingCost": 4000,
+    "footprint": { "width": 1, "height": 1 },
+    "maxUnits": 3,
+    "retail": true,
+    "targetHeadcount": { "min": 3, "max": 8 }
+  },
+  {
+    "id": "supermarket",
+    "name": "Supermarket",
+    "category": "supermarket",
+    "constructionCost": 1200000,
+    "monthlyOperatingCost": 15000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 6,
+    "retail": true,
+    "targetHeadcount": { "min": 15, "max": 40 },
+    "levels": [
+      { "level": 1, "capacity": 6,  "monthlyOperatingCost": 15000, "upgradeCost": 0 },
+      { "level": 2, "capacity": 9,  "monthlyOperatingCost": 12750, "upgradeCost": 720000 },
+      { "level": 3, "capacity": 12, "monthlyOperatingCost": 10500, "upgradeCost": 600000 }
+    ]
+  },
+  {
+    "id": "department_store",
+    "name": "Department Store",
+    "category": "department_store",
+    "constructionCost": 4000000,
+    "monthlyOperatingCost": 40000,
+    "footprint": { "width": 4, "height": 4 },
+    "maxUnits": 9,
+    "retail": true,
+    "targetHeadcount": { "min": 40, "max": 120 }
+  }
+]

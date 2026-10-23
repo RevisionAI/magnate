@@ -1,0 +1,114 @@
+{
+  "id": "adv.legacy.tutorial_step2",
+  "role": "advisor",
+  "text": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+  "sentText": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.083
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:41:28.371Z",
+  "file": "adv.legacy.tutorial_step2.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 6.24,
+  "speechSec": 6,
+  "wpm": 190,
+  "syllables": 23,
+  "sylPerSec": 3.83,
+  "paceWpm": 154.4,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 470,
+  "samplePeakDbfs": -6.17,
+  "truePeakDbtp": -6.2,
+  "lufsI": -22,
+  "lra": 1.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 140,
+    "tailTrimmedMs": 345
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.206,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 157,
+      "paceWpm": 127.6,
+      "maxGapMs": 610,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+      "score": {
+        "hard": 1,
+        "soft": 2.539,
+        "flags": [
+          "pace 127.6 wpm-eq, 3.17 syl/s (target 150–165)",
+          "internal pause 610 ms"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step2/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.037
+      },
+      "wpm": 185.7,
+      "paceWpm": 150.8,
+      "maxGapMs": 490,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+      "score": {
+        "hard": 0,
+        "soft": 0.292,
+        "flags": []
+      },
+      "file": "_takes/adv.legacy.tutorial_step2/t2.wav"
+    }
+  ],
+  "lineHash": "9dd63779b25a91e95b58083b"
+}

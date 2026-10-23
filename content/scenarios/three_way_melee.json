@@ -1,0 +1,64 @@
+{
+  "id": "three_way_melee",
+  "name": "Three-Way Melee",
+  "description": "Three rivals, one city, one prize. Metropolis is the densest market on the map and every company wants the soft-drink aisle. Become the best-known brand, hold a commanding share, and prove it is no fluke by stringing together a year of profits.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2032,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 75000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "ApexBev",
+      "startingCash": 105000000,
+      "strategy": "adaptive"
+    },
+    {
+      "name": "Harbor Brands",
+      "startingCash": 90000000,
+      "strategy": "adaptive"
+    },
+    {
+      "name": "Pinnacle Co",
+      "startingCash": 120000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": [
+    {
+      "id": "brand",
+      "type": "topBrand",
+      "description": "Reach 75 brand awareness for soft drinks in Metropolis — top of mind in a four-way fight.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 75.0
+    },
+    {
+      "id": "share",
+      "type": "marketShare",
+      "description": "Sell 40% of the soft drinks bought in Metropolis over three months — a clear plurality in a four-company race.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 0.4
+    },
+    {
+      "id": "profit-streak",
+      "type": "consecutiveProfitable",
+      "description": "Post 12 consecutive months of positive net income (after depreciation, interest and tax).",
+      "months": 12
+    },
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $140M — spoils worthy of winning the melee.",
+      "threshold": 140000000
+    }
+  ]
+}

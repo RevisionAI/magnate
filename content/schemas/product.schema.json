@@ -1,0 +1,316 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://magnate.game/schemas/product.schema.json",
+  "title": "Product",
+  "description": "A tradeable good in Magnate. Raws are produced by extraction buildings with no recipe. Intermediates and finished goods have a recipe.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "tier",
+    "category",
+    "unit",
+    "baseWorldMarketPrice"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Stable machine id. Lowercase snake_case."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tier": {
+      "enum": [
+        "raw",
+        "intermediate",
+        "finished"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-form grouping e.g. crop, mineral, beverage, electronics, apparel."
+    },
+    "unit": {
+      "type": "string",
+      "description": "Display unit: bottle, kg, ton, unit, etc."
+    },
+    "baseWorldMarketPrice": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Reference price used for import/export and initial pricing suggestions."
+    },
+    "priceElasticity": {
+      "type": "number",
+      "minimum": 0,
+      "default": 1.0,
+      "description": "Classic rules: demand sensitivity to price in the softmax (staples < 1, luxuries > 1). Realistic rules: the category (total-market) price elasticity ε of the Middle bracket at the reference point (econ-audit §4.1)."
+    },
+    "maxTechLevel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20,
+      "default": 10
+    },
+    "baseDemandPerCapita": {
+      "type": "object",
+      "description": "Monthly demand per person in each income bracket. Only meaningful for finished goods.",
+      "additionalProperties": false,
+      "properties": {
+        "low": {
+          "type": "number",
+          "minimum": 0
+        },
+        "middle": {
+          "type": "number",
+          "minimum": 0
+        },
+        "high": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "reservationPrice": {
+      "type": "object",
+      "description": "Deprecated (Classic rules only). Optional per-bracket maximum price; under Realistic rules a 0 removes that bracket from the market and other values are ignored (the lognormal WTP curve replaces the cliff).",
+      "additionalProperties": false,
+      "properties": {
+        "low": {
+          "type": "number",
+          "minimum": 0
+        },
+        "middle": {
+          "type": "number",
+          "minimum": 0
+        },
+        "high": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "recipe": {
+      "type": "object",
+      "description": "Omitted for raw materials.",
+      "required": [
+        "outputQuantity",
+        "laborUnits",
+        "inputs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "outputQuantity": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Units produced per recipe execution (per-unit recipes use 1)."
+        },
+        "laborUnits": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Legacy labour units per execution; maps to laborPerSlot = 5 × laborUnits when laborPerSlot is absent."
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "productId",
+              "quantity"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "productId": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "quantity": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        },
+        "outputPerSlotMonth": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Output units one slot makes per month at level 1. When absent a slot runs 200 recipe executions a month (legacy)."
+        },
+        "laborPerSlot": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Production staff per active slot."
+        },
+        "otherCostPerUnit": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Purchased materials not modelled as products ($ per output unit), capitalised at production (Realistic)."
+        },
+        "kwhPerUnit": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Production energy per output unit (kWh), charged at the industrial tariff and capitalised (Realistic)."
+        },
+        "lineCapex": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Production-line equipment capex per slot ($), paid the first month a slot runs the recipe (Realistic)."
+        }
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "description": "Only valid on raw products. Defines which building category extracts it and the per-slot monthly yield.",
+      "required": [
+        "sourceCategory",
+        "yieldPerSlotPerMonth"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sourceCategory": {
+          "enum": [
+            "farm",
+            "livestock_farm",
+            "plantation",
+            "mine",
+            "oil_well",
+            "logging_camp",
+            "quarry"
+          ]
+        },
+        "yieldPerSlotPerMonth": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "otherCostPerUnit": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cash cost per extracted unit ($), capitalised into the raw's cost basis (Realistic)."
+        },
+        "laborPerSlot": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Staff per active extraction slot (default 4)."
+        },
+        "equipmentCapex": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Equipment capex per slot ($), paid the first month the slot runs (Realistic)."
+        },
+        "fieldsCapex": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Field (land) capex per farm/plantation slot ($). Informational until land accounting books it."
+        }
+      }
+    },
+    "referencePrice": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Pref: reference shelf price ($, CPI 1, city price index 1). Finished goods; default 1.6 × world price."
+    },
+    "wtpSigma": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 1.0,
+      "description": "σ: log-standard deviation of willingness to pay (default 0.5)."
+    },
+    "offerElasticity": {
+      "type": "number",
+      "minimum": 1.2,
+      "maximum": 12,
+      "description": "θ: substitution elasticity between store offers, Middle bracket (default 5)."
+    },
+    "valueSpread": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 1.5,
+      "description": "κ: value multiplier spread; perceived value 100 multiplies willingness to pay by e^κ (default 0.7)."
+    },
+    "attributeWeights": {
+      "type": "object",
+      "description": "Weights of quality, brand and tech in perceived value; must sum to 1 (defaults .35/.40/.25).",
+      "additionalProperties": false,
+      "required": [
+        "quality",
+        "brand",
+        "tech"
+      ],
+      "properties": {
+        "quality": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        },
+        "brand": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        },
+        "tech": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "incumbent": {
+      "type": "object",
+      "description": "Attributes of the permanent local competition (defaults brand 45, quality 50).",
+      "additionalProperties": false,
+      "properties": {
+        "brand": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "importBrand": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Brand floor carried by imported national-brand goods (default = incumbent brand)."
+    },
+    "retailCategory": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Retail category matched against store formats' draw (grocery, apparel, electronics, auto, …). Default from category."
+    },
+    "referenceStore": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Retail building type that sizes the incumbent offer. Default: the format with the strongest draw for the retail category."
+    },
+    "importMultiplier": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Landed import price ÷ world price (default 1.10 raw/intermediate, 1.12 finished)."
+    },
+    "exportMultiplier": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "description": "Export netback ÷ world price at zero volume (default 0.92 raw/intermediate, 0.93 finished)."
+    },
+    "exportable": {
+      "type": "boolean",
+      "default": true,
+      "description": "False for perishables: importable but never exported."
+    },
+    "worldMarketDepth": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Export volume (units/month, all companies) at which the export price factor is 1/√2. 0 = infinitely deep. Default 3 × one slot's monthly output."
+    }
+  }
+}

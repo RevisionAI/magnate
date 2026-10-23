@@ -1,0 +1,113 @@
+{
+  "id": "vo_brand_milestone",
+  "role": "advisor",
+  "text": "People are starting to recognise our name.",
+  "sentText": "People are starting to recognise our name.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.721
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:35:00.922Z",
+  "file": "vo_brand_milestone.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.32,
+  "speechSec": 3.08,
+  "wpm": 136.4,
+  "syllables": 12,
+  "sylPerSec": 3.9,
+  "paceWpm": 156.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 0,
+  "samplePeakDbfs": -5.55,
+  "truePeakDbtp": -5.5,
+  "lufsI": -22.8,
+  "lra": 20.1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 270,
+    "tailTrimmedMs": 485
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "People are starting to recognize our name.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.006,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 174.3,
+      "paceWpm": 200.5,
+      "maxGapMs": 0,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "People are starting to recognize our name.",
+      "score": {
+        "hard": 0,
+        "soft": 3.98,
+        "flags": [
+          "pace 200.5 wpm-eq, 4.98 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_brand_milestone/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.7
+      },
+      "wpm": 132.5,
+      "paceWpm": 152.4,
+      "maxGapMs": 0,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "People are starting to recognize our name.",
+      "score": {
+        "hard": 0,
+        "soft": 0.051,
+        "flags": []
+      },
+      "file": "_takes/vo_brand_milestone/t2.wav"
+    }
+  ],
+  "lineHash": "4862984286a7d948de75d9b1"
+}

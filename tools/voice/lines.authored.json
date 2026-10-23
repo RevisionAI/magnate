@@ -1,0 +1,55 @@
+{
+  "_doc": "Inputs to parse-script.mjs that the research docs do not provide. (1) uxMeta: priority + delivery for the ux-playability §9 lines (that table has only id/trigger/line); priorities follow audio-plan §4.11 classes. (2) templated: text for the §5.3 templated ids, which the docs name but never script; written by a2-voice in the §5.1 persona and flagged needsReview. (3) legacy: the five legacy GuidedTutorial step lines that have no §5.2 replacement, re-recorded verbatim (text recovered with local Whisper from client/assets/audio/vo, STT slips corrected) so every legacy vo_* name maps to a new file. (4) ttsOverrides: per-line spoken text for any id (a respelling or a comma for one line), applied before the pronunciation.json aliases; the subtitle stays the doc text. Keys starting with _ are ignored. Edit this file, then run `node parse-script.mjs`.",
+  "uxMeta": {
+    "vo_t1_intro": { "priority": "P1", "tutorial": true, "delivery": "confident, inviting" },
+    "vo_t1_city": { "priority": "P1", "tutorial": true, "delivery": "warm, scene-setting" },
+    "vo_t1_speed": { "priority": "P1", "tutorial": true, "delivery": "light" },
+    "vo_t1_readstore": { "priority": "P1", "tutorial": true, "delivery": "explanatory" },
+    "vo_t1_sharedrop": { "priority": "P1", "tutorial": true, "delivery": "concerned, steady" },
+    "vo_t1_loan": { "priority": "P1", "tutorial": true, "delivery": "reassuring" },
+    "vo_t1_expand": { "priority": "P1", "tutorial": true, "delivery": "practical" },
+    "vo_t1_almost": { "priority": "P1", "tutorial": true, "delivery": "encouraging" },
+    "vo_victory_t1": { "priority": "P1", "tutorial": true, "delivery": "proud, warm" },
+    "vo_below_cost": { "priority": "P1", "delivery": "firm", "limit": "once per game (UX §8 #11)" },
+    "vo_brand_milestone": { "priority": "P2", "delivery": "pleased", "limit": "at brand 30, once per city (UX §8 #20)" },
+    "vo_brand_household": { "priority": "P2", "delivery": "proud", "limit": "at brand 70, once per city (UX §8 #20)" },
+    "vo_news_major": { "priority": "P1", "delivery": "alert", "limit": "after a Major news item (UX §8 #25)" },
+    "vo_loan_missed": { "priority": "P0", "delivery": "grave, dry", "limit": "each (UX §8 #28)" },
+    "vo_goal_generic": { "priority": "P1", "delivery": "satisfied", "limit": "per goal without a specific line (UX §8 #34)" },
+    "vo_deadline_12": { "priority": "P2", "delivery": "matter-of-fact", "limit": "once per scenario" },
+    "vo_deadline_3": { "priority": "P1", "delivery": "urgent, focused", "limit": "once per scenario" }
+  },
+  "templated": {
+    "vo_building_first_retail": { "text": "Our first store. Price it smartly and keep those shelves stocked.", "delivery": "encouraging" },
+    "vo_building_first_farm": { "text": "Our first farm. Growing our own inputs protects our margins.", "delivery": "satisfied" },
+    "vo_building_first_mine_well": { "text": "We're producing our own raw materials now. Price shocks will hurt us less.", "delivery": "shrewd" },
+    "vo_building_first_warehouse": { "text": "Our first warehouse. Buffer stock keeps our stores supplied when demand jumps.", "delivery": "practical" },
+    "vo_building_first_rd": { "text": "Our first R&D center. Better technology means better products and margins.", "delivery": "enthusiastic" },
+    "vo_building_first_media": { "text": "Our first media outlet. Let's put it to work building our brand.", "delivery": "confident" },
+    "vo_building_first_seaport": { "text": "Our own seaport. Imported goods now come straight to our door.", "delivery": "satisfied" },
+    "vo_milestone_1m": { "text": "Our first million in revenue. Now let's make the next one faster.", "delivery": "delighted" },
+    "vo_milestone_10m": { "text": "Ten million in revenue. The business has real momentum now.", "delivery": "pleased" },
+    "vo_milestone_100m": { "text": "A hundred million in revenue. We're a serious player now.", "delivery": "proud" },
+    "vo_milestone_1b": { "text": "A billion in revenue. That's the mark of a true magnate.", "delivery": "proud, warm" },
+    "vo_upgrade_first": { "text": "Our first upgrade is complete. More capacity, same address.", "delivery": "satisfied" },
+    "vo_tech_max": { "text": "Our technology is the best on the market. Now let's protect that lead.", "delivery": "proud, firm" }
+  },
+  "templatedMeta": {
+    "vo_building_first_": { "priority": "P2", "trigger": "first construction of this building category (UX §8 #1: construction started; phrased to also fit completion)", "limit": "once per category per game" },
+    "vo_milestone_": { "priority": "P2", "trigger": "cumulative revenue milestone (UX §8 #8)", "limit": "once each per game" },
+    "vo_upgrade_first": { "priority": "P2", "trigger": "first building upgrade completed (UX §8 #35)", "limit": "once per game" },
+    "vo_tech_max": { "priority": "P2", "trigger": "player product reaches max tech (UX §8 #22; techMax*)", "limit": "once per game" }
+  },
+  "legacy": [
+    { "id": "adv.legacy.tutorial_step1", "legacyAlias": "vo_tutorial_step1", "text": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.", "delivery": "encouraging", "trigger": "legacy Godot GuidedTutorial step build-store" },
+    { "id": "adv.legacy.tutorial_step2", "legacyAlias": "vo_tutorial_step2", "text": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.", "delivery": "practical", "trigger": "legacy Godot GuidedTutorial step stock-shelf" },
+    { "id": "adv.legacy.tutorial_step3", "legacyAlias": "vo_tutorial_step3", "text": "Time is your engine. Press play and let three months run. Watch the cash begin to flow.", "delivery": "light", "trigger": "legacy Godot GuidedTutorial step let-time-pass" },
+    { "id": "adv.legacy.tutorial_step4", "legacyAlias": "vo_tutorial_step4", "text": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.", "delivery": "confident", "trigger": "legacy Godot GuidedTutorial step run-campaign" },
+    { "id": "adv.legacy.tutorial_step5", "legacyAlias": "vo_tutorial_step5", "text": "Now scale. Grow your corporate value to $20 million. Your rivals are already moving.", "tts": "Now scale. Grow your corporate value to twenty million dollars. Your rivals are already moving.", "delivery": "driven", "trigger": "legacy Godot GuidedTutorial step grow-value" }
+  ],
+  "ttsOverrides": {
+    "_example": "\"news.market_crash\": \"Stocks plunge in heavy trading, as panic sweeps the exchange.\"",
+    "_adv.cash.negative": "QA-final: Kokoro phrased the doc text as '...in the red costs, | interest and credibility' (a ~0.35 s break after 'costs' turns the verb into a list item). The comma after 'interest' binds 'costs interest' and moves the break to the list.",
+    "adv.cash.negative": "We're overdrawn. Every month in the red costs interest, and credibility."
+  }
+}

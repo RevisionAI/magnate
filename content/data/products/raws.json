@@ -1,0 +1,147 @@
+[
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 40,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 18000,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 4500,
+      "otherCostPerUnit": 21,
+      "laborPerSlot": 4,
+      "equipmentCapex": 900000,
+      "fieldsCapex": 2200000
+    }
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 250,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 5,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 3600,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 900,
+      "otherCostPerUnit": 140,
+      "laborPerSlot": 3,
+      "equipmentCapex": 900000,
+      "fieldsCapex": 2200000
+    }
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 1900,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 480,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 120,
+      "otherCostPerUnit": 1050,
+      "laborPerSlot": 4,
+      "equipmentCapex": 900000,
+      "fieldsCapex": 2200000
+    }
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "tier": "raw",
+    "category": "mineral",
+    "unit": "ton",
+    "baseWorldMarketPrice": 100,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 40000,
+    "extraction": {
+      "sourceCategory": "mine",
+      "yieldPerSlotPerMonth": 10000,
+      "otherCostPerUnit": 48,
+      "laborPerSlot": 14,
+      "equipmentCapex": 8000000
+    }
+  },
+  {
+    "id": "crude_oil",
+    "name": "Crude Oil",
+    "tier": "raw",
+    "category": "petroleum",
+    "unit": "barrel",
+    "baseWorldMarketPrice": 75,
+    "priceElasticity": 0.8,
+    "maxTechLevel": 5,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 48000,
+    "extraction": {
+      "sourceCategory": "oil_well",
+      "yieldPerSlotPerMonth": 12000,
+      "otherCostPerUnit": 30,
+      "laborPerSlot": 6,
+      "equipmentCapex": 12000000
+    }
+  },
+  {
+    "id": "coffee_beans",
+    "name": "Coffee Beans",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 7000,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 6,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 120,
+    "extraction": {
+      "sourceCategory": "plantation",
+      "yieldPerSlotPerMonth": 30,
+      "otherCostPerUnit": 3300,
+      "laborPerSlot": 10,
+      "equipmentCapex": 600000,
+      "fieldsCapex": 2000000
+    }
+  },
+  {
+    "id": "hops",
+    "name": "Hops",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 12000,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 6,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 72,
+    "extraction": {
+      "sourceCategory": "plantation",
+      "yieldPerSlotPerMonth": 18,
+      "otherCostPerUnit": 5600,
+      "laborPerSlot": 9,
+      "equipmentCapex": 700000,
+      "fieldsCapex": 2000000
+    }
+  }
+]

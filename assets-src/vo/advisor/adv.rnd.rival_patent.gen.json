@@ -1,0 +1,111 @@
+{
+  "id": "adv.rnd.rival_patent",
+  "role": "advisor",
+  "text": "A rival patented that technology. We'll need a license or a new path.",
+  "sentText": "A rival patented that technology. We'll need a license or a new path.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.827
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:23:54.152Z",
+  "file": "adv.rnd.rival_patent.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.05,
+  "speechSec": 4.81,
+  "wpm": 162.2,
+  "syllables": 19,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 510,
+  "samplePeakDbfs": -5.78,
+  "truePeakDbtp": -5.8,
+  "lufsI": -21.9,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 370
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Arrival patented that technology. We'll need a license or a new path.",
+    "wer": 0.154,
+    "cer": 0.019
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.671,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 163.2,
+      "paceWpm": 160.1,
+      "maxGapMs": 510,
+      "lufsI": -21.9,
+      "cer": 0.019,
+      "transcript": "Arrival patented that technology. We'll need a license or a new path.",
+      "score": {
+        "hard": 0,
+        "soft": 0.681,
+        "flags": []
+      },
+      "file": "_takes/adv.rnd.rival_patent/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.825
+      },
+      "wpm": 160.5,
+      "paceWpm": 157.4,
+      "maxGapMs": 540,
+      "lufsI": -21.9,
+      "cer": 0.019,
+      "transcript": "Arrival patented that technology. We'll need a license or a new path.",
+      "score": {
+        "hard": 0,
+        "soft": 0.731,
+        "flags": []
+      },
+      "file": "_takes/adv.rnd.rival_patent/t2.wav"
+    }
+  ],
+  "lineHash": "23fac013c47e4d2bf5141d71"
+}

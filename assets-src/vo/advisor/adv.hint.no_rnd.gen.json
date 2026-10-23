@@ -1,0 +1,116 @@
+{
+  "id": "adv.hint.no_rnd",
+  "role": "advisor",
+  "text": "Rivals are out-innovating us. Consider building an R&D center.",
+  "tts": "Rivals are out-innovating us. Consider building an R and D center.",
+  "sentText": "Rivals are out-innovating us. Consider building an R and D center.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.801
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:28:47.963Z",
+  "file": "adv.hint.no_rnd.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.47,
+  "speechSec": 5.23,
+  "wpm": 126.2,
+  "syllables": 20,
+  "sylPerSec": 3.82,
+  "paceWpm": 154,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -5.59,
+  "truePeakDbtp": -5.6,
+  "lufsI": -22.5,
+  "lra": 0.4,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 450
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Rivals are out-innovating us. Consider building an R and D center.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.235,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 142.5,
+      "paceWpm": 173.9,
+      "maxGapMs": 440,
+      "lufsI": -22.3,
+      "cer": 0.075,
+      "transcript": "Rifles are out-tinnovating us. Consider building an R and D center.",
+      "score": {
+        "hard": 0,
+        "soft": 2.654,
+        "flags": [
+          "pace 173.9 wpm-eq, 4.32 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.no_rnd/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.761
+      },
+      "wpm": 115.4,
+      "paceWpm": 140.8,
+      "maxGapMs": 500,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "Rivals are out-innovating us. Consider building an R and D center.",
+      "score": {
+        "hard": 0,
+        "soft": 1.337,
+        "flags": [
+          "pace 140.8 wpm-eq, 3.5 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.no_rnd/t2.wav"
+    }
+  ],
+  "lineHash": "651c2aab95ffe1efedde9d05"
+}

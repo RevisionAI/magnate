@@ -1,0 +1,54 @@
+{
+  "method": "explainNetIncome",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "base": {
+        "from": {
+          "year": 2026,
+          "month": 7
+        },
+        "to": {
+          "year": 2026,
+          "month": 7
+        },
+        "months": 1,
+        "preset": "lastMonth"
+      },
+      "compare": {
+        "from": {
+          "year": 2026,
+          "month": 8
+        },
+        "to": {
+          "year": 2026,
+          "month": 8
+        },
+        "months": 1,
+        "preset": "thisMonth"
+      },
+      "baseNetIncome": -1117859.65,
+      "compareNetIncome": -28095801.61,
+      "drivers": [
+        {
+          "driver": "opexExisting",
+          "amount": 112.5
+        },
+        {
+          "driver": "opexNewBuildings",
+          "amount": -290.56
+        },
+        {
+          "driver": "depreciation",
+          "amount": -156250
+        },
+        {
+          "driver": "other",
+          "amount": -26821513.89
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

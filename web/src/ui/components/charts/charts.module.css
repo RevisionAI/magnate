@@ -1,0 +1,153 @@
+.chart {
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+.gridLine {
+  stroke: var(--chart-grid);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.zeroLine {
+  stroke: rgba(181, 196, 205, 0.35);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.axisText {
+  fill: var(--chart-axis);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.dashed {
+  stroke-dasharray: 4 4;
+}
+
+.crosshair {
+  stroke: var(--chart-crosshair);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #0b1117;
+  stroke-width: 2;
+}
+
+.bar {
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.barDim {
+  opacity: 0.45;
+}
+
+.tip {
+  position: absolute;
+  z-index: 2;
+  min-width: 8rem;
+  padding: 6px 8px;
+  border-radius: var(--r-sm);
+  background: rgba(11, 17, 23, 0.96);
+  border: 1px solid var(--c-hairline-strong);
+  box-shadow: var(--e-3);
+  font-size: var(--fs-xs);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tipTitle {
+  margin-bottom: 3px;
+  color: var(--c-muted);
+  font-weight: var(--fw-semibold);
+}
+
+.tipRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  color: var(--c-text2);
+}
+
+.tipRow b {
+  color: var(--c-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 8px;
+  font-size: var(--fs-xs);
+  color: var(--c-text2);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+}
+
+.legendValue {
+  margin-left: 6px;
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.stack {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(5, 9, 13, 0.5);
+  box-shadow: 0 0 0 1px rgba(160, 196, 218, 0.1);
+}
+
+.stackSeg {
+  height: 100%;
+  min-width: 0;
+  transition: width var(--dur-slow) var(--ease-out), filter var(--dur-fast) var(--ease-out);
+}
+
+.stackSeg + .stackSeg {
+  box-shadow: inset 1px 0 0 rgba(11, 17, 23, 0.85);
+}
+
+.stackSeg:hover {
+  filter: brightness(1.2);
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  color: var(--c-dim);
+  font-size: var(--fs-xs);
+  border: 1px dashed rgba(160, 196, 218, 0.15);
+  border-radius: var(--r-sm);
+}

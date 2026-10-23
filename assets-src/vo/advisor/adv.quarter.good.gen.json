@@ -1,0 +1,113 @@
+{
+  "id": "adv.quarter.good",
+  "role": "advisor",
+  "text": "Strong quarter. Revenue and profit are both up. The board is pleased.",
+  "sentText": "Strong quarter. Revenue and profit are both up. The board is pleased.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.925
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:25:10.105Z",
+  "file": "adv.quarter.good.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.35,
+  "speechSec": 4.11,
+  "wpm": 175.2,
+  "syllables": 16,
+  "sylPerSec": 3.89,
+  "paceWpm": 156.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -5.38,
+  "truePeakDbtp": -5.4,
+  "lufsI": -21.7,
+  "lra": 0.4,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 150,
+    "tailTrimmedMs": 350
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Strong quarter, revenue and profit are both up. The board is pleased.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.007,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 157.2,
+      "paceWpm": 140.7,
+      "maxGapMs": 350,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Strong quarter, revenue and profit are both up. The board is pleased.",
+      "score": {
+        "hard": 0,
+        "soft": 1.098,
+        "flags": [
+          "pace 140.7 wpm-eq, 3.49 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.quarter.good/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.94
+      },
+      "wpm": 176,
+      "paceWpm": 157.5,
+      "maxGapMs": 320,
+      "lufsI": -21.9,
+      "cer": 0.055,
+      "transcript": "Strong quarter, revenue and profit are both up. The board is pleased. He's.",
+      "score": {
+        "hard": 0,
+        "soft": 1.1,
+        "flags": []
+      },
+      "file": "_takes/adv.quarter.good/t2.wav"
+    }
+  ],
+  "lineHash": "7ff76e16ea2e131d35e6680d"
+}

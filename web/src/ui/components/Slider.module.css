@@ -1,0 +1,195 @@
+.root {
+  --rows: 1;
+  position: relative;
+  width: 100%;
+  padding-top: calc(var(--rows) * 1rem + 0.5rem);
+  padding-bottom: 0.75rem;
+  touch-action: none;
+  user-select: none;
+  outline: none;
+}
+
+.noMarks {
+  padding-top: 0.5rem;
+}
+
+.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.track {
+  position: relative;
+  height: 6px;
+  border-radius: var(--r-pill);
+  background: rgba(5, 9, 13, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(160, 196, 218, 0.12);
+  cursor: pointer;
+}
+
+.band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 2px;
+  opacity: 0.85;
+}
+
+.band-danger {
+  background: repeating-linear-gradient(-45deg, rgba(223, 111, 106, 0.55) 0 4px, rgba(223, 111, 106, 0.32) 4px 8px);
+}
+
+.band-warning {
+  background: repeating-linear-gradient(-45deg, rgba(232, 182, 58, 0.5) 0 4px, rgba(232, 182, 58, 0.28) 4px 8px);
+}
+
+.band-success {
+  background: linear-gradient(180deg, rgba(97, 194, 143, 0.75), rgba(97, 194, 143, 0.5));
+  box-shadow: 0 0 8px rgba(97, 194, 143, 0.35);
+}
+
+.band-info {
+  background: rgba(90, 167, 216, 0.5);
+}
+
+.band-neutral {
+  background: rgba(160, 196, 218, 0.3);
+}
+
+.band-gold {
+  background: rgba(215, 183, 102, 0.55);
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--r-pill);
+  background: linear-gradient(90deg, rgba(168, 134, 63, 0.35), rgba(240, 211, 138, 0.55));
+  pointer-events: none;
+}
+
+/* With bands the colours carry the meaning; the fill would hide them. */
+.withBands .fill {
+  display: none;
+}
+
+.mark {
+  position: absolute;
+  top: -5px;
+  width: 1px;
+  height: 16px;
+  margin-left: -0.5px;
+  background: currentColor;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.markDiamond {
+  position: absolute;
+  pointer-events: none;
+  width: 9px;
+  height: 9px;
+  top: -2px;
+  margin-left: -4.5px;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.markLabel {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.markLabel span {
+  opacity: 0.75;
+  font-weight: var(--fw-medium);
+}
+
+.tone-danger {
+  color: #f08c86;
+}
+
+.tone-warning {
+  color: #f0c95e;
+}
+
+.tone-success {
+  color: #7fd6a6;
+}
+
+.tone-info {
+  color: #82bfe6;
+}
+
+.tone-gold {
+  color: var(--c-gold-bright);
+}
+
+.tone-neutral {
+  color: var(--c-text2);
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-left: -0.5625rem;
+  margin-top: -0.5625rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, #fff6dc, #f0d38a 45%, #b8964a 100%);
+  border: 2px solid #0b1117;
+  box-shadow: 0 0 0 1px rgba(240, 211, 138, 0.9), 0 2px 6px rgba(0, 0, 0, 0.6), 0 0 14px rgba(215, 183, 102, 0.45);
+  transition: transform var(--dur-fast) var(--ease-out);
+  pointer-events: none;
+}
+
+.root:focus-visible .thumb,
+.dragging .thumb {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 1px rgba(240, 211, 138, 0.95), 0 0 0 5px rgba(215, 183, 102, 0.22), 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.bubble {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 7px;
+  border-radius: var(--r-xs);
+  background: #f0d38a;
+  color: var(--c-gold-ink);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -4px;
+  border: 4px solid transparent;
+  border-top-color: #f0d38a;
+}
+
+.scaleRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: var(--fs-2xs);
+  color: var(--c-dim);
+  font-variant-numeric: tabular-nums;
+}

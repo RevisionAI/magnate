@@ -1,0 +1,83 @@
+{
+  "method": "previewBuild",
+  "args": {
+    "typeId": "convenience_store",
+    "cityId": "metropolis",
+    "at": {
+      "px": 1,
+      "pz": 1
+    }
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "typeId": "convenience_store",
+      "cityId": "metropolis",
+      "constructionCost": 1400000,
+      "landCost": 5715,
+      "totalCost": 1405715,
+      "monthlyOpex": 6000,
+      "capacity": 3,
+      "affordable": true,
+      "shortfall": 0,
+      "cashAfter": 156378216.48,
+      "runwayMonthsAfter": 141.55,
+      "geographyOk": true,
+      "geographyIssues": [],
+      "eligibleProductIds": [
+        "beer",
+        "bread",
+        "car",
+        "coffee_drink",
+        "designer_jeans",
+        "soft_drink",
+        "t_shirt",
+        "television"
+      ],
+      "footprintW": 1,
+      "footprintH": 1,
+      "placementOk": false,
+      "placementIssue": "zoning",
+      "constructionMonths": 2,
+      "catchment": {
+        "score": 0.3,
+        "potentialUnitsPerMonth": 3675000,
+        "rivalsWithinRadius": 0,
+        "productId": "soft_drink",
+        "traffic": 4,
+        "radiusPlots": 6
+      },
+      "upfrontCost": 285715,
+      "redevelopmentCost": 0,
+      "deposit": 280000,
+      "monthlyInstalment": 560000,
+      "opensAt": {
+        "year": 2026,
+        "month": 10
+      },
+      "placementIssues": [
+        {
+          "code": "zoning",
+          "message": "Zoned agricultural \u2014 shops go on commercial land or main streets",
+          "px": 1,
+          "pz": 1
+        }
+      ],
+      "site": {
+        "traffic": 4,
+        "peakTraffic": 4,
+        "locationFactor": 0.3,
+        "distanceToCbd": 58.8,
+        "frontage": "local",
+        "district": "rural",
+        "maxSlope": 0,
+        "waterfront": false,
+        "landValuePerPlot": 5715,
+        "parcelIds": [
+          1
+        ]
+      }
+    },
+    "revision": 12
+  }
+}

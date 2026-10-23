@@ -1,0 +1,12 @@
+[
+  {
+    "id": "rd_center",
+    "name": "R&D Center",
+    "category": "rd_center",
+    "constructionCost": 3000000,
+    "monthlyOperatingCost": 50000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 4,
+    "targetHeadcount": { "min": 10, "max": 40 }
+  }
+]

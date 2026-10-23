@@ -1,0 +1,21 @@
+{
+  "id": "riverside",
+  "name": "Riverside",
+  "population": 250000,
+  "demographics": {
+    "low":    0.35,
+    "middle": 0.45,
+    "high":   0.20
+  },
+  "grid": {
+    "width":  60,
+    "height": 60
+  },
+  "geography": {
+    "coastal":     false,
+    "arable":      true,
+    "mineralRich": true,
+    "oilRich":     false
+  },
+  "baseLandPrice": 100.0
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Magnate.Bridge</RootNamespace>
+    <AssemblyName>Magnate.Bridge</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- The bridge is consumed by the browser-wasm host; keep it free of platform APIs. -->
+    <IsTrimmable>false</IsTrimmable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Magnate.Engine\Magnate.Engine.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Tests drive internals (Attach a hand-built world, inspect the ledger index). -->
+    <InternalsVisibleTo Include="Magnate.Bridge.Tests" />
+  </ItemGroup>
+</Project>

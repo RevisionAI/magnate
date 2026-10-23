@@ -1,0 +1,66 @@
+{
+  "id": "tech_race",
+  "name": "Tech Race",
+  "description": "A rival with twice your capital is sprinting toward the electronics future. Out-research them: run two R&D centres, put televisions and cars on your shelves, and win the biggest share of the Metropolis television market — while keeping the company worth more than you started with.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "NovaTech",
+    "startingCash": 90000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "ApexLabs",
+      "startingCash": 180000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": [
+    {
+      "id": "labs",
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 R&D centres — research compounds across labs.",
+      "category": "rd_center",
+      "count": 2
+    },
+    {
+      "id": "retail-tv",
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — electronic parts, plastic and steel all have to come together.",
+      "product": "television"
+    },
+    {
+      "id": "retail-car",
+      "type": "productRetailed",
+      "description": "Put cars on a shelf — the flagship product, sold at a premium.",
+      "product": "car"
+    },
+    {
+      "id": "advertise-tv",
+      "type": "adCampaignActive",
+      "description": "Run an advertising campaign for televisions (Marketing, K) — brand awareness compounds.",
+      "product": "television"
+    },
+    {
+      "id": "share-tv",
+      "type": "marketShare",
+      "description": "Sell 35% of the televisions bought in Metropolis (trailing three months) — your technology lead has to show up in sales.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.35
+    },
+    {
+      "id": "value-at-deadline",
+      "type": "corporateValue",
+      "mode": "holdAtDeadline",
+      "description": "Be worth at least $100M when the scenario ends in December 2030 — research spending has to pay its way.",
+      "threshold": 100000000
+    }
+  ]
+}

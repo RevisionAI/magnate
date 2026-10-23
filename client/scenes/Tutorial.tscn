@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/Tutorial.cs" id="1_tut"]
+
+[node name="Tutorial" type="Node"]
+script = ExtResource("1_tut")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 32.0
+offset_right = -48.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Tutorial"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="PageCounterLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "1 / 10"
+horizontal_alignment = 1
+modulate = Color(1, 1, 1, 0.55)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BodyText" type="RichTextLabel" parent="Panel/VBox/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+text = ""
+
+[node name="HBox" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="BackButton" type="Button" parent="Panel/VBox/HBox"]
+custom_minimum_size = Vector2(96, 36)
+layout_mode = 2
+text = "Back"
+
+[node name="NextButton" type="Button" parent="Panel/VBox/HBox"]
+custom_minimum_size = Vector2(96, 36)
+layout_mode = 2
+text = "Next"
+
+[node name="SkipButton" type="Button" parent="Panel/VBox/HBox"]
+custom_minimum_size = Vector2(96, 36)
+layout_mode = 2
+text = "Skip"
+
+[node name="CloseButton" type="Button" parent="Panel/VBox/HBox"]
+custom_minimum_size = Vector2(96, 36)
+layout_mode = 2
+text = "Close"

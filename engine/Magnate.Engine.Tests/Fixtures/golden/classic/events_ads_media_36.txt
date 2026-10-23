@@ -1,0 +1,250 @@
+month 2026-02 1=71731000.00 2=56520000 3=49453800.00 4=28285199.268210462400 news=0
+month 2026-03 1=72462000.00 2=57540000 3=51607600.00 4=26945999.7876377717700 news=1
+month 2026-04 1=73193000.00 2=58560000 3=53761400.00 4=26631171.7130164069525 news=1
+month 2026-05 1=73924000.00 2=59580000 3=55915200.00 4=27461639.1352329570925 news=2
+month 2026-06 1=74655000.00 2=60600000 3=58081500.00 4=28825720.7912504220475 news=2
+month 2026-07 1=75386000.00 2=61620000 3=60247800.00 4=30897162.9076039530975 news=2
+month 2026-08 1=76117000.00 2=62640000 3=62414100.00 4=33238411.8024138129725 news=3
+month 2026-09 1=76848000.00 2=63660000 3=64580400.00 4=36227132.8251775715975 news=3
+month 2026-10 1=77579000.00 2=64680000 3=66746700.00 4=39480432.3523332513025 news=3
+month 2026-11 1=78310000.00 2=65700000 3=68913000.00 4=43245019.4634370517525 news=3
+month 2026-12 1=79041000.00 2=66720000 3=71079300.00 4=47486446.1599612474450 news=3
+month 2027-01 1=79772000.00 2=67740000 3=73245600.00 4=52006786.1481572765975 news=3
+month 2027-02 1=80533000.00 2=68760000 3=75399400.00 4=56726692.9708340709475 news=3
+month 2027-03 1=81294000.00 2=69780000 3=77553200.00 4=61823089.9725021214675 news=3
+month 2027-04 1=82055000.00 2=70800000 3=79707000.00 4=67223399.5385443106725 news=4
+month 2027-05 1=82816000.00 2=71820000 3=81860800.00 4=73106682.2138761513375 news=4
+month 2027-06 1=83577000.00 2=72840000 3=84014600.00 4=79204405.7938844686050 news=4
+month 2027-07 1=84338000.00 2=73860000 3=86168400.00 4=85425897.7999269055525 news=5
+month 2027-08 1=85284000.00 2=74880000 3=88292200.00 4=92097630.7174690087900 news=5
+month 2027-09 1=86230000.00 2=75900000 3=90416000.00 4=98972367.8963102371400 news=5
+month 2027-10 1=87176000.00 2=76920000 3=92539800.00 4=105985713.4438751549950 news=5
+month 2027-11 1=88122000.00 2=77940000 3=94663600.00 4=113591844.84578452701000 news=6
+month 2027-12 1=89068000.00 2=78960000 3=96787400.00 4=121381926.73402575867000 news=7
+month 2028-01 1=90014000.00 2=79980000 3=98902800.00 4=129456441.32570032763250 news=7
+month 2028-02 1=90960000.00 2=80930000 3=101048200.00 4=137659281.08172191706750 news=7
+month 2028-03 1=91906000.00 2=81636790.39512231520 3=103193600.00 4=145705005.53787375991650 news=8
+month 2028-04 1=92852000.00 2=82512690.84316839440 3=105309000.00 4=151086315.06461221232750 news=8
+month 2028-05 1=93798000.00 2=83390242.41809202320 3=107424400.00 4=161616931.41526816941550 news=8
+month 2028-06 1=94744000.00 2=84268704.67693696560 3=109539800.00 4=172058176.37536195566850 news=8
+month 2028-07 1=95683945.4553993540 2=85147645.69833384160 3=111655200.00 4=181421013.46279699082500 news=9
+month 2028-08 1=96614542.9910182375 2=86026809.47863394960 3=113779000.00 4=192762314.07430238170300 news=9
+month 2028-09 1=97542646.6431195865 2=86906043.667006358560 3=115902800.00 4=208563594.18943379737600 news=9
+month 2028-10 1=98468287.0962108200 2=87785258.495394489280 3=118056600.00 4=224310429.81657904472950 news=9
+month 2028-11 1=99391494.5639971740 2=88664402.631973622560 3=120210400.00 4=239694190.79801033055100 news=10
+month 2028-12 1=100312298.8445045410 2=89543448.590351121280 3=122334200.00 4=257062002.36528346848700 news=11
+month 2029-01 1=101316402.0176123165 2=90422383.718099103600 3=124458000.00 4=272710645.06258702409300 news=11
+magnate-state-digest v1
+clock 2029-01
+next company=5 building=45
+company 1 "BrandCo" cash=101316402.0176123165 owned=1,2,3,4,5
+company 2 "ScreenCo" cash=90422383.718099103600 owned=6
+company 3 "Mill & Brew" cash=124458000.00 owned=7,8
+company 4 "RivalCo" cash=272710645.06258702409300 owned=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44
+building 1 tv_station owner=1 city=metropolis level=1 autoExport=True
+building 2 newspaper_publisher owner=1 city=eastside level=1 autoExport=True
+building 3 factory_small owner=1 city=metropolis level=1 autoExport=True
+  slot production 0 soft_drink
+building 4 supermarket owner=1 city=metropolis level=1 autoExport=True
+  slot retail 0 soft_drink price=1.85 restock=1200000
+  slot retail 1 bread price=2.90 restock=500000
+  inv soft_drink qty=1629.592955463333 cost=2038.2236644498328572079927 q=50.00000000000143
+building 5 supermarket owner=1 city=eastside level=1 autoExport=True
+  slot retail 0 soft_drink price=1.95 restock=300000
+building 6 department_store owner=2 city=metropolis level=1 autoExport=True
+  slot retail 0 television price=480 restock=3000
+  slot retail 1 car price=21000 restock=300
+  inv television qty=2077.519013717396 cost=831007.6054869593167603175388 q=50
+building 7 factory_small owner=3 city=riverside level=1 autoExport=True
+  slot production 0 flour
+  slot production 1 bread
+  slot production 2 roasted_coffee
+  slot production 3 coffee_drink
+  slot production 4 cotton_fabric
+  slot production 5 t_shirt
+building 8 supermarket owner=3 city=riverside level=1 autoExport=True
+  slot retail 0 bread price=2.80 restock=200000
+  slot retail 1 coffee_drink price=4.60 restock=150000
+  slot retail 2 t_shirt price=17.50 restock=20000
+building 9 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 bread price=2.7550 restock=2145000
+building 10 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 soft_drink price=1.7575 restock=1575000
+  inv soft_drink qty=148370.40704453643 cost=222555.6105668042538716003774 q=50.000000000000014
+building 11 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 coffee_drink price=4.80 restock=2190000
+  inv coffee_drink qty=365000 cost=1459999.9999999929920000000000 q=50
+building 12 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 bread price=2.6600 restock=1042500
+building 13 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 beer price=3.60 restock=1575000
+  inv beer qty=262500 cost=787499.9999999962200000000000 q=50
+building 14 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 soft_drink price=1.800 restock=1575000
+  inv soft_drink qty=262500 cost=393749.9999999981100000000000 q=50
+building 15 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 bread price=3.000 restock=1572000
+  inv bread qty=262000 cost=654999.9999999968560000000000 q=50
+building 16 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 bread price=3.000 restock=1314000
+  inv bread qty=219000 cost=547499.9999999973720000000000 q=50
+building 17 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 coffee_drink price=4.3700 restock=630000
+building 18 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 coffee_drink price=4.80 restock=1212000
+  inv coffee_drink qty=202000 cost=807999.9999999961216000000000 q=50
+building 19 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 soft_drink price=1.8525 restock=606000
+  inv soft_drink qty=15050.104832968209 cost=22575.1572494518173169568274 q=49.999999999999936
+building 20 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 soft_drink price=1.800 restock=954000
+  inv soft_drink qty=159000 cost=238499.9999999988552000000000 q=50
+building 21 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 beer price=3.60 restock=787500
+  inv beer qty=131250 cost=393749.9999999981100000000000 q=50
+building 22 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 bread price=3.000 restock=768000
+  inv bread qty=128000 cost=319999.9999999984640000000000 q=50
+building 23 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 coffee_drink price=4.80 restock=648000
+  inv coffee_drink qty=108000 cost=431999.9999999979264000000000 q=50
+building 24 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 beer price=3.60 restock=606000
+  inv beer qty=101000 cost=302999.9999999985456000000000 q=50
+building 25 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 soft_drink price=1.800 restock=600000
+  inv soft_drink qty=100000 cost=149999.99999999928000000000000 q=50
+building 26 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 coffee_drink price=4.80 restock=594000
+  inv coffee_drink qty=99000 cost=395999.9999999980992000000000 q=50
+building 27 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 beer price=3.60 restock=477000
+  inv beer qty=79500 cost=238499.9999999988552000000000 q=50
+building 28 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 beer price=3.60 restock=300000
+  inv beer qty=50000 cost=149999.99999999928000000000003 q=50
+building 29 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 t_shirt price=18.00 restock=264000
+  inv t_shirt qty=44000 cost=659999.9999999968320000000011 q=50
+building 30 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 t_shirt price=16.6250 restock=70500
+building 31 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 t_shirt price=18.00 restock=124800
+  inv t_shirt qty=20800 cost=311999.9999999985024000000191 q=50
+building 32 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 t_shirt price=18.00 restock=75600
+  inv t_shirt qty=12600 cost=188999.9999999990928000000695 q=50
+building 33 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 t_shirt price=18.00 restock=64800
+  inv t_shirt qty=10800 cost=161999.9999999992224000003572 q=50
+building 34 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 television price=456.00 restock=1320
+  inv television qty=492.4809862826039 cost=196992.39451304167731911019489 q=49.99999999999999
+building 35 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 car price=19950.00 restock=855
+  inv car qty=14.414161011313581 cost=259454.898203651249165848595 q=49.99999999999991
+building 36 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 television price=480.00 restock=1485
+  inv television qty=422.5 cost=168999.99999999957512048419028 q=50
+building 37 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 television price=480.00 restock=1440
+  inv television qty=340 cost=135999.99999999991621899106534 q=50
+building 38 supermarket owner=4 city=eastside level=1 autoExport=True
+  slot retail 0 car price=21600.00 restock=1020
+  inv car qty=220 cost=3960000.000000001835960131468 q=50
+building 39 supermarket owner=4 city=riverside level=1 autoExport=True
+  slot retail 0 car price=21600.00 restock=990
+  inv car qty=252.5 cost=4544999.999999998792196968920 q=50
+building 40 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 television price=480.00 restock=768
+  inv television qty=168 cost=67200.00000000000000000000000 q=50
+building 41 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 television price=480.00 restock=720
+  inv television qty=270 cost=108000.000000000000 q=50
+building 42 supermarket owner=4 city=hilltown level=1 autoExport=True
+  slot retail 0 car price=21600.00 restock=552
+  inv car qty=112 cost=2016000.0000000039412022684311 q=50
+building 43 supermarket owner=4 city=metropolis level=1 autoExport=True
+  slot retail 0 designer_jeans price=144.00 restock=462
+  inv designer_jeans qty=77 cost=9239.999999999956880000000000 q=50
+building 44 supermarket owner=4 city=portbay level=1 autoExport=True
+  slot retail 0 car price=21600.00 restock=450
+  inv car qty=150 cost=2699999.999999997300000 q=50
+brand 1 bread metropolis 30.259865379361287
+brand 1 soft_drink eastside 54.99658691492816
+brand 1 soft_drink metropolis 79.31353308570328
+brand 2 television metropolis 99.31094459830427
+brand 4 bread metropolis 99.06613982345208
+brand 4 bread riverside 98.60601629623167
+brand 4 car metropolis 69.93421986699104
+brand 4 coffee_drink riverside 97.28220039239126
+brand 4 soft_drink eastside 96.4502209206743
+brand 4 soft_drink metropolis 100
+brand 4 t_shirt riverside 84.578992715592
+brand 4 television metropolis 73.69244238361716
+ad 2 television metropolis TV 50000
+ad 4 bread metropolis TV 50000
+ad 4 bread riverside TV 50000
+ad 4 car metropolis TV 50000
+ad 4 coffee_drink riverside TV 50000
+ad 4 soft_drink eastside TV 50000
+ad 4 soft_drink metropolis TV 50000
+ad 4 t_shirt riverside TV 50000
+ad 4 television metropolis TV 50000
+price-effect coffee_beans 1.5 4
+price-effect steel 1.2 6
+ai 4 AdaptiveStrategy
+news 2026-03 consumer_electronics_craze Info
+news 2026-05 cotton_harvest_bumper Notable
+news 2026-08 viral_ad_spot Info
+news 2027-04 viral_ad_spot Info
+news 2027-07 cocoa_blight Notable
+news 2027-11 trade_summit_optimism Info
+news 2027-12 wheat_drought Notable
+news 2028-03 cocoa_blight Notable
+news 2028-07 tariff_announcement Major
+news 2028-11 cocoa_blight Notable
+news 2028-12 viral_ad_spot Info
+ledger count=3522 sha256=f80cf731d7a7e3f110c57f79b092595a5b6321e81567a51ce4aca2b9bec51999
+ledger-sum 1 AdvertisingCost n=66 sum=-3690000
+ledger-sum 1 ConstructionCost n=5 sum=-9000000
+ledger-sum 1 InputPurchase n=72 sum=-396000
+ledger-sum 1 OperatingCost n=180 sum=-3528000
+ledger-sum 1 ProductSale n=108 sum=152930759.5800977010
+ledger-sum 1 RetailRestock n=108 sum=-115000357.5624853845
+ledger-sum 1 StartingCapital n=1 sum=80000000
+ledger-sum 2 AdvertisingCost n=36 sum=-1800000
+ledger-sum 2 ConstructionCost n=1 sum=-4000000
+ledger-sum 2 OperatingCost n=36 sum=-1440000
+ledger-sum 2 ProductSale n=72 sum=254960347.941516372000
+ledger-sum 2 RetailRestock n=72 sum=-217297964.223417268400
+ledger-sum 2 StartingCapital n=1 sum=60000000
+ledger-sum 3 ConstructionCost n=2 sum=-2700000
+ledger-sum 3 ExportSale n=144 sum=48024000.0
+ledger-sum 3 InputPurchase n=144 sum=-5246000.00
+ledger-sum 3 OperatingCost n=72 sum=-1260000
+ledger-sum 3 ProductSale n=108 sum=57600000.00
+ledger-sum 3 RetailRestock n=72 sum=-21960000.0
+ledger-sum 3 StartingCapital n=1 sum=50000000
+ledger-sum 4 AdvertisingCost n=186 sum=-9300000
+ledger-sum 4 ConstructionCost n=36 sum=-43200000
+ledger-sum 4 OperatingCost n=666 sum=-9990000
+ledger-sum 4 ProductSale n=666 sum=2235500466.95458607289300
+ledger-sum 4 RetailRestock n=666 sum=-1930299821.891999048800
+ledger-sum 4 StartingCapital n=1 sum=30000000
+cogs count=1098 sha256=41dc333f2d7c594a16c830b8bdf351703706adf52e27ca0b022bba4882a39eb4
+cogs-sum 1 n=108 qty=71865275.44870146 cost=115394319.33882093466714279201
+cogs-sum 2 n=72 qty=65967.39154482578 cost=216466956.61793030908323968245
+cogs-sum 3 n=252 qty=24364800 cost=27206000.000000
+cogs-sum 4 n=666 qty=540369738.2820575 cost=1907291303.8314661397479476390
+transfers count=144 sha256=4b5421893e915c0b4ed4ed28ac6ebc962c62b9db313b6b39fa883165b84757e4
+transfer-sum 1 n=36 qty=7200000
+transfer-sum 3 n=108 qty=7056000
+income 1 revenue=152930759.5800977010 cogs=115394319.33882093466714279201 opex=7218000 gross=37536440.24127676633285720799 net=30318440.24127676633285720799
+balance 1 cash=101316402.0176123165 inventory=2038.2236644498328572079927 buildings=9000000 liabilities=0 assets=110318440.24127676633285720799 equity=110318440.24127676633285720799
+income 2 revenue=254960347.941516372000 cogs=216466956.61793030908323968245 opex=3240000 gross=38493391.32358606291676031755 net=35253391.32358606291676031755
+balance 2 cash=90422383.718099103600 inventory=831007.6054869593167603175388 buildings=4000000 liabilities=0 assets=95253391.32358606291676031754 equity=95253391.32358606291676031754
+income 3 revenue=105624000.00 cogs=27206000.000000 opex=1260000 gross=78418000.000000 net=77158000.000000
+balance 3 cash=124458000.00 inventory=0 buildings=2700000 liabilities=0 assets=127158000.00 equity=127158000.00
+income 4 revenue=2235500466.95458607289300 cogs=1907291303.8314661397479476390 opex=19290000 gross=328209163.1231199331450523610 net=308919163.1231199331450523610
+balance 4 cash=272710645.06258702409300 inventory=23008518.060532909052052360515 buildings=43200000 liabilities=0 assets=338919163.12311993314505236052 equity=338919163.12311993314505236052

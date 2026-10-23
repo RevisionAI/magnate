@@ -1,0 +1,295 @@
+{
+  "$comment": "Event -> audio actions (audio-plan section 4.12). Keys are bridge GameEventDto.kind values (bridge-spec section 7: camelCase) plus the kinds proposed by the audio plan (marked proposed), the client bus topics (prefixed 'bus.') and client-derived moments (prefixed 'client.'). Each key maps to rules; the first rule whose 'if' matches fires (later rules are alternatives). Actions: sfx (id | [id | {id, delay, detuneCents, levelDb}]), at ('building' = positional at the event's building when the scene can locate it), vo (line id | {line, chain, rank, scenarioEnd, newsSting, hint}; line may be a list of candidates tried in order, with ${group} (first-building group), ${milestone} (1m/10m/100m/1b) and ${pct} (share threshold) filled from the event; a candidate that is latched, cooling down (vo-lines.json gameMonthCooldown / firstFree / every) or unknown is skipped), tutorial (true: voiced at advisor frequency 'important'; \"scenario\": only in the tutorial scenario), music ({state} | {stinger} | {evaluate} | {warning} | {tension}), once ('game': client latch per kind+key). 'if' keys: isPlayer, severity, newsTier, anchor (news event has an anchor line), reason, sign, dir, monthsLte, monthsEq, thresholdIn, speed, held, category, cue, fast, atMax (level >= maxLevel), group (building group), drawer, overlay, buildingsEq, buildingsGte, monthsGte, runwayLt. Line priorities, once-per-game flags and cooldowns live in vo-lines.json. 'tutorial' maps tutorial step ids (UX 6.17 / 7) to line ids; a step's own 'vo' wins.",
+  "version": 2,
+  "tutorial": {
+    "$comment": "Step id -> line id (UX section 7 chapter 1 beats and audio-plan 5.2 onboarding triggers). Played once per step id per save (tutorialStore.voPlayed), as a P1 tutorial line.",
+    "welcome": "adv.onboard.welcome",
+    "briefing": "vo_t1_intro",
+    "flyover": "vo_t1_city",
+    "build": "adv.onboard.first_plot",
+    "build-store": "adv.onboard.first_store",
+    "construction": "vo_t1_speed",
+    "price": "adv.onboard.set_price",
+    "restock": "adv.onboard.restock",
+    "press-play": "adv.onboard.press_play",
+    "first-month": "adv.sales.first",
+    "read-store": "vo_t1_readstore",
+    "rival": "adv.market.competitor_entered",
+    "share-drop": "vo_t1_sharedrop",
+    "advertise": "adv.onboard.first_ad",
+    "run-campaign": "adv.onboard.first_ad",
+    "brand": "vo_brand_milestone",
+    "books": "adv.onboard.read_books",
+    "loan": "vo_t1_loan",
+    "expand": "vo_t1_expand",
+    "finish": "vo_t1_almost",
+    "complete": "adv.onboard.complete",
+    "victory": "vo_victory_t1"
+  },
+  "events": {
+    "bus.gameStarted": [
+      { "doc": "new or loaded game", "sfx": "confirm", "music": { "evaluate": true }, "vo": { "line": "adv.onboard.welcome", "rank": 3 } }
+    ],
+    "bus.speedChanged": [
+      { "doc": "a menu/overlay holds time: no transport sound", "if": { "speed": "paused", "held": true }, "music": { "tone": "paused" } },
+      { "if": { "speed": "resumed", "held": true }, "music": { "tone": "normal" } },
+      { "if": { "speed": "paused" }, "sfx": "pause", "music": { "tone": "paused" } },
+      { "if": { "speed": "faster" }, "sfx": "speed_up", "music": { "tone": "normal" } },
+      { "if": { "speed": "slower" }, "sfx": "speed_down", "music": { "tone": "normal" } },
+      { "if": { "speed": "resumed" }, "sfx": "speed_up", "music": { "tone": "normal" } }
+    ],
+    "bus.buildingPlaced": [
+      { "doc": "construction started by the player (command accepted)", "sfx": "build_construct", "at": "building", "music": { "intensity": "build" } }
+    ],
+    "bus.buildingSelected": [
+      { "if": { "category": "retail" }, "sfx": "select_retail" },
+      { "if": { "category": "industrial" }, "sfx": "select_industrial" },
+      { "if": { "category": "agri" }, "sfx": "select_agri" },
+      { "if": { "category": "knowledge" }, "sfx": "select_knowledge" },
+      { "if": { "category": "any" }, "sfx": "ui_click" }
+    ],
+    "bus.ui": [
+      { "if": { "cue": "click" }, "sfx": "ui_click" },
+      { "if": { "cue": "hover" }, "sfx": "ui_hover" },
+      { "if": { "cue": "open" }, "sfx": "panel_open" },
+      { "if": { "cue": "close" }, "sfx": "panel_close" },
+      { "if": { "cue": "toggle" }, "sfx": "toggle_on" },
+      { "if": { "cue": "error" }, "sfx": "error" },
+      { "if": { "cue": "confirm" }, "sfx": "confirm" },
+      { "if": { "cue": "toggleOn" }, "sfx": "toggle_on" },
+      { "if": { "cue": "toggleOff" }, "sfx": "toggle_off" },
+      { "if": { "cue": "tab" }, "sfx": "tab_switch" },
+      { "if": { "cue": "slider" }, "sfx": "slider_tick" },
+      { "if": { "cue": "priceTag" }, "sfx": "price_tag" },
+      { "if": { "cue": "placeOk" }, "sfx": "place_ok" },
+      { "if": { "cue": "placeInvalid" }, "sfx": "place_invalid" },
+      { "doc": "unknown cues are no-ops" }
+    ],
+    "bus.panelChanged": [
+      { "doc": "onboarding (audio-plan 5.2 #2): Build opened with no player building", "if": { "drawer": "build", "buildingsEq": 0 }, "vo": { "line": "adv.onboard.first_plot", "rank": 0 }, "tutorial": true },
+      { "doc": "onboarding #4: the inspector opened on our first store", "if": { "drawer": "inspector", "buildingsEq": 1 }, "vo": { "line": "adv.onboard.set_price", "rank": 0 }, "tutorial": true },
+      { "doc": "onboarding #7: Reports opened after the first month close", "if": { "overlay": "reports", "monthsGte": 1 }, "vo": { "line": "adv.onboard.read_books", "rank": 2 }, "tutorial": "scenario" },
+      { "doc": "panel sounds come from audio.ui('open'/'close')" }
+    ],
+    "client.pausedAfterBuild": [
+      { "doc": "onboarding #6: first building placed, game still paused 10 s later, nothing played yet", "if": { "monthsGte": 0 }, "vo": { "line": "adv.onboard.press_play", "rank": 2 }, "tutorial": "scenario" }
+    ],
+    "client.deadline": [
+      { "doc": "months = months to the scenario deadline (snapshot.scenario.monthsRemaining) when a month close lands on 12 or 3", "if": { "monthsEq": 12 }, "sfx": "notify_info", "vo": { "line": "vo_deadline_12", "rank": 1 } },
+      { "if": { "monthsEq": 3 }, "sfx": "notify_warning", "vo": { "line": "vo_deadline_3", "rank": 0 }, "music": { "warning": true } }
+    ],
+
+    "monthClosed": [
+      { "doc": "month close (UX section 8 #5/#6); pitch rises with the profit streak; at 8x only every other close sounds", "if": { "sign": "positive" }, "sfx": "month_close_up", "music": { "evaluate": true } },
+      { "if": { "sign": "negative" }, "sfx": "month_close_down", "music": { "evaluate": true } },
+      { "music": { "evaluate": true } }
+    ],
+    "firstSale": [
+      { "sfx": ["cash_register", { "id": "coins_small", "delay": 0.25 }], "at": "building", "vo": { "line": "adv.sales.first", "rank": 2 }, "once": "game" }
+    ],
+    "recordMonth": [
+      { "sfx": "coins_large", "vo": { "line": "adv.sales.record_month", "rank": 2 }, "music": { "stinger": "stinger.triumph" } }
+    ],
+    "buildingSales": [
+      { "doc": "per retail building with revenue; world popups only, no sound (cash sound is the month close)" }
+    ],
+    "exportSales": [{ "doc": "popup only" }],
+    "netIncomeFlip": [
+      { "if": { "reason": "toProfit" }, "sfx": "rating_up" },
+      { "if": { "reason": "toLoss" }, "sfx": "notify_warning", "music": { "warning": true } }
+    ],
+    "lossStreak": [
+      { "sfx": "notify_warning", "music": { "warning": true } }
+    ],
+    "cashLow": [
+      { "sfx": "notify_warning", "music": { "warning": true } }
+    ],
+    "lowRunway": [
+      { "sfx": "heartbeat_soft", "vo": { "line": "adv.cash.runway_low", "rank": 3 }, "music": { "tension": true } }
+    ],
+    "cashNegative": [
+      { "doc": "rank 1: when the bankruptcy warning lands in the same close, the more severe line is the one voiced", "sfx": "alert_critical", "vo": { "line": "adv.cash.negative", "rank": 1 }, "music": { "tension": true } }
+    ],
+    "cashRecovered": [
+      { "doc": "proposed", "sfx": "rating_up", "vo": { "line": "adv.cash.recovered", "rank": 3 }, "music": { "evaluate": true } }
+    ],
+    "bankruptcyWarning": [
+      { "if": { "monthsLte": 1 }, "sfx": "alert_critical", "vo": { "line": "adv.bankruptcy.final", "rank": 0 }, "music": { "tension": true } },
+      { "if": { "monthsLte": 3 }, "sfx": "alert_critical", "vo": { "line": "adv.bankruptcy.warning", "rank": 0 }, "music": { "tension": true } },
+      { "sfx": "notify_warning", "music": { "tension": true } }
+    ],
+    "insolvency": [
+      { "doc": "E2 distress (B2 kind insolvency, reason default): the player's 3-month cure window opened", "if": { "isPlayer": true, "reason": "default" }, "sfx": "alert_critical", "vo": { "line": "adv.bankruptcy.warning", "rank": 0 }, "music": { "tension": true } },
+      { "doc": "distress cured", "if": { "isPlayer": true, "reason": "cured" }, "sfx": "rating_up", "vo": { "line": "adv.cash.recovered", "rank": 2 }, "music": { "evaluate": true } },
+      { "doc": "the player's bankruptcy is voiced by scenarioLost (reason insolvency)", "if": { "isPlayer": true, "reason": "bankrupt" } },
+      { "doc": "a rival liquidated", "if": { "reason": "bankrupt" }, "sfx": "news_sting", "vo": { "line": "news.corporate_bankruptcy", "rank": 3 } },
+      { "doc": "a rival in default: feed only" }
+    ],
+    "insolvencyWarning": [
+      { "doc": "proposed alias of bankruptcyWarning", "if": { "monthsLte": 1 }, "sfx": "alert_critical", "vo": { "line": "adv.bankruptcy.final", "rank": 0 }, "music": { "tension": true } },
+      { "sfx": "alert_critical", "vo": { "line": "adv.bankruptcy.warning", "rank": 0 }, "music": { "tension": true } }
+    ],
+    "goalAchieved": [
+      { "sfx": "goal_achieved", "vo": { "line": "vo_goal_generic", "rank": 0 }, "music": { "stinger": "stinger.triumph" } }
+    ],
+    "goalLost": [{ "doc": "none (UX)" }],
+    "scenarioWon": [
+      { "doc": "victory_fanfare is played by the music director (stinger -> victory cue +0.4 s -> VO +1.6 s)", "music": { "state": "victory" }, "vo": { "line": "adv.end.victory", "rank": 0, "scenarioEnd": true, "delay": 1.6 } }
+    ],
+    "scenarioLost": [
+      { "if": { "reason": "bankruptcy" }, "music": { "state": "defeat" }, "vo": { "line": "adv.end.defeat_bankrupt", "rank": 0, "scenarioEnd": true, "delay": 1.8 } },
+      { "if": { "reason": "insolvency" }, "music": { "state": "defeat" }, "vo": { "line": "adv.end.defeat_bankrupt", "rank": 0, "scenarioEnd": true, "delay": 1.8 } },
+      { "music": { "state": "defeat" }, "vo": { "line": "adv.end.defeat_timeup", "rank": 0, "scenarioEnd": true, "delay": 1.8 } }
+    ],
+    "news": [
+      { "doc": "Major (commodity) news: news_sting -> anchor line -> 0.6 s -> advisor 'Big news...' (vo_news_major, <= 1 per 12 game-months)", "if": { "newsTier": "major" }, "sfx": "newspaper", "vo": { "line": "news.$news", "chain": ["news.$news", "vo_news_major"], "rank": 3, "newsSting": true } },
+      { "doc": "Notable news with an anchor line (commodity moves, breakthroughs); brand shifts and Info headlines get notify_info only (audio-plan 5.2 mapping)", "if": { "newsTier": "notable", "anchor": true }, "sfx": "news_sting", "vo": { "line": "news.$news", "rank": 3, "newsSting": false } },
+      { "sfx": "notify_info" }
+    ],
+    "priceEffectEnded": [{ "doc": "none" }],
+    "buildingConstructed": [
+      { "doc": "command echo (player) or AI build after a tick; without construction time (features.constructionTime off) this is the player's build moment", "if": { "isPlayer": true, "runwayLt": 4 }, "sfx": "build_construct", "at": "building", "dedupe": "bus.buildingPlaced", "vo": { "line": ["vo_building_first_${group}", "adv.build.started_tight"], "rank": 2 } },
+      { "if": { "isPlayer": true }, "sfx": "build_construct", "at": "building", "dedupe": "bus.buildingPlaced", "vo": { "line": ["vo_building_first_${group}", "adv.build.started"], "rank": 3 } },
+      { "if": { "isPlayer": false }, "sfx": "notify_info" }
+    ],
+    "constructionStarted": [
+      { "doc": "a factory's templated first line is the 'finished' line: at the start of construction use the generic one", "if": { "isPlayer": true, "group": "factory" }, "sfx": "build_construct", "at": "building", "dedupe": "bus.buildingPlaced", "vo": { "line": "adv.build.started", "rank": 3 }, "music": { "intensity": "build" } },
+      { "if": { "isPlayer": true, "runwayLt": 4 }, "sfx": "build_construct", "at": "building", "dedupe": "bus.buildingPlaced", "vo": { "line": ["vo_building_first_${group}", "adv.build.started_tight"], "rank": 2 }, "music": { "intensity": "build" } },
+      { "if": { "isPlayer": true }, "sfx": "build_construct", "at": "building", "dedupe": "bus.buildingPlaced", "vo": { "line": ["vo_building_first_${group}", "adv.build.started"], "rank": 3 }, "music": { "intensity": "build" } }
+    ],
+    "constructionCompleted": [
+      { "if": { "isPlayer": true, "group": "factory" }, "sfx": "ribbon_cut", "at": "building", "vo": { "line": ["adv.build.factory_complete", "adv.build.complete"], "rank": 3 } },
+      { "if": { "isPlayer": true }, "sfx": "ribbon_cut", "at": "building", "vo": { "line": "adv.build.complete", "rank": 3 } }
+    ],
+    "buildingUpgraded": [
+      { "if": { "isPlayer": true }, "sfx": "upgrade", "at": "building", "vo": { "line": "vo_upgrade_first", "rank": 3 } }
+    ],
+    "buildingDemolished": [
+      { "if": { "isPlayer": true }, "sfx": "demolish", "at": "building" }
+    ],
+    "landPurchased": [{ "if": { "isPlayer": true }, "sfx": "stamp" }],
+    "slotConfigured": [{ "sfx": "price_tag" }],
+    "slotCleared": [{ "sfx": "toggle_off" }],
+    "priceChanged": [{ "sfx": "price_tag", "at": "building" }],
+    "techLevelUp": [
+      { "if": { "isPlayer": true, "atMax": true }, "sfx": "tech_up", "vo": { "line": ["vo_tech_max", "adv.rnd.breakthrough"], "rank": 2 } },
+      { "if": { "isPlayer": true }, "sfx": "tech_up", "vo": { "line": "adv.rnd.breakthrough", "rank": 2 } }
+    ],
+    "patentGranted": [
+      { "if": { "isPlayer": true }, "sfx": [{ "id": "stamp", "detuneCents": -281 }, { "id": "confirm", "delay": 0.18 }], "vo": { "line": "adv.rnd.patent_granted", "rank": 2 } },
+      { "sfx": "notify_warning", "music": { "warning": true } }
+    ],
+    "patentExpired": [{ "doc": "none" }],
+    "patentBlocked": [
+      { "sfx": "notify_warning", "vo": { "line": "adv.rnd.rival_patent", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "licenseGranted": [{ "sfx": "confirm" }],
+    "licenseRevoked": [{ "sfx": "notify_warning" }],
+    "revenueMilestone": [
+      { "doc": "cumulative revenue 1M / 10M / 100M / 1B (UX section 8 #8)", "sfx": "goal_achieved", "vo": { "line": "vo_milestone_${milestone}", "rank": 2 }, "music": { "stinger": "stinger.triumph" } }
+    ],
+    "rivalEnteredMarket": [
+      { "sfx": "rival_alert", "vo": { "line": "adv.market.competitor_entered", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "rivalUndercut": [
+      { "sfx": "price_war", "vo": { "line": "adv.market.price_war", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "priceUndercut": [
+      { "doc": "proposed alias of rivalUndercut", "sfx": "price_war", "vo": { "line": "adv.market.price_war", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "shareRankFirst": [
+      { "sfx": "overtake", "vo": { "line": "adv.market.leader", "rank": 2 }, "music": { "stinger": "stinger.triumph" } }
+    ],
+    "marketLeaderGained": [
+      { "doc": "proposed alias of shareRankFirst", "sfx": "overtake", "vo": { "line": "adv.market.leader", "rank": 2 }, "music": { "stinger": "stinger.triumph" } }
+    ],
+    "marketLeaderLost": [
+      { "doc": "proposed", "sfx": "notify_warning", "vo": { "line": "adv.market.lost_lead", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "shareMilestone": [
+      { "doc": "bridge thresholds 0.25/0.50/0.75 (audio-plan also scripts 10%); 75% has no line", "sfx": "milestone_small", "vo": { "line": "adv.market.share_${pct}", "rank": 2 } }
+    ],
+    "campaignStarted": [
+      { "sfx": "campaign_start", "vo": { "line": "adv.onboard.first_ad", "rank": 3 }, "tutorial": "scenario" }
+    ],
+    "campaignChanged": [{ "sfx": "confirm" }],
+    "campaignCancelled": [{ "sfx": "toggle_off" }],
+    "brandMilestone": [
+      { "if": { "thresholdIn": [30] }, "sfx": "brand_up", "vo": { "line": "vo_brand_milestone", "rank": 2 } },
+      { "if": { "thresholdIn": [70] }, "sfx": "brand_up", "vo": { "line": "vo_brand_household", "rank": 2 } },
+      { "sfx": "brand_up" }
+    ],
+    "brandFading": [{ "doc": "none" }],
+    "belowCostPrice": [{ "sfx": "notify_warning", "vo": { "line": "vo_below_cost", "rank": 1 }, "music": { "warning": true } }],
+    "autosaved": [{ "doc": "none" }],
+    "stockout": [
+      { "sfx": "stockout", "at": "building", "vo": { "line": "adv.ops.stockout", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "stockOut": [
+      { "doc": "audio-plan spelling", "sfx": "stockout", "at": "building", "vo": { "line": "adv.ops.stockout", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "overstock": [{ "sfx": "notify_warning", "vo": { "line": "adv.ops.overstock", "rank": 3 } }],
+    "inputShortage": [{ "sfx": "notify_warning", "music": { "warning": true } }],
+    "quarterClosed": [
+      { "doc": "proposed; reason 'record' = all-time-high quarterly NI with >= 4 quarters played (replaces quarter.good)", "if": { "reason": "record" }, "sfx": "quarter_close", "vo": { "line": "adv.quarter.record", "rank": 2 }, "music": { "stinger": "stinger.triumph" } },
+      { "if": { "sign": "negative" }, "sfx": "quarter_close", "vo": { "line": "adv.quarter.bad", "rank": 3 } },
+      { "sfx": "quarter_close", "vo": { "line": "adv.quarter.good", "rank": 3 } }
+    ],
+    "loanTaken": [
+      { "sfx": "loan_approved", "vo": { "line": "adv.loan.approved", "rank": 3 } }
+    ],
+    "loanApproved": [
+      { "doc": "proposed alias of loanTaken", "sfx": "loan_approved", "vo": { "line": "adv.loan.approved", "rank": 3 } }
+    ],
+    "loanDenied": [{ "doc": "proposed", "sfx": "error", "vo": { "line": "adv.loan.denied", "rank": 3 } }],
+    "loanRepaid": [{ "doc": "proposed", "sfx": "stamp", "vo": { "line": "adv.loan.repaid", "rank": 3 } }],
+    "loanPaymentMissed": [
+      { "sfx": "alert_critical", "vo": { "line": "vo_loan_missed", "rank": 0 }, "music": { "tension": true } }
+    ],
+    "creditRatingChanged": [
+      { "if": { "dir": "up" }, "sfx": "rating_up", "vo": { "line": "adv.credit.upgrade", "rank": 3 } },
+      { "if": { "dir": "down" }, "sfx": "rating_down", "vo": { "line": "adv.credit.downgrade", "rank": 3 }, "music": { "warning": true } }
+    ],
+    "taxPaid": [{ "doc": "proposed", "sfx": "tax_paid", "vo": { "line": "adv.tax.paid", "rank": 3 } }],
+    "dividendPaid": [{ "sfx": "coins_small", "vo": { "line": "adv.dividend.declared", "rank": 3 } }],
+    "dividendDeclared": [{ "doc": "proposed alias of dividendPaid", "sfx": "coins_small", "vo": { "line": "adv.dividend.declared", "rank": 3 } }],
+    "ipoEligible": [{ "doc": "proposed", "sfx": "notify_opportunity", "vo": { "line": "adv.ipo.eligible", "rank": 2 } }],
+    "ipoCompleted": [
+      { "if": { "isPlayer": true }, "sfx": ["ipo_bell", { "id": "coins_large", "delay": 1.0 }], "music": { "stinger": "stinger.ipo" }, "vo": { "line": "adv.ipo.complete", "chain": ["news.ipo_debut", "adv.ipo.complete"], "rank": 2, "newsSting": true } },
+      { "sfx": "news_sting", "vo": { "line": "news.ipo_debut", "rank": 3 } }
+    ],
+    "sharePriceMove": [
+      { "doc": "proposed", "if": { "dir": "up" }, "sfx": "ticker_up", "vo": { "line": "adv.stock.surge", "rank": 3 } },
+      { "if": { "dir": "down" }, "sfx": "ticker_down", "vo": { "line": "adv.stock.crash", "rank": 3 }, "music": { "drawdown": true } }
+    ],
+    "indexMove": [
+      { "doc": "proposed", "if": { "dir": "down" }, "sfx": "news_sting", "vo": { "line": "news.market_crash", "rank": 3 }, "music": { "stinger": "stinger.crash" } },
+      { "if": { "dir": "up" }, "sfx": "news_sting", "vo": { "line": "news.market_rally", "rank": 3 } }
+    ],
+    "takeoverBid": [
+      { "sfx": "rival_alert", "vo": { "line": "adv.stock.takeover_threat", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "stakeAlert": [
+      { "doc": "proposed", "sfx": "rival_alert", "vo": { "line": "adv.stock.takeover_threat", "rank": 1 }, "music": { "warning": true } }
+    ],
+    "macroShift": [
+      { "doc": "reason = macro phase (bridge-spec 8.6)", "if": { "reason": "recession" }, "sfx": "newspaper", "music": { "climate": "recession" }, "vo": { "line": "adv.macro.recession", "chain": ["news.recession", "adv.macro.recession"], "rank": 1, "newsSting": true } },
+      { "if": { "reason": "panic" }, "sfx": "newspaper", "music": { "climate": "panic" }, "vo": { "line": "adv.macro.recession", "chain": ["news.recession", "adv.macro.recession"], "rank": 1, "newsSting": true } },
+      { "if": { "reason": "recovery" }, "sfx": "newspaper", "music": { "climate": "normal" }, "vo": { "line": "adv.macro.recovery", "chain": ["news.recovery", "adv.macro.recovery"], "rank": 2, "newsSting": true } },
+      { "if": { "reason": "expansion" }, "music": { "climate": "prosperous" } },
+      { "if": { "reason": "peak" }, "sfx": "newspaper", "music": { "climate": "boom", "stinger": "stinger.boom" }, "vo": { "line": "adv.macro.boom", "chain": ["news.boom", "adv.macro.boom"], "rank": 2, "newsSting": true } },
+      { "if": { "reason": "boom" }, "sfx": "newspaper", "music": { "climate": "boom", "stinger": "stinger.boom" }, "vo": { "line": "adv.macro.boom", "chain": ["news.boom", "adv.macro.boom"], "rank": 2, "newsSting": true } }
+    ],
+    "climateChanged": [
+      { "doc": "proposed alias of macroShift (reason = climate)", "alias": "macroShift" }
+    ],
+    "policyRateChanged": [
+      { "doc": "proposed", "if": { "dir": "up" }, "sfx": "news_sting", "vo": { "line": "news.rates_up", "chain": ["news.rates_up", "adv.rates.up"], "rank": 3 } },
+      { "if": { "dir": "down" }, "sfx": "news_sting", "vo": { "line": "news.rates_down", "rank": 3 } }
+    ],
+    "companyBankrupt": [
+      { "doc": "proposed (AI company liquidated)", "sfx": "news_sting", "vo": { "line": "news.corporate_bankruptcy", "rank": 3 } }
+    ],
+    "playerIdle": [{ "doc": "proposed (client): the hint rules pick a P3 line", "vo": { "line": "$hint", "hint": true, "rank": 3 } }]
+  }
+}

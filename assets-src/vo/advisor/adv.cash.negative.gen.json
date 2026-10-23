@@ -1,0 +1,106 @@
+{
+  "id": "adv.cash.negative",
+  "role": "advisor",
+  "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+  "tts": "We're overdrawn. Every month in the red costs interest, and credibility.",
+  "sentText": "We're overdrawn. Every month in the red costs interest, and credibility.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.826
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T10:29:30.752Z",
+  "file": "adv.cash.negative.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.09,
+  "speechSec": 4.85,
+  "wpm": 136.1,
+  "syllables": 19,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -3.83,
+  "truePeakDbtp": -3.8,
+  "lufsI": -22,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 425
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're overdrawn every month in the red cost's interest and credibility.",
+    "wer": 0.091,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.203,
+    "flags": []
+  },
+  "flags": [],
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 138.7,
+      "paceWpm": 160.7,
+      "maxGapMs": 480,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "We're overdrawn, every month in the red costs interest and credibility.",
+      "score": {
+        "hard": 0,
+        "soft": 0.232,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.negative/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.823
+      },
+      "wpm": 135.5,
+      "paceWpm": 157.1,
+      "maxGapMs": 480,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "We're overdrawn, every month in the red costs interest and credibility.",
+      "score": {
+        "hard": 0,
+        "soft": 0.204,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.negative/t2.wav"
+    }
+  ],
+  "lineHash": "82fbbe89e2ed824720fc6859"
+}

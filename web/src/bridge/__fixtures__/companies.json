@@ -1,0 +1,41 @@
+{
+  "method": "companies",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": [
+      {
+        "id": 1,
+        "name": "Your Corp",
+        "isPlayer": true,
+        "cash": 159335566.41,
+        "totalAssets": 223356868.08,
+        "equity": 223356868.08,
+        "revenueThisMonth": 135000,
+        "netIncomeThisMonth": -1117859.65,
+        "buildingCount": 5,
+        "color": "#2F7DE1",
+        "corporateValue": 199348879.96,
+        "netIncomeLast12": -2243131.92,
+        "colorIndex": 0
+      },
+      {
+        "id": 2,
+        "name": "LocalCo",
+        "isPlayer": false,
+        "cash": 5330777.58,
+        "totalAssets": 20202927.4,
+        "equity": 20202927.4,
+        "revenueThisMonth": 1215364.98,
+        "netIncomeThisMonth": 177980.92,
+        "buildingCount": 1,
+        "color": "#E69F00",
+        "corporateValue": 14625871.22,
+        "netIncomeLast12": 202927.4,
+        "colorIndex": 1,
+        "aiStrategy": "simple"
+      }
+    ],
+    "revision": 9
+  }
+}

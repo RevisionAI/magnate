@@ -1,0 +1,22 @@
+{
+  "method": "previewDisposal",
+  "args": {
+    "buildingId": 4,
+    "kind": "sale"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "buildingId": 4,
+      "proceeds": 15095974,
+      "bookValue": 25033474,
+      "gainOrLoss": -9937500,
+      "kind": "sale",
+      "ppe": 24843750,
+      "land": 189724,
+      "constructionInProgress": 0,
+      "inventory": 0
+    },
+    "revision": 21
+  }
+}

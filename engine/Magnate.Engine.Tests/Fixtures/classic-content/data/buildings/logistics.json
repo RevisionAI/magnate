@@ -1,0 +1,33 @@
+[
+  {
+    "id": "warehouse_small",
+    "name": "Small Warehouse",
+    "category": "warehouse",
+    "constructionCost": 500000,
+    "monthlyOperatingCost": 6000,
+    "footprint": { "width": 2, "height": 2 },
+    "maxUnits": 4,
+    "targetHeadcount": { "min": 4, "max": 12 }
+  },
+  {
+    "id": "warehouse_large",
+    "name": "Large Warehouse",
+    "category": "warehouse",
+    "constructionCost": 1800000,
+    "monthlyOperatingCost": 18000,
+    "footprint": { "width": 4, "height": 4 },
+    "maxUnits": 8,
+    "targetHeadcount": { "min": 15, "max": 40 }
+  },
+  {
+    "id": "seaport",
+    "name": "Seaport",
+    "category": "seaport",
+    "constructionCost": 6000000,
+    "monthlyOperatingCost": 70000,
+    "footprint": { "width": 5, "height": 3 },
+    "maxUnits": 8,
+    "targetHeadcount": { "min": 40, "max": 120 },
+    "geographyRequirement": { "coastal": true }
+  }
+]

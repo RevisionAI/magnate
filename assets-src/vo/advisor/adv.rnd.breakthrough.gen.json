@@ -1,0 +1,157 @@
+{
+  "id": "adv.rnd.breakthrough",
+  "role": "advisor",
+  "text": "Research breakthrough! Our technology just moved up a level.",
+  "sentText": "Research breakthrough! Our technology just moved up a level.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.802
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 5,
+  "takesConsidered": 5,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:23:21.574Z",
+  "file": "adv.rnd.breakthrough.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.2,
+  "speechSec": 3.96,
+  "wpm": 136.4,
+  "syllables": 16,
+  "sylPerSec": 4.04,
+  "paceWpm": 162.7,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 390,
+  "samplePeakDbfs": -1.66,
+  "truePeakDbtp": -1.6,
+  "lufsI": -21.9,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 220,
+    "tailTrimmedMs": 430
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Research breakthrough. Our technology just moved up a level.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.052,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 143.6,
+      "paceWpm": 171.4,
+      "maxGapMs": 370,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Research breakthrough. Our technology just moved up a level.",
+      "score": {
+        "hard": 0,
+        "soft": 0.779,
+        "flags": [
+          "pace 171.4 wpm-eq, 4.26 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rnd.breakthrough/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.772
+      },
+      "wpm": 119.5,
+      "paceWpm": 142.5,
+      "maxGapMs": 390,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Research breakthrough. Our technology just moved up a level.",
+      "score": {
+        "hard": 0,
+        "soft": 0.9,
+        "flags": [
+          "pace 142.5 wpm-eq, 3.54 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rnd.breakthrough/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.807
+      },
+      "wpm": 138.5,
+      "paceWpm": 165.2,
+      "maxGapMs": 390,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Research breakthrough. Our technology just moved up a level.",
+      "score": {
+        "hard": 0,
+        "soft": 0.097,
+        "flags": [
+          "pace 165.2 wpm-eq, 4.1 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rnd.breakthrough/t3.wav"
+    },
+    {
+      "take": 4,
+      "seed": null,
+      "settings": {
+        "speed": 0.795
+      },
+      "wpm": 124.1,
+      "paceWpm": 148.1,
+      "maxGapMs": 390,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Research breakthrough. Our technology just moved up a level.",
+      "score": {
+        "hard": 0,
+        "soft": 0.284,
+        "flags": [
+          "pace 148.1 wpm-eq, 3.68 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rnd.breakthrough/t4.wav"
+    }
+  ],
+  "lineHash": "30b1fac353919df4aca75445"
+}

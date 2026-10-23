@@ -1,0 +1,113 @@
+{
+  "id": "adv.credit.upgrade",
+  "role": "advisor",
+  "text": "Credit rating upgraded. Lenders like what they see.",
+  "sentText": "Credit rating upgraded. Lenders like what they see.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.897
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:18:58.524Z",
+  "file": "adv.credit.upgrade.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.55,
+  "speechSec": 3.31,
+  "wpm": 145,
+  "syllables": 13,
+  "sylPerSec": 3.93,
+  "paceWpm": 158.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 370,
+  "samplePeakDbfs": -5.33,
+  "truePeakDbtp": -5.3,
+  "lufsI": -21.5,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 360
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Credit rating upgraded. Lenders like what they see.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.007,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 135.2,
+      "paceWpm": 147.5,
+      "maxGapMs": 400,
+      "lufsI": -21.4,
+      "cer": 0,
+      "transcript": "Credit rating upgraded. Lenders like what they see.",
+      "score": {
+        "hard": 0,
+        "soft": 0.35,
+        "flags": [
+          "pace 147.5 wpm-eq, 3.66 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.credit.upgrade/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.888
+      },
+      "wpm": 145,
+      "paceWpm": 158.2,
+      "maxGapMs": 370,
+      "lufsI": -21.5,
+      "cer": 0,
+      "transcript": "Credit rating upgraded. Lenders like what they see.",
+      "score": {
+        "hard": 0,
+        "soft": 0.007,
+        "flags": []
+      },
+      "file": "_takes/adv.credit.upgrade/t3.wav"
+    }
+  ],
+  "lineHash": "26260fefc97639d738cc3393"
+}

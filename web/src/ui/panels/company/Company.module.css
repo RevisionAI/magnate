@@ -1,0 +1,141 @@
+/* Company overlay. */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.totalsLine {
+  font-size: var(--fs-sm);
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.group {
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-hairline);
+  background: rgba(160, 200, 225, 0.025);
+  overflow: hidden;
+}
+
+.groupHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--c-hairline);
+  background: linear-gradient(90deg, rgba(215, 183, 102, 0.08), transparent 60%);
+  color: var(--c-gold);
+}
+
+.groupName {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--c-text);
+}
+
+.groupMeta {
+  font-size: var(--fs-xs);
+  color: var(--c-muted);
+}
+
+.groupNet {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.warn {
+  color: var(--c-amber);
+}
+
+.pos {
+  color: var(--c-pos);
+}
+
+.neg {
+  color: var(--c-neg);
+}
+
+.dim {
+  color: var(--c-dim);
+}
+
+.nameCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.typeIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--r-sm);
+  color: var(--c-gold-bright);
+  background: var(--c-gold-wash);
+  border: 1px solid rgba(215, 183, 102, 0.25);
+}
+
+.nameText {
+  font-weight: var(--fw-medium);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reason {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: var(--space-2);
+  font-size: var(--fs-2xs);
+  color: var(--c-amber);
+  white-space: nowrap;
+}
+
+.products {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.net {
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 1100px) {
+  .kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,9 @@
+# local toolchains (never commit)
+node_modules/
+.venv/
+# model weights + provider response cache (re-creatable; cache avoids re-billing)
+.cache/
+# scratch
+.tmp/
+*.log
+__pycache__/

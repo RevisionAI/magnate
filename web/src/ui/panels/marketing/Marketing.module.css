@@ -1,0 +1,195 @@
+.brandCell {
+  display: grid;
+  grid-template-columns: minmax(70px, 1fr) auto auto;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.leaderTag {
+  font-size: var(--fs-2xs);
+  color: var(--c-muted);
+}
+
+.pickers {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-2);
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: var(--space-2);
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-hairline);
+  background: rgba(5, 9, 13, 0.3);
+  font: inherit;
+  color: var(--c-text2);
+  cursor: pointer;
+  text-align: left;
+}
+
+.channel:hover {
+  border-color: var(--c-hairline-strong);
+  background: var(--c-hover);
+}
+
+.channelOn {
+  border-color: rgba(215, 183, 102, 0.75);
+  background: var(--c-gold-wash);
+  color: var(--c-text);
+}
+
+.channelName {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+}
+
+.channelCost {
+  font-size: var(--fs-2xs);
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.channelBonus {
+  font-size: var(--fs-2xs);
+  color: var(--c-gold-bright);
+}
+
+.budgetRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: var(--space-1);
+}
+
+.budget {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+  color: var(--c-gold-bright);
+}
+
+.previewStats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--c-hairline);
+}
+
+.map {
+  overflow-x: auto;
+}
+
+.mapTable {
+  border-collapse: separate;
+  border-spacing: 6px;
+  font-size: var(--fs-sm);
+}
+
+.mapTable th {
+  padding: 2px 8px;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  color: var(--c-muted);
+  white-space: nowrap;
+}
+
+.mapTable th[scope='row'] {
+  text-align: left;
+  color: var(--c-text2);
+}
+
+.mapCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 9.5rem;
+  padding: 8px 10px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--c-hairline);
+  background: rgba(5, 9, 13, 0.3);
+  font: inherit;
+  color: var(--c-text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.mapCell:hover {
+  border-color: rgba(215, 183, 102, 0.55);
+}
+
+.mapBars {
+  position: relative;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(160, 196, 218, 0.08);
+}
+
+.mapYou {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 3px;
+  background: var(--owner-0);
+}
+
+.mapLeader {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  border-radius: 1px;
+}
+
+.mapNums {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-2xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--c-muted);
+}
+
+.mapWin {
+  border-color: rgba(97, 194, 143, 0.45);
+}
+
+.mapLose {
+  border-color: rgba(232, 182, 58, 0.4);
+}
+
+.mapNone {
+  display: grid;
+  place-items: center;
+  width: 9.5rem;
+  min-height: 3.2rem;
+  border-radius: var(--r-sm);
+  border: 1px dashed rgba(160, 196, 218, 0.15);
+  background: none;
+  font: inherit;
+  font-size: var(--fs-2xs);
+  color: var(--c-dim);
+  cursor: pointer;
+}
+
+.mapNone:hover {
+  color: var(--c-text2);
+  border-color: var(--c-hairline-strong);
+}

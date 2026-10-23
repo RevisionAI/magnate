@@ -1,0 +1,111 @@
+{
+  "id": "adv.macro.recovery",
+  "role": "advisor",
+  "text": "The economy is recovering. Assets are cheap; a good time to invest.",
+  "sentText": "The economy is recovering. Assets are cheap; a good time to invest.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.842
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:24:32.560Z",
+  "file": "adv.macro.recovery.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.36,
+  "speechSec": 5.12,
+  "wpm": 140.6,
+  "syllables": 20,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.3,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 510,
+  "samplePeakDbfs": -3.92,
+  "truePeakDbtp": -3.9,
+  "lufsI": -21.9,
+  "lra": 1.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 390
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The economy is recovering. Assets are cheap, a good time to invest.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.277,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 139.8,
+      "paceWpm": 156.4,
+      "maxGapMs": 520,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "The economy is recovering. Assets are cheap, a good time to invest.",
+      "score": {
+        "hard": 0,
+        "soft": 0.311,
+        "flags": []
+      },
+      "file": "_takes/adv.macro.recovery/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 145.7,
+      "paceWpm": 163,
+      "maxGapMs": 490,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "The economy is recovering. Assets are cheap, a good time to invest.",
+      "score": {
+        "hard": 0,
+        "soft": 0.28,
+        "flags": []
+      },
+      "file": "_takes/adv.macro.recovery/t2.wav"
+    }
+  ],
+  "lineHash": "da2a8e133a3013a011230216"
+}

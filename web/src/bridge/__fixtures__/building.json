@@ -1,0 +1,201 @@
+{
+  "method": "building",
+  "args": {
+    "buildingId": 1
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "id": 1,
+      "typeId": "supermarket",
+      "typeName": "Supermarket",
+      "category": "supermarket",
+      "slotKind": "retail",
+      "ownerId": 1,
+      "ownerName": "Your Corp",
+      "isPlayer": true,
+      "cityId": "metropolis",
+      "cityName": "Metropolis",
+      "level": 1,
+      "maxLevel": 3,
+      "capacity": 6,
+      "slotsUsed": 1,
+      "nextFreeSlotIndex": 1,
+      "monthlyOpex": 40000,
+      "constructionCost": 10000000,
+      "bookValue": 13698131.02,
+      "openedAt": {
+        "year": 2026,
+        "month": 5
+      },
+      "autoExport": false,
+      "autoExportApplies": false,
+      "upgrade": {
+        "toLevel": 2,
+        "cost": 6000000,
+        "capacity": 9,
+        "monthlyOpex": 52000,
+        "affordable": true
+      },
+      "workforce": {
+        "perSlotMin": 15,
+        "perSlotMax": 40,
+        "estimatedMin": 15,
+        "estimatedMax": 40
+      },
+      "slots": [
+        {
+          "index": 0,
+          "kind": "retail",
+          "productId": "soft_drink",
+          "productName": "Soft Drink",
+          "tier": "finished",
+          "retail": {
+            "price": 2.25,
+            "restockTarget": 60000,
+            "onHand": 0,
+            "unitCost": 0,
+            "effectiveWorldPrice": 1.1,
+            "lastMonthUnits": 60000,
+            "lastMonthRevenue": 135000,
+            "lastMonthAvgPrice": 2.25,
+            "rivalCount": 0,
+            "modelDemandUnits": 12250000,
+            "belowCost": false
+          }
+        }
+      ],
+      "inventory": [],
+      "inventoryTotals": {
+        "raw": {
+          "units": 0,
+          "cost": 0
+        },
+        "intermediate": {
+          "units": 0,
+          "cost": 0
+        },
+        "finished": {
+          "units": 0,
+          "cost": 0
+        }
+      },
+      "pnl": {
+        "thisMonth": {
+          "from": {
+            "year": 2026,
+            "month": 8
+          },
+          "to": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "grossProfit": 61080,
+          "opex": 172719.8,
+          "netIncome": -111639.8
+        },
+        "last12": {
+          "from": {
+            "year": 2026,
+            "month": 5
+          },
+          "to": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 540000,
+          "cogs": 295680,
+          "grossProfit": 244320,
+          "opex": 691087.52,
+          "netIncome": -446767.52
+        },
+        "sinceOpen": {
+          "from": {
+            "year": 2026,
+            "month": 5
+          },
+          "to": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 540000,
+          "cogs": 295680,
+          "grossProfit": 244320,
+          "opex": 691087.52,
+          "netIncome": -446767.52
+        },
+        "monthlyNetIncome": {
+          "start": {
+            "year": 2025,
+            "month": 9
+          },
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -111723.131,
+            -111723.131,
+            -111681.46434,
+            -111639.79768
+          ]
+        }
+      },
+      "supply": {
+        "sources": [
+          {
+            "kind": "marketPurchase",
+            "productId": "soft_drink",
+            "amount": 73920
+          }
+        ],
+        "destinations": [
+          {
+            "kind": "retailSale",
+            "productId": "soft_drink",
+            "quantity": 60000,
+            "amount": 135000,
+            "counterpartyCityId": "metropolis"
+          }
+        ]
+      },
+      "actions": {
+        "canUpgrade": true,
+        "canAddSlot": true,
+        "canConfigure": true,
+        "canToggleAutoExport": false,
+        "canDemolish": true,
+        "eligibleProductIds": [
+          "beer",
+          "bread",
+          "car",
+          "coffee_drink",
+          "designer_jeans",
+          "soft_drink",
+          "t_shirt",
+          "television"
+        ]
+      },
+      "placement": {
+        "px": 47,
+        "pz": 47,
+        "rotation": 270,
+        "source": "engine"
+      },
+      "book": {
+        "grossPpe": 10000000,
+        "accumulatedDepreciation": 124999.98,
+        "land": 3823131,
+        "constructionInProgress": 0,
+        "upgradeCost": 0
+      }
+    },
+    "revision": 12
+  }
+}

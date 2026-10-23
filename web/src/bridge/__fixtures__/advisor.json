@@ -1,0 +1,76 @@
+{
+  "method": "advisor",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "priority": {
+        "code": "activateIdle",
+        "severity": "warning",
+        "message": "One of your buildings has nothing to do \u2014 configure it.",
+        "params": {
+          "count": "1"
+        },
+        "buildingIds": [
+          6
+        ]
+      },
+      "hints": [
+        {
+          "code": "losingBuilding",
+          "severity": "warning",
+          "message": "Small Factory #2 has lost money three months running.",
+          "params": {
+            "buildingId": "2",
+            "months": "3"
+          },
+          "buildingIds": [
+            2
+          ],
+          "cityId": "metropolis",
+          "impactPerMonth": 276609.51
+        },
+        {
+          "code": "losingBuilding",
+          "severity": "warning",
+          "message": "Supermarket #1 has lost money three months running.",
+          "params": {
+            "buildingId": "1",
+            "months": "3"
+          },
+          "buildingIds": [
+            1
+          ],
+          "cityId": "metropolis",
+          "impactPerMonth": 111681.46
+        },
+        {
+          "code": "idleBuilding",
+          "severity": "warning",
+          "message": "Convenience Store #6 has nothing configured and costs $0 a month.",
+          "params": {
+            "buildingId": "6"
+          },
+          "buildingIds": [
+            6
+          ],
+          "cityId": "metropolis",
+          "impactPerMonth": 0
+        },
+        {
+          "code": "unservedOpportunity",
+          "severity": "info",
+          "message": "Nobody serves Car well in Metropolis \u2014 a store there could earn about $3,527,325 a month.",
+          "params": {
+            "cityId": "metropolis",
+            "productId": "car"
+          },
+          "cityId": "metropolis",
+          "productId": "car",
+          "impactPerMonth": 3527325
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

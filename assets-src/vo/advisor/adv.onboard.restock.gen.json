@@ -1,0 +1,111 @@
+{
+  "id": "adv.onboard.restock",
+  "role": "advisor",
+  "text": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+  "sentText": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.856
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:15:18.663Z",
+  "file": "adv.onboard.restock.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.85,
+  "speechSec": 4.61,
+  "wpm": 169.2,
+  "syllables": 18,
+  "sylPerSec": 3.9,
+  "paceWpm": 157.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 460,
+  "samplePeakDbfs": -6.91,
+  "truePeakDbtp": -6.9,
+  "lufsI": -22.2,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 395
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.153,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 165.6,
+      "paceWpm": 153.9,
+      "maxGapMs": 490,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+      "score": {
+        "hard": 0,
+        "soft": 0.261,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.restock/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.86
+      },
+      "wpm": 170.3,
+      "paceWpm": 158.3,
+      "maxGapMs": 470,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+      "score": {
+        "hard": 0,
+        "soft": 0.183,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.restock/t2.wav"
+    }
+  ],
+  "lineHash": "cd9015c63bba2c13b76f761d"
+}

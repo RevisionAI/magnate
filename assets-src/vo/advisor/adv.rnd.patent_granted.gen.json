@@ -1,0 +1,115 @@
+{
+  "id": "adv.rnd.patent_granted",
+  "role": "advisor",
+  "text": "Patent granted. For now, that technology is ours alone.",
+  "sentText": "Patent granted. For now, that technology is ours alone.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.869
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:23:36.092Z",
+  "file": "adv.rnd.patent_granted.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.02,
+  "speechSec": 3.78,
+  "wpm": 142.9,
+  "syllables": 15,
+  "sylPerSec": 3.97,
+  "paceWpm": 159.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 370,
+  "samplePeakDbfs": -4.14,
+  "truePeakDbtp": -4.1,
+  "lufsI": -22.2,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 380
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "patent-granted. For now, that technology is ours alone.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.023,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 133,
+      "paceWpm": 148.8,
+      "maxGapMs": 420,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "patent-granted. For now, that technology is ours alone.",
+      "score": {
+        "hard": 0,
+        "soft": 0.257,
+        "flags": [
+          "pace 148.8 wpm-eq, 3.69 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rnd.patent_granted/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.889
+      },
+      "wpm": 145.9,
+      "paceWpm": 163.3,
+      "maxGapMs": 360,
+      "lufsI": -22.1,
+      "cer": 0.045,
+      "transcript": "Pat and granted, for now, that technology is ours alone.",
+      "score": {
+        "hard": 0,
+        "soft": 1.458,
+        "flags": [
+          "low-confidence words: Pat (p 0.26)"
+        ]
+      },
+      "file": "_takes/adv.rnd.patent_granted/t2.wav"
+    }
+  ],
+  "lineHash": "a31540787a84cba2926c853c"
+}

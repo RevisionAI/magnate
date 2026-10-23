@@ -1,0 +1,40 @@
+{
+  "id": "tech_titan_clash",
+  "name": "Tech Titan Clash",
+  "description": "A deep-pocketed premium-brand rival is flooding the High-bracket aisles with flagship televisions and cars. They outspend you 2-to-1 and they price 30% above the market — but the softmax doesn't care who's richer, it cares who has Q+T+B. Out-engineer them in the Eastside car market, out-brand them on Metropolis televisions, and prove your company can cash the cheques.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2030, "month": 12 },
+  "player": {
+    "name": "NovaTech",
+    "startingCash": 25000000
+  },
+  "aiCompetitors": [
+    { "name": "Zenith Labs", "startingCash": 50000000, "strategy": "techLeader" }
+  ],
+  "goals": [
+    {
+      "type": "marketShare",
+      "description": "Reach 30% share of car in Eastside — the High-bracket enclave where TechLeader will dig in first.",
+      "product": "car",
+      "city": "eastside",
+      "threshold": 0.30
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 25% share of television in Metropolis — deny the titan a clean sweep of the densest market.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.25
+    },
+    {
+      "type": "corporateValue",
+      "description": "Grow corporate value to $50M — survive the spend war and come out ahead.",
+      "threshold": 50000000
+    },
+    {
+      "type": "elapsedMonths",
+      "description": "Hold the line for 60 months — premium brands compound slowly; so does your counter.",
+      "months": 60
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/HelpOverlay.cs" id="1_help"]
+
+[node name="HelpOverlay" type="Node"]
+script = ExtResource("1_help")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Keyboard Shortcuts"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Press Esc or ? to close"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Content" type="VBoxContainer" parent="Panel/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="PlaybackSection" type="RichTextLabel" parent="Panel/VBox/Scroll/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+text = "[b]Playback[/b]
+  [code]Space[/code]    Toggle play / pause
+  [code].[/code]        Advance one month (while paused)
+  [code]1[/code]        Speed 1× (1.00 s/month)
+  [code]2[/code]        Speed 2× (0.50 s/month)
+  [code]3[/code]        Speed 5× (0.20 s/month)"
+
+[node name="ScenesSection" type="RichTextLabel" parent="Panel/VBox/Scroll/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+text = "[b]Scenes[/b]
+  [code]M[/code]        Manage (buildings / slots)
+  [code]R[/code]        Reports
+  [code]C[/code]        City Map
+  [code]T[/code]        Research Tree
+  [code]S[/code]        Save / Load menu
+  [code]F[/code]        Financial Statements
+  [code]I[/code]        Market Intelligence
+  [code]A[/code]        Activity Feed"
+
+[node name="NavigationSection" type="RichTextLabel" parent="Panel/VBox/Scroll/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+text = "[b]Navigation[/b]
+  [code]Esc[/code]      Back to title screen (from Main) · close modal (from Help / sub-scenes)"
+
+[node name="HelpSection" type="RichTextLabel" parent="Panel/VBox/Scroll/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+text = "[b]Help[/b]
+  [code]?[/code]        Toggle this overlay"
+
+[node name="Footer" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="BackButton" type="Button" parent="Panel/VBox/Footer"]
+layout_mode = 2
+text = "Back"

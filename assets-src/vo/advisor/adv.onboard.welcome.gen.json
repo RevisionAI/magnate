@@ -1,0 +1,111 @@
+{
+  "id": "adv.onboard.welcome",
+  "role": "advisor",
+  "text": "Welcome aboard. Let's build a company that lasts.",
+  "sentText": "Welcome aboard. Let's build a company that lasts.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.87
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:11:23.007Z",
+  "file": "adv.onboard.welcome.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.3,
+  "speechSec": 3.06,
+  "wpm": 156.9,
+  "syllables": 12,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -6.02,
+  "truePeakDbtp": -6,
+  "lufsI": -22.3,
+  "lra": 20.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 325
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Welcome aboard. Let's build a company that lasts.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 150.9,
+      "paceWpm": 152,
+      "maxGapMs": 350,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Welcome aboard. Let's build a company that lasts.",
+      "score": {
+        "hard": 0,
+        "soft": 0.055,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.welcome/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.865
+      },
+      "wpm": 156.9,
+      "paceWpm": 157.9,
+      "maxGapMs": 320,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "Welcome aboard. Let's build a company that lasts.",
+      "score": {
+        "hard": 0,
+        "soft": 0.004,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.welcome/t3.wav"
+    }
+  ],
+  "lineHash": "ecdb3da5900393a8db1c44b5"
+}

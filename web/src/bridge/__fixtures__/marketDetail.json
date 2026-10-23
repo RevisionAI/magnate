@@ -1,0 +1,88 @@
+{
+  "method": "marketDetail",
+  "args": {
+    "cityId": "metropolis",
+    "productId": "soft_drink"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "cityId": "metropolis",
+      "productId": "soft_drink",
+      "potentialDemand": 12250000,
+      "elasticity": 0.8,
+      "baseWorldPrice": 1.1,
+      "effectiveWorldPrice": 1.1,
+      "brackets": [
+        {
+          "bracket": "low",
+          "population": 225000,
+          "perCapita": 24,
+          "demand": 5386570.912,
+          "eligibleRetailers": 1
+        },
+        {
+          "bracket": "middle",
+          "population": 200000,
+          "perCapita": 26,
+          "demand": 5186314.687,
+          "eligibleRetailers": 1
+        },
+        {
+          "bracket": "high",
+          "population": 75000,
+          "perCapita": 22,
+          "demand": 1646139.07,
+          "eligibleRetailers": 1
+        }
+      ],
+      "retailers": [
+        {
+          "buildingId": 1,
+          "slotIndex": 0,
+          "ownerId": 1,
+          "ownerName": "Your Corp",
+          "isPlayer": true,
+          "price": 2.4,
+          "quality": 50,
+          "tech": 2,
+          "brand": 45,
+          "weight": 2.75,
+          "modelDemandUnits": 70000,
+          "modelShare": 0.00815,
+          "onHand": 0,
+          "lastMonthUnits": 60000,
+          "lastMonthRevenue": 135000,
+          "lastMonthRealisedShare": 0.004920880753557144,
+          "excludedBrackets": []
+        }
+      ],
+      "playerRealisedShareHistory": {
+        "start": {
+          "year": 2026,
+          "month": 1
+        },
+        "values": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "engineGoalShare": 0.0049208807535571445,
+      "modelSource": "engine",
+      "incumbent": {
+        "price": 1.75,
+        "mass": 63.518519,
+        "modelUnits": 12137189.598,
+        "modelShare": 0.99185,
+        "lastMonthUnits": 12132939.233
+      }
+    },
+    "revision": 25
+  }
+}

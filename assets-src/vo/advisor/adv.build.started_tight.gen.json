@@ -1,0 +1,113 @@
+{
+  "id": "adv.build.started_tight",
+  "role": "advisor",
+  "text": "That build stretches our cash thin. Make sure it pays back fast.",
+  "sentText": "That build stretches our cash thin. Make sure it pays back fast.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.967
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:16:18.047Z",
+  "file": "adv.build.started_tight.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.82,
+  "speechSec": 3.58,
+  "wpm": 201.1,
+  "syllables": 14,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -6.64,
+  "truePeakDbtp": -6.6,
+  "lufsI": -22.3,
+  "lra": 1.4,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 170,
+    "tailTrimmedMs": 310
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "That build stretches our cache thin. Make sure it pays back fast.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 177.3,
+      "paceWpm": 138.9,
+      "maxGapMs": 390,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "That build stretches our cache thin. Make sure it pays back fast.",
+      "score": {
+        "hard": 0,
+        "soft": 1.296,
+        "flags": [
+          "pace 138.9 wpm-eq, 3.45 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.build.started_tight/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.952
+      },
+      "wpm": 198.9,
+      "paceWpm": 155.7,
+      "maxGapMs": 310,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "That build stretches our cache thin. Make sure it pays back fast.",
+      "score": {
+        "hard": 0,
+        "soft": 0.018,
+        "flags": []
+      },
+      "file": "_takes/adv.build.started_tight/t2.wav"
+    }
+  ],
+  "lineHash": "59b7f4f15874d189f94d6b57"
+}

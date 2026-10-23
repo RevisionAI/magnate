@@ -1,0 +1,112 @@
+{
+  "id": "adv.end.defeat_timeup",
+  "role": "advisor",
+  "text": "Time's up. We missed the targets, but the lessons are ours to keep.",
+  "sentText": "Time's up. We missed the targets, but the lessons are ours to keep.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:27:34.968Z",
+  "file": "adv.end.defeat_timeup.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.34,
+  "speechSec": 4.1,
+  "wpm": 190.2,
+  "syllables": 16,
+  "sylPerSec": 3.9,
+  "paceWpm": 157.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -6.38,
+  "truePeakDbtp": -6.4,
+  "lufsI": -21.9,
+  "lra": 1.1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 400
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Time's up, we missed the targets, but the lessons are ours to keep.",
+    "wer": 0,
+    "cer": 0,
+    "droppedTail": "keep. 8"
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 196,
+      "paceWpm": 161.9,
+      "maxGapMs": 320,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Time's up, we missed the targets, but the lessons are ours to keep.",
+      "score": {
+        "hard": 0,
+        "soft": 0.044,
+        "flags": []
+      },
+      "file": "_takes/adv.end.defeat_timeup/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.842
+      },
+      "wpm": 191.2,
+      "paceWpm": 157.9,
+      "maxGapMs": 330,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Time's up, we missed the targets, but the lessons are ours to keep.",
+      "score": {
+        "hard": 0,
+        "soft": 0.004,
+        "flags": []
+      },
+      "file": "_takes/adv.end.defeat_timeup/t3.wav"
+    }
+  ],
+  "lineHash": "713805e2bee7953e45a835b2"
+}

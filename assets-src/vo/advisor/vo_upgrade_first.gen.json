@@ -1,0 +1,111 @@
+{
+  "id": "vo_upgrade_first",
+  "role": "advisor",
+  "text": "Our first upgrade is complete. More capacity, same address.",
+  "sentText": "Our first upgrade is complete. More capacity, same address.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.821
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:40:23.995Z",
+  "file": "vo_upgrade_first.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.29,
+  "speechSec": 4.05,
+  "wpm": 133.3,
+  "syllables": 16,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 420,
+  "samplePeakDbfs": -2.01,
+  "truePeakDbtp": -2,
+  "lufsI": -22,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 375
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our first upgrade is complete. More capacity, same address.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.066,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 135,
+      "paceWpm": 161.1,
+      "maxGapMs": 420,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Our first upgrade is complete. More capacity, same address.",
+      "score": {
+        "hard": 0,
+        "soft": 0.086,
+        "flags": []
+      },
+      "file": "_takes/vo_upgrade_first/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.806
+      },
+      "wpm": 130.1,
+      "paceWpm": 155.3,
+      "maxGapMs": 420,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Our first upgrade is complete. More capacity, same address.",
+      "score": {
+        "hard": 0,
+        "soft": 0.072,
+        "flags": []
+      },
+      "file": "_takes/vo_upgrade_first/t3.wav"
+    }
+  ],
+  "lineHash": "b7015c12df179054e7cc57eb"
+}

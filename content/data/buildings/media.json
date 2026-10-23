@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tv_station",
+    "name": "TV Station",
+    "category": "media",
+    "constructionCost": 40000000,
+    "monthlyOperatingCost": 120000,
+    "footprint": {
+      "width": 3,
+      "height": 3
+    },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": {
+      "min": 10,
+      "max": 30
+    },
+    "staff": {
+      "fixed": 40,
+      "fixedRole": "media",
+      "perSlot": 0,
+      "slotRole": "media"
+    },
+    "buildMonths": 6
+  },
+  {
+    "id": "radio_station",
+    "name": "Radio Station",
+    "category": "media",
+    "constructionCost": 5000000,
+    "monthlyOperatingCost": 25000,
+    "footprint": {
+      "width": 2,
+      "height": 2
+    },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": {
+      "min": 5,
+      "max": 15
+    },
+    "staff": {
+      "fixed": 12,
+      "fixedRole": "media",
+      "perSlot": 0,
+      "slotRole": "media"
+    },
+    "buildMonths": 3
+  },
+  {
+    "id": "newspaper_publisher",
+    "name": "Newspaper Publisher",
+    "category": "media",
+    "constructionCost": 15000000,
+    "monthlyOperatingCost": 60000,
+    "footprint": {
+      "width": 3,
+      "height": 3
+    },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": {
+      "min": 8,
+      "max": 25
+    },
+    "staff": {
+      "fixed": 30,
+      "fixedRole": "media",
+      "perSlot": 0,
+      "slotRole": "media"
+    },
+    "buildMonths": 4
+  },
+  {
+    "id": "magazine_publisher",
+    "name": "Magazine Publisher",
+    "category": "media",
+    "constructionCost": 8000000,
+    "monthlyOperatingCost": 35000,
+    "footprint": {
+      "width": 3,
+      "height": 3
+    },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": {
+      "min": 8,
+      "max": 25
+    },
+    "staff": {
+      "fixed": 18,
+      "fixedRole": "media",
+      "perSlot": 0,
+      "slotRole": "media"
+    },
+    "buildMonths": 4
+  }
+]

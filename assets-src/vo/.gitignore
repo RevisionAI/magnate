@@ -1,0 +1,4 @@
+# rejected takes and throwaway renders (regenerate from tools/voice/.cache)
+_takes/
+_kokoro_full/
+_ab/

@@ -1,0 +1,113 @@
+{
+  "id": "adv.legacy.tutorial_step4",
+  "role": "advisor",
+  "text": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+  "sentText": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.896
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:42:15.956Z",
+  "file": "adv.legacy.tutorial_step4.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.6,
+  "speechSec": 5.36,
+  "wpm": 179.1,
+  "syllables": 21,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 530,
+  "samplePeakDbfs": -5.12,
+  "truePeakDbtp": -5.1,
+  "lufsI": -21.9,
+  "lra": 1.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 375
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.328,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 167.5,
+      "paceWpm": 147.6,
+      "maxGapMs": 550,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+      "score": {
+        "hard": 0,
+        "soft": 0.714,
+        "flags": [
+          "pace 147.6 wpm-eq, 3.66 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step4/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.888
+      },
+      "wpm": 177.4,
+      "paceWpm": 156.3,
+      "maxGapMs": 530,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+      "score": {
+        "hard": 0,
+        "soft": 0.337,
+        "flags": []
+      },
+      "file": "_takes/adv.legacy.tutorial_step4/t3.wav"
+    }
+  ],
+  "lineHash": "fbfa582ece56a3c15c914539"
+}

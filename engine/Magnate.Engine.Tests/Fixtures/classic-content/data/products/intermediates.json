@@ -1,0 +1,156 @@
+[
+  {
+    "id": "sugar",
+    "name": "Sugar",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 2.0,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 7,
+    "recipe": {
+      "outputQuantity": 500.0,
+      "laborUnits": 3.0,
+      "inputs": [
+        { "productId": "sugarcane", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "flour",
+    "name": "Flour",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 1.5,
+    "priceElasticity": 0.8,
+    "maxTechLevel": 7,
+    "recipe": {
+      "outputQuantity": 800.0,
+      "laborUnits": 2.0,
+      "inputs": [
+        { "productId": "wheat", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "cotton_fabric",
+    "name": "Cotton Fabric",
+    "tier": "intermediate",
+    "category": "textile",
+    "unit": "bolt",
+    "baseWorldMarketPrice": 15.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 8,
+    "recipe": {
+      "outputQuantity": 40.0,
+      "laborUnits": 4.0,
+      "inputs": [
+        { "productId": "cotton", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "steel",
+    "name": "Steel",
+    "tier": "intermediate",
+    "category": "metal",
+    "unit": "ton",
+    "baseWorldMarketPrice": 300.0,
+    "priceElasticity": 1.1,
+    "maxTechLevel": 10,
+    "recipe": {
+      "outputQuantity": 1.5,
+      "laborUnits": 5.0,
+      "inputs": [
+        { "productId": "iron_ore", "quantity": 2.0 }
+      ]
+    }
+  },
+  {
+    "id": "plastic",
+    "name": "Plastic",
+    "tier": "intermediate",
+    "category": "polymer",
+    "unit": "kg",
+    "baseWorldMarketPrice": 3.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 10,
+    "recipe": {
+      "outputQuantity": 1000.0,
+      "laborUnits": 3.0,
+      "inputs": [
+        { "productId": "crude_oil", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "electronic_parts",
+    "name": "Electronic Parts",
+    "tier": "intermediate",
+    "category": "electronics",
+    "unit": "unit",
+    "baseWorldMarketPrice": 25.0,
+    "priceElasticity": 1.2,
+    "maxTechLevel": 12,
+    "recipe": {
+      "outputQuantity": 50.0,
+      "laborUnits": 6.0,
+      "inputs": [
+        { "productId": "plastic", "quantity": 10.0 },
+        { "productId": "steel",   "quantity": 0.2 }
+      ]
+    }
+  },
+  {
+    "id": "malt",
+    "name": "Malt",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 3.0,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 7,
+    "recipe": {
+      "outputQuantity": 400.0,
+      "laborUnits": 3.0,
+      "inputs": [
+        { "productId": "wheat", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "roasted_coffee",
+    "name": "Roasted Coffee",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 8.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 8,
+    "recipe": {
+      "outputQuantity": 500.0,
+      "laborUnits": 4.0,
+      "inputs": [
+        { "productId": "coffee_beans", "quantity": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "denim_fabric",
+    "name": "Denim Fabric",
+    "tier": "intermediate",
+    "category": "textile",
+    "unit": "bolt",
+    "baseWorldMarketPrice": 22.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 9,
+    "recipe": {
+      "outputQuantity": 25.0,
+      "laborUnits": 5.0,
+      "inputs": [
+        { "productId": "cotton", "quantity": 1.0 }
+      ]
+    }
+  }
+]

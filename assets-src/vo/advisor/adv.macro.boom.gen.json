@@ -1,0 +1,115 @@
+{
+  "id": "adv.macro.boom",
+  "role": "advisor",
+  "text": "The economy is booming. Demand is strong, so let's add capacity.",
+  "sentText": "The economy is booming. Demand is strong, so let's add capacity.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.823
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:24:51.732Z",
+  "file": "adv.macro.boom.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.94,
+  "speechSec": 4.7,
+  "wpm": 140.4,
+  "syllables": 19,
+  "sylPerSec": 4.04,
+  "paceWpm": 162.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -1,
+  "truePeakDbtp": -1,
+  "lufsI": -22,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 425
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The economy is booming. Demand is strong, so let's add capacity.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.253,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 143.5,
+      "paceWpm": 166.3,
+      "maxGapMs": 460,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "The economy is booming. Demand is strong, so let's add capacity.",
+      "score": {
+        "hard": 0,
+        "soft": 0.368,
+        "flags": [
+          "pace 166.3 wpm-eq, 4.13 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.macro.boom/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.796
+      },
+      "wpm": 124.1,
+      "paceWpm": 143.8,
+      "maxGapMs": 500,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "The economy is booming. Demand is strong, so let's add capacity.",
+      "score": {
+        "hard": 0,
+        "soft": 1.007,
+        "flags": [
+          "pace 143.8 wpm-eq, 3.57 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.macro.boom/t2.wav"
+    }
+  ],
+  "lineHash": "b393d599e4129293cb931dff"
+}

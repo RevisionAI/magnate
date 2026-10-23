@@ -1,0 +1,113 @@
+{
+  "id": "adv.onboard.first_plot",
+  "role": "advisor",
+  "text": "Pick a plot near busy roads. Traffic brings customers through the door.",
+  "sentText": "Pick a plot near busy roads. Traffic brings customers through the door.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.914
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:14:43.448Z",
+  "file": "adv.onboard.first_plot.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.36,
+  "speechSec": 4.12,
+  "wpm": 174.8,
+  "syllables": 16,
+  "sylPerSec": 3.88,
+  "paceWpm": 156.4,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 380,
+  "samplePeakDbfs": -3.44,
+  "truePeakDbtp": -3.4,
+  "lufsI": -22,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 365
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Pick a plot near busy roads. Traffic brings customers through the door.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.011,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 161.8,
+      "paceWpm": 144.8,
+      "maxGapMs": 410,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Pick a plot near busy roads. Traffic brings customers through the door.",
+      "score": {
+        "hard": 0,
+        "soft": 0.672,
+        "flags": [
+          "pace 144.8 wpm-eq, 3.6 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.onboard.first_plot/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.929
+      },
+      "wpm": 178.2,
+      "paceWpm": 159.5,
+      "maxGapMs": 390,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Pick a plot near busy roads. Traffic brings customers through the door.",
+      "score": {
+        "hard": 0,
+        "soft": 0.02,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.first_plot/t3.wav"
+    }
+  ],
+  "lineHash": "b299c09b9d0ae48b3bcc2975"
+}

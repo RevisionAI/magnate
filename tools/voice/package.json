@@ -1,0 +1,17 @@
+{
+  "name": "magnate-voice-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Magnate VO pipeline: script parser, ElevenLabs/Kokoro generator, take selection, QA",
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "parse": "node parse-script.mjs",
+    "generate": "node generate.mjs",
+    "kokoro-samples": "node generate.mjs --provider kokoro --samples"
+  },
+  "dependencies": {
+    "kokoro-js": "^1.2.1",
+    "phonemizer": "^1.2.1"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "vertical_showdown",
+  "name": "Vertical Showdown",
+  "description": "A deep-pocketed rival is building their own supply chain from farm to shelf. You can't outspend them — you have to out-manoeuvre them. Stand up your own 2-tier chain, win the television aisle in Metropolis, and keep the lights on for five years.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2030, "month": 12 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 20000000
+  },
+  "aiCompetitors": [
+    { "name": "ChainLink Industries", "startingCash": 45000000, "strategy": "verticalIntegrator" }
+  ],
+  "goals": [
+    {
+      "type": "ownsBuilding",
+      "description": "Operate at least one factory — own the conversion step so you're not paying world-market markups on every TV.",
+      "category": "factory",
+      "count": 1
+    },
+    {
+      "type": "ownsBuilding",
+      "description": "Operate at least one farm — controlling a raw-material source is what makes your chain two tiers deep.",
+      "category": "farm",
+      "count": 1
+    },
+    {
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — prove your chain reaches all the way to the customer.",
+      "product": "television"
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 30% share of television in Metropolis — a chain that doesn't sell is just a cost centre.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.30
+    },
+    {
+      "type": "corporateValue",
+      "description": "Keep the company alive and growing: hit $35M corporate value.",
+      "threshold": 35000000
+    },
+    {
+      "type": "elapsedMonths",
+      "description": "Survive and scale for 48 months — endurance matters when the rival out-banks you.",
+      "months": 48
+    }
+  ]
+}

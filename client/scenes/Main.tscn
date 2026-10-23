@@ -1,0 +1,190 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/Main.cs" id="1_main"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_main")
+
+[node name="Hud" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Hud"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_top = 24.0
+offset_right = 260.0
+offset_bottom = 400.0
+grow_horizontal = 2
+theme_override_constants/separation = 8
+
+[node name="TitleLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "Magnate"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="ScenarioLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="TipPanel" type="PanelContainer" parent="Hud/VBox"]
+layout_mode = 2
+visible = false
+
+[node name="TipVBox" type="VBoxContainer" parent="Hud/VBox/TipPanel"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TipHeader" type="Label" parent="Hud/VBox/TipPanel/TipVBox"]
+layout_mode = 2
+text = "Current Goal"
+horizontal_alignment = 1
+
+[node name="TipBody" type="Label" parent="Hud/VBox/TipPanel/TipVBox"]
+layout_mode = 2
+text = ""
+autowrap_mode = 3
+
+[node name="TipProgress" type="ProgressBar" parent="Hud/VBox/TipPanel/TipVBox"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+show_percentage = false
+
+[node name="TipDetail" type="Label" parent="Hud/VBox/TipPanel/TipVBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+
+[node name="DateLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "Date: —"
+horizontal_alignment = 1
+
+[node name="PlayerLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="AiLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="WorldLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="HBox" type="HBoxContainer" parent="Hud/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="PlayButton" type="Button" parent="Hud/VBox/HBox"]
+layout_mode = 2
+text = "Play"
+
+[node name="AdvanceButton" type="Button" parent="Hud/VBox/HBox"]
+layout_mode = 2
+text = "Advance 1 Month"
+
+[node name="SpeedHBox" type="HBoxContainer" parent="Hud/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="SpeedLabel" type="Label" parent="Hud/VBox/SpeedHBox"]
+layout_mode = 2
+text = "Speed:"
+
+[node name="Speed1x" type="Button" parent="Hud/VBox/SpeedHBox"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "1×"
+
+[node name="Speed2x" type="Button" parent="Hud/VBox/SpeedHBox"]
+layout_mode = 2
+toggle_mode = true
+text = "2×"
+
+[node name="Speed5x" type="Button" parent="Hud/VBox/SpeedHBox"]
+layout_mode = 2
+toggle_mode = true
+text = "5×"
+
+[node name="HBox2" type="HBoxContainer" parent="Hud/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="ManageButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Manage"
+
+[node name="ReportsButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Reports"
+
+[node name="CityMapButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "City Map"
+
+[node name="ResearchButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Research"
+
+[node name="SaveButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Save"
+
+[node name="SaveLoadButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Save/Load"
+
+[node name="FinancialsButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Financials"
+
+[node name="MarketIntelButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Market Intel"
+
+[node name="ActivityFeedButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Activity"
+
+[node name="ReplayButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Replay (P)"
+
+[node name="StatsButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Stats (X)"
+
+[node name="TutorialButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Tutorial"
+
+[node name="HelpButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Help (?)"
+
+[node name="BackButton" type="Button" parent="Hud/VBox/HBox2"]
+layout_mode = 2
+text = "Back to Title"
+
+[node name="StatusLabel" type="Label" parent="Hud/VBox"]
+layout_mode = 2
+text = "Paused"
+horizontal_alignment = 1

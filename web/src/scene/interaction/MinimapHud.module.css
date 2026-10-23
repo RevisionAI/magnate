@@ -1,0 +1,162 @@
+/* Minimap additions owned by W6 (ui/hud/Minimap.tsx): the canvas, the overlay bar and the overlay legend.
+   The frame itself keeps U1's ui/hud/Minimap.module.css. */
+
+.mapArea.mapArea {
+  height: calc(var(--hud-minimap-width) - 1.75rem);
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.canvasHot {
+  cursor: pointer;
+}
+
+.empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+  pointer-events: none;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 3px 4px 4px;
+  border-top: 1px solid var(--c-hairline);
+}
+
+.bar button {
+  flex: 1;
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.legend {
+  padding: 7px 10px 8px;
+  border-bottom: 1px solid var(--c-hairline);
+  background: rgba(10, 16, 22, 0.35);
+  animation: legendIn var(--dur-base) var(--ease-out);
+}
+
+@keyframes legendIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.legendHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.legendTitle {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-text);
+  white-space: nowrap;
+}
+
+.legendSub {
+  min-width: 0;
+  font-size: var(--fs-2xs);
+  color: var(--c-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ramp {
+  margin-top: 6px;
+  height: 7px;
+  border-radius: var(--r-pill);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.rampLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  font-size: var(--fs-2xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--c-text2);
+}
+
+.bins {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  margin-top: 6px;
+}
+
+.bin {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  font-size: 0.5625rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--c-text2);
+  white-space: nowrap;
+}
+
+.bin i {
+  display: block;
+  height: 7px;
+  border-radius: 2px;
+}
+
+.cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 9px;
+  margin-top: 6px;
+}
+
+.cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  max-width: 100%;
+  font-size: var(--fs-2xs);
+  color: var(--c-text2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cat i {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.legendEmpty {
+  margin-top: 5px;
+  font-size: var(--fs-2xs);
+  color: var(--c-muted);
+}

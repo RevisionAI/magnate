@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/SaveMenu.cs" id="1_savemenu"]
+
+[node name="SaveMenu" type="Node"]
+script = ExtResource("1_savemenu")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Save / Load"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="HintLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+
+[node name="SaveRow" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="FilenameLabel" type="Label" parent="Panel/VBox/SaveRow"]
+layout_mode = 2
+text = "Filename:"
+
+[node name="FilenameEdit" type="LineEdit" parent="Panel/VBox/SaveRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "save name"
+
+[node name="SaveNowButton" type="Button" parent="Panel/VBox/SaveRow"]
+layout_mode = 2
+text = "Save Now"
+
+[node name="SortRow" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SortLabel" type="Label" parent="Panel/VBox/SortRow"]
+layout_mode = 2
+text = "Order:"
+
+[node name="SortDropdown" type="OptionButton" parent="Panel/VBox/SortRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SaveList" type="VBoxContainer" parent="Panel/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="StatusLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back to Game"

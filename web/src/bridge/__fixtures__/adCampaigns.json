@@ -1,0 +1,24 @@
+{
+  "method": "adCampaigns",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "campaigns": [
+        {
+          "productId": "soft_drink",
+          "cityId": "metropolis",
+          "channel": "tv",
+          "monthlyBudget": 50000,
+          "brand": 32.759950250996,
+          "mediaBonus": 1,
+          "projectedBrand": 34.46675373342627,
+          "hasRetailPresence": true
+        }
+      ],
+      "totalMonthlySpend": 50000,
+      "brandDecayRate": 0.03
+    },
+    "revision": 23
+  }
+}

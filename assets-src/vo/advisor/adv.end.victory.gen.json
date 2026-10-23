@@ -1,0 +1,113 @@
+{
+  "id": "adv.end.victory",
+  "role": "advisor",
+  "text": "Every objective met. That's a business built to last. Congratulations.",
+  "sentText": "Every objective met. That's a business built to last. Congratulations.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.964
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:27:20.464Z",
+  "file": "adv.end.victory.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.88,
+  "speechSec": 4.64,
+  "wpm": 129.3,
+  "syllables": 18,
+  "sylPerSec": 3.88,
+  "paceWpm": 156.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 400,
+  "samplePeakDbfs": -4.24,
+  "truePeakDbtp": -4.2,
+  "lufsI": -22,
+  "lra": 1.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 320
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Every objective met, that's a business built to last. Congratulations.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.013,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 116.7,
+      "paceWpm": 141,
+      "maxGapMs": 430,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Every objective met. That's a business built to last. Congratulations.",
+      "score": {
+        "hard": 0,
+        "soft": 1.14,
+        "flags": [
+          "pace 141 wpm-eq, 3.5 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.end.victory/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.938
+      },
+      "wpm": 126.8,
+      "paceWpm": 153.2,
+      "maxGapMs": 420,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Every objective met. That's a business built to last. Congratulations.",
+      "score": {
+        "hard": 0,
+        "soft": 0.093,
+        "flags": []
+      },
+      "file": "_takes/adv.end.victory/t2.wav"
+    }
+  ],
+  "lineHash": "7bfba2a67eef3cd5bb74d039"
+}

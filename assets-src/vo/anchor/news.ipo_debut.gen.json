@@ -1,0 +1,113 @@
+{
+  "id": "news.ipo_debut",
+  "role": "anchor",
+  "text": "A hotly anticipated newcomer debuts on the exchange today.",
+  "sentText": "A hotly anticipated newcomer debuts on the exchange today.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.043
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:45:57.971Z",
+  "file": "news.ipo_debut.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.45,
+  "speechSec": 4.21,
+  "wpm": 128.3,
+  "syllables": 19,
+  "sylPerSec": 4.51,
+  "paceWpm": 154.7,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -5.64,
+  "truePeakDbtp": -5.6,
+  "lufsI": -21.7,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 140,
+    "tailTrimmedMs": 385
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "a hotly anticipated newcomer debuts on the exchange today.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.003,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 143.2,
+      "paceWpm": 172.8,
+      "maxGapMs": 270,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "a hotly anticipated newcomer debuts on the exchange today.",
+      "score": {
+        "hard": 0,
+        "soft": 0.458,
+        "flags": [
+          "pace 172.8 wpm-eq, 5.04 syl/s (target 140–170)"
+        ]
+      },
+      "file": "_takes/news.ipo_debut/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.058
+      },
+      "wpm": 128.9,
+      "paceWpm": 155.5,
+      "maxGapMs": 320,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "a hotly anticipated newcomer debuts on the exchange today.",
+      "score": {
+        "hard": 0,
+        "soft": 0.005,
+        "flags": []
+      },
+      "file": "_takes/news.ipo_debut/t2.wav"
+    }
+  ],
+  "lineHash": "f86e4cb3a30bba5eadcdbdf7"
+}

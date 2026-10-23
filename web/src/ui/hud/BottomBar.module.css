@@ -1,0 +1,252 @@
+/* ================================================================ News ticker */
+.ticker {
+  position: absolute;
+  z-index: var(--z-hud);
+  left: calc(var(--hud-rail-width) + var(--hud-minimap-width) + var(--hud-gutter) * 3);
+  right: calc(var(--hud-gutter) * 2 + 17rem + var(--drawer-offset, 0px));
+  bottom: var(--hud-gutter);
+  height: var(--hud-ticker-height);
+  display: flex;
+  align-items: stretch;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-hairline);
+  background: linear-gradient(180deg, rgba(20, 31, 41, 0.86), rgba(11, 18, 25, 0.9));
+  box-shadow: var(--e-2);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  overflow: hidden;
+  pointer-events: auto;
+  transition: right var(--dur-slow) var(--ease-out);
+}
+
+.masthead {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 var(--space-3);
+  background: linear-gradient(180deg, #f3ecda, #e3d7bc);
+  color: var(--c-paper-ink);
+  border: none;
+  cursor: pointer;
+  box-shadow: 6px 0 14px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.mastTitle {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: var(--fw-black);
+  font-variation-settings: 'opsz' 48;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.mastDate {
+  font-size: 0.5625rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.viewport {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 32px), transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 32px), transparent);
+}
+
+.track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll linear infinite;
+  will-change: transform;
+}
+
+.viewport:hover .track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.headline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 var(--space-4);
+  border: none;
+  background: transparent;
+  color: var(--c-text2);
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-variation-settings: 'opsz' 18;
+  cursor: pointer;
+}
+
+.headline:hover {
+  color: var(--c-text);
+}
+
+.headline::after {
+  content: '◆';
+  margin-left: var(--space-4);
+  font-size: 0.5rem;
+  color: var(--c-gold);
+  opacity: 0.7;
+}
+
+.major {
+  color: var(--c-gold-bright);
+  font-weight: var(--fw-semibold);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-muted);
+}
+
+.dotMajor {
+  background: var(--c-red);
+  box-shadow: 0 0 6px var(--c-red);
+}
+
+.dotNotable {
+  background: var(--c-gold);
+}
+
+html[data-reduced-motion='true'] .track {
+  position: static;
+  animation: none;
+}
+
+/* ================================================================ Month-close chip */
+.close {
+  position: absolute;
+  z-index: var(--z-hud);
+  left: 50%;
+  bottom: calc(var(--hud-ticker-height) + var(--hud-gutter) * 2);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(215, 183, 102, 0.45);
+  background: linear-gradient(180deg, rgba(26, 38, 49, 0.95), rgba(13, 21, 29, 0.96));
+  box-shadow: var(--e-3), 0 0 30px rgba(215, 183, 102, 0.12);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  pointer-events: auto;
+  white-space: nowrap;
+  animation: chipIn var(--dur-slower) var(--ease-spring);
+}
+
+.closeOut {
+  animation: chipOut var(--dur-slow) var(--ease-in-out) forwards;
+}
+
+@keyframes chipIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px) scale(0.96);
+  }
+}
+
+@keyframes chipOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+}
+
+.closeLabel {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-variation-settings: 'opsz' 24;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-gold-bright);
+}
+
+.closeStat {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: var(--fs-md);
+  color: var(--c-text2);
+}
+
+.closeStat b {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--c-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.closeStat .pos {
+  color: var(--c-pos);
+}
+
+.closeStat .neg {
+  color: var(--c-neg);
+}
+
+.streak {
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-green);
+}
+
+/* ================================================================ Auto-pause banner */
+.pauseBanner {
+  position: absolute;
+  z-index: var(--z-hud);
+  top: calc(var(--hud-top-bar-height) + var(--hud-gutter));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 6px 6px 6px var(--space-4);
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(232, 182, 58, 0.55);
+  background: linear-gradient(180deg, rgba(48, 38, 12, 0.94), rgba(26, 21, 8, 0.95));
+  box-shadow: var(--e-3), 0 0 24px rgba(232, 182, 58, 0.2);
+  color: #f6dc9a;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  pointer-events: auto;
+  animation: chipIn var(--dur-slow) var(--ease-spring);
+}
+
+.pauseIcon {
+  display: inline-flex;
+  color: var(--c-amber);
+}
+
+/* Squeezed by an open drawer on a small screen: hidden but still measured. */
+.squeezed {
+  visibility: hidden;
+}

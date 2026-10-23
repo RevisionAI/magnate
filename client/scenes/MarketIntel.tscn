@@ -1,0 +1,133 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/MarketIntel.cs" id="1_marketintel"]
+[ext_resource type="Script" path="res://scripts/Sparkline.cs" id="2_sparkline"]
+
+[node name="MarketIntel" type="Node"]
+script = ExtResource("1_marketintel")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Market Intelligence"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="Tabs" type="TabContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="Grid" type="VBoxContainer" parent="Panel/VBox/Tabs"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Controls" type="VBoxContainer" parent="Panel/VBox/Tabs/Grid"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SortBar" type="HBoxContainer" parent="Panel/VBox/Tabs/Grid/Controls"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="CityBar" type="HBoxContainer" parent="Panel/VBox/Tabs/Grid/Controls"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="FilterBar" type="HBoxContainer" parent="Panel/VBox/Tabs/Grid/Controls"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Body" type="HSplitContainer" parent="Panel/VBox/Tabs/Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+split_offset = 540
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox/Tabs/Grid/Body"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="Content" type="VBoxContainer" parent="Panel/VBox/Tabs/Grid/Body/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="DetailPanel" type="VBoxContainer" parent="Panel/VBox/Tabs/Grid/Body"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="DetailHeader" type="Label" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel"]
+layout_mode = 2
+text = "Select a row to inspect a market"
+theme_override_font_sizes/font_size = 16
+
+[node name="SparkHost" type="VBoxContainer" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SparkLabel" type="Label" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel/SparkHost"]
+layout_mode = 2
+text = "Player share trend (last 12 months)"
+
+[node name="Sparkline" type="Control" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel/SparkHost"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+script = ExtResource("2_sparkline")
+
+[node name="DetailScroll" type="ScrollContainer" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="DetailRich" type="RichTextLabel" parent="Panel/VBox/Tabs/Grid/Body/DetailPanel/DetailScroll"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="Top 3" type="VBoxContainer" parent="Panel/VBox/Tabs"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TopScroll" type="ScrollContainer" parent="Panel/VBox/Tabs/Top 3"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="TopContent" type="VBoxContainer" parent="Panel/VBox/Tabs/Top 3/TopScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

@@ -1,0 +1,111 @@
+{
+  "id": "adv.stock.crash",
+  "role": "advisor",
+  "text": "Our shares took a beating. Stay calm, and let earnings do the talking.",
+  "sentText": "Our shares took a beating. Stay calm, and let earnings do the talking.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.87
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:19:57.210Z",
+  "file": "adv.stock.crash.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.58,
+  "speechSec": 4.34,
+  "wpm": 179.7,
+  "syllables": 17,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.7,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 460,
+  "samplePeakDbfs": -6.21,
+  "truePeakDbtp": -6.2,
+  "lufsI": -21.9,
+  "lra": 0.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 395
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our shares took a beating. Stay calm and let earnings do the talking.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.152,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 173.3,
+      "paceWpm": 152.1,
+      "maxGapMs": 460,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Our shares took a beating. Stay calm and let earnings do the talking.",
+      "score": {
+        "hard": 0,
+        "soft": 0.204,
+        "flags": []
+      },
+      "file": "_takes/adv.stock.crash/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.865
+      },
+      "wpm": 179.7,
+      "paceWpm": 157.7,
+      "maxGapMs": 460,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Our shares took a beating. Stay calm and let earnings do the talking.",
+      "score": {
+        "hard": 0,
+        "soft": 0.152,
+        "flags": []
+      },
+      "file": "_takes/adv.stock.crash/t3.wav"
+    }
+  ],
+  "lineHash": "c13efd7b3c4d310ec40a465f"
+}

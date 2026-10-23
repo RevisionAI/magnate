@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tv_station",
+    "name": "TV Station",
+    "category": "media",
+    "constructionCost": 3000000,
+    "monthlyOperatingCost": 30000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": { "min": 10, "max": 30 }
+  },
+  {
+    "id": "radio_station",
+    "name": "Radio Station",
+    "category": "media",
+    "constructionCost": 800000,
+    "monthlyOperatingCost": 12000,
+    "footprint": { "width": 2, "height": 2 },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": { "min": 5, "max": 15 }
+  },
+  {
+    "id": "newspaper_publisher",
+    "name": "Newspaper Publisher",
+    "category": "media",
+    "constructionCost": 2100000,
+    "monthlyOperatingCost": 18000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": { "min": 8, "max": 25 }
+  },
+  {
+    "id": "magazine_publisher",
+    "name": "Magazine Publisher",
+    "category": "media",
+    "constructionCost": 2100000,
+    "monthlyOperatingCost": 18000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 1,
+    "producibleTiers": [],
+    "targetHeadcount": { "min": 8, "max": 25 }
+  }
+]

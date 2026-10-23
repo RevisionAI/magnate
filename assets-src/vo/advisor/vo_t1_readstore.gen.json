@@ -1,0 +1,113 @@
+{
+  "id": "vo_t1_readstore",
+  "role": "advisor",
+  "text": "Sold against demand: if those numbers ever split, we ran out of stock.",
+  "sentText": "Sold against demand: if those numbers ever split, we ran out of stock.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.942
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:31:02.660Z",
+  "file": "vo_t1_readstore.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.63,
+  "speechSec": 4.39,
+  "wpm": 177.7,
+  "syllables": 17,
+  "sylPerSec": 3.87,
+  "paceWpm": 155.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -3.97,
+  "truePeakDbtp": -3.9,
+  "lufsI": -22,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 160,
+    "tailTrimmedMs": 335
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Sold against demand. If those numbers ever split, we ran out of stock.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.216,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 164.2,
+      "paceWpm": 144.1,
+      "maxGapMs": 500,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Sold against demand. If those numbers ever split, we ran out of stock.",
+      "score": {
+        "hard": 0,
+        "soft": 0.974,
+        "flags": [
+          "pace 144.1 wpm-eq, 3.58 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_t1_readstore/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.918
+      },
+      "wpm": 174.9,
+      "paceWpm": 153.5,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Sold against demand. If those numbers ever split, we ran out of stock.",
+      "score": {
+        "hard": 0,
+        "soft": 0.24,
+        "flags": []
+      },
+      "file": "_takes/vo_t1_readstore/t2.wav"
+    }
+  ],
+  "lineHash": "0ef4515d28a6bdd6eb83a7ae"
+}

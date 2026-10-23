@@ -1,0 +1,115 @@
+{
+  "id": "adv.ipo.complete",
+  "role": "advisor",
+  "text": "We're officially public. From now on, every quarter is a report card.",
+  "sentText": "We're officially public. From now on, every quarter is a report card.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.809
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:19:37.088Z",
+  "file": "adv.ipo.complete.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.9,
+  "speechSec": 4.66,
+  "wpm": 154.5,
+  "syllables": 19,
+  "sylPerSec": 4.08,
+  "paceWpm": 164.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 470,
+  "samplePeakDbfs": -4.47,
+  "truePeakDbtp": -4.5,
+  "lufsI": -21.7,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 415
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're officially public. From now on, every quarter is a report card.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.242,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 160.7,
+      "paceWpm": 170.8,
+      "maxGapMs": 420,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "We're officially public. From now on, every quarter is a report card.",
+      "score": {
+        "hard": 0,
+        "soft": 0.763,
+        "flags": [
+          "pace 170.8 wpm-eq, 4.24 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.ipo.complete/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.775
+      },
+      "wpm": 134.3,
+      "paceWpm": 142.7,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "We're officially public. From now on, every quarter is a report card.",
+      "score": {
+        "hard": 0,
+        "soft": 1.078,
+        "flags": [
+          "pace 142.7 wpm-eq, 3.54 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.ipo.complete/t2.wav"
+    }
+  ],
+  "lineHash": "2bd83f81bb319c52caa3dcca"
+}

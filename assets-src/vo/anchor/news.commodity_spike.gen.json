@@ -1,0 +1,111 @@
+{
+  "id": "news.commodity_spike",
+  "role": "anchor",
+  "text": "Commodity prices spike as supply shortages hit world markets.",
+  "sentText": "Commodity prices spike as supply shortages hit world markets.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.265
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:45:07.313Z",
+  "file": "news.commodity_spike.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4,
+  "speechSec": 3.76,
+  "wpm": 143.6,
+  "syllables": 17,
+  "sylPerSec": 4.52,
+  "paceWpm": 155,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 210,
+  "samplePeakDbfs": -6.12,
+  "truePeakDbtp": -6.1,
+  "lufsI": -21.8,
+  "lra": 1.1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 90,
+    "tailTrimmedMs": 260
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Commodity prices spike as supply shortages hit world markets.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 134,
+      "paceWpm": 144.6,
+      "maxGapMs": 240,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "Commodity prices spike as supply shortages hit world markets.",
+      "score": {
+        "hard": 0,
+        "soft": 0.104,
+        "flags": []
+      },
+      "file": "_takes/news.commodity_spike/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.252
+      },
+      "wpm": 141,
+      "paceWpm": 152.2,
+      "maxGapMs": 240,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "Commodity prices spike as supply shortages hit world markets.",
+      "score": {
+        "hard": 0,
+        "soft": 0.028,
+        "flags": []
+      },
+      "file": "_takes/news.commodity_spike/t3.wav"
+    }
+  ],
+  "lineHash": "abd6d21183333a6255afa07d"
+}

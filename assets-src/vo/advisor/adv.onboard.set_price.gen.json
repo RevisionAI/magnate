@@ -1,0 +1,112 @@
+{
+  "id": "adv.onboard.set_price",
+  "role": "advisor",
+  "text": "Set a price with a healthy margin, but keep an eye on rivals.",
+  "sentText": "Set a price with a healthy margin, but keep an eye on rivals.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:14:57.973Z",
+  "file": "adv.onboard.set_price.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.33,
+  "speechSec": 4.09,
+  "wpm": 190.7,
+  "syllables": 16,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 380,
+  "samplePeakDbfs": -6.01,
+  "truePeakDbtp": -6,
+  "lufsI": -22.6,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 380
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Set a price with a healthy margin, but keep an eye on rivals.",
+    "wer": 0,
+    "cer": 0,
+    "droppedTail": "Thank you so much for joining us."
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.825
+      },
+      "wpm": 187.5,
+      "paceWpm": 154.9,
+      "maxGapMs": 390,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "Set a price with a healthy margin, but keep an eye on rivals.",
+      "score": {
+        "hard": 0,
+        "soft": 0.026,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.set_price/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.838
+      },
+      "wpm": 190.7,
+      "paceWpm": 157.5,
+      "maxGapMs": 380,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "Set a price with a healthy margin, but keep an eye on rivals.",
+      "score": {
+        "hard": 0,
+        "soft": 0,
+        "flags": []
+      },
+      "file": "_takes/adv.onboard.set_price/t3.wav"
+    }
+  ],
+  "lineHash": "f9c3727be6346d678dc0d525"
+}

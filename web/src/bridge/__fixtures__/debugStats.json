@@ -1,0 +1,39 @@
+{
+  "method": "debugStats",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "ledgerEntries": 209,
+      "cogsEntries": 14,
+      "transferEntries": 0,
+      "buildings": 6,
+      "companies": 2,
+      "lastTickMs": 7.57383,
+      "lastBridgeMs": 2.87138,
+      "indexCatchUpMs": 0.000712,
+      "revision": 25,
+      "faulted": false,
+      "protocolVersion": "1",
+      "lastAdvancePhasesMs": {
+        "capture": 0.046,
+        "index": 0.074,
+        "placement": 0.018,
+        "history": 0.514,
+        "events": 0.174,
+        "goals": 0.114,
+        "snapshot": 0.021,
+        "activity": 7.457
+      },
+      "lastLoadPhasesMs": {
+        "gunzip": 0.186,
+        "scan": 14.874,
+        "engine": 39.612,
+        "sidecar": 6.904,
+        "install": 4.652,
+        "snapshot": 1.166
+      }
+    },
+    "revision": 25
+  }
+}

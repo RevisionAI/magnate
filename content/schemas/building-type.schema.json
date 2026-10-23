@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://magnate.game/schemas/building-type.schema.json",
+  "title": "BuildingType",
+  "description": "Blueprint for a kind of building that the player (or AI) can construct.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "constructionCost",
+    "monthlyOperatingCost",
+    "footprint",
+    "maxUnits"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "enum": [
+        "farm",
+        "livestock_farm",
+        "plantation",
+        "mine",
+        "oil_well",
+        "logging_camp",
+        "quarry",
+        "factory",
+        "warehouse",
+        "distribution_center",
+        "seaport",
+        "freight_yard",
+        "convenience_store",
+        "supermarket",
+        "department_store",
+        "specialty_store",
+        "auto_dealer",
+        "fashion_store",
+        "restaurant",
+        "fast_food",
+        "hardware_store",
+        "furniture_store",
+        "pharmacy",
+        "gas_station",
+        "showroom",
+        "apartment",
+        "office_tower",
+        "hotel",
+        "shopping_mall",
+        "luxury_condo",
+        "headquarters",
+        "rd_center",
+        "training_center",
+        "media",
+        "tv_station",
+        "newspaper",
+        "magazine",
+        "internet_service",
+        "bank",
+        "investment_firm",
+        "college",
+        "software_firm",
+        "semiconductor_fab",
+        "automotive_plant",
+        "pharmaceutical_lab",
+        "pharmaceutical_factory",
+        "subsidiary_hq",
+        "boardroom"
+      ]
+    },
+    "constructionCost": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "monthlyOperatingCost": {
+      "type": "number",
+      "minimum": 0
+    },
+    "footprint": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        }
+      }
+    },
+    "maxUnits": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 32,
+      "description": "Internal slot count (purchase/manufacture/sales units)."
+    },
+    "producibleTiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "raw",
+          "intermediate",
+          "finished"
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Which product tiers this building can produce. Empty for pure retail/service buildings."
+    },
+    "retail": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this building sells to end consumers."
+    },
+    "targetHeadcount": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "geographyRequirement": {
+      "type": "object",
+      "description": "Optional tile/city requirements.",
+      "additionalProperties": false,
+      "properties": {
+        "coastal": {
+          "type": "boolean"
+        },
+        "arable": {
+          "type": "boolean"
+        },
+        "mineralRich": {
+          "type": "boolean"
+        },
+        "oilRich": {
+          "type": "boolean"
+        }
+      }
+    },
+    "levels": {
+      "type": "array",
+      "description": "Optional upgrade ladder (Phase 3.59). Entries must be ordered ascending by level starting at 1; the L1 entry should mirror maxUnits + monthlyOperatingCost so pre-upgrade behaviour is unchanged.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "level",
+          "capacity",
+          "monthlyOperatingCost",
+          "upgradeCost"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "capacity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "monthlyOperatingCost": {
+            "type": "number",
+            "minimum": 0
+          },
+          "upgradeCost": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "staff": {
+      "type": "object",
+      "description": "Staffing (econ-audit §4.5): fixed staff × level multiplier + per-slot staff. Production/extraction slots take per-slot staff from the recipe/raw.",
+      "additionalProperties": false,
+      "properties": {
+        "fixed": {
+          "type": "number",
+          "minimum": 0
+        },
+        "fixedRole": {
+          "enum": [
+            "production",
+            "retail",
+            "farm",
+            "extraction",
+            "admin",
+            "scientist",
+            "media"
+          ]
+        },
+        "perSlot": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Staff per active retail/warehouse/research slot."
+        },
+        "slotRole": {
+          "enum": [
+            "production",
+            "retail",
+            "farm",
+            "extraction",
+            "admin",
+            "scientist",
+            "media"
+          ]
+        }
+      }
+    },
+    "retailFormat": {
+      "type": "object",
+      "description": "Retail buildings only (econ-audit §4.3): throughput per slot and draw per retail category (0 or missing = not sold here).",
+      "additionalProperties": false,
+      "properties": {
+        "capacityPerSlot": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Monthly throughput per slot in $ at the product's reference price."
+        },
+        "draw": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      }
+    },
+    "storageValuePerSlot": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Warehouse slots: maximum stock value at world price per slot ($)."
+    },
+    "buildMonths": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Construction duration in months (game-compressed, econ-audit §4.12)."
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "method": "cancelAdCampaign",
+  "args": {
+    "productId": "soft_drink",
+    "cityId": "metropolis",
+    "channel": "radio"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "cancelled": true
+    },
+    "revision": 25,
+    "hud": {
+      "date": {
+        "year": 2026,
+        "month": 8
+      },
+      "monthIndex": 24319,
+      "playerId": 1,
+      "companies": [
+        {
+          "id": 1,
+          "name": "Your Corp",
+          "isPlayer": true,
+          "cash": 153957574.14,
+          "totalAssets": 195261066.48,
+          "equity": 195261066.48,
+          "revenueThisMonth": 135000,
+          "netIncomeThisMonth": -28095801.61,
+          "buildingCount": 5,
+          "color": "#2F7DE1",
+          "corporateValue": 177190788.58,
+          "netIncomeLast12": -30338933.52,
+          "colorIndex": 0
+        },
+        {
+          "id": 2,
+          "name": "LocalCo",
+          "isPlayer": false,
+          "cash": 5625841.97,
+          "totalAssets": 20510143.82,
+          "equity": 20510143.82,
+          "revenueThisMonth": 1688096.74,
+          "netIncomeThisMonth": 307216.42,
+          "buildingCount": 1,
+          "color": "#E69F00",
+          "corporateValue": 17704721.48,
+          "netIncomeLast12": 510143.82,
+          "colorIndex": 1,
+          "aiStrategy": "simple"
+        }
+      ],
+      "scenario": {
+        "id": "tutorial",
+        "name": "Tutorial \u2014 Your First Company",
+        "goals": [
+          {
+            "description": "Open your first store. Press B to open Build, pick Retail \u203A Supermarket and place it on a busy street in Metropolis \u2014 high-traffic plots bring more shoppers. Building costs cash up front and the store becomes an asset on your balance sheet.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "1 / 1",
+            "id": "open-store",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "current": 1,
+            "target": 1,
+            "unit": "count",
+            "achievedAt": {
+              "year": 2026,
+              "month": 1
+            },
+            "category": "supermarket",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Stock soft drinks. Click your supermarket to open its inspector, add a Soft Drink line and keep the price near the suggested band (around $1.65 a bottle, a little under the going rate). The store buys its stock from the world market automatically.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "configured",
+            "id": "stock-soft-drinks",
+            "index": 1,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "current": 1,
+            "target": 1,
+            "unit": "flag",
+            "achievedAt": {
+              "year": 2026,
+              "month": 1
+            },
+            "productId": "soft_drink",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Earn a profitable month. Let time run (Space, or 1\u20134 for speed) and read the month-close summary. Imported soft drinks leave a thin margin after wages, running costs and depreciation \u2014 that is normal, and the next steps show how to widen it.",
+            "achieved": false,
+            "progress": 0,
+            "detail": "0 / 1 months",
+            "id": "first-profit",
+            "index": 2,
+            "kind": "consecutiveProfitable",
+            "metric": "consecutiveProfitable",
+            "current": 0,
+            "target": 1,
+            "unit": "months",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Advertise. Open Marketing (K) and start a TV campaign for soft drinks in Metropolis. Brand awareness lets you sell more at a better price; the forecast shows how quickly it builds and how fast it fades if you stop paying.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "running",
+            "id": "advertise",
+            "index": 3,
+            "kind": "adCampaignActive",
+            "metric": "adCampaignActive",
+            "current": 1,
+            "target": 1,
+            "unit": "flag",
+            "achievedAt": {
+              "year": 2026,
+              "month": 1
+            },
+            "productId": "soft_drink",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "32.8 / 30.0",
+            "id": "brand-30",
+            "index": 4,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "current": 32.76,
+            "target": 30,
+            "unit": "points",
+            "achievedAt": {
+              "year": 2026,
+              "month": 8
+            },
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Borrow to grow. Open Finance (F) \u203A Bank and take a term loan sized to your next investment. The offer shows the rate your credit rating earns, the monthly payment, and the interest that will appear below operating profit in your income statement.",
+            "achieved": false,
+            "progress": 0,
+            "detail": "0 / 1",
+            "id": "bank-loan",
+            "index": 5,
+            "kind": "loanTaken",
+            "metric": "loansTaken",
+            "current": 0,
+            "target": 1,
+            "unit": "count",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Add a second product line. Use the loan to put bread on a free unit of your supermarket (or open a second store). More lines spread the store\u0027s fixed costs over more sales.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "configured",
+            "id": "second-line",
+            "index": 6,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "current": 1,
+            "target": 1,
+            "unit": "flag",
+            "achievedAt": {
+              "year": 2026,
+              "month": 8
+            },
+            "productId": "bread",
+            "mode": "reachOnce"
+          },
+          {
+            "description": "Grow company value to $55M. Company value prices your business on its earnings: cash counts at face value, and stores are worth more than their cost only when they earn more than investors require. Check the Reports (R) balance sheet and income statement to see what moves it.",
+            "achieved": true,
+            "progress": 1,
+            "detail": "$177,190,789 / $55,000,000",
+            "id": "company-value",
+            "index": 7,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "current": 177190788.58,
+            "target": 55000000,
+            "unit": "usd",
+            "achievedAt": {
+              "year": 2026,
+              "month": 1
+            },
+            "mode": "reachOnce"
+          }
+        ],
+        "goalsAchieved": 6,
+        "nextGoalId": "first-profit"
+      },
+      "revision": 25,
+      "gameId": "405ea8d2326daadf06273f63c3f9a152",
+      "startDate": {
+        "year": 2026,
+        "month": 1
+      },
+      "elapsedMonths": 7,
+      "player": {
+        "companyId": 1,
+        "name": "Your Corp",
+        "cash": 153957574.14,
+        "cashFlowThisMonth": -5377992.28,
+        "revenueThisMonth": 135000,
+        "netIncomeThisMonth": -28095801.61,
+        "netIncomeLast12": -30338933.52,
+        "totalAssets": 195261066.48,
+        "equity": 195261066.48,
+        "corporateValue": 177190788.58,
+        "buildings": 5,
+        "idleBuildings": 1,
+        "activeCampaigns": 1,
+        "cashRunwayMonths": 140.12,
+        "creditRating": "NR"
+      },
+      "outcome": {
+        "status": "playing"
+      },
+      "alerts": {
+        "lowCash": false,
+        "negativeCashMonths": 0,
+        "bankruptcyGraceMonths": 3
+      },
+      "newsSeq": 2,
+      "feedSeq": 53,
+      "faulted": false
+    },
+    "events": [
+      {
+        "kind": "campaignCancelled",
+        "severity": "info",
+        "message": "Stopped the radio campaign for Soft Drink in Metropolis.",
+        "amount": 0,
+        "cityId": "metropolis",
+        "productId": "soft_drink",
+        "seq": 53,
+        "month": {
+          "year": 2026,
+          "month": 8
+        },
+        "priority": 1,
+        "reason": "radio",
+        "oldValue": 20000
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+=== subscription ===
+tier: None | chars: None / None
+=== music ===
+FAIL music/title_theme http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"167d0f9e68942e41bad940b449785612"}}
+FAIL music/gameplay_loop http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"b8f3d190eba6c374b2761ac5c83bb76d"}}
+FAIL music/victory_theme http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"c91ae968c85b861abac0b965b57aea37"}}
+=== sfx ===
+FAIL sfx/ui_click http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/build_construct http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/cash_sale http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/goal_achieved http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/notify_info http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/notify_warning http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/month_tick http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/campaign_start http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/upgrade http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/defeat http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+FAIL sfx/victory_fanfare http=401 {"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission sound_generation to execute this operation.","status":"missing_permissions","re
+=== vo ===
+OK  vo/vo_welcome
+OK  vo/vo_tutorial_step1
+OK  vo/vo_tutorial_step2
+OK  vo/vo_tutorial_step3
+OK  vo/vo_tutorial_step4
+OK  vo/vo_tutorial_step5
+OK  vo/vo_tutorial_complete
+OK  vo/vo_victory
+OK  vo/vo_defeat_bankrupt
+OK  vo/vo_defeat_timeup
+=== done ===
+/Users/eddyh/Documents/2026/Games/Capitalism/client/assets/audio/music:
+total 0
+drwxr-xr-x  2 eddyh  staff   64 Jul 17 13:02 .
+drwxr-xr-x  6 eddyh  staff  192 Jul 17 13:02 ..
+
+/Users/eddyh/Documents/2026/Games/Capitalism/client/assets/audio/sfx:
+total 0
+drwxr-xr-x  2 eddyh  staff   64 Jul 17 13:02 .
+drwxr-xr-x  6 eddyh  staff  192 Jul 17 13:02 ..
+
+/Users/eddyh/Documents/2026/Games/Capitalism/client/assets/audio/vo:
+total 1568
+drwxr-xr-x  12 eddyh  staff    384 Jul 17 13:03 .
+drwxr-xr-x   6 eddyh  staff    192 Jul 17 13:02 ..
+-rw-r--r--   1 eddyh  staff  96174 Jul 17 13:03 vo_defeat_bankrupt.mp3
+-rw-r--r--   1 eddyh  staff  65663 Jul 17 13:03 vo_defeat_timeup.mp3
+-rw-r--r--   1 eddyh  staff  52288 Jul 17 13:03 vo_tutorial_complete.mp3
+-rw-r--r--   1 eddyh  staff  99100 Jul 17 13:03 vo_tutorial_step1.mp3
+-rw-r--r--   1 eddyh  staff  96174 Jul 17 13:03 vo_tutorial_step2.mp3
+-rw-r--r--   1 eddyh  staff  90323 Jul 17 13:03 vo_tutorial_step3.mp3
+-rw-r--r--   1 eddyh  staff  71097 Jul 17 13:03 vo_tutorial_step4.mp3
+-rw-r--r--   1 eddyh  staff  87815 Jul 17 13:03 vo_tutorial_step5.mp3
+-rw-r--r--   1 eddyh  staff  51035 Jul 17 13:03 vo_victory.mp3
+-rw-r--r--   1 eddyh  staff  65663 Jul 17 13:03 vo_welcome.mp3

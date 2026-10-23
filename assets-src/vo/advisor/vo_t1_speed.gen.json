@@ -1,0 +1,115 @@
+{
+  "id": "vo_t1_speed",
+  "role": "advisor",
+  "text": "Construction takes time. Speed things up while the crane works.",
+  "sentText": "Construction takes time. Speed things up while the crane works.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.159
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:30:41.405Z",
+  "file": "vo_t1_speed.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.42,
+  "speechSec": 3.18,
+  "wpm": 188.7,
+  "syllables": 12,
+  "sylPerSec": 3.77,
+  "paceWpm": 152,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 260,
+  "samplePeakDbfs": -5.08,
+  "truePeakDbtp": -5.1,
+  "lufsI": -22.2,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 150,
+    "tailTrimmedMs": 230
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Construction takes time, speed things up while the crane works.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.055,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 157.1,
+      "paceWpm": 126.5,
+      "maxGapMs": 390,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Construction takes time. Speed things up while the crane works.",
+      "score": {
+        "hard": 0,
+        "soft": 2.66,
+        "flags": [
+          "pace 126.5 wpm-eq, 3.14 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_t1_speed/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.046
+      },
+      "wpm": 176.5,
+      "paceWpm": 142.1,
+      "maxGapMs": 310,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Construction takes time, speed things up while the crane works.",
+      "score": {
+        "hard": 0,
+        "soft": 0.944,
+        "flags": [
+          "pace 142.1 wpm-eq, 3.53 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_t1_speed/t2.wav"
+    }
+  ],
+  "lineHash": "55691de40f0b64bd4c3b1fc5"
+}

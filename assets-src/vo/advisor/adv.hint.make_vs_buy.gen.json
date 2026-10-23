@@ -1,0 +1,115 @@
+{
+  "id": "adv.hint.make_vs_buy",
+  "role": "advisor",
+  "text": "Suppliers are taking a fat margin. Could we make it ourselves?",
+  "sentText": "Suppliers are taking a fat margin. Could we make it ourselves?",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.817
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:29:46.153Z",
+  "file": "adv.hint.make_vs_buy.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.45,
+  "speechSec": 4.21,
+  "wpm": 156.8,
+  "syllables": 17,
+  "sylPerSec": 4.04,
+  "paceWpm": 162.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -5.8,
+  "truePeakDbtp": -5.8,
+  "lufsI": -21.9,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 410
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Suppliers are taking a fat margin. Could we make it ourselves?",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.251,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 160.6,
+      "paceWpm": 166.6,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Suppliers are taking a fat margin. Could we make it ourselves?",
+      "score": {
+        "hard": 0,
+        "soft": 0.376,
+        "flags": [
+          "pace 166.6 wpm-eq, 4.14 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.make_vs_buy/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.794
+      },
+      "wpm": 142.9,
+      "paceWpm": 148.2,
+      "maxGapMs": 480,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Suppliers are taking a fat margin. Could we make it ourselves?",
+      "score": {
+        "hard": 0,
+        "soft": 0.473,
+        "flags": [
+          "pace 148.2 wpm-eq, 3.68 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.make_vs_buy/t2.wav"
+    }
+  ],
+  "lineHash": "3b2b3467eaba1916cf0eb7e9"
+}

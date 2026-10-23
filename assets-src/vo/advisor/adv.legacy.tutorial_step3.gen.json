@@ -1,0 +1,113 @@
+{
+  "id": "adv.legacy.tutorial_step3",
+  "role": "advisor",
+  "text": "Time is your engine. Press play and let three months run. Watch the cash begin to flow.",
+  "sentText": "Time is your engine. Press play and let three months run. Watch the cash begin to flow.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.061
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:41:45.240Z",
+  "file": "adv.legacy.tutorial_step3.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.19,
+  "speechSec": 4.95,
+  "wpm": 206.1,
+  "syllables": 19,
+  "sylPerSec": 3.84,
+  "paceWpm": 154.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 360,
+  "samplePeakDbfs": -4.78,
+  "truePeakDbtp": -4.8,
+  "lufsI": -21.9,
+  "lra": 1.3,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 160,
+    "tailTrimmedMs": 325
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Time is your engine. Press play and let three months run. Watch the cache begin to flow.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.029,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 174.7,
+      "paceWpm": 131,
+      "maxGapMs": 440,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Time is your engine. Press play and let three months run. Watch the cache begin to flow.",
+      "score": {
+        "hard": 0,
+        "soft": 2.265,
+        "flags": [
+          "pace 131 wpm-eq, 3.25 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step3/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.01
+      },
+      "wpm": 200,
+      "paceWpm": 150,
+      "maxGapMs": 350,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Time is your engine. Press play and let three months run. Watch the cache begin to flow.",
+      "score": {
+        "hard": 0,
+        "soft": 0.075,
+        "flags": []
+      },
+      "file": "_takes/adv.legacy.tutorial_step3/t2.wav"
+    }
+  ],
+  "lineHash": "090990be04a7fd9ee2aa7b81"
+}

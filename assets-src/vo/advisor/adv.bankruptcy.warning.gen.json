@@ -1,0 +1,115 @@
+{
+  "id": "adv.bankruptcy.warning",
+  "role": "advisor",
+  "text": "We're edging toward bankruptcy. Raise cash now: borrow, cut costs, or sell assets.",
+  "sentText": "We're edging toward bankruptcy. Raise cash now: borrow, cut costs, or sell assets.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.159
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:26:14.078Z",
+  "file": "adv.bankruptcy.warning.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.2,
+  "speechSec": 4.96,
+  "wpm": 157.3,
+  "syllables": 19,
+  "sylPerSec": 3.83,
+  "paceWpm": 154.3,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 420,
+  "samplePeakDbfs": -5.17,
+  "truePeakDbtp": -5.1,
+  "lufsI": -22.6,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 140,
+    "tailTrimmedMs": 235
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're edging toward bankruptcy. Raise cash now, borrow cut costs or sell assets.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.082,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 125.6,
+      "paceWpm": 123.2,
+      "maxGapMs": 590,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "We're edging toward bankruptcy. Raise cash now, borrow, cut costs, or sell assets.",
+      "score": {
+        "hard": 0,
+        "soft": 3.498,
+        "flags": [
+          "pace 123.2 wpm-eq, 3.06 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.bankruptcy.warning/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.074
+      },
+      "wpm": 148.9,
+      "paceWpm": 146,
+      "maxGapMs": 460,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "We're edging toward bankruptcy. Raise cash now, borrow cut costs or sell assets.",
+      "score": {
+        "hard": 0,
+        "soft": 0.665,
+        "flags": [
+          "pace 146 wpm-eq, 3.63 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.bankruptcy.warning/t2.wav"
+    }
+  ],
+  "lineHash": "4c6b81462ce115ca8fc9e8a3"
+}

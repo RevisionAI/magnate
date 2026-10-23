@@ -1,0 +1,143 @@
+{
+  "method": "marketIntel",
+  "args": {
+    "cityId": "metropolis"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "rows": [
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "soft_drink",
+          "productName": "Soft Drink",
+          "potentialDemand": 12250000,
+          "retailerCount": 1,
+          "playerPresent": true,
+          "playerPrice": 2.4,
+          "playerModelShare": 0.00815,
+          "playerRealisedShare": 0.004921,
+          "rivalCount": 0,
+          "incumbentShare": 0.995079
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "beer",
+          "productName": "Beer",
+          "potentialDemand": 6125000,
+          "retailerCount": 1,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "cheapestRivalPrice": 2.09,
+          "topRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "share": 0.038821
+          },
+          "rivalCount": 1,
+          "incumbentShare": 0.961179
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "coffee_drink",
+          "productName": "Coffee Drink",
+          "potentialDemand": 3400000,
+          "retailerCount": 1,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "cheapestRivalPrice": 3.9,
+          "topRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "share": 0.0358
+          },
+          "rivalCount": 1,
+          "incumbentShare": 0.9642
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "bread",
+          "productName": "Bread",
+          "potentialDemand": 3037500,
+          "retailerCount": 0,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "rivalCount": 0,
+          "incumbentShare": 1
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "t_shirt",
+          "productName": "T-Shirt",
+          "potentialDemand": 670000,
+          "retailerCount": 1,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "cheapestRivalPrice": 13.5,
+          "topRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "share": 0.043664
+          },
+          "rivalCount": 1,
+          "incumbentShare": 0.956336
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "designer_jeans",
+          "productName": "Designer Jeans",
+          "potentialDemand": 31000,
+          "retailerCount": 1,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "cheapestRivalPrice": 117,
+          "topRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "share": 0.088607
+          },
+          "rivalCount": 1,
+          "incumbentShare": 0.911393
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "television",
+          "productName": "Television",
+          "potentialDemand": 5625,
+          "retailerCount": 0,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "rivalCount": 0,
+          "incumbentShare": 1
+        },
+        {
+          "cityId": "metropolis",
+          "cityName": "Metropolis",
+          "productId": "car",
+          "productName": "Car",
+          "potentialDemand": 1927.5,
+          "retailerCount": 0,
+          "playerPresent": false,
+          "playerModelShare": 0,
+          "playerRealisedShare": 0,
+          "rivalCount": 0,
+          "incumbentShare": 1
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

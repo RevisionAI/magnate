@@ -1,0 +1,113 @@
+{
+  "id": "adv.loan.approved",
+  "role": "advisor",
+  "text": "Loan approved. Borrowed money is a tool; make it earn more than it costs.",
+  "sentText": "Loan approved. Borrowed money is a tool; make it earn more than it costs.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.941
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:18:10.944Z",
+  "file": "adv.loan.approved.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.56,
+  "speechSec": 4.32,
+  "wpm": 194.4,
+  "syllables": 17,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 360,
+  "samplePeakDbfs": -6.18,
+  "truePeakDbtp": -6.2,
+  "lufsI": -22.1,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 305
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Loan approved, borrowed money is a tool, make it earn more than it costs.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.01,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 172.5,
+      "paceWpm": 140.6,
+      "maxGapMs": 390,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Loan approved, borrowed money is a tool, make it earn more than it costs.",
+      "score": {
+        "hard": 0,
+        "soft": 1.109,
+        "flags": [
+          "pace 140.6 wpm-eq, 3.49 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.loan.approved/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.926
+      },
+      "wpm": 189.6,
+      "paceWpm": 154.5,
+      "maxGapMs": 370,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Loan approved, borrowed money is a tool, make it earn more than it costs.",
+      "score": {
+        "hard": 0,
+        "soft": 0.03,
+        "flags": []
+      },
+      "file": "_takes/adv.loan.approved/t3.wav"
+    }
+  ],
+  "lineHash": "cc66c26bfa0eedf02519fb75"
+}

@@ -1,0 +1,98 @@
+{
+  "method": "supplyFlows",
+  "args": {
+    "cityId": "metropolis"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "month": {
+        "year": 2026,
+        "month": 8
+      },
+      "flows": [
+        {
+          "kind": "import",
+          "productId": "soft_drink",
+          "toBuildingId": 1,
+          "toCityId": "metropolis",
+          "amount": 73920
+        },
+        {
+          "kind": "retail",
+          "productId": "soft_drink",
+          "fromBuildingId": 1,
+          "fromCityId": "metropolis",
+          "toCityId": "metropolis",
+          "quantity": 60000,
+          "amount": 135000
+        },
+        {
+          "kind": "import",
+          "productId": "beer",
+          "toBuildingId": 5,
+          "toCityId": "metropolis",
+          "amount": 297094.74
+        },
+        {
+          "kind": "retail",
+          "productId": "beer",
+          "fromBuildingId": 5,
+          "fromCityId": "metropolis",
+          "toCityId": "metropolis",
+          "quantity": 236842.1052631579,
+          "amount": 495000
+        },
+        {
+          "kind": "import",
+          "productId": "coffee_drink",
+          "toBuildingId": 5,
+          "toCityId": "metropolis",
+          "amount": 322912.15
+        },
+        {
+          "kind": "retail",
+          "productId": "coffee_drink",
+          "fromBuildingId": 5,
+          "fromCityId": "metropolis",
+          "toCityId": "metropolis",
+          "quantity": 121213.27085028013,
+          "amount": 472731.76
+        },
+        {
+          "kind": "import",
+          "productId": "designer_jeans",
+          "toBuildingId": 5,
+          "toCityId": "metropolis",
+          "amount": 170428.73
+        },
+        {
+          "kind": "retail",
+          "productId": "designer_jeans",
+          "fromBuildingId": 5,
+          "fromCityId": "metropolis",
+          "toCityId": "metropolis",
+          "quantity": 2766.7001237225195,
+          "amount": 323703.91
+        },
+        {
+          "kind": "import",
+          "productId": "t_shirt",
+          "toBuildingId": 5,
+          "toCityId": "metropolis",
+          "amount": 230357.24
+        },
+        {
+          "kind": "retail",
+          "productId": "t_shirt",
+          "fromBuildingId": 5,
+          "fromCityId": "metropolis",
+          "toCityId": "metropolis",
+          "quantity": 29382.30145923727,
+          "amount": 396661.07
+        }
+      ]
+    },
+    "revision": 12
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sandbox",
+  "name": "Sandbox",
+  "description": "Free play. No victory conditions — build whatever you like.",
+  "startDate": { "year": 2026, "month": 1 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 30000000
+  },
+  "aiCompetitors": [
+    { "name": "RivalCo", "startingCash": 25000000, "strategy": "adaptive" }
+  ],
+  "goals": []
+}

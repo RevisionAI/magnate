@@ -1,0 +1,48 @@
+{
+  "id": "four_archetype_melee",
+  "name": "Four-Archetype Melee",
+  "description": "Metropolis. One city, four rivals, four playbooks. Simple undercuts on price, Adaptive reads the room and counters, VerticalIntegrator squeezes COGS with a farm-to-shelf chain, and TechLeader bets the farm on Q+T+B at a 30% premium. You have to top the brand chart in soft drink AND car, grind out 18 consecutive profitable months, and still be worth $40M when the dust settles — over seven years.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2032, "month": 12 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 30000000
+  },
+  "aiCompetitors": [
+    { "name": "BasicCo",         "startingCash": 30000000, "strategy": "simple" },
+    { "name": "Adapta Holdings", "startingCash": 30000000, "strategy": "adaptive" },
+    { "name": "ChainLink Inc",   "startingCash": 30000000, "strategy": "verticalIntegrator" },
+    { "name": "Zenith Labs",     "startingCash": 30000000, "strategy": "techLeader" }
+  ],
+  "goals": [
+    {
+      "type": "topBrand",
+      "description": "Top the soft drink brand chart in Metropolis (70 awareness) — the volume aisle everyone fights over.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "type": "topBrand",
+      "description": "Top the car brand chart in Metropolis (70 awareness) — TechLeader's hero turf; take it from them.",
+      "product": "car",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "type": "consecutiveProfitable",
+      "description": "Post 18 consecutive months of positive net income — melee survivors have to be earners, not just spenders.",
+      "months": 18
+    },
+    {
+      "type": "corporateValue",
+      "description": "Grow corporate value to $40M — with four rivals pounding the same city, a positive balance sheet is a verdict.",
+      "threshold": 40000000
+    },
+    {
+      "type": "elapsedMonths",
+      "description": "Outlast the melee for 84 months — a seven-year grind is the point.",
+      "months": 84
+    }
+  ]
+}

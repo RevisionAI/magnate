@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Standalone visual check for the city generator (workstream E3a). Deliberately NOT part of
+    Magnate.sln. Renders every city's layout to PNG (zones, land value, traffic); see Program.cs
+    for the command line.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Magnate.LayoutPreview</RootNamespace>
+    <AssemblyName>layout-preview</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\engine\Magnate.Engine\Magnate.Engine.csproj" />
+  </ItemGroup>
+</Project>

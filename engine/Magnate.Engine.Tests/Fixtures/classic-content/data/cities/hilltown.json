@@ -1,0 +1,21 @@
+{
+  "id": "hilltown",
+  "name": "Hilltown",
+  "population": 100000,
+  "demographics": {
+    "low":    0.20,
+    "middle": 0.40,
+    "high":   0.40
+  },
+  "grid": {
+    "width":  40,
+    "height": 40
+  },
+  "geography": {
+    "coastal":     false,
+    "arable":      true,
+    "mineralRich": false,
+    "oilRich":     false
+  },
+  "baseLandPrice": 250.0
+}

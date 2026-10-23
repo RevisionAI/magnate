@@ -1,0 +1,18 @@
+{
+  "id": "export_tycoon",
+  "name": "Export Tycoon",
+  "description": "You start with a modest $8M treasury and a mandate to conquer the world market. Stand up farms and factories, flip the export switch, and bank $5M in cumulative export revenue inside five years.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2030, "month": 12 },
+  "player": {
+    "name": "Player",
+    "startingCash": 8000000
+  },
+  "goals": [
+    {
+      "type": "exportRevenue",
+      "description": "Bank $5M in cumulative export revenue within five years — the world market is your customer.",
+      "amount": 5000000
+    }
+  ]
+}

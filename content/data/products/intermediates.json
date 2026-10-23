@@ -1,0 +1,258 @@
+[
+  {
+    "id": "sugar",
+    "name": "Sugar",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 0.6,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 7,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 6000000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 2.0,
+      "inputs": [
+        {
+          "productId": "sugarcane",
+          "quantity": 0.009
+        }
+      ],
+      "outputPerSlotMonth": 2000000,
+      "laborPerSlot": 10,
+      "otherCostPerUnit": 0.05,
+      "kwhPerUnit": 0.12,
+      "lineCapex": 5000000
+    }
+  },
+  {
+    "id": "flour",
+    "name": "Flour",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 0.5,
+    "priceElasticity": 0.8,
+    "maxTechLevel": 7,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 6000000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 1.8,
+      "inputs": [
+        {
+          "productId": "wheat",
+          "quantity": 0.00133
+        }
+      ],
+      "outputPerSlotMonth": 2000000,
+      "laborPerSlot": 9,
+      "otherCostPerUnit": 0.02,
+      "kwhPerUnit": 0.07,
+      "lineCapex": 3500000
+    }
+  },
+  {
+    "id": "cotton_fabric",
+    "name": "Cotton Fabric",
+    "tier": "intermediate",
+    "category": "textile",
+    "unit": "bolt",
+    "baseWorldMarketPrice": 72,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 8,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 36000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 4.8,
+      "inputs": [
+        {
+          "productId": "cotton",
+          "quantity": 0.007
+        }
+      ],
+      "outputPerSlotMonth": 12000,
+      "laborPerSlot": 24,
+      "otherCostPerUnit": 26.5,
+      "kwhPerUnit": 25,
+      "lineCapex": 5000000
+    }
+  },
+  {
+    "id": "steel",
+    "name": "Steel",
+    "tier": "intermediate",
+    "category": "metal",
+    "unit": "ton",
+    "baseWorldMarketPrice": 760,
+    "priceElasticity": 1.1,
+    "maxTechLevel": 10,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 9000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 5.6,
+      "inputs": [
+        {
+          "productId": "iron_ore",
+          "quantity": 1.6
+        }
+      ],
+      "outputPerSlotMonth": 3000,
+      "laborPerSlot": 28,
+      "otherCostPerUnit": 343,
+      "kwhPerUnit": 480,
+      "lineCapex": 15000000
+    }
+  },
+  {
+    "id": "plastic",
+    "name": "Plastic",
+    "tier": "intermediate",
+    "category": "polymer",
+    "unit": "kg",
+    "baseWorldMarketPrice": 1.45,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 10,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 4500000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 2.8,
+      "inputs": [
+        {
+          "productId": "crude_oil",
+          "quantity": 0.011
+        }
+      ],
+      "outputPerSlotMonth": 1500000,
+      "laborPerSlot": 14,
+      "otherCostPerUnit": 0.14,
+      "kwhPerUnit": 1.1,
+      "lineCapex": 10000000
+    }
+  },
+  {
+    "id": "electronic_parts",
+    "name": "Electronic Parts",
+    "tier": "intermediate",
+    "category": "electronics",
+    "unit": "unit",
+    "baseWorldMarketPrice": 10.0,
+    "priceElasticity": 1.2,
+    "maxTechLevel": 12,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 600000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 8.0,
+      "inputs": [
+        {
+          "productId": "plastic",
+          "quantity": 0.05
+        },
+        {
+          "productId": "steel",
+          "quantity": 0.0004
+        }
+      ],
+      "outputPerSlotMonth": 200000,
+      "laborPerSlot": 40,
+      "otherCostPerUnit": 6.4,
+      "kwhPerUnit": 1.5,
+      "lineCapex": 10000000
+    }
+  },
+  {
+    "id": "malt",
+    "name": "Malt",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 0.72,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 7,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 3000000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 1.8,
+      "inputs": [
+        {
+          "productId": "wheat",
+          "quantity": 0.0013
+        }
+      ],
+      "outputPerSlotMonth": 1000000,
+      "laborPerSlot": 9,
+      "otherCostPerUnit": 0.13,
+      "kwhPerUnit": 0.25,
+      "lineCapex": 3500000
+    }
+  },
+  {
+    "id": "roasted_coffee",
+    "name": "Roasted Coffee",
+    "tier": "intermediate",
+    "category": "food_ingredient",
+    "unit": "kg",
+    "baseWorldMarketPrice": 12.5,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 8,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 300000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 2.4,
+      "inputs": [
+        {
+          "productId": "coffee_beans",
+          "quantity": 0.0012
+        }
+      ],
+      "outputPerSlotMonth": 100000,
+      "laborPerSlot": 12,
+      "otherCostPerUnit": 0.41,
+      "kwhPerUnit": 0.9,
+      "lineCapex": 3500000
+    }
+  },
+  {
+    "id": "denim_fabric",
+    "name": "Denim Fabric",
+    "tier": "intermediate",
+    "category": "textile",
+    "unit": "bolt",
+    "baseWorldMarketPrice": 180,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 9,
+    "importMultiplier": 1.1,
+    "exportMultiplier": 0.92,
+    "worldMarketDepth": 18000,
+    "recipe": {
+      "outputQuantity": 1.0,
+      "laborUnits": 4.8,
+      "inputs": [
+        {
+          "productId": "cotton",
+          "quantity": 0.0175
+        }
+      ],
+      "outputPerSlotMonth": 6000,
+      "laborPerSlot": 24,
+      "otherCostPerUnit": 77,
+      "kwhPerUnit": 45,
+      "lineCapex": 5000000
+    }
+  }
+]

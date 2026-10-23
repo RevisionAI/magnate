@@ -1,0 +1,40 @@
+{
+  "id": "tutorial",
+  "name": "Tutorial — Your First Company",
+  "description": "Learn the basics of running a company in Magnate. Follow the five steps and you'll ship your first product, run your first ad campaign, and grow a profitable business. Suggested for new players.",
+  "startDate": { "year": 2026, "month": 1 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 15000000
+  },
+  "aiCompetitors": [
+    { "name": "LocalCo", "startingCash": 10000000, "strategy": "simple" }
+  ],
+  "goals": [
+    {
+      "type": "ownsBuilding",
+      "description": "Step 1 — Open Manage (in-game button). Go to the Build tab. Pick any city, choose Supermarket, and click Construct. Buildings cost cash but turn into revenue-generating assets on your balance sheet.",
+      "category": "supermarket"
+    },
+    {
+      "type": "productRetailed",
+      "description": "Step 2 — Before clicking Construct (or in the building's Inspect view), pick soft_drink as the first-slot product. Set a price around $1.80 and restock target around 500,000. Your store will auto-buy inventory from the world market each month.",
+      "product": "soft_drink"
+    },
+    {
+      "type": "elapsedMonths",
+      "description": "Step 3 — Go back to the main HUD and click Play. The sim ticks one month per second. Let 3 months pass to see your store serve customers and rack up sales. Watch your cash and ledger entries grow.",
+      "months": 3
+    },
+    {
+      "type": "adCampaignActive",
+      "description": "Step 4 — Go to Manage → Campaigns. Start a TV ad campaign for soft_drink in your city at $50,000/month. Brand awareness builds over time and increases your market share — competitors without ads will lose customers to you.",
+      "product": "soft_drink"
+    },
+    {
+      "type": "corporateValue",
+      "description": "Step 5 — Grow your company to $20M corporate value (cash + inventory + buildings). Try the Reports scene to see your accrual books, per-product margins, and goal progress. Tune prices, ad budgets, and restock targets via the Inspect button.",
+      "threshold": 20000000
+    }
+  ]
+}

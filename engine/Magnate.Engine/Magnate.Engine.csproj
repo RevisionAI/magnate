@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Magnate.Engine</RootNamespace>
+    <AssemblyName>Magnate.Engine</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Tests read engine internals (World.Internal*, RecordCashChange, RecordAccrual, …). -->
+    <InternalsVisibleTo Include="Magnate.Engine.Tests" />
+  </ItemGroup>
+</Project>

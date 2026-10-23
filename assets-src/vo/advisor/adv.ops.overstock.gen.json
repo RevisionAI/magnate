@@ -1,0 +1,111 @@
+{
+  "id": "adv.ops.overstock",
+  "role": "advisor",
+  "text": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+  "sentText": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.855
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:17:27.915Z",
+  "file": "adv.ops.overstock.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.84,
+  "speechSec": 4.6,
+  "wpm": 169.6,
+  "syllables": 18,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 450,
+  "samplePeakDbfs": -6.37,
+  "truePeakDbtp": -6.4,
+  "lufsI": -22.1,
+  "lra": 1.4,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 240,
+    "tailTrimmedMs": 370
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.126,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 166.7,
+      "paceWpm": 154.9,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+      "score": {
+        "hard": 0,
+        "soft": 0.151,
+        "flags": []
+      },
+      "file": "_takes/adv.ops.overstock/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.853
+      },
+      "wpm": 169.6,
+      "paceWpm": 157.6,
+      "maxGapMs": 450,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+      "score": {
+        "hard": 0,
+        "soft": 0.126,
+        "flags": []
+      },
+      "file": "_takes/adv.ops.overstock/t3.wav"
+    }
+  ],
+  "lineHash": "6202b0d1880d027f5332c361"
+}

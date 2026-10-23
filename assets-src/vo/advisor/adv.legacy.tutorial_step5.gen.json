@@ -1,0 +1,116 @@
+{
+  "id": "adv.legacy.tutorial_step5",
+  "role": "advisor",
+  "text": "Now scale. Grow your corporate value to $20 million. Your rivals are already moving.",
+  "tts": "Now scale. Grow your corporate value to twenty million dollars. Your rivals are already moving.",
+  "sentText": "Now scale. Grow your corporate value to twenty million dollars. Your rivals are already moving.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.808
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:42:42.673Z",
+  "file": "adv.legacy.tutorial_step5.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 6.64,
+  "speechSec": 6.4,
+  "wpm": 140.6,
+  "syllables": 26,
+  "sylPerSec": 4.06,
+  "paceWpm": 163.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -5.86,
+  "truePeakDbtp": -5.9,
+  "lufsI": -22.1,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 425
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Now scale. Grow your corporate value to 20 million dollars. Your rivals are already moving.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.261,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 146.3,
+      "paceWpm": 170.2,
+      "maxGapMs": 460,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Now scale, grow your corporate value to 20 million dollars. Your rivals are already moving.",
+      "score": {
+        "hard": 0,
+        "soft": 0.797,
+        "flags": [
+          "pace 170.2 wpm-eq, 4.23 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step5/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.777
+      },
+      "wpm": 124.7,
+      "paceWpm": 145,
+      "maxGapMs": 500,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Now scale. Grow your corporate value to 20 million dollars. Your rivals are already moving.",
+      "score": {
+        "hard": 0,
+        "soft": 0.875,
+        "flags": [
+          "pace 145 wpm-eq, 3.6 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.legacy.tutorial_step5/t2.wav"
+    }
+  ],
+  "lineHash": "3363bb83dc966cece31a412d"
+}

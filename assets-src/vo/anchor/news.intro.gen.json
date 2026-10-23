@@ -1,0 +1,111 @@
+{
+  "id": "news.intro",
+  "role": "anchor",
+  "text": "Good evening. Here's what's moving the markets tonight.",
+  "sentText": "Good evening. Here's what's moving the markets tonight.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.209
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:11:45.351Z",
+  "file": "news.intro.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 2.91,
+  "speechSec": 2.67,
+  "wpm": 179.8,
+  "syllables": 12,
+  "sylPerSec": 4.49,
+  "paceWpm": 154.1,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 180,
+  "samplePeakDbfs": -6.79,
+  "truePeakDbtp": -6.8,
+  "lufsI": -21.3,
+  "lra": 0,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 120,
+    "tailTrimmedMs": 295
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Good evening, here's what's moving the markets tonight.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.009,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 176.5,
+      "paceWpm": 151.3,
+      "maxGapMs": 180,
+      "lufsI": -21.2,
+      "cer": 0,
+      "transcript": "Good evening, here's what's moving the markets tonight.",
+      "score": {
+        "hard": 0,
+        "soft": 0.037,
+        "flags": []
+      },
+      "file": "_takes/news.intro/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.224
+      },
+      "wpm": 184.6,
+      "paceWpm": 158.2,
+      "maxGapMs": 180,
+      "lufsI": -21.2,
+      "cer": 0,
+      "transcript": "Good evening, here's what's moving the markets tonight.",
+      "score": {
+        "hard": 0,
+        "soft": 0.032,
+        "flags": []
+      },
+      "file": "_takes/news.intro/t3.wav"
+    }
+  ],
+  "lineHash": "ff3bc34ed43a003f83d4ba88"
+}

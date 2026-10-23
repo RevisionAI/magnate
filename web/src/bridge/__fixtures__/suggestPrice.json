@@ -1,0 +1,76 @@
+{
+  "method": "suggestPrice",
+  "args": {
+    "buildingId": 1,
+    "slotIndex": 0
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "buildingId": 1,
+      "slotIndex": 0,
+      "unitCost": 1.232,
+      "effectiveWorldPrice": 1.1,
+      "ceilings": [],
+      "suggested": 2.63,
+      "expectedUnitsAt": [
+        {
+          "price": 1.4,
+          "units": 70000,
+          "revenue": 98000,
+          "grossProfit": 11760
+        },
+        {
+          "price": 1.58,
+          "units": 70000,
+          "revenue": 110600,
+          "grossProfit": 24360
+        },
+        {
+          "price": 1.75,
+          "units": 70000,
+          "revenue": 122500,
+          "grossProfit": 36260
+        },
+        {
+          "price": 1.93,
+          "units": 70000,
+          "revenue": 135100,
+          "grossProfit": 48860
+        },
+        {
+          "price": 2.1,
+          "units": 70000,
+          "revenue": 147000,
+          "grossProfit": 60760
+        },
+        {
+          "price": 2.28,
+          "units": 70000,
+          "revenue": 159600,
+          "grossProfit": 73360
+        },
+        {
+          "price": 2.45,
+          "units": 70000,
+          "revenue": 171500,
+          "grossProfit": 85260
+        },
+        {
+          "price": 2.63,
+          "units": 62691.496,
+          "revenue": 164878.63,
+          "grossProfit": 87642.71
+        },
+        {
+          "price": 2.8,
+          "units": 45825.376,
+          "revenue": 128311.05,
+          "grossProfit": 71854.19
+        }
+      ],
+      "modelSource": "engine"
+    },
+    "revision": 25
+  }
+}

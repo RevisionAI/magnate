@@ -1,0 +1,43 @@
+{
+  "id": "multi_city_mogul",
+  "name": "Multi-City Mogul",
+  "description": "Not content with owning one town? Prove you can dominate three markets at once. Secure a controlling share of bread in three of the four cities while growing a serious balance sheet — two rival chains will fight you in every aisle.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2032, "month": 12 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 25000000
+  },
+  "aiCompetitors": [
+    { "name": "GoliathMart", "startingCash": 35000000, "strategy": "adaptive" },
+    { "name": "PennyGrocer", "startingCash": 20000000, "strategy": "simple"   }
+  ],
+  "goals": [
+    {
+      "type": "marketShare",
+      "description": "Reach 40% share of bread in Metropolis — the flagship market.",
+      "product": "bread",
+      "city": "metropolis",
+      "threshold": 0.40
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 40% share of bread in Riverside — the mid-tier suburb.",
+      "product": "bread",
+      "city": "riverside",
+      "threshold": 0.40
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 40% share of bread in Portbay — the coastal working-class town.",
+      "product": "bread",
+      "city": "portbay",
+      "threshold": 0.40
+    },
+    {
+      "type": "corporateValue",
+      "description": "Grow corporate value to $40M — empires require capital.",
+      "threshold": 40000000
+    }
+  ]
+}

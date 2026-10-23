@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/SaveBrowser.cs" id="1_browser"]
+
+[node name="SaveBrowser" type="Node"]
+script = ExtResource("1_browser")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Load Saved Game"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="HintLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+
+[node name="Split" type="HSplitContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 420
+
+[node name="LeftPane" type="VBoxContainer" parent="Panel/VBox/Split"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="ListHeader" type="Label" parent="Panel/VBox/Split/LeftPane"]
+layout_mode = 2
+text = "Saves"
+theme_override_font_sizes/font_size = 16
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox/Split/LeftPane"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SaveList" type="VBoxContainer" parent="Panel/VBox/Split/LeftPane/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="RightPane" type="VBoxContainer" parent="Panel/VBox/Split"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="PreviewHeader" type="Label" parent="Panel/VBox/Split/RightPane"]
+layout_mode = 2
+text = "Preview"
+theme_override_font_sizes/font_size = 16
+
+[node name="PreviewScroll" type="ScrollContainer" parent="Panel/VBox/Split/RightPane"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Preview" type="RichTextLabel" parent="Panel/VBox/Split/RightPane/PreviewScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+text = "[i]Select a save on the left to preview.[/i]"
+
+[node name="LoadButton" type="Button" parent="Panel/VBox/Split/RightPane"]
+layout_mode = 2
+text = "Load Selected Save"
+disabled = true
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

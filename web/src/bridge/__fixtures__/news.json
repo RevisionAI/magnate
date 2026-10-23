@@ -1,0 +1,79 @@
+{
+  "method": "news",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "entries": [
+        {
+          "seq": 0,
+          "date": {
+            "year": 2026,
+            "month": 3
+          },
+          "eventId": "consumer_electronics_craze",
+          "headline": "TV-buying craze sweeps Metropolis as new model debuts",
+          "description": "An aggressive launch campaign by an unnamed retailer (and three suspiciously well-dressed influencers) has Metropolis household electronics flying off shelves.",
+          "severity": "info",
+          "effects": [
+            {
+              "kind": "brandShift",
+              "productId": "television",
+              "cityId": "metropolis",
+              "delta": 12
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "date": {
+            "year": 2026,
+            "month": 5
+          },
+          "eventId": "cotton_harvest_bumper",
+          "headline": "Bumper cotton harvest crashes textile feedstock prices",
+          "description": "Favourable rains and a quiet pest season produced an exceptional cotton crop. Apparel makers expect cheaper denim and tee runs through year-end.",
+          "severity": "notable",
+          "effects": [
+            {
+              "kind": "priceMultiplier",
+              "productId": "cotton",
+              "multiplier": 0.75,
+              "months": 8
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "eventId": "viral_ad_spot",
+          "headline": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+          "description": "A 30-second spot picked up unexpected social-media traction overnight. Brand recall for soft drinks across Metropolis got a lift across all incumbents.",
+          "severity": "info",
+          "effects": [
+            {
+              "kind": "brandShift",
+              "productId": "soft_drink",
+              "cityId": "metropolis",
+              "delta": 10
+            }
+          ]
+        }
+      ],
+      "latestSeq": 2,
+      "activePriceEffects": [
+        {
+          "productId": "cotton",
+          "multiplier": 0.75,
+          "remainingMonths": 5,
+          "basePrice": 1900,
+          "effectivePrice": 1425
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

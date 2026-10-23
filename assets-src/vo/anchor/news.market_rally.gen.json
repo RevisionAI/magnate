@@ -1,0 +1,111 @@
+{
+  "id": "news.market_rally",
+  "role": "anchor",
+  "text": "Stocks close sharply higher in a broad market rally.",
+  "sentText": "Stocks close sharply higher in a broad market rally.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.214
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:44:46.432Z",
+  "file": "news.market_rally.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.09,
+  "speechSec": 2.85,
+  "wpm": 189.5,
+  "syllables": 13,
+  "sylPerSec": 4.56,
+  "paceWpm": 156.4,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 200,
+  "samplePeakDbfs": -5.07,
+  "truePeakDbtp": -5.1,
+  "lufsI": -21.3,
+  "lra": 20,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 90,
+    "tailTrimmedMs": 295
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Stocks close sharply higher in a broad market rally.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.014,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 182.4,
+      "paceWpm": 150.6,
+      "maxGapMs": 210,
+      "lufsI": -21.4,
+      "cer": 0,
+      "transcript": "Stocks close sharply higher in a broad market rally.",
+      "score": {
+        "hard": 0,
+        "soft": 0.044,
+        "flags": []
+      },
+      "file": "_takes/news.market_rally/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.206
+      },
+      "wpm": 189.5,
+      "paceWpm": 156.4,
+      "maxGapMs": 200,
+      "lufsI": -21.3,
+      "cer": 0,
+      "transcript": "Stocks close sharply higher in a broad market rally.",
+      "score": {
+        "hard": 0,
+        "soft": 0.014,
+        "flags": []
+      },
+      "file": "_takes/news.market_rally/t3.wav"
+    }
+  ],
+  "lineHash": "5949c2fd32a880a72ac8484c"
+}

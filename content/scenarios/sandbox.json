@@ -1,0 +1,21 @@
+{
+  "id": "sandbox",
+  "name": "Sandbox",
+  "description": "Free play with no victory conditions. One well-funded rival runs its own chain; build whatever you like, borrow when it pays, and keep an eye on your credit rating — bankruptcy still ends the company.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 90000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "RivalCo",
+      "startingCash": 75000000,
+      "strategy": "adaptive"
+    }
+  ],
+  "goals": []
+}

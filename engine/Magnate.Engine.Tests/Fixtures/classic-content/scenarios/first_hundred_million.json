@@ -1,0 +1,21 @@
+{
+  "id": "first_hundred_million",
+  "name": "First Hundred Million",
+  "description": "Grow from a startup to a $100M corporation within five years, competing against a well-funded incumbent.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2030, "month": 12 },
+  "player": {
+    "name": "Startup Inc",
+    "startingCash": 15000000
+  },
+  "aiCompetitors": [
+    { "name": "BigCo", "startingCash": 50000000, "strategy": "adaptive" }
+  ],
+  "goals": [
+    {
+      "type": "corporateValue",
+      "description": "Reach $100M corporate value",
+      "threshold": 100000000
+    }
+  ]
+}

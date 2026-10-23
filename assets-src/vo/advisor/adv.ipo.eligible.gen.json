@@ -1,0 +1,112 @@
+{
+  "id": "adv.ipo.eligible",
+  "role": "advisor",
+  "text": "We qualify for a public listing. An IPO could fund real growth.",
+  "tts": "We qualify for a public listing. An I.P.O. could fund real growth.",
+  "sentText": "We qualify for a public listing. An I.P.O. could fund real growth.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.825
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T02:54:30.751Z",
+  "file": "adv.ipo.eligible.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.08,
+  "speechSec": 4.84,
+  "wpm": 148.8,
+  "syllables": 19,
+  "sylPerSec": 3.93,
+  "paceWpm": 158.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 490,
+  "samplePeakDbfs": -6.18,
+  "truePeakDbtp": -5.7,
+  "lufsI": -22.3,
+  "lra": 0.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 220,
+    "tailTrimmedMs": 375
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We qualify for a public listing. An IPO could fund real growth.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.231,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 150.3,
+      "paceWpm": 159.7,
+      "maxGapMs": 490,
+      "lufsI": -22.3,
+      "cer": 0.02,
+      "transcript": "We qualify for a public listing, and IPO could fund real growth.",
+      "score": {
+        "hard": 0,
+        "soft": 0.647,
+        "flags": []
+      },
+      "file": "_takes/adv.ipo.eligible/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.81
+      },
+      "wpm": 146,
+      "paceWpm": 155.2,
+      "maxGapMs": 510,
+      "lufsI": -22.2,
+      "cer": 0.02,
+      "transcript": "We qualify for a public listing, and IPO could fund real growth.",
+      "score": {
+        "hard": 0,
+        "soft": 0.698,
+        "flags": []
+      },
+      "file": "_takes/adv.ipo.eligible/t3.wav"
+    }
+  ],
+  "lineHash": "6b22d882478c85b708d8d911"
+}

@@ -1,0 +1,17 @@
+=== music ===
+OK  music/title_theme
+OK  music/gameplay_loop
+OK  music/victory_theme
+=== sfx ===
+OK  sfx/ui_click
+OK  sfx/build_construct
+OK  sfx/cash_sale
+OK  sfx/goal_achieved
+OK  sfx/notify_info
+OK  sfx/notify_warning
+OK  sfx/month_tick
+OK  sfx/campaign_start
+OK  sfx/upgrade
+OK  sfx/defeat
+OK  sfx/victory_fanfare
+=== done ===

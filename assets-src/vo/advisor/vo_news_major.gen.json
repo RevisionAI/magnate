@@ -1,0 +1,113 @@
+{
+  "id": "vo_news_major",
+  "role": "advisor",
+  "text": "Big news. Check how it hits our costs.",
+  "sentText": "Big news. Check how it hits our costs.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.902
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:35:46.095Z",
+  "file": "vo_news_major.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 2.54,
+  "speechSec": 2.3,
+  "wpm": 208.7,
+  "syllables": 9,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 200,
+  "samplePeakDbfs": -5.49,
+  "truePeakDbtp": -5.5,
+  "lufsI": -21.9,
+  "lra": 0,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 160,
+    "tailTrimmedMs": 325
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Big news, check how it hits our costs.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.001,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 194.3,
+      "paceWpm": 146.7,
+      "maxGapMs": 200,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Big news, check how it hits our costs.",
+      "score": {
+        "hard": 0,
+        "soft": 0.438,
+        "flags": [
+          "pace 146.7 wpm-eq, 3.64 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_news_major/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.893
+      },
+      "wpm": 206.9,
+      "paceWpm": 156.2,
+      "maxGapMs": 190,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Big news, check how it hits our costs.",
+      "score": {
+        "hard": 0,
+        "soft": 0.013,
+        "flags": []
+      },
+      "file": "_takes/vo_news_major/t3.wav"
+    }
+  ],
+  "lineHash": "fe7b6e6643199c752fd41c40"
+}

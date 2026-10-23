@@ -1,0 +1,113 @@
+{
+  "id": "vo_deadline_12",
+  "role": "advisor",
+  "text": "One year left on the clock.",
+  "sentText": "One year left on the clock.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.887
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:36:34.952Z",
+  "file": "vo_deadline_12.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 1.77,
+  "speechSec": 1.53,
+  "wpm": 235.3,
+  "syllables": 6,
+  "sylPerSec": 3.92,
+  "paceWpm": 157.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 0,
+  "samplePeakDbfs": -7.44,
+  "truePeakDbtp": -7.4,
+  "lufsI": -21.9,
+  "lra": 0,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 330
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "One year left on the clock.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 222.2,
+      "paceWpm": 149.1,
+      "maxGapMs": 0,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "One year left on the clock.",
+      "score": {
+        "hard": 0,
+        "soft": 0.174,
+        "flags": [
+          "pace 149.1 wpm-eq, 3.7 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_deadline_12/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.88
+      },
+      "wpm": 235.3,
+      "paceWpm": 157.9,
+      "maxGapMs": 0,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "One year left on the clock.",
+      "score": {
+        "hard": 0,
+        "soft": 0.004,
+        "flags": []
+      },
+      "file": "_takes/vo_deadline_12/t3.wav"
+    }
+  ],
+  "lineHash": "a79494028c09d5f8fd43662f"
+}

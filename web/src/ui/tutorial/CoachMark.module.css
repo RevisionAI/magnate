@@ -1,0 +1,61 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-coach);
+  pointer-events: none;
+}
+
+.dim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade var(--dur-slow) var(--ease-out);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.ring {
+  position: absolute;
+  border-radius: var(--r-md);
+  box-shadow: 0 0 0 2px var(--c-gold-bright), 0 0 24px rgba(240, 211, 138, 0.55);
+  animation: breathe 1.8s ease-in-out infinite;
+  transition: top var(--dur-base) var(--ease-out), left var(--dur-base) var(--ease-out), width var(--dur-base) var(--ease-out), height var(--dur-base) var(--ease-out);
+}
+
+.nudge {
+  animation: nudge 0.9s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% {
+    box-shadow: 0 0 0 3px var(--c-gold-bright), 0 0 36px rgba(240, 211, 138, 0.75);
+  }
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.hint {
+  position: absolute;
+  max-width: 16rem;
+  padding: 6px 10px;
+  border-radius: var(--r-sm);
+  background: var(--c-gold-bright);
+  color: var(--c-gold-ink);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  box-shadow: var(--e-3);
+  animation: fade var(--dur-slow) var(--ease-out);
+}

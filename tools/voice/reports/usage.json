@@ -1,0 +1,73 @@
+{
+  "runs": [
+    {
+      "date": "2026-10-01T02:53:24.436Z",
+      "out": "assets-src/vo",
+      "roles": {
+        "advisor": "kokoro",
+        "anchor": "kokoro"
+      },
+      "requests": 0,
+      "cachedTakes": 20,
+      "charactersSent": 0,
+      "creditsCharged": 0,
+      "kokoroRenders": 300
+    },
+    {
+      "date": "2026-10-01T05:46:42.762Z",
+      "out": "assets-src/vo",
+      "roles": {
+        "advisor": "kokoro",
+        "anchor": "kokoro"
+      },
+      "requests": 0,
+      "cachedTakes": 24,
+      "charactersSent": 0,
+      "creditsCharged": 0,
+      "kokoroRenders": 312
+    },
+    {
+      "date": "2026-10-01T10:29:32.552Z",
+      "out": "assets-src/vo",
+      "roles": {
+        "advisor": "kokoro"
+      },
+      "requests": 0,
+      "cachedTakes": 0,
+      "charactersSent": 0,
+      "creditsCharged": 0,
+      "kokoroRenders": 3
+    },
+    {
+      "date": "2026-10-01T10:36:32.588Z",
+      "out": "tools/voice/.tmp/vo-offline",
+      "roles": {
+        "advisor": "kokoro",
+        "anchor": "kokoro"
+      },
+      "requests": 0,
+      "cachedTakes": 0,
+      "charactersSent": 0,
+      "creditsCharged": 0,
+      "kokoroRenders": 324
+    },
+    {
+      "date": "2026-10-01T10:36:54.967Z",
+      "out": "tools/voice/.tmp/vo-offline",
+      "roles": {
+        "advisor": "kokoro"
+      },
+      "requests": 0,
+      "cachedTakes": 0,
+      "charactersSent": 0,
+      "creditsCharged": 0,
+      "kokoroRenders": 3
+    }
+  ],
+  "totals": {
+    "requests": 0,
+    "charactersSent": 0,
+    "creditsCharged": 0,
+    "kokoroRenders": 942
+  }
+}

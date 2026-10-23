@@ -1,0 +1,115 @@
+{
+  "id": "adv.market.share_25",
+  "role": "advisor",
+  "text": "A quarter of this market is ours. Competitors will be noticing.",
+  "sentText": "A quarter of this market is ours. Competitors will be noticing.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.748
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:21:49.474Z",
+  "file": "adv.market.share_25.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.24,
+  "speechSec": 5,
+  "wpm": 132,
+  "syllables": 19,
+  "sylPerSec": 3.8,
+  "paceWpm": 153,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 510,
+  "samplePeakDbfs": -5.86,
+  "truePeakDbtp": -5.8,
+  "lufsI": -22.4,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 240,
+    "tailTrimmedMs": 470
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "A quarter of this market is ours. Competitors will be noticing.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.32,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 159,
+      "paceWpm": 184.4,
+      "maxGapMs": 430,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "A quarter of this market is ours. Competitors will be noticing.",
+      "score": {
+        "hard": 0,
+        "soft": 2.284,
+        "flags": [
+          "pace 184.4 wpm-eq, 4.58 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.market.share_25/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.717
+      },
+      "wpm": 128.2,
+      "paceWpm": 148.6,
+      "maxGapMs": 520,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "A quarter of this market is ours. Competitors will be noticing.",
+      "score": {
+        "hard": 0,
+        "soft": 0.529,
+        "flags": [
+          "pace 148.6 wpm-eq, 3.69 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.market.share_25/t2.wav"
+    }
+  ],
+  "lineHash": "d917d66eaca41e524fa7adb9"
+}

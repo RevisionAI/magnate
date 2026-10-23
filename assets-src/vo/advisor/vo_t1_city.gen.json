@@ -1,0 +1,111 @@
+{
+  "id": "vo_t1_city",
+  "role": "advisor",
+  "text": "Metropolis: half a million people. The glowing districts are where thirsty customers live.",
+  "sentText": "Metropolis: half a million people. The glowing districts are where thirsty customers live.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.815
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:30:01.291Z",
+  "file": "vo_t1_city.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 6.38,
+  "speechSec": 6.14,
+  "wpm": 127,
+  "syllables": 24,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.4,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 550,
+  "samplePeakDbfs": -4.61,
+  "truePeakDbtp": -4.6,
+  "lufsI": -21.9,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 410
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Metropolis, half a million people. The glowing districts are where thirsty customers live.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.376,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 131.1,
+      "paceWpm": 162.4,
+      "maxGapMs": 550,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Metropolis, half a million people. The glowing districts are where thirsty customers live.",
+      "score": {
+        "hard": 0,
+        "soft": 0.424,
+        "flags": []
+      },
+      "file": "_takes/vo_t1_city/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.819
+      },
+      "wpm": 129.1,
+      "paceWpm": 160,
+      "maxGapMs": 550,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Metropolis, half a million people. The glowing districts are where thirsty customers live.",
+      "score": {
+        "hard": 0,
+        "soft": 0.4,
+        "flags": []
+      },
+      "file": "_takes/vo_t1_city/t3.wav"
+    }
+  ],
+  "lineHash": "afef3185c8d5c1183739cf58"
+}

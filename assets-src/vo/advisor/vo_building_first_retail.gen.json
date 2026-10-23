@@ -1,0 +1,113 @@
+{
+  "id": "vo_building_first_retail",
+  "role": "advisor",
+  "text": "Our first store. Price it smartly and keep those shelves stocked.",
+  "sentText": "Our first store. Price it smartly and keep those shelves stocked.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.029
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:37:01.126Z",
+  "file": "vo_building_first_retail.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.61,
+  "speechSec": 3.37,
+  "wpm": 195.8,
+  "syllables": 13,
+  "sylPerSec": 3.86,
+  "paceWpm": 155.3,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -4.84,
+  "truePeakDbtp": -4.8,
+  "lufsI": -22,
+  "lra": 0.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 180,
+    "tailTrimmedMs": 285
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our first store, price it smartly and keep those shelves stocked.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.022,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 165.8,
+      "paceWpm": 131.5,
+      "maxGapMs": 410,
+      "lufsI": -21.9,
+      "cer": 0.057,
+      "transcript": "Our first door, price it smartly and keep those shelves stocked.",
+      "score": {
+        "hard": 0,
+        "soft": 3.275,
+        "flags": [
+          "pace 131.5 wpm-eq, 3.27 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_building_first_retail/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.006
+      },
+      "wpm": 194.1,
+      "paceWpm": 154,
+      "maxGapMs": 320,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Our first store, price it smartly and keep those shelves stocked.",
+      "score": {
+        "hard": 0,
+        "soft": 0.035,
+        "flags": []
+      },
+      "file": "_takes/vo_building_first_retail/t2.wav"
+    }
+  ],
+  "lineHash": "3318527b226a760ee90549f7"
+}

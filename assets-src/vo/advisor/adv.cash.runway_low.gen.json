@@ -1,0 +1,111 @@
+{
+  "id": "adv.cash.runway_low",
+  "role": "advisor",
+  "text": "Our cash runway is getting short. Trim costs or line up financing.",
+  "sentText": "Our cash runway is getting short. Trim costs or line up financing.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.887
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:17:41.044Z",
+  "file": "adv.cash.runway_low.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.6,
+  "speechSec": 4.36,
+  "wpm": 165.1,
+  "syllables": 17,
+  "sylPerSec": 3.9,
+  "paceWpm": 157,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 440,
+  "samplePeakDbfs": -5.7,
+  "truePeakDbtp": -5.7,
+  "lufsI": -22.1,
+  "lra": 0.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 365
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our cash runway is getting short, trim costs or line up financing.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.105,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 159.6,
+      "paceWpm": 151.8,
+      "maxGapMs": 460,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Our cash runway is getting short, trim costs or line up financing.",
+      "score": {
+        "hard": 0,
+        "soft": 0.207,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.runway_low/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.872
+      },
+      "wpm": 164.4,
+      "paceWpm": 156.3,
+      "maxGapMs": 460,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Our cash runway is getting short, trim costs or line up financing.",
+      "score": {
+        "hard": 0,
+        "soft": 0.162,
+        "flags": []
+      },
+      "file": "_takes/adv.cash.runway_low/t2.wav"
+    }
+  ],
+  "lineHash": "888405fc66e3eccf3ed40489"
+}

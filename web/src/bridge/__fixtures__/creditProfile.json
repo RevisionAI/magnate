@@ -1,0 +1,37 @@
+{
+  "method": "creditProfile",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "rating": "NR",
+      "creditLimit": 11570503.94,
+      "outstanding": 0,
+      "interestRate": 0.0661,
+      "debtToEquity": 0,
+      "nextReview": {
+        "year": 2026,
+        "month": 9
+      },
+      "pricingRating": "BBB",
+      "seasoned": false,
+      "termDebt": 0,
+      "revolverDrawn": 0,
+      "revolverLimit": 11570503.94,
+      "revolverRate": 0.0661,
+      "newLoanMax": 11570503,
+      "minTermMonths": 12,
+      "maxTermMonths": 240,
+      "policyRate": 0.04,
+      "ebitdaTtm": -3038933.52,
+      "nextPayment": 0,
+      "solvency": "solvent",
+      "taxRate": 0.25,
+      "lossCarryForward": 0,
+      "taxPaidYtd": 0,
+      "bookEquity": 194842995.48,
+      "companyValue": 177267338.89
+    },
+    "revision": 28
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "adv.dividend.declared",
+  "role": "advisor",
+  "text": "Dividend declared. Shareholders love a steady, reliable return.",
+  "sentText": "Dividend declared. Shareholders love a steady, reliable return.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.854
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:20:16.856Z",
+  "file": "adv.dividend.declared.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.81,
+  "speechSec": 4.57,
+  "wpm": 105,
+  "syllables": 18,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 450,
+  "samplePeakDbfs": -6.43,
+  "truePeakDbtp": -6.4,
+  "lufsI": -22.1,
+  "lra": 1.1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 390
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Dividend declared, shareholders love a steady, reliable return.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.136,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 101.1,
+      "paceWpm": 152.6,
+      "maxGapMs": 480,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Dividend declared. Shareholders love a steady, reliable return.",
+      "score": {
+        "hard": 0,
+        "soft": 0.249,
+        "flags": []
+      },
+      "file": "_takes/adv.dividend.declared/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.867
+      },
+      "wpm": 107.4,
+      "paceWpm": 162.2,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Dividend declared. Shareholders love a steady, reliable return.",
+      "score": {
+        "hard": 0,
+        "soft": 0.172,
+        "flags": []
+      },
+      "file": "_takes/adv.dividend.declared/t2.wav"
+    }
+  ],
+  "lineHash": "f2ff79cab57ce6bf2998d78f"
+}

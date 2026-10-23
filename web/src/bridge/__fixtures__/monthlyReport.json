@@ -1,0 +1,456 @@
+{
+  "method": "monthlyReport",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "months": [
+        {
+          "month": {
+            "year": 2026,
+            "month": 1
+          },
+          "revenue": 0,
+          "expenses": 0,
+          "netCash": 210290458,
+          "cogs": 0,
+          "royalties": 0,
+          "netIncome": 0,
+          "unitsSold": 0,
+          "newBuildings": 0,
+          "adCampaigns": 0,
+          "cumulativeCash": 210290458,
+          "cumulativeNetIncome": 0,
+          "topBuildings": [],
+          "noteworthy": [
+            {
+              "seq": 0,
+              "category": "startingCapital",
+              "amount": 225600000
+            },
+            {
+              "seq": 2,
+              "category": "landPurchase",
+              "amount": -3823131
+            },
+            {
+              "seq": 3,
+              "category": "constructionPayment",
+              "amount": -2000000
+            },
+            {
+              "seq": 5,
+              "category": "constructionPayment",
+              "amount": -3000000
+            },
+            {
+              "seq": 7,
+              "category": "constructionPayment",
+              "amount": -1000000
+            },
+            {
+              "seq": 9,
+              "category": "constructionPayment",
+              "amount": -5000000
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 2
+          },
+          "revenue": 0,
+          "expenses": 54309.54,
+          "netCash": -9120976.2,
+          "cogs": 0,
+          "royalties": 0,
+          "netIncome": -54309.54,
+          "unitsSold": 0,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 201169481.8,
+          "cumulativeNetIncome": -54309.54,
+          "topBuildings": [
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -3823.13
+            },
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -204.67
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 12,
+              "category": "constructionPayment",
+              "amount": -2000000
+            },
+            {
+              "seq": 13,
+              "category": "constructionPayment",
+              "amount": -2400000
+            },
+            {
+              "seq": 14,
+              "category": "constructionPayment",
+              "amount": -1333333.33
+            },
+            {
+              "seq": 15,
+              "category": "constructionPayment",
+              "amount": -3333333.33
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 3
+          },
+          "revenue": 0,
+          "expenses": 54309.54,
+          "netCash": -9120976.2,
+          "cogs": 0,
+          "royalties": 0,
+          "netIncome": -54309.54,
+          "unitsSold": 0,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 192048505.6,
+          "cumulativeNetIncome": -108619.08,
+          "topBuildings": [
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -3823.13
+            },
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -204.67
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 23,
+              "category": "constructionPayment",
+              "amount": -2000000
+            },
+            {
+              "seq": 24,
+              "category": "constructionPayment",
+              "amount": -2400000
+            },
+            {
+              "seq": 25,
+              "category": "constructionPayment",
+              "amount": -1333333.33
+            },
+            {
+              "seq": 26,
+              "category": "constructionPayment",
+              "amount": -3333333.33
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 4
+          },
+          "revenue": 0,
+          "expenses": 155229.54,
+          "netCash": -9274546.21,
+          "cogs": 0,
+          "royalties": 0,
+          "netIncome": -155229.54,
+          "unitsSold": 0,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 182773959.38,
+          "cumulativeNetIncome": -263848.63,
+          "topBuildings": [
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -3823.13
+            },
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -204.67
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 34,
+              "category": "constructionPayment",
+              "amount": -2000000
+            },
+            {
+              "seq": 35,
+              "category": "constructionPayment",
+              "amount": -2400000
+            },
+            {
+              "seq": 36,
+              "category": "constructionPayment",
+              "amount": -1333333.34
+            },
+            {
+              "seq": 37,
+              "category": "constructionPayment",
+              "amount": -3333333.33
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 5
+          },
+          "revenue": 135000,
+          "expenses": 324209.54,
+          "netCash": -7996462.87,
+          "cogs": 73920,
+          "royalties": 0,
+          "netIncome": -277018.43,
+          "unitsSold": 60000,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 174777496.51,
+          "cumulativeNetIncome": -540867.06,
+          "topBuildings": [
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -111723.13
+            },
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -204.67
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 50,
+              "category": "constructionPayment",
+              "amount": -2000000
+            },
+            {
+              "seq": 51,
+              "category": "constructionPayment",
+              "amount": -2400000
+            },
+            {
+              "seq": 52,
+              "category": "constructionPayment",
+              "amount": -3333333.33
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 6
+          },
+          "revenue": 135000,
+          "expenses": 589929.65,
+          "netCash": -10546562.98,
+          "cogs": 73920,
+          "royalties": 0,
+          "netIncome": -584405.2,
+          "unitsSold": 60000,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 164230933.53,
+          "cumulativeNetIncome": -1125272.26,
+          "topBuildings": [
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -265938.67
+            },
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -111723.13
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 78,
+              "category": "constructionPayment",
+              "amount": -2400000
+            },
+            {
+              "seq": 79,
+              "category": "constructionPayment",
+              "amount": -3333333.33
+            },
+            {
+              "seq": 102,
+              "category": "equipmentPurchase",
+              "productId": "flour",
+              "amount": -3500000
+            },
+            {
+              "seq": 103,
+              "category": "inputPurchase",
+              "productId": "wheat",
+              "amount": -731500
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 7
+          },
+          "revenue": 135000,
+          "expenses": 1052550.76,
+          "netCash": -4895367.11,
+          "cogs": 73920,
+          "royalties": 0,
+          "netIncome": -1117859.65,
+          "unitsSold": 60000,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 159335566.41,
+          "cumulativeNetIncome": -2243131.92,
+          "topBuildings": [
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -281980.34
+            },
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -111681.46
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 116,
+              "category": "constructionPayment",
+              "amount": -3333333.35
+            },
+            {
+              "seq": 132,
+              "category": "wages",
+              "amount": -304135
+            },
+            {
+              "seq": 156,
+              "category": "landPurchase",
+              "amount": -290563
+            },
+            {
+              "seq": 157,
+              "category": "constructionPayment",
+              "amount": -280000
+            }
+          ]
+        },
+        {
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 135000,
+          "expenses": 1052714.94,
+          "netCash": -5377992.28,
+          "cogs": 73920,
+          "royalties": 0,
+          "netIncome": -28095801.61,
+          "unitsSold": 60000,
+          "newBuildings": 0,
+          "adCampaigns": 1,
+          "cumulativeCash": 153957574.14,
+          "cumulativeNetIncome": -30338933.52,
+          "topBuildings": [
+            {
+              "buildingId": 2,
+              "typeName": "Small Factory",
+              "cityId": "metropolis",
+              "netIncome": -281909.51
+            },
+            {
+              "buildingId": 1,
+              "typeName": "Supermarket",
+              "cityId": "metropolis",
+              "netIncome": -111639.8
+            },
+            {
+              "buildingId": 6,
+              "typeName": "Convenience Store",
+              "cityId": "metropolis",
+              "netIncome": -290.56
+            }
+          ],
+          "noteworthy": [
+            {
+              "seq": 158,
+              "category": "constructionPayment",
+              "amount": -560000
+            },
+            {
+              "seq": 174,
+              "category": "wages",
+              "amount": -304135
+            },
+            {
+              "seq": 202,
+              "category": "landPurchase",
+              "amount": -260687
+            },
+            {
+              "seq": 203,
+              "category": "constructionPayment",
+              "amount": -280000
+            },
+            {
+              "seq": 204,
+              "category": "landPurchase",
+              "amount": -306726
+            },
+            {
+              "seq": 205,
+              "category": "constructionPayment",
+              "amount": -280000
+            },
+            {
+              "seq": 206,
+              "category": "upgradeCost",
+              "amount": -6000000
+            },
+            {
+              "seq": 208,
+              "category": "assetSale",
+              "amount": 3111331.66
+            }
+          ]
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

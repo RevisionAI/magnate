@@ -1,0 +1,123 @@
+{
+  "id": "adv.loan.repaid",
+  "role": "advisor",
+  "text": "Loan repaid in full. Less interest, stronger balance sheet.",
+  "sentText": "Loan repaid in full. Less interest, stronger balance sheet.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.146
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:18:37.039Z",
+  "file": "adv.loan.repaid.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.53,
+  "speechSec": 3.29,
+  "wpm": 164.1,
+  "syllables": 13,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 330,
+  "samplePeakDbfs": -4.32,
+  "truePeakDbtp": -4.3,
+  "lufsI": -22.2,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 170,
+    "tailTrimmedMs": 250
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Loan repaid in full, less interest, stronger balance sheet.",
+    "wer": 0,
+    "cer": 0,
+    "lowConf": [
+      "Loan (p 0.156)"
+    ]
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.516,
+    "flags": [
+      "low-confidence words: Loan (p 0.156)"
+    ]
+  },
+  "flags": [
+    "low-confidence words: Loan (p 0.156)"
+  ],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 130.1,
+      "paceWpm": 126.1,
+      "maxGapMs": 450,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Loan repaid in full. Less interest, stronger balance sheet.",
+      "score": {
+        "hard": 0,
+        "soft": 3.329,
+        "flags": [
+          "pace 126.1 wpm-eq, 3.13 syl/s (target 150–165)",
+          "low-confidence words: Loan (p 0.135)"
+        ]
+      },
+      "file": "_takes/adv.loan.repaid/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.049
+      },
+      "wpm": 148.8,
+      "paceWpm": 144.2,
+      "maxGapMs": 360,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Lone repaid in full, less interest, stronger balance sheet.",
+      "score": {
+        "hard": 0,
+        "soft": 0.713,
+        "flags": [
+          "pace 144.2 wpm-eq, 3.58 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.loan.repaid/t2.wav"
+    }
+  ],
+  "lineHash": "960fcdf3a12f052754615fa5"
+}

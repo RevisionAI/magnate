@@ -1,0 +1,18 @@
+{
+  "method": "issueShares",
+  "args": {
+    "shares": 1000000,
+    "price": 10
+  },
+  "envelope": {
+    "ok": false,
+    "error": {
+      "code": "feature_unavailable",
+      "message": "This feature is not available yet.",
+      "details": {
+        "feature": "stockMarket"
+      }
+    },
+    "revision": 30
+  }
+}

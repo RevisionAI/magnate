@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-01T02:11:02.608Z",
+  "phrase": "Ready.",
+  "formats": {
+    "wav_48000": {
+      "ok": true,
+      "bytes": 58036,
+      "contentType": "audio/wav",
+      "requestId": "66CDz1QgFXBxDeAuln8V",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/wav",
+        "current-concurrent-requests": "1",
+        "history-item-id": "iz4m4PFiQh3ssHhP9A60",
+        "maximum-concurrent-requests": "3",
+        "request-id": "66CDz1QgFXBxDeAuln8V",
+        "tts-latency-ms": "1063",
+        "x-region": "europe-west4"
+      },
+      "head": "RIFF"
+    },
+    "pcm_48000": {
+      "ok": true,
+      "bytes": 57958,
+      "contentType": "audio/pcm",
+      "requestId": "DpaZmI44F8Lfgo91Wj2h",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/pcm",
+        "current-concurrent-requests": "1",
+        "history-item-id": "zGdZFZN5HF44ORbCtnVt",
+        "maximum-concurrent-requests": "3",
+        "request-id": "DpaZmI44F8Lfgo91Wj2h",
+        "tts-latency-ms": "759",
+        "x-region": "europe-west4"
+      },
+      "head": "...."
+    },
+    "mp3_44100_192": {
+      "ok": false,
+      "error": "FormatRejected",
+      "status": 403,
+      "code": "output_format_not_allowed",
+      "message": "Output format 'mp3_44100_192' is only available on the Creator tier and above.",
+      "requestId": "dc3959d10f051cc01727173f56ed4134"
+    },
+    "mp3_44100_128": {
+      "ok": true,
+      "bytes": 10911,
+      "contentType": "audio/mpeg",
+      "requestId": "AjKTXUL0DJBnsnkgNYYm",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/mpeg",
+        "current-concurrent-requests": "1",
+        "history-item-id": "O0dvYozozEiec2x3Wj17",
+        "maximum-concurrent-requests": "3",
+        "request-id": "AjKTXUL0DJBnsnkgNYYm",
+        "tts-latency-ms": "772",
+        "x-region": "europe-west4"
+      },
+      "head": "ID3."
+    }
+  },
+  "models": {
+    "eleven_multilingual_v2": {
+      "ok": true,
+      "bytes": 58036,
+      "contentType": "audio/wav",
+      "requestId": "rnefmp79yKILLD9JGwY1",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/wav",
+        "current-concurrent-requests": "1",
+        "history-item-id": "CyG7jQ5LzKqTpQR0mZqX",
+        "maximum-concurrent-requests": "3",
+        "request-id": "rnefmp79yKILLD9JGwY1",
+        "tts-latency-ms": "777",
+        "x-region": "europe-west4"
+      },
+      "head": "RIFF"
+    },
+    "eleven_v4": {
+      "ok": true,
+      "bytes": 69198,
+      "contentType": "audio/wav",
+      "requestId": "89MUOldSRTqywcia4VFm",
+      "headers": {
+        "character-cost": "1",
+        "content-type": "audio/wav",
+        "current-concurrent-requests": "1",
+        "history-item-id": "KaHPQepjSFYHeSEORsNZ",
+        "maximum-concurrent-requests": "3",
+        "request-id": "89MUOldSRTqywcia4VFm",
+        "tts-latency-ms": "507",
+        "x-region": "europe-west4"
+      },
+      "head": "RIFF"
+    }
+  },
+  "voices": {
+    "anchor": {
+      "ok": true,
+      "bytes": 66952,
+      "contentType": "audio/wav",
+      "requestId": "v1fmA7xxp3SZrDVFcp5u",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/wav",
+        "current-concurrent-requests": "1",
+        "history-item-id": "nKaoJa2mqMNsDTtLkPtX",
+        "maximum-concurrent-requests": "3",
+        "request-id": "v1fmA7xxp3SZrDVFcp5u",
+        "tts-latency-ms": "774",
+        "x-region": "europe-west4"
+      },
+      "head": "RIFF"
+    },
+    "advisor": {
+      "ok": true,
+      "bytes": 58036,
+      "contentType": "audio/wav",
+      "requestId": "66CDz1QgFXBxDeAuln8V",
+      "headers": {
+        "character-cost": "2",
+        "content-type": "audio/wav",
+        "current-concurrent-requests": "1",
+        "history-item-id": "iz4m4PFiQh3ssHhP9A60",
+        "maximum-concurrent-requests": "3",
+        "request-id": "66CDz1QgFXBxDeAuln8V",
+        "tts-latency-ms": "1063",
+        "x-region": "europe-west4"
+      },
+      "head": "RIFF"
+    }
+  },
+  "dictionary": {
+    "ok": false,
+    "error": "ProviderUnavailable",
+    "status": 401,
+    "code": "missing_permissions",
+    "message": "The API key you used is missing the permission pronunciation_dictionaries_write to execute this operation.",
+    "requestId": "116dd3e3db077ad41727173f56ed477e"
+  },
+  "charactersBilled": 36,
+  "chosenFormat": "wav_48000"
+}

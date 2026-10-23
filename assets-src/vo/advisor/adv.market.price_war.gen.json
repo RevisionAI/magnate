@@ -1,0 +1,111 @@
+{
+  "id": "adv.market.price_war",
+  "role": "advisor",
+  "text": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+  "sentText": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:22:36.608Z",
+  "file": "adv.market.price_war.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.94,
+  "speechSec": 4.7,
+  "wpm": 166,
+  "syllables": 19,
+  "sylPerSec": 4.04,
+  "paceWpm": 162.8,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 430,
+  "samplePeakDbfs": -3.86,
+  "truePeakDbtp": -3.9,
+  "lufsI": -21.9,
+  "lra": 1.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 400
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.128,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.813
+      },
+      "wpm": 157.9,
+      "paceWpm": 154.9,
+      "maxGapMs": 480,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+      "score": {
+        "hard": 0,
+        "soft": 0.226,
+        "flags": []
+      },
+      "file": "_takes/adv.market.price_war/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.822
+      },
+      "wpm": 160.2,
+      "paceWpm": 157.1,
+      "maxGapMs": 470,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+      "score": {
+        "hard": 0,
+        "soft": 0.179,
+        "flags": []
+      },
+      "file": "_takes/adv.market.price_war/t3.wav"
+    }
+  ],
+  "lineHash": "a4d07c863daff4019679326a"
+}

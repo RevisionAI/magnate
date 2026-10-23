@@ -1,0 +1,130 @@
+.rail {
+  position: absolute;
+  /* Above the L3 overlay scrim: the top bar and rail stay usable while an overlay is open (UX §6.2). */
+  z-index: calc(var(--z-overlay) + 1);
+  top: calc(var(--hud-top-bar-height) + var(--hud-gutter));
+  left: var(--hud-gutter);
+  width: var(--hud-rail-width);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 5px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-hairline);
+  background: linear-gradient(180deg, rgba(20, 31, 41, 0.86), rgba(11, 18, 25, 0.88));
+  box-shadow: var(--e-2);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.15);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.15);
+  pointer-events: auto;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+  height: 3.125rem;
+  border: none;
+  border-radius: var(--r-md);
+  background: transparent;
+  color: var(--c-muted);
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+
+.item:hover {
+  color: var(--c-text);
+  background: var(--c-hover);
+}
+
+.item:hover .icon {
+  transform: translateY(-1px);
+}
+
+.active {
+  color: var(--c-gold-bright);
+  background: linear-gradient(90deg, rgba(215, 183, 102, 0.22), rgba(215, 183, 102, 0.06));
+  box-shadow: inset 0 0 0 1px rgba(215, 183, 102, 0.32);
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--c-gold);
+  box-shadow: 0 0 10px var(--c-gold);
+}
+
+.icon {
+  display: inline-flex;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.label {
+  font-size: 0.5625rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.key {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  font-size: 0.5625rem;
+  font-weight: var(--fw-bold);
+  color: var(--c-dim);
+  opacity: 0.8;
+}
+
+.active .key {
+  color: var(--c-gold);
+}
+
+.badge {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 4px;
+  border-radius: var(--r-pill);
+  background: var(--c-red);
+  color: #fff;
+  font-size: 0.5625rem;
+  font-weight: var(--fw-black);
+  line-height: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(223, 111, 106, 0.8);
+  animation: badgePop var(--dur-slow) var(--ease-spring);
+}
+
+@keyframes badgePop {
+  from {
+    transform: scale(0);
+  }
+}
+
+.divider {
+  height: 1px;
+  margin: 3px 8px;
+  background: var(--c-hairline);
+}
+
+@media (max-height: 760px) {
+  .item {
+    height: 2.75rem;
+  }
+
+  .label {
+    display: none;
+  }
+}

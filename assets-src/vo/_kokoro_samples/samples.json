@@ -1,0 +1,262 @@
+{
+  "_doc": "Proof that the Kokoro fallback works on this machine: 3 lines per role rendered locally by tools/voice/generate.mjs --provider kokoro --samples (best of the speed takes), transcribed by faster-whisper base.en.",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "runtime": "kokoro-js + onnxruntime-node (CPU)",
+  "samples": [
+    {
+      "id": "adv.onboard.welcome",
+      "role": "advisor",
+      "file": "advisor/adv.onboard.welcome.wav",
+      "text": "Welcome aboard. Let's build a company that lasts.",
+      "sentText": "Welcome aboard. Let's build a company that lasts.",
+      "voice": "af_heart",
+      "speed": 0.87,
+      "durationSec": 3.3,
+      "wpm": 156.9,
+      "paceWpm": 157.9,
+      "sylPerSec": 3.92,
+      "maxGapMs": 320,
+      "lufsI": -22.3,
+      "truePeakDbtp": -6,
+      "transcript": "Welcome aboard. Let's build a company that lasts.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 0.84,
+          "wpm": 150.9,
+          "paceWpm": 152,
+          "cer": 0
+        },
+        {
+          "speed": 0.87,
+          "wpm": 156.9,
+          "paceWpm": 157.9,
+          "cer": 0
+        },
+        {
+          "speed": 0.865,
+          "wpm": 156.9,
+          "paceWpm": 157.9,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "adv.ipo.eligible",
+      "role": "advisor",
+      "file": "advisor/adv.ipo.eligible.wav",
+      "text": "We qualify for a public listing. An IPO could fund real growth.",
+      "sentText": "We qualify for a public listing. An I.P.O. could fund real growth.",
+      "voice": "af_heart",
+      "speed": 0.825,
+      "durationSec": 5.08,
+      "wpm": 148.8,
+      "paceWpm": 158.1,
+      "sylPerSec": 3.93,
+      "maxGapMs": 490,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.7,
+      "transcript": "We qualify for a public listing. An IPO could fund real growth.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 0.84,
+          "wpm": 150.3,
+          "paceWpm": 159.7,
+          "cer": 0.02
+        },
+        {
+          "speed": 0.825,
+          "wpm": 148.8,
+          "paceWpm": 158.1,
+          "cer": 0
+        },
+        {
+          "speed": 0.81,
+          "wpm": 146,
+          "paceWpm": 155.2,
+          "cer": 0.02
+        }
+      ]
+    },
+    {
+      "id": "adv.end.defeat_bankrupt",
+      "role": "advisor",
+      "file": "advisor/adv.end.defeat_bankrupt.wav",
+      "text": "The creditors have taken over. Every great magnate has a second act.",
+      "sentText": "The creditors have taken over. Every great mag-nate has a second act.",
+      "voice": "af_heart",
+      "speed": 0.803,
+      "durationSec": 5.05,
+      "wpm": 149.7,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 540,
+      "lufsI": -22.2,
+      "truePeakDbtp": -4.3,
+      "transcript": "The creditors have taken over. Every great magnate has a second act.",
+      "cer": 0,
+      "magnate": "ok",
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 0.84,
+          "wpm": 164.4,
+          "paceWpm": 174.7,
+          "cer": 0
+        },
+        {
+          "speed": 0.757,
+          "wpm": 128.3,
+          "paceWpm": 136.4,
+          "cer": 0
+        },
+        {
+          "speed": 0.803,
+          "wpm": 149.7,
+          "paceWpm": 159.1,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "news.intro",
+      "role": "anchor",
+      "file": "anchor/news.intro.wav",
+      "text": "Good evening. Here's what's moving the markets tonight.",
+      "sentText": "Good evening. Here's what's moving the markets tonight.",
+      "voice": "bm_george",
+      "speed": 1.209,
+      "durationSec": 2.91,
+      "wpm": 179.8,
+      "paceWpm": 154.1,
+      "sylPerSec": 4.49,
+      "maxGapMs": 180,
+      "lufsI": -21.3,
+      "truePeakDbtp": -6.8,
+      "transcript": "Good evening, here's what's moving the markets tonight.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 176.5,
+          "paceWpm": 151.3,
+          "cer": 0
+        },
+        {
+          "speed": 1.209,
+          "wpm": 179.8,
+          "paceWpm": 154.1,
+          "cer": 0
+        },
+        {
+          "speed": 1.224,
+          "wpm": 184.6,
+          "paceWpm": 158.2,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "news.recession",
+      "role": "anchor",
+      "file": "anchor/news.recession.wav",
+      "text": "Breaking news: the economy has officially entered a recession.",
+      "sentText": "Breaking news: the economy has officially entered a recession.",
+      "voice": "bm_george",
+      "speed": 1.033,
+      "durationSec": 4.36,
+      "wpm": 131.1,
+      "paceWpm": 158.1,
+      "sylPerSec": 4.61,
+      "maxGapMs": 300,
+      "lufsI": -21.5,
+      "truePeakDbtp": -5.6,
+      "transcript": "Breaking news, the economy has officially entered a recession.",
+      "cer": 0,
+      "flags": [],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 142.1,
+          "paceWpm": 171.4,
+          "cer": 0
+        },
+        {
+          "speed": 1.067,
+          "wpm": 132.7,
+          "paceWpm": 160.1,
+          "cer": 0
+        },
+        {
+          "speed": 1.033,
+          "wpm": 131.1,
+          "paceWpm": 158.1,
+          "cer": 0
+        }
+      ]
+    },
+    {
+      "id": "news.market_crash",
+      "role": "anchor",
+      "file": "anchor/news.market_crash.wav",
+      "text": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "sentText": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "voice": "bm_george",
+      "speed": 1.18,
+      "durationSec": 3.77,
+      "wpm": 170,
+      "paceWpm": 136,
+      "sylPerSec": 3.97,
+      "maxGapMs": 220,
+      "lufsI": -21.4,
+      "truePeakDbtp": -4.8,
+      "transcript": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "cer": 0,
+      "flags": [
+        "pace 136 wpm-eq, 3.97 syl/s (target 140–170)"
+      ],
+      "allTakes": [
+        {
+          "speed": 1.18,
+          "wpm": 170,
+          "paceWpm": 136,
+          "cer": 0
+        },
+        {
+          "speed": 1.345,
+          "wpm": 221.4,
+          "paceWpm": 177.1,
+          "cer": 0
+        },
+        {
+          "speed": 1.256,
+          "wpm": 182.9,
+          "paceWpm": 146.3,
+          "cer": 0.06
+        },
+        {
+          "speed": 1.281,
+          "wpm": 185.8,
+          "paceWpm": 148.6,
+          "cer": 0.06
+        },
+        {
+          "speed": 1.295,
+          "wpm": 186.9,
+          "paceWpm": 149.5,
+          "cer": 0.06
+        },
+        {
+          "speed": 1.305,
+          "wpm": 188.1,
+          "paceWpm": 150.5,
+          "cer": 0.06
+        }
+      ]
+    }
+  ]
+}

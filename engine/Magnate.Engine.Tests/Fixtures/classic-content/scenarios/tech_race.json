@@ -1,0 +1,49 @@
+{
+  "id": "tech_race",
+  "name": "Tech Race",
+  "description": "A deep-pocketed rival is sprinting toward the electronics future. Out-research them: stand up multiple R&D centres, put both televisions and cars on your shelves, and win a plurality of the Metropolis TV market — all while keeping the lights on.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2030, "month": 12 },
+  "player": {
+    "name": "NovaTech",
+    "startingCash": 30000000
+  },
+  "aiCompetitors": [
+    { "name": "ApexLabs",  "startingCash": 60000000, "strategy": "adaptive" }
+  ],
+  "goals": [
+    {
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 R&D Centres — research compounds with labs.",
+      "category": "rd_center",
+      "count": 2
+    },
+    {
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — a tech-tier product with a meaningful supply chain (electronic_parts + plastic + steel).",
+      "product": "television"
+    },
+    {
+      "type": "productRetailed",
+      "description": "Put cars on a shelf — the flagship automotive product, priced at a premium.",
+      "product": "car"
+    },
+    {
+      "type": "adCampaignActive",
+      "description": "Run an ongoing ad campaign for television — brand awareness compounds over time.",
+      "product": "television"
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 35% share of television in Metropolis — your tech lead should show up on the softmax allocator.",
+      "product": "television",
+      "city": "metropolis",
+      "threshold": 0.35
+    },
+    {
+      "type": "corporateValue",
+      "description": "Keep the company alive and growing: reach $40M corporate value.",
+      "threshold": 40000000
+    }
+  ]
+}

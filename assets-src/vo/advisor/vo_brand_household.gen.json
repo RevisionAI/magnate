@@ -1,0 +1,113 @@
+{
+  "id": "vo_brand_household",
+  "role": "advisor",
+  "text": "We're a household name in this city.",
+  "sentText": "We're a household name in this city.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.721
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:35:27.861Z",
+  "file": "vo_brand_household.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 2.49,
+  "speechSec": 2.25,
+  "wpm": 186.7,
+  "syllables": 9,
+  "sylPerSec": 4,
+  "paceWpm": 161.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 0,
+  "samplePeakDbfs": -6.74,
+  "truePeakDbtp": -6.7,
+  "lufsI": -22.1,
+  "lra": 0,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 250,
+    "tailTrimmedMs": 485
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're a household name in this city.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.036,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 232,
+      "paceWpm": 200.2,
+      "maxGapMs": 0,
+      "lufsI": -21.9,
+      "cer": 0.071,
+      "transcript": "We're a household name in the city.",
+      "score": {
+        "hard": 0,
+        "soft": 5.367,
+        "flags": [
+          "pace 200.2 wpm-eq, 4.97 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_brand_household/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.7
+      },
+      "wpm": 178,
+      "paceWpm": 153.6,
+      "maxGapMs": 0,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "We're a household name in this city.",
+      "score": {
+        "hard": 0,
+        "soft": 0.039,
+        "flags": []
+      },
+      "file": "_takes/vo_brand_household/t2.wav"
+    }
+  ],
+  "lineHash": "e9096cf1426e023eafd476c1"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "adv.stock.surge",
+  "role": "advisor",
+  "text": "Our share price is surging. The market believes in our story.",
+  "sentText": "Our share price is surging. The market believes in our story.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.759
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:19:49.432Z",
+  "file": "adv.stock.surge.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.74,
+  "speechSec": 4.5,
+  "wpm": 146.7,
+  "syllables": 17,
+  "sylPerSec": 3.78,
+  "paceWpm": 152.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 450,
+  "samplePeakDbfs": -5.79,
+  "truePeakDbtp": -5.8,
+  "lufsI": -21.9,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 480
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our share price is surging. The market believes in our story.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.179,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 177.4,
+      "paceWpm": 184,
+      "maxGapMs": 390,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Our share price is surging. The market believes in our story.",
+      "score": {
+        "hard": 0,
+        "soft": 2.165,
+        "flags": [
+          "pace 184 wpm-eq, 4.57 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.stock.surge/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.719
+      },
+      "wpm": 139.2,
+      "paceWpm": 144.4,
+      "maxGapMs": 450,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Our share price is surging. The market believes in our story.",
+      "score": {
+        "hard": 0,
+        "soft": 0.816,
+        "flags": [
+          "pace 144.4 wpm-eq, 3.59 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.stock.surge/t2.wav"
+    }
+  ],
+  "lineHash": "3a2a6680f6107199f36f5c8b"
+}

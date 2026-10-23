@@ -1,0 +1,115 @@
+{
+  "id": "vo_t1_almost",
+  "role": "advisor",
+  "text": "Almost there. Keep the shelves full and the brand warm.",
+  "sentText": "Almost there. Keep the shelves full and the brand warm.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 1.136
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:33:36.590Z",
+  "file": "vo_t1_almost.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.05,
+  "speechSec": 2.81,
+  "wpm": 213.5,
+  "syllables": 11,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 250,
+  "samplePeakDbfs": -5.81,
+  "truePeakDbtp": -5.8,
+  "lufsI": -22.3,
+  "lra": 20,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 160,
+    "tailTrimmedMs": 290
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Almost there, keep the shelves full and the brand warm.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.001,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 167.1,
+      "paceWpm": 123.4,
+      "maxGapMs": 360,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Almost there, keep the shelves full and the brand warm.",
+      "score": {
+        "hard": 0,
+        "soft": 3.001,
+        "flags": [
+          "pace 123.4 wpm-eq, 3.06 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_t1_almost/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.072
+      },
+      "wpm": 201.3,
+      "paceWpm": 148.6,
+      "maxGapMs": 290,
+      "lufsI": -22.2,
+      "cer": 0,
+      "transcript": "Almost there, keep the shelves full and the brand warm.",
+      "score": {
+        "hard": 0,
+        "soft": 0.229,
+        "flags": [
+          "pace 148.6 wpm-eq, 3.69 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_t1_almost/t2.wav"
+    }
+  ],
+  "lineHash": "0c2a108598b331af7ae9a96f"
+}

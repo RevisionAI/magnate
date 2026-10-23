@@ -1,0 +1,111 @@
+{
+  "id": "adv.ops.stockout",
+  "role": "advisor",
+  "text": "We're selling out. Empty shelves send customers straight to competitors.",
+  "sentText": "We're selling out. Empty shelves send customers straight to competitors.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.858
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:17:18.545Z",
+  "file": "adv.ops.stockout.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.64,
+  "speechSec": 4.4,
+  "wpm": 136.4,
+  "syllables": 17,
+  "sylPerSec": 3.86,
+  "paceWpm": 155.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 450,
+  "samplePeakDbfs": -6.05,
+  "truePeakDbtp": -6,
+  "lufsI": -22.5,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 385
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're selling out. Empty shelves send customers straight to competitors.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.144,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 135.1,
+      "paceWpm": 154.2,
+      "maxGapMs": 460,
+      "lufsI": -22.5,
+      "cer": 0,
+      "transcript": "We're selling out. Empty shelves send customers straight to competitors.",
+      "score": {
+        "hard": 0,
+        "soft": 0.183,
+        "flags": []
+      },
+      "file": "_takes/adv.ops.stockout/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.873
+      },
+      "wpm": 139.5,
+      "paceWpm": 159.2,
+      "maxGapMs": 460,
+      "lufsI": -22.5,
+      "cer": 0,
+      "transcript": "We're selling out. Empty shelves send customers straight to competitors.",
+      "score": {
+        "hard": 0,
+        "soft": 0.167,
+        "flags": []
+      },
+      "file": "_takes/adv.ops.stockout/t3.wav"
+    }
+  ],
+  "lineHash": "0e11c60902f9c52b5d7fd671"
+}

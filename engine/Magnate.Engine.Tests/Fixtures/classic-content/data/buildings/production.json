@@ -1,0 +1,104 @@
+[
+  {
+    "id": "small_farm",
+    "name": "Small Farm",
+    "category": "farm",
+    "constructionCost": 250000,
+    "monthlyOperatingCost": 4000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 3,
+    "producibleTiers": ["raw"],
+    "targetHeadcount": { "min": 5, "max": 15 },
+    "geographyRequirement": { "arable": true },
+    "levels": [
+      { "level": 1, "capacity": 3, "monthlyOperatingCost": 4000, "upgradeCost": 0 },
+      { "level": 2, "capacity": 4, "monthlyOperatingCost": 3400, "upgradeCost": 150000 },
+      { "level": 3, "capacity": 6, "monthlyOperatingCost": 2800, "upgradeCost": 125000 }
+    ]
+  },
+  {
+    "id": "large_farm",
+    "name": "Large Farm",
+    "category": "farm",
+    "constructionCost": 800000,
+    "monthlyOperatingCost": 12000,
+    "footprint": { "width": 5, "height": 5 },
+    "maxUnits": 6,
+    "producibleTiers": ["raw"],
+    "targetHeadcount": { "min": 20, "max": 50 },
+    "geographyRequirement": { "arable": true }
+  },
+  {
+    "id": "small_plantation",
+    "name": "Small Plantation",
+    "category": "plantation",
+    "constructionCost": 400000,
+    "monthlyOperatingCost": 5000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 3,
+    "producibleTiers": ["raw"],
+    "targetHeadcount": { "min": 8, "max": 20 },
+    "geographyRequirement": { "arable": true }
+  },
+  {
+    "id": "iron_mine",
+    "name": "Iron Mine",
+    "category": "mine",
+    "constructionCost": 1200000,
+    "monthlyOperatingCost": 18000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 3,
+    "producibleTiers": ["raw"],
+    "targetHeadcount": { "min": 15, "max": 40 },
+    "geographyRequirement": { "mineralRich": true }
+  },
+  {
+    "id": "oil_well",
+    "name": "Oil Well",
+    "category": "oil_well",
+    "constructionCost": 2500000,
+    "monthlyOperatingCost": 25000,
+    "footprint": { "width": 2, "height": 2 },
+    "maxUnits": 2,
+    "producibleTiers": ["raw"],
+    "targetHeadcount": { "min": 10, "max": 25 },
+    "geographyRequirement": { "oilRich": true },
+    "levels": [
+      { "level": 1, "capacity": 2, "monthlyOperatingCost": 25000, "upgradeCost": 0 },
+      { "level": 2, "capacity": 3, "monthlyOperatingCost": 21250, "upgradeCost": 1500000 },
+      { "level": 3, "capacity": 4, "monthlyOperatingCost": 17500, "upgradeCost": 1250000 }
+    ]
+  },
+  {
+    "id": "factory_small",
+    "name": "Small Factory",
+    "category": "factory",
+    "constructionCost": 1500000,
+    "monthlyOperatingCost": 20000,
+    "footprint": { "width": 3, "height": 3 },
+    "maxUnits": 6,
+    "producibleTiers": ["intermediate", "finished"],
+    "targetHeadcount": { "min": 20, "max": 60 },
+    "levels": [
+      { "level": 1, "capacity": 6,  "monthlyOperatingCost": 20000, "upgradeCost": 0 },
+      { "level": 2, "capacity": 9,  "monthlyOperatingCost": 17000, "upgradeCost": 900000 },
+      { "level": 3, "capacity": 12, "monthlyOperatingCost": 14000, "upgradeCost": 750000 }
+    ]
+  },
+  {
+    "id": "factory_large",
+    "name": "Large Factory",
+    "category": "factory",
+    "constructionCost": 5000000,
+    "monthlyOperatingCost": 55000,
+    "footprint": { "width": 5, "height": 5 },
+    "maxUnits": 12,
+    "producibleTiers": ["intermediate", "finished"],
+    "targetHeadcount": { "min": 60, "max": 200 },
+    "levels": [
+      { "level": 1, "capacity": 12, "monthlyOperatingCost": 55000, "upgradeCost": 0 },
+      { "level": 2, "capacity": 18, "monthlyOperatingCost": 46750, "upgradeCost": 3000000 },
+      { "level": 3, "capacity": 24, "monthlyOperatingCost": 38500, "upgradeCost": 2500000 }
+    ]
+  }
+]

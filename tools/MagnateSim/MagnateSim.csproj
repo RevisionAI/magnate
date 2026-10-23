@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Magnate.Sim</RootNamespace>
+    <AssemblyName>magnate-sim</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\engine\Magnate.Engine\Magnate.Engine.csproj" />
+  </ItemGroup>
+</Project>

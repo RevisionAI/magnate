@@ -1,0 +1,113 @@
+{
+  "id": "vo_goal_generic",
+  "role": "advisor",
+  "text": "Objective complete.",
+  "sentText": "Objective complete.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.933
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:36:24.203Z",
+  "file": "vo_goal_generic.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 1.51,
+  "speechSec": 1.27,
+  "wpm": 94.5,
+  "syllables": 5,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 0,
+  "samplePeakDbfs": -4.89,
+  "truePeakDbtp": -4.9,
+  "lufsI": -21.8,
+  "lra": 0,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 275
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Objective complete.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.003,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 84.5,
+      "paceWpm": 141.8,
+      "maxGapMs": 0,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Objective complete.",
+      "score": {
+        "hard": 0,
+        "soft": 0.293,
+        "flags": [
+          "pace 141.8 wpm-eq, 3.52 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_goal_generic/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.919
+      },
+      "wpm": 91.6,
+      "paceWpm": 153.7,
+      "maxGapMs": 0,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Objective complete.",
+      "score": {
+        "hard": 0,
+        "soft": 0.011,
+        "flags": []
+      },
+      "file": "_takes/vo_goal_generic/t3.wav"
+    }
+  ],
+  "lineHash": "d1eb9adf6313fb39f6913f3c"
+}

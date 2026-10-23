@@ -1,0 +1,380 @@
+.bar {
+  position: absolute;
+  /* Above the L3 overlay scrim: the top bar and rail stay usable while an overlay is open (UX §6.2). */
+  z-index: calc(var(--z-overlay) + 1);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--hud-top-bar-height);
+  display: flex;
+  align-items: stretch;
+  padding: 0 var(--space-2) 0 var(--space-3);
+  background: linear-gradient(180deg, rgba(16, 26, 35, 0.94) 0%, rgba(11, 18, 25, 0.9) 100%);
+  border-bottom: 1px solid var(--c-hairline-strong);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.2);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.2);
+  pointer-events: auto;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(240, 211, 138, 0.75), transparent);
+  pointer-events: none;
+}
+
+.segment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-4);
+  min-width: 0;
+}
+
+.segment + .segment::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: var(--c-hairline);
+}
+
+.spacer {
+  flex: 1;
+  min-width: var(--space-2);
+}
+
+/* ---- company */
+.company {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+  max-width: 18rem;
+  padding: 4px var(--space-2) 4px 4px;
+  margin-left: calc(var(--space-2) * -1);
+  border: none;
+  border-radius: var(--r-md);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.company:hover {
+  background: var(--c-hover);
+}
+
+.companyText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.companyName {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.companySub {
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- KPI */
+.kpi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  min-width: 0;
+  padding: 2px 4px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+
+.kpi:hover .kpiValue {
+  color: var(--c-gold-bright);
+}
+
+.kpiLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+  white-space: nowrap;
+}
+
+.kpiRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.kpiValue {
+  font-size: 1.1875rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--c-text);
+  transition: color var(--dur-base) var(--ease-out);
+}
+
+.kpiValue.neg {
+  color: var(--c-neg);
+}
+
+.kpiValue.pos {
+  color: var(--c-pos);
+}
+
+.flash {
+  animation: flash 900ms var(--ease-out);
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  25% {
+    color: var(--c-gold-bright);
+    text-shadow: 0 0 16px rgba(240, 211, 138, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+.lowRunway .kpiValue {
+  animation: amberPulse 1s ease-in-out 3;
+}
+
+@keyframes amberPulse {
+  50% {
+    color: var(--c-amber);
+    text-shadow: 0 0 12px rgba(232, 182, 58, 0.6);
+  }
+}
+
+.spark {
+  display: flex;
+  align-items: center;
+}
+
+/* ---- date + day clock */
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  min-width: 11rem;
+  padding: 2px 6px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+
+.dateRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.month {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: var(--fw-semibold);
+  font-variation-settings: 'opsz' 36;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.day {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.dayBar {
+  --p: 0;
+  position: relative;
+  height: 5px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(90deg, rgba(160, 196, 218, 0.16) 0 calc(100% / 30 - 1px), transparent calc(100% / 30 - 1px) calc(100% / 30));
+  overflow: hidden;
+}
+
+.dayFill {
+  position: absolute;
+  inset: 0;
+  transform-origin: left center;
+  transform: scaleX(var(--p));
+  background: repeating-linear-gradient(90deg, var(--c-gold) 0 calc(100% / 30 - 1px), transparent calc(100% / 30 - 1px) calc(100% / 30));
+  filter: drop-shadow(0 0 4px rgba(215, 183, 102, 0.6));
+}
+
+.closing .dayFill {
+  background: var(--c-gold-bright);
+  animation: closePulse 500ms ease-in-out infinite alternate;
+}
+
+@keyframes closePulse {
+  to {
+    opacity: 0.55;
+  }
+}
+
+.deadline {
+  margin-left: 2px;
+}
+
+.deadlineWarn .month {
+  color: var(--c-amber);
+}
+
+.deadlineDanger .month {
+  color: var(--c-neg);
+}
+
+/* ---- speed controls */
+.speeds {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--r-md);
+  background: rgba(5, 9, 13, 0.5);
+  border: 1px solid var(--c-hairline);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.speed {
+  display: grid;
+  place-items: center;
+  min-width: 2.125rem;
+  height: 1.875rem;
+  padding: 0 6px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast);
+}
+
+.speed:hover:not(:disabled) {
+  color: var(--c-text);
+  background: var(--c-hover);
+}
+
+.speed:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.speed[aria-pressed='true'] {
+  color: var(--c-gold-ink);
+  background: linear-gradient(180deg, #f0d48c, var(--c-gold) 55%, #bf9d50);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 0 12px rgba(215, 183, 102, 0.35);
+}
+
+.pauseBtn[aria-pressed='true'] {
+  color: #2a1d02;
+  background: linear-gradient(180deg, #f5cf6f, var(--c-amber) 60%, #c99a26);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 12px rgba(232, 182, 58, 0.4);
+}
+
+.held .speed[aria-pressed='true']:not(.pauseBtn) {
+  background: transparent;
+  color: var(--c-gold);
+  box-shadow: inset 0 0 0 1px rgba(215, 183, 102, 0.6);
+}
+
+.sep {
+  width: 1px;
+  height: 18px;
+  margin: 0 3px;
+  background: var(--c-hairline);
+}
+
+/* ---- right cluster */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.bell {
+  position: relative;
+}
+
+.bellBadge {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  pointer-events: none;
+}
+
+.mutedIcon {
+  color: var(--c-amber);
+}
+
+@media (max-width: 1500px) {
+  .segment {
+    padding: 0 var(--space-3);
+  }
+}
+
+@media (max-width: 1400px) {
+  .spark {
+    display: none;
+  }
+
+  .companySub {
+    display: none;
+  }
+
+  .date {
+    min-width: 9.5rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  .skipBtn {
+    display: none;
+  }
+
+  .company {
+    max-width: 10rem;
+  }
+}

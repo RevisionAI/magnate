@@ -1,0 +1,19 @@
+{
+  "method": "grantLicense",
+  "args": {
+    "licenseeId": 2,
+    "productId": "soft_drink"
+  },
+  "envelope": {
+    "ok": false,
+    "error": {
+      "code": "not_patent_holder",
+      "message": "You hold no patent on Soft Drink.",
+      "field": "productId",
+      "details": {
+        "productId": "soft_drink"
+      }
+    },
+    "revision": 25
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "eastside",
+  "name": "Eastside",
+  "population": 200000,
+  "demographics": {
+    "low":    0.25,
+    "middle": 0.40,
+    "high":   0.35
+  },
+  "grid": {
+    "width":  55,
+    "height": 55
+  },
+  "geography": {
+    "coastal":     false,
+    "arable":      true,
+    "mineralRich": false,
+    "oilRich":     false
+  },
+  "baseLandPrice": 180.0
+}

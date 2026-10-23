@@ -1,0 +1,111 @@
+{
+  "id": "vo_below_cost",
+  "role": "advisor",
+  "text": "We're selling below cost. Every sale loses money.",
+  "sentText": "We're selling below cost. Every sale loses money.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.855
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:34:15.084Z",
+  "file": "vo_below_cost.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.58,
+  "speechSec": 3.34,
+  "wpm": 143.7,
+  "syllables": 13,
+  "sylPerSec": 3.89,
+  "paceWpm": 156.7,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 360,
+  "samplePeakDbfs": -3.98,
+  "truePeakDbtp": -4,
+  "lufsI": -22.1,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 410
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're selling below cost, every sale loses money.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.008,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 143.3,
+      "paceWpm": 156.3,
+      "maxGapMs": 360,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "We're selling below cost. Every sale loses money.",
+      "score": {
+        "hard": 0,
+        "soft": 0.012,
+        "flags": []
+      },
+      "file": "_takes/vo_below_cost/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.87
+      },
+      "wpm": 145.9,
+      "paceWpm": 159.1,
+      "maxGapMs": 370,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "We're selling below cost. Every sale loses money.",
+      "score": {
+        "hard": 0,
+        "soft": 0.016,
+        "flags": []
+      },
+      "file": "_takes/vo_below_cost/t3.wav"
+    }
+  ],
+  "lineHash": "36becf16728301247adafefa"
+}

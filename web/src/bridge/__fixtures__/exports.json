@@ -1,0 +1,30 @@
+{
+  "method": "exports",
+  "args": {
+    "period": {
+      "preset": "sinceStart"
+    }
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "period": {
+        "from": {
+          "year": 2026,
+          "month": 1
+        },
+        "to": {
+          "year": 2026,
+          "month": 8
+        },
+        "months": 8,
+        "preset": "sinceStart"
+      },
+      "totalRevenue": 0,
+      "totalUnits": 0,
+      "byProduct": [],
+      "byBuilding": []
+    },
+    "revision": 25
+  }
+}

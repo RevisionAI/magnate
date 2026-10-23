@@ -1,0 +1,111 @@
+{
+  "id": "news.rates_up",
+  "role": "anchor",
+  "text": "The central bank has raised interest rates, effective immediately.",
+  "sentText": "The central bank has raised interest rates, effective immediately.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.195
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:43:35.259Z",
+  "file": "news.rates_up.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4,
+  "speechSec": 3.76,
+  "wpm": 143.6,
+  "syllables": 17,
+  "sylPerSec": 4.52,
+  "paceWpm": 155,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 230,
+  "samplePeakDbfs": -4.55,
+  "truePeakDbtp": -4.5,
+  "lufsI": -21.6,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 120,
+    "tailTrimmedMs": 305
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The central bank has raised interest rates effective immediately.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 141.7,
+      "paceWpm": 153,
+      "maxGapMs": 230,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "The central bank has raised interest rates effective immediately.",
+      "score": {
+        "hard": 0,
+        "soft": 0.02,
+        "flags": []
+      },
+      "file": "_takes/news.rates_up/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.193
+      },
+      "wpm": 143.6,
+      "paceWpm": 155,
+      "maxGapMs": 230,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "The central bank has raised interest rates effective immediately.",
+      "score": {
+        "hard": 0,
+        "soft": 0,
+        "flags": []
+      },
+      "file": "_takes/news.rates_up/t3.wav"
+    }
+  ],
+  "lineHash": "b56a7c46d46c36f86f039bc8"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "patent_race",
+  "name": "Patent Race",
+  "description": "A short, sharp tech sprint. A TechLeader rival is pouring every spare dollar into R&D on its hero product (car) and flanking with televisions on the side. You have three years — maybe four — to put both tech-tier goods on the shelf, crack the Eastside car market, and stay ahead in value. No long grinds, no brand moats: just a race.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2029, "month": 12 },
+  "player": {
+    "name": "Player",
+    "startingCash": 20000000
+  },
+  "aiCompetitors": [
+    { "name": "Vanguard R&D", "startingCash": 40000000, "strategy": "techLeader" }
+  ],
+  "goals": [
+    {
+      "type": "productRetailed",
+      "description": "Put televisions on a shelf — the electronics-parts supply chain is the price of admission.",
+      "product": "television"
+    },
+    {
+      "type": "productRetailed",
+      "description": "Put cars on a shelf — match the TechLeader's hero product head-to-head.",
+      "product": "car"
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 20% share of car in Eastside — crack their High-bracket stronghold even as they premium-price the aisle.",
+      "product": "car",
+      "city": "eastside",
+      "threshold": 0.20
+    },
+    {
+      "type": "corporateValue",
+      "description": "Grow corporate value to $35M — finish the race ahead on the scoreboard, not just on the shelves.",
+      "threshold": 35000000
+    },
+    {
+      "type": "elapsedMonths",
+      "description": "Complete the sprint in 42 months — this isn't a marathon.",
+      "months": 42
+    }
+  ]
+}

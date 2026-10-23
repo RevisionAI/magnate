@@ -1,0 +1,165 @@
+[
+  {
+    "id": "convenience_store",
+    "name": "Convenience Store",
+    "category": "convenience_store",
+    "constructionCost": 1400000,
+    "monthlyOperatingCost": 6000,
+    "footprint": {
+      "width": 1,
+      "height": 1
+    },
+    "maxUnits": 3,
+    "retail": true,
+    "targetHeadcount": {
+      "min": 3,
+      "max": 8
+    },
+    "staff": {
+      "fixed": 4,
+      "fixedRole": "retail",
+      "perSlot": 1,
+      "slotRole": "retail"
+    },
+    "retailFormat": {
+      "capacityPerSlot": 70000,
+      "draw": {
+        "grocery": 0.3
+      }
+    },
+    "buildMonths": 2
+  },
+  {
+    "id": "supermarket",
+    "name": "Supermarket",
+    "category": "supermarket",
+    "constructionCost": 10000000,
+    "monthlyOperatingCost": 40000,
+    "footprint": {
+      "width": 3,
+      "height": 3
+    },
+    "maxUnits": 6,
+    "retail": true,
+    "targetHeadcount": {
+      "min": 15,
+      "max": 40
+    },
+    "levels": [
+      {
+        "level": 1,
+        "capacity": 6,
+        "monthlyOperatingCost": 40000,
+        "upgradeCost": 0
+      },
+      {
+        "level": 2,
+        "capacity": 9,
+        "monthlyOperatingCost": 52000,
+        "upgradeCost": 6000000
+      },
+      {
+        "level": 3,
+        "capacity": 12,
+        "monthlyOperatingCost": 64000,
+        "upgradeCost": 5000000
+      }
+    ],
+    "staff": {
+      "fixed": 16,
+      "fixedRole": "retail",
+      "perSlot": 5,
+      "slotRole": "retail"
+    },
+    "retailFormat": {
+      "capacityPerSlot": 450000,
+      "draw": {
+        "grocery": 1.0,
+        "apparel": 0.35
+      }
+    },
+    "buildMonths": 4
+  },
+  {
+    "id": "department_store",
+    "name": "Department Store",
+    "category": "department_store",
+    "constructionCost": 14000000,
+    "monthlyOperatingCost": 60000,
+    "footprint": {
+      "width": 4,
+      "height": 4
+    },
+    "maxUnits": 4,
+    "retail": true,
+    "targetHeadcount": {
+      "min": 40,
+      "max": 120
+    },
+    "levels": [
+      {
+        "level": 1,
+        "capacity": 4,
+        "monthlyOperatingCost": 60000,
+        "upgradeCost": 0
+      },
+      {
+        "level": 2,
+        "capacity": 6,
+        "monthlyOperatingCost": 78000,
+        "upgradeCost": 8400000
+      },
+      {
+        "level": 3,
+        "capacity": 9,
+        "monthlyOperatingCost": 96000,
+        "upgradeCost": 7000000
+      }
+    ],
+    "staff": {
+      "fixed": 20,
+      "fixedRole": "retail",
+      "perSlot": 6,
+      "slotRole": "retail"
+    },
+    "retailFormat": {
+      "capacityPerSlot": 500000,
+      "draw": {
+        "apparel": 1.0,
+        "electronics": 1.0,
+        "grocery": 0.25
+      }
+    },
+    "buildMonths": 6
+  },
+  {
+    "id": "car_dealership",
+    "name": "Car Dealership",
+    "category": "auto_dealer",
+    "constructionCost": 4000000,
+    "monthlyOperatingCost": 18000,
+    "footprint": {
+      "width": 2,
+      "height": 2
+    },
+    "maxUnits": 2,
+    "retail": true,
+    "targetHeadcount": {
+      "min": 12,
+      "max": 24
+    },
+    "staff": {
+      "fixed": 6,
+      "fixedRole": "retail",
+      "perSlot": 6,
+      "slotRole": "retail"
+    },
+    "retailFormat": {
+      "capacityPerSlot": 1200000,
+      "draw": {
+        "auto": 1.0
+      }
+    },
+    "buildMonths": 4
+  }
+]

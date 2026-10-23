@@ -1,0 +1,115 @@
+{
+  "id": "adv.hint.idle_cash",
+  "role": "advisor",
+  "text": "We're sitting on idle cash. Money that isn't invested isn't working.",
+  "sentText": "We're sitting on idle cash. Money that isn't invested isn't working.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.795
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:28:15.104Z",
+  "file": "adv.hint.idle_cash.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.25,
+  "speechSec": 5.01,
+  "wpm": 131.7,
+  "syllables": 19,
+  "sylPerSec": 3.79,
+  "paceWpm": 152.7,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 470,
+  "samplePeakDbfs": -7.04,
+  "truePeakDbtp": -7,
+  "lufsI": -22.2,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 220,
+    "tailTrimmedMs": 430
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We're sitting on idle cash. Money that isn't invested isn't working.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.223,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 150.3,
+      "paceWpm": 174.3,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "We're sitting on idle cash, money that isn't invested isn't working.",
+      "score": {
+        "hard": 0,
+        "soft": 1.223,
+        "flags": [
+          "pace 174.3 wpm-eq, 4.33 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.idle_cash/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.759
+      },
+      "wpm": 124.1,
+      "paceWpm": 143.8,
+      "maxGapMs": 520,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "We're sitting on idle cash. Money that isn't invested isn't working.",
+      "score": {
+        "hard": 0,
+        "soft": 1.057,
+        "flags": [
+          "pace 143.8 wpm-eq, 3.57 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.idle_cash/t2.wav"
+    }
+  ],
+  "lineHash": "064f1cdec81b8be3d12e81bb"
+}

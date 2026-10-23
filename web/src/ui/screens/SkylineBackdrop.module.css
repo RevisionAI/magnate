@@ -1,0 +1,267 @@
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #070c13;
+  isolation: isolate;
+}
+
+/* ---- sky: dusk ⇄ night cross-fade on a slow 80 s cycle */
+.sky,
+.skyNight {
+  position: absolute;
+  inset: 0;
+}
+
+.sky {
+  background: linear-gradient(
+    180deg,
+    #0b1524 0%,
+    #16294a 30%,
+    #3b4466 52%,
+    #9a6a63 66%,
+    #e3a067 75%,
+    #f2c27d 79%,
+    #f6d79a 81%
+  );
+}
+
+.skyNight {
+  background: linear-gradient(180deg, #03060c 0%, #08111f 38%, #122039 62%, #2b3456 76%, #4b4a5e 81%);
+  opacity: 0;
+  animation: night 80s ease-in-out infinite alternate;
+}
+
+@keyframes night {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  80%,
+  100% {
+    opacity: 0.92;
+  }
+}
+
+.sun {
+  position: absolute;
+  left: 63%;
+  top: 58%;
+  width: 46vmin;
+  height: 46vmin;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 228, 160, 0.95) 0%, rgba(255, 196, 112, 0.55) 9%, rgba(240, 150, 90, 0.22) 26%, rgba(240, 150, 90, 0) 62%);
+  animation: sunset 80s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+}
+
+@keyframes sunset {
+  0%,
+  15% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  85%,
+  100% {
+    transform: translate(-50%, -18%);
+    opacity: 0.25;
+  }
+}
+
+.stars {
+  position: absolute;
+  inset: 0 0 35% 0;
+  width: 100%;
+  height: 65%;
+  opacity: 0;
+  animation: night 80s ease-in-out infinite alternate;
+}
+
+.star {
+  animation: twinkle 3.2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+/* ---- clouds */
+.cloud {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 214, 170, 0.32), rgba(255, 214, 170, 0));
+  filter: blur(6px);
+  animation: drift linear infinite;
+  will-change: transform;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(-30vw);
+  }
+  to {
+    transform: translateX(130vw);
+  }
+}
+
+/* ---- skyline layers (parallax drift) */
+.layer {
+  position: absolute;
+  left: 0;
+  bottom: 17%;
+  display: flex;
+  width: 200%;
+  animation: pan linear infinite;
+  will-change: transform;
+}
+
+.layer svg {
+  display: block;
+  flex: none;
+  width: 50%;
+  height: auto;
+}
+
+@keyframes pan {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.far {
+  bottom: 18.5%;
+  animation-duration: 420s;
+  opacity: 0.55;
+  filter: blur(0.6px);
+}
+
+.mid {
+  bottom: 17.5%;
+  animation-duration: 260s;
+  opacity: 0.85;
+}
+
+.near {
+  animation-duration: 170s;
+}
+
+.window {
+  animation: windowFlicker 9s ease-in-out infinite;
+}
+
+@keyframes windowFlicker {
+  0%,
+  42% {
+    opacity: 1;
+  }
+  46%,
+  70% {
+    opacity: 0.12;
+  }
+  74%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.beacon {
+  animation: beacon 1.6s steps(1) infinite;
+}
+
+@keyframes beacon {
+  0%,
+  55% {
+    opacity: 1;
+  }
+  56%,
+  100% {
+    opacity: 0.12;
+  }
+}
+
+/* ---- water with the city's reflection */
+.water {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 17.5%;
+  background: linear-gradient(180deg, #172338 0%, #0d1726 40%, #070c14 100%);
+  overflow: hidden;
+}
+
+.reflection {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 200%;
+  transform-origin: top;
+  opacity: 0.32;
+  filter: blur(2.2px);
+  animation: pan 170s linear infinite;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 75%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 75%);
+}
+
+.reflection svg {
+  display: block;
+  flex: none;
+  width: 50%;
+  height: auto;
+  transform: scaleY(-1);
+  transform-origin: top;
+}
+
+.ripples {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 7px);
+  animation: ripple 6s linear infinite;
+}
+
+@keyframes ripple {
+  to {
+    background-position: 0 14px;
+  }
+}
+
+.shoreGlow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 210, 140, 0.45) 40%, rgba(255, 210, 140, 0.6) 63%, transparent);
+  filter: blur(1px);
+}
+
+/* ---- finishing */
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 30% 40%, transparent 40%, rgba(3, 6, 10, 0.7) 100%),
+    linear-gradient(90deg, rgba(4, 8, 13, 0.82) 0%, rgba(4, 8, 13, 0.35) 38%, rgba(4, 8, 13, 0) 60%);
+  pointer-events: none;
+}
+
+.grain {
+  position: absolute;
+  inset: -50%;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.static .layer,
+.static .reflection,
+.static .cloud {
+  animation-play-state: paused;
+}

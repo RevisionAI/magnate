@@ -1,0 +1,111 @@
+{
+  "id": "adv.market.lost_lead",
+  "role": "advisor",
+  "text": "We've lost market leadership here. Time to review price and quality.",
+  "sentText": "We've lost market leadership here. Time to review price and quality.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:22:22.781Z",
+  "file": "adv.market.lost_lead.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.59,
+  "speechSec": 4.35,
+  "wpm": 151.7,
+  "syllables": 17,
+  "sylPerSec": 3.91,
+  "paceWpm": 157.4,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 430,
+  "samplePeakDbfs": -7.48,
+  "truePeakDbtp": -7.4,
+  "lufsI": -21.9,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 425
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We've lost market leadership here. Time to review price and quality.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.076,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 153.5,
+      "paceWpm": 159.2,
+      "maxGapMs": 430,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "We've lost market leadership here. Time to review price and quality.",
+      "score": {
+        "hard": 0,
+        "soft": 0.092,
+        "flags": []
+      },
+      "file": "_takes/adv.market.lost_lead/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.842
+      },
+      "wpm": 151.7,
+      "paceWpm": 157.4,
+      "maxGapMs": 430,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "We've lost market leadership here. Time to review price and quality.",
+      "score": {
+        "hard": 0,
+        "soft": 0.076,
+        "flags": []
+      },
+      "file": "_takes/adv.market.lost_lead/t3.wav"
+    }
+  ],
+  "lineHash": "40aa9e99ac5b68e7ca05c863"
+}

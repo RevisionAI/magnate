@@ -1,0 +1,1836 @@
+{
+  "method": "catalog",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "products": [
+        {
+          "id": "coffee_beans",
+          "name": "Coffee Beans",
+          "tier": "raw",
+          "category": "crop",
+          "unit": "ton",
+          "baseWorldMarketPrice": 7000,
+          "maxTechLevel": 6,
+          "extractedAt": "plantation",
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 30,
+          "feedsInto": [
+            "roasted_coffee"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "cotton",
+          "name": "Cotton",
+          "tier": "raw",
+          "category": "crop",
+          "unit": "ton",
+          "baseWorldMarketPrice": 1900,
+          "maxTechLevel": 5,
+          "extractedAt": "farm",
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 120,
+          "feedsInto": [
+            "cotton_fabric",
+            "denim_fabric"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "crude_oil",
+          "name": "Crude Oil",
+          "tier": "raw",
+          "category": "petroleum",
+          "unit": "barrel",
+          "baseWorldMarketPrice": 75,
+          "maxTechLevel": 5,
+          "extractedAt": "oil_well",
+          "priceElasticity": 0.8,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 12000,
+          "feedsInto": [
+            "plastic"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "hops",
+          "name": "Hops",
+          "tier": "raw",
+          "category": "crop",
+          "unit": "ton",
+          "baseWorldMarketPrice": 12000,
+          "maxTechLevel": 6,
+          "extractedAt": "plantation",
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 18,
+          "feedsInto": [
+            "beer"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "iron_ore",
+          "name": "Iron Ore",
+          "tier": "raw",
+          "category": "mineral",
+          "unit": "ton",
+          "baseWorldMarketPrice": 100,
+          "maxTechLevel": 5,
+          "extractedAt": "mine",
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 10000,
+          "feedsInto": [
+            "steel"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "sugarcane",
+          "name": "Sugarcane",
+          "tier": "raw",
+          "category": "crop",
+          "unit": "ton",
+          "baseWorldMarketPrice": 40,
+          "maxTechLevel": 5,
+          "extractedAt": "farm",
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 4500,
+          "feedsInto": [
+            "sugar"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "wheat",
+          "name": "Wheat",
+          "tier": "raw",
+          "category": "crop",
+          "unit": "ton",
+          "baseWorldMarketPrice": 250,
+          "maxTechLevel": 5,
+          "extractedAt": "farm",
+          "priceElasticity": 0.9,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "yieldPerSlotPerMonth": 900,
+          "feedsInto": [
+            "flour",
+            "malt"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "cotton_fabric",
+          "name": "Cotton Fabric",
+          "tier": "intermediate",
+          "category": "textile",
+          "unit": "bolt",
+          "baseWorldMarketPrice": 72,
+          "maxTechLevel": 8,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "cotton",
+                "quantity": 0.007,
+                "perSlotPerMonth": 84
+              }
+            ],
+            "laborUnits": 4.8
+          },
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 12000,
+          "feedsInto": [
+            "t_shirt"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "denim_fabric",
+          "name": "Denim Fabric",
+          "tier": "intermediate",
+          "category": "textile",
+          "unit": "bolt",
+          "baseWorldMarketPrice": 180,
+          "maxTechLevel": 9,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "cotton",
+                "quantity": 0.0175,
+                "perSlotPerMonth": 105.00000000000001
+              }
+            ],
+            "laborUnits": 4.8
+          },
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 6000,
+          "feedsInto": [
+            "designer_jeans"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "electronic_parts",
+          "name": "Electronic Parts",
+          "tier": "intermediate",
+          "category": "electronics",
+          "unit": "unit",
+          "baseWorldMarketPrice": 10,
+          "maxTechLevel": 12,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "plastic",
+                "quantity": 0.05,
+                "perSlotPerMonth": 10000
+              },
+              {
+                "productId": "steel",
+                "quantity": 0.0004,
+                "perSlotPerMonth": 80
+              }
+            ],
+            "laborUnits": 8
+          },
+          "priceElasticity": 1.2,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 200000,
+          "feedsInto": [
+            "car",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "flour",
+          "name": "Flour",
+          "tier": "intermediate",
+          "category": "food_ingredient",
+          "unit": "kg",
+          "baseWorldMarketPrice": 0.5,
+          "maxTechLevel": 7,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "wheat",
+                "quantity": 0.00133,
+                "perSlotPerMonth": 2660
+              }
+            ],
+            "laborUnits": 1.8
+          },
+          "priceElasticity": 0.8,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 2000000,
+          "feedsInto": [
+            "bread"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "malt",
+          "name": "Malt",
+          "tier": "intermediate",
+          "category": "food_ingredient",
+          "unit": "kg",
+          "baseWorldMarketPrice": 0.72,
+          "maxTechLevel": 7,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "wheat",
+                "quantity": 0.0013,
+                "perSlotPerMonth": 1300
+              }
+            ],
+            "laborUnits": 1.8
+          },
+          "priceElasticity": 0.9,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 1000000,
+          "feedsInto": [
+            "beer"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "plastic",
+          "name": "Plastic",
+          "tier": "intermediate",
+          "category": "polymer",
+          "unit": "kg",
+          "baseWorldMarketPrice": 1.45,
+          "maxTechLevel": 10,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "crude_oil",
+                "quantity": 0.011,
+                "perSlotPerMonth": 16500
+              }
+            ],
+            "laborUnits": 2.8
+          },
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 1500000,
+          "feedsInto": [
+            "electronic_parts",
+            "beer",
+            "car",
+            "coffee_drink",
+            "soft_drink",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "roasted_coffee",
+          "name": "Roasted Coffee",
+          "tier": "intermediate",
+          "category": "food_ingredient",
+          "unit": "kg",
+          "baseWorldMarketPrice": 12.5,
+          "maxTechLevel": 8,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "coffee_beans",
+                "quantity": 0.0012,
+                "perSlotPerMonth": 119.99999999999999
+              }
+            ],
+            "laborUnits": 2.4
+          },
+          "priceElasticity": 1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 100000,
+          "feedsInto": [
+            "coffee_drink"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "steel",
+          "name": "Steel",
+          "tier": "intermediate",
+          "category": "metal",
+          "unit": "ton",
+          "baseWorldMarketPrice": 760,
+          "maxTechLevel": 10,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "iron_ore",
+                "quantity": 1.6,
+                "perSlotPerMonth": 4800
+              }
+            ],
+            "laborUnits": 5.6
+          },
+          "priceElasticity": 1.1,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 3000,
+          "feedsInto": [
+            "electronic_parts",
+            "car",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "sugar",
+          "name": "Sugar",
+          "tier": "intermediate",
+          "category": "food_ingredient",
+          "unit": "kg",
+          "baseWorldMarketPrice": 0.6,
+          "maxTechLevel": 7,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "sugarcane",
+                "quantity": 0.009,
+                "perSlotPerMonth": 18000
+              }
+            ],
+            "laborUnits": 2
+          },
+          "priceElasticity": 0.9,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0,
+            "high": 0
+          },
+          "outputPerSlotPerMonth": 2000000,
+          "feedsInto": [
+            "soft_drink"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "id": "beer",
+          "name": "Beer",
+          "tier": "finished",
+          "category": "beverage",
+          "unit": "bottle",
+          "baseWorldMarketPrice": 1.12,
+          "maxTechLevel": 9,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "malt",
+                "quantity": 0.06,
+                "perSlotPerMonth": 60000
+              },
+              {
+                "productId": "hops",
+                "quantity": 7E-07,
+                "perSlotPerMonth": 0.7
+              },
+              {
+                "productId": "plastic",
+                "quantity": 0.004,
+                "perSlotPerMonth": 4000
+              }
+            ],
+            "laborUnits": 4.4
+          },
+          "priceElasticity": 0.6,
+          "baseDemandPerCapita": {
+            "low": 12,
+            "middle": 13,
+            "high": 11
+          },
+          "outputPerSlotPerMonth": 1000000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "bread",
+          "name": "Bread",
+          "tier": "finished",
+          "category": "food",
+          "unit": "loaf",
+          "baseWorldMarketPrice": 1.95,
+          "maxTechLevel": 7,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "flour",
+                "quantity": 0.45,
+                "perSlotPerMonth": 202500
+              }
+            ],
+            "laborUnits": 6
+          },
+          "priceElasticity": 0.35,
+          "baseDemandPerCapita": {
+            "low": 6.5,
+            "middle": 6,
+            "high": 5
+          },
+          "outputPerSlotPerMonth": 450000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "tier": "finished",
+          "category": "automotive",
+          "unit": "unit",
+          "baseWorldMarketPrice": 30500,
+          "maxTechLevel": 12,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "steel",
+                "quantity": 1,
+                "perSlotPerMonth": 300
+              },
+              {
+                "productId": "plastic",
+                "quantity": 160,
+                "perSlotPerMonth": 48000
+              },
+              {
+                "productId": "electronic_parts",
+                "quantity": 350,
+                "perSlotPerMonth": 105000
+              }
+            ],
+            "laborUnits": 12
+          },
+          "priceElasticity": 1.1,
+          "baseDemandPerCapita": {
+            "low": 0.0025,
+            "middle": 0.0042,
+            "high": 0.007
+          },
+          "outputPerSlotPerMonth": 300,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "coffee_drink",
+          "name": "Coffee Drink",
+          "tier": "finished",
+          "category": "beverage",
+          "unit": "cup",
+          "baseWorldMarketPrice": 1.85,
+          "maxTechLevel": 8,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "roasted_coffee",
+                "quantity": 0.015,
+                "perSlotPerMonth": 9000
+              },
+              {
+                "productId": "plastic",
+                "quantity": 0.025,
+                "perSlotPerMonth": 15000
+              }
+            ],
+            "laborUnits": 4.4
+          },
+          "priceElasticity": 0.6,
+          "baseDemandPerCapita": {
+            "low": 4,
+            "middle": 8,
+            "high": 12
+          },
+          "outputPerSlotPerMonth": 600000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "designer_jeans",
+          "name": "Designer Jeans",
+          "tier": "finished",
+          "category": "apparel",
+          "unit": "unit",
+          "baseWorldMarketPrice": 55,
+          "maxTechLevel": 10,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "denim_fabric",
+                "quantity": 0.04,
+                "perSlotPerMonth": 480
+              }
+            ],
+            "laborUnits": 7.2
+          },
+          "priceElasticity": 1.3,
+          "baseDemandPerCapita": {
+            "low": 0,
+            "middle": 0.08,
+            "high": 0.2
+          },
+          "outputPerSlotPerMonth": 12000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "soft_drink",
+          "name": "Soft Drink",
+          "tier": "finished",
+          "category": "beverage",
+          "unit": "bottle",
+          "baseWorldMarketPrice": 1.1,
+          "maxTechLevel": 8,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "sugar",
+                "quantity": 0.05,
+                "perSlotPerMonth": 75000
+              },
+              {
+                "productId": "plastic",
+                "quantity": 0.022,
+                "perSlotPerMonth": 33000
+              }
+            ],
+            "laborUnits": 4.4
+          },
+          "priceElasticity": 0.8,
+          "baseDemandPerCapita": {
+            "low": 24,
+            "middle": 26,
+            "high": 22
+          },
+          "outputPerSlotPerMonth": 1500000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "t_shirt",
+          "name": "T-Shirt",
+          "tier": "finished",
+          "category": "apparel",
+          "unit": "unit",
+          "baseWorldMarketPrice": 7,
+          "maxTechLevel": 9,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "cotton_fabric",
+                "quantity": 0.035,
+                "perSlotPerMonth": 4200
+              }
+            ],
+            "laborUnits": 6
+          },
+          "priceElasticity": 0.9,
+          "baseDemandPerCapita": {
+            "low": 1.2,
+            "middle": 1.4,
+            "high": 1.6
+          },
+          "outputPerSlotPerMonth": 120000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "id": "television",
+          "name": "Television",
+          "tier": "finished",
+          "category": "electronics",
+          "unit": "unit",
+          "baseWorldMarketPrice": 345,
+          "maxTechLevel": 12,
+          "recipe": {
+            "outputQuantity": 1,
+            "inputs": [
+              {
+                "productId": "electronic_parts",
+                "quantity": 20,
+                "perSlotPerMonth": 200000
+              },
+              {
+                "productId": "plastic",
+                "quantity": 5,
+                "perSlotPerMonth": 50000
+              },
+              {
+                "productId": "steel",
+                "quantity": 0.008,
+                "perSlotPerMonth": 80
+              }
+            ],
+            "laborUnits": 8
+          },
+          "priceElasticity": 1.3,
+          "baseDemandPerCapita": {
+            "low": 0.009,
+            "middle": 0.012,
+            "high": 0.016
+          },
+          "outputPerSlotPerMonth": 10000,
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        }
+      ],
+      "buildingTypes": [
+        {
+          "id": "car_dealership",
+          "name": "Car Dealership",
+          "category": "auto_dealer",
+          "constructionCost": 4000000,
+          "monthlyOperatingCost": 18000,
+          "footprintWidth": 2,
+          "footprintHeight": 2,
+          "maxUnits": 2,
+          "retail": true,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "retail",
+          "eligibleProductIds": [
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 2,
+              "monthlyOperatingCost": 18000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 12,
+            "max": 24
+          },
+          "buildMenuGroup": "retail"
+        },
+        {
+          "id": "convenience_store",
+          "name": "Convenience Store",
+          "category": "convenience_store",
+          "constructionCost": 1400000,
+          "monthlyOperatingCost": 6000,
+          "footprintWidth": 1,
+          "footprintHeight": 1,
+          "maxUnits": 3,
+          "retail": true,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "retail",
+          "eligibleProductIds": [
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 3,
+              "monthlyOperatingCost": 6000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 3,
+            "max": 8
+          },
+          "buildMenuGroup": "retail"
+        },
+        {
+          "id": "department_store",
+          "name": "Department Store",
+          "category": "department_store",
+          "constructionCost": 14000000,
+          "monthlyOperatingCost": 60000,
+          "footprintWidth": 4,
+          "footprintHeight": 4,
+          "maxUnits": 4,
+          "retail": true,
+          "producibleTiers": [],
+          "maxLevel": 3,
+          "slotKind": "retail",
+          "eligibleProductIds": [
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 4,
+              "monthlyOperatingCost": 60000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 6,
+              "monthlyOperatingCost": 78000,
+              "upgradeCost": 8400000
+            },
+            {
+              "level": 3,
+              "capacity": 9,
+              "monthlyOperatingCost": 96000,
+              "upgradeCost": 7000000
+            }
+          ],
+          "headcount": {
+            "min": 40,
+            "max": 120
+          },
+          "buildMenuGroup": "retail"
+        },
+        {
+          "id": "factory_small",
+          "name": "Small Factory",
+          "category": "factory",
+          "constructionCost": 15000000,
+          "monthlyOperatingCost": 45000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 6,
+          "retail": false,
+          "producibleTiers": [
+            "intermediate",
+            "finished"
+          ],
+          "maxLevel": 3,
+          "slotKind": "production",
+          "eligibleProductIds": [
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 6,
+              "monthlyOperatingCost": 45000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 9,
+              "monthlyOperatingCost": 58500,
+              "upgradeCost": 9000000
+            },
+            {
+              "level": 3,
+              "capacity": 12,
+              "monthlyOperatingCost": 72000,
+              "upgradeCost": 7500000
+            }
+          ],
+          "headcount": {
+            "min": 20,
+            "max": 60
+          },
+          "buildMenuGroup": "production"
+        },
+        {
+          "id": "factory_large",
+          "name": "Large Factory",
+          "category": "factory",
+          "constructionCost": 48000000,
+          "monthlyOperatingCost": 120000,
+          "footprintWidth": 5,
+          "footprintHeight": 5,
+          "maxUnits": 12,
+          "retail": false,
+          "producibleTiers": [
+            "intermediate",
+            "finished"
+          ],
+          "maxLevel": 3,
+          "slotKind": "production",
+          "eligibleProductIds": [
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 12,
+              "monthlyOperatingCost": 120000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 18,
+              "monthlyOperatingCost": 156000,
+              "upgradeCost": 28800000
+            },
+            {
+              "level": 3,
+              "capacity": 24,
+              "monthlyOperatingCost": 192000,
+              "upgradeCost": 24000000
+            }
+          ],
+          "headcount": {
+            "min": 60,
+            "max": 200
+          },
+          "buildMenuGroup": "production"
+        },
+        {
+          "id": "small_farm",
+          "name": "Small Farm",
+          "category": "farm",
+          "constructionCost": 1500000,
+          "monthlyOperatingCost": 8000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 3,
+          "retail": false,
+          "producibleTiers": [
+            "raw"
+          ],
+          "maxLevel": 3,
+          "slotKind": "extraction",
+          "eligibleProductIds": [
+            "cotton",
+            "sugarcane",
+            "wheat"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 3,
+              "monthlyOperatingCost": 8000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 4,
+              "monthlyOperatingCost": 10400,
+              "upgradeCost": 900000
+            },
+            {
+              "level": 3,
+              "capacity": 6,
+              "monthlyOperatingCost": 12800,
+              "upgradeCost": 750000
+            }
+          ],
+          "geography": {
+            "arable": true
+          },
+          "headcount": {
+            "min": 5,
+            "max": 15
+          },
+          "buildMenuGroup": "extraction"
+        },
+        {
+          "id": "large_farm",
+          "name": "Large Farm",
+          "category": "farm",
+          "constructionCost": 4000000,
+          "monthlyOperatingCost": 18000,
+          "footprintWidth": 5,
+          "footprintHeight": 5,
+          "maxUnits": 6,
+          "retail": false,
+          "producibleTiers": [
+            "raw"
+          ],
+          "maxLevel": 1,
+          "slotKind": "extraction",
+          "eligibleProductIds": [
+            "cotton",
+            "sugarcane",
+            "wheat"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 6,
+              "monthlyOperatingCost": 18000,
+              "upgradeCost": 0
+            }
+          ],
+          "geography": {
+            "arable": true
+          },
+          "headcount": {
+            "min": 20,
+            "max": 50
+          },
+          "buildMenuGroup": "extraction"
+        },
+        {
+          "id": "radio_station",
+          "name": "Radio Station",
+          "category": "media",
+          "constructionCost": 5000000,
+          "monthlyOperatingCost": 25000,
+          "footprintWidth": 2,
+          "footprintHeight": 2,
+          "maxUnits": 1,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "none",
+          "eligibleProductIds": [],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 1,
+              "monthlyOperatingCost": 25000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 5,
+            "max": 15
+          },
+          "buildMenuGroup": "media",
+          "mediaChannel": "radio",
+          "mediaBonus": 1.35
+        },
+        {
+          "id": "magazine_publisher",
+          "name": "Magazine Publisher",
+          "category": "media",
+          "constructionCost": 8000000,
+          "monthlyOperatingCost": 35000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 1,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "none",
+          "eligibleProductIds": [],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 1,
+              "monthlyOperatingCost": 35000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 8,
+            "max": 25
+          },
+          "buildMenuGroup": "media",
+          "mediaChannel": "magazine",
+          "mediaBonus": 1.25
+        },
+        {
+          "id": "newspaper_publisher",
+          "name": "Newspaper Publisher",
+          "category": "media",
+          "constructionCost": 15000000,
+          "monthlyOperatingCost": 60000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 1,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "none",
+          "eligibleProductIds": [],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 1,
+              "monthlyOperatingCost": 60000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 8,
+            "max": 25
+          },
+          "buildMenuGroup": "media",
+          "mediaChannel": "newspaper",
+          "mediaBonus": 1.25
+        },
+        {
+          "id": "tv_station",
+          "name": "TV Station",
+          "category": "media",
+          "constructionCost": 40000000,
+          "monthlyOperatingCost": 120000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 1,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "none",
+          "eligibleProductIds": [],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 1,
+              "monthlyOperatingCost": 120000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 10,
+            "max": 30
+          },
+          "buildMenuGroup": "media",
+          "mediaChannel": "tv",
+          "mediaBonus": 1.35
+        },
+        {
+          "id": "iron_mine",
+          "name": "Iron Mine",
+          "category": "mine",
+          "constructionCost": 12000000,
+          "monthlyOperatingCost": 60000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 3,
+          "retail": false,
+          "producibleTiers": [
+            "raw"
+          ],
+          "maxLevel": 1,
+          "slotKind": "extraction",
+          "eligibleProductIds": [
+            "iron_ore"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 3,
+              "monthlyOperatingCost": 60000,
+              "upgradeCost": 0
+            }
+          ],
+          "geography": {
+            "mineralRich": true
+          },
+          "headcount": {
+            "min": 15,
+            "max": 40
+          },
+          "buildMenuGroup": "extraction"
+        },
+        {
+          "id": "oil_well",
+          "name": "Oil Well",
+          "category": "oil_well",
+          "constructionCost": 6000000,
+          "monthlyOperatingCost": 30000,
+          "footprintWidth": 2,
+          "footprintHeight": 2,
+          "maxUnits": 2,
+          "retail": false,
+          "producibleTiers": [
+            "raw"
+          ],
+          "maxLevel": 3,
+          "slotKind": "extraction",
+          "eligibleProductIds": [
+            "crude_oil"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 2,
+              "monthlyOperatingCost": 30000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 3,
+              "monthlyOperatingCost": 39000,
+              "upgradeCost": 3600000
+            },
+            {
+              "level": 3,
+              "capacity": 4,
+              "monthlyOperatingCost": 48000,
+              "upgradeCost": 3000000
+            }
+          ],
+          "geography": {
+            "oilRich": true
+          },
+          "headcount": {
+            "min": 10,
+            "max": 25
+          },
+          "buildMenuGroup": "extraction"
+        },
+        {
+          "id": "small_plantation",
+          "name": "Small Plantation",
+          "category": "plantation",
+          "constructionCost": 1800000,
+          "monthlyOperatingCost": 9000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 3,
+          "retail": false,
+          "producibleTiers": [
+            "raw"
+          ],
+          "maxLevel": 1,
+          "slotKind": "extraction",
+          "eligibleProductIds": [
+            "coffee_beans",
+            "hops"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 3,
+              "monthlyOperatingCost": 9000,
+              "upgradeCost": 0
+            }
+          ],
+          "geography": {
+            "arable": true
+          },
+          "headcount": {
+            "min": 8,
+            "max": 20
+          },
+          "buildMenuGroup": "extraction"
+        },
+        {
+          "id": "rd_center",
+          "name": "R\u0026D Center",
+          "category": "rd_center",
+          "constructionCost": 25000000,
+          "monthlyOperatingCost": 80000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 4,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "research",
+          "eligibleProductIds": [
+            "coffee_beans",
+            "cotton",
+            "crude_oil",
+            "hops",
+            "iron_ore",
+            "sugarcane",
+            "wheat",
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 4,
+              "monthlyOperatingCost": 80000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 10,
+            "max": 40
+          },
+          "buildMenuGroup": "research"
+        },
+        {
+          "id": "seaport",
+          "name": "Seaport",
+          "category": "seaport",
+          "constructionCost": 120000000,
+          "monthlyOperatingCost": 250000,
+          "footprintWidth": 5,
+          "footprintHeight": 3,
+          "maxUnits": 8,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "warehouse",
+          "eligibleProductIds": [
+            "coffee_beans",
+            "cotton",
+            "crude_oil",
+            "hops",
+            "iron_ore",
+            "sugarcane",
+            "wheat",
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 8,
+              "monthlyOperatingCost": 250000,
+              "upgradeCost": 0
+            }
+          ],
+          "geography": {
+            "coastal": true
+          },
+          "headcount": {
+            "min": 40,
+            "max": 120
+          },
+          "buildMenuGroup": "logistics"
+        },
+        {
+          "id": "supermarket",
+          "name": "Supermarket",
+          "category": "supermarket",
+          "constructionCost": 10000000,
+          "monthlyOperatingCost": 40000,
+          "footprintWidth": 3,
+          "footprintHeight": 3,
+          "maxUnits": 6,
+          "retail": true,
+          "producibleTiers": [],
+          "maxLevel": 3,
+          "slotKind": "retail",
+          "eligibleProductIds": [
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 6,
+              "monthlyOperatingCost": 40000,
+              "upgradeCost": 0
+            },
+            {
+              "level": 2,
+              "capacity": 9,
+              "monthlyOperatingCost": 52000,
+              "upgradeCost": 6000000
+            },
+            {
+              "level": 3,
+              "capacity": 12,
+              "monthlyOperatingCost": 64000,
+              "upgradeCost": 5000000
+            }
+          ],
+          "headcount": {
+            "min": 15,
+            "max": 40
+          },
+          "buildMenuGroup": "retail"
+        },
+        {
+          "id": "warehouse_small",
+          "name": "Small Warehouse",
+          "category": "warehouse",
+          "constructionCost": 5000000,
+          "monthlyOperatingCost": 20000,
+          "footprintWidth": 2,
+          "footprintHeight": 2,
+          "maxUnits": 4,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "warehouse",
+          "eligibleProductIds": [
+            "coffee_beans",
+            "cotton",
+            "crude_oil",
+            "hops",
+            "iron_ore",
+            "sugarcane",
+            "wheat",
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 4,
+              "monthlyOperatingCost": 20000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 4,
+            "max": 12
+          },
+          "buildMenuGroup": "logistics"
+        },
+        {
+          "id": "warehouse_large",
+          "name": "Large Warehouse",
+          "category": "warehouse",
+          "constructionCost": 22000000,
+          "monthlyOperatingCost": 55000,
+          "footprintWidth": 4,
+          "footprintHeight": 4,
+          "maxUnits": 8,
+          "retail": false,
+          "producibleTiers": [],
+          "maxLevel": 1,
+          "slotKind": "warehouse",
+          "eligibleProductIds": [
+            "coffee_beans",
+            "cotton",
+            "crude_oil",
+            "hops",
+            "iron_ore",
+            "sugarcane",
+            "wheat",
+            "cotton_fabric",
+            "denim_fabric",
+            "electronic_parts",
+            "flour",
+            "malt",
+            "plastic",
+            "roasted_coffee",
+            "steel",
+            "sugar",
+            "beer",
+            "bread",
+            "car",
+            "coffee_drink",
+            "designer_jeans",
+            "soft_drink",
+            "t_shirt",
+            "television"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "capacity": 8,
+              "monthlyOperatingCost": 55000,
+              "upgradeCost": 0
+            }
+          ],
+          "headcount": {
+            "min": 15,
+            "max": 40
+          },
+          "buildMenuGroup": "logistics"
+        }
+      ],
+      "cities": [
+        {
+          "id": "metropolis",
+          "name": "Metropolis",
+          "population": 500000,
+          "gridWidth": 80,
+          "gridHeight": 80,
+          "coastal": true,
+          "arable": true,
+          "mineralRich": false,
+          "oilRich": false,
+          "baseLandPrice": 150,
+          "demographics": {
+            "low": 0.45,
+            "middle": 0.4,
+            "high": 0.15
+          },
+          "potentialDemand": {
+            "beer": 6125000,
+            "bread": 3037500,
+            "car": 1927.5,
+            "coffee_drink": 3400000,
+            "designer_jeans": 31000,
+            "soft_drink": 12250000,
+            "t_shirt": 670000,
+            "television": 5625
+          }
+        },
+        {
+          "id": "riverside",
+          "name": "Riverside",
+          "population": 250000,
+          "gridWidth": 60,
+          "gridHeight": 60,
+          "coastal": false,
+          "arable": true,
+          "mineralRich": true,
+          "oilRich": false,
+          "baseLandPrice": 100,
+          "demographics": {
+            "low": 0.35,
+            "middle": 0.45,
+            "high": 0.2
+          },
+          "potentialDemand": {
+            "beer": 3062500,
+            "bread": 1493750,
+            "car": 1041.25,
+            "coffee_drink": 1850000,
+            "designer_jeans": 19000,
+            "soft_drink": 6125000,
+            "t_shirt": 342500,
+            "television": 2937.5
+          }
+        },
+        {
+          "id": "eastside",
+          "name": "Eastside",
+          "population": 200000,
+          "gridWidth": 55,
+          "gridHeight": 55,
+          "coastal": false,
+          "arable": true,
+          "mineralRich": false,
+          "oilRich": false,
+          "baseLandPrice": 180,
+          "demographics": {
+            "low": 0.25,
+            "middle": 0.4,
+            "high": 0.35
+          },
+          "potentialDemand": {
+            "beer": 2410000,
+            "bread": 1155000,
+            "car": 951,
+            "coffee_drink": 1680000,
+            "designer_jeans": 20400,
+            "soft_drink": 4820000,
+            "t_shirt": 284000,
+            "television": 2530
+          }
+        },
+        {
+          "id": "portbay",
+          "name": "Portbay",
+          "population": 150000,
+          "gridWidth": 50,
+          "gridHeight": 50,
+          "coastal": true,
+          "arable": false,
+          "mineralRich": false,
+          "oilRich": true,
+          "baseLandPrice": 80,
+          "demographics": {
+            "low": 0.5,
+            "middle": 0.4,
+            "high": 0.1
+          },
+          "potentialDemand": {
+            "beer": 1845000,
+            "bread": 922500,
+            "car": 544.5,
+            "coffee_drink": 960000,
+            "designer_jeans": 7800,
+            "soft_drink": 3690000,
+            "t_shirt": 198000,
+            "television": 1635
+          }
+        },
+        {
+          "id": "hilltown",
+          "name": "Hilltown",
+          "population": 100000,
+          "gridWidth": 40,
+          "gridHeight": 40,
+          "coastal": false,
+          "arable": true,
+          "mineralRich": false,
+          "oilRich": false,
+          "baseLandPrice": 250,
+          "demographics": {
+            "low": 0.2,
+            "middle": 0.4,
+            "high": 0.4
+          },
+          "potentialDemand": {
+            "beer": 1200000,
+            "bread": 570000,
+            "car": 498,
+            "coffee_drink": 880000,
+            "designer_jeans": 11200,
+            "soft_drink": 2400000,
+            "t_shirt": 144000,
+            "television": 1300
+          }
+        }
+      ],
+      "adChannels": [
+        {
+          "id": "tv",
+          "costPerPoint": 4000,
+          "mediaBuildingTypeId": "tv_station",
+          "ownershipBonus": 1.35
+        },
+        {
+          "id": "newspaper",
+          "costPerPoint": 6000,
+          "mediaBuildingTypeId": "newspaper_publisher",
+          "ownershipBonus": 1.25
+        },
+        {
+          "id": "magazine",
+          "costPerPoint": 8000,
+          "mediaBuildingTypeId": "magazine_publisher",
+          "ownershipBonus": 1.25
+        },
+        {
+          "id": "radio",
+          "costPerPoint": 5000,
+          "mediaBuildingTypeId": "radio_station",
+          "ownershipBonus": 1.35
+        }
+      ],
+      "constants": {
+        "cyclesPerSlotPerMonth": 200,
+        "interCityShippingFraction": 0.1,
+        "worldMarketQuality": 50,
+        "extractionQuality": 50,
+        "baseTechLevel": 1,
+        "researchPointsPerSlotPerMonth": 100,
+        "baseResearchThreshold": 100,
+        "patentDurationMonths": 24,
+        "patentRoyaltyRate": 0.05,
+        "brandDecayRate": 0.02,
+        "eventBaseProbabilityPerMonth": 0.2,
+        "bankruptcyGraceMonths": 3,
+        "defaultLowCashThreshold": 1000000
+      },
+      "events": [
+        {
+          "id": "cocoa_blight",
+          "name": "Cocoa blight strikes Riverside \u2014 wholesale prices spike",
+          "description": "A fungal blight tearing through Riverside\u0027s plantation belt has wholesalers scrambling. Coffee-bean futures are up sharply for the next two quarters.",
+          "severity": "notable"
+        },
+        {
+          "id": "consumer_electronics_craze",
+          "name": "TV-buying craze sweeps Metropolis as new model debuts",
+          "description": "An aggressive launch campaign by an unnamed retailer (and three suspiciously well-dressed influencers) has Metropolis household electronics flying off shelves.",
+          "severity": "info"
+        },
+        {
+          "id": "cotton_harvest_bumper",
+          "name": "Bumper cotton harvest crashes textile feedstock prices",
+          "description": "Favourable rains and a quiet pest season produced an exceptional cotton crop. Apparel makers expect cheaper denim and tee runs through year-end.",
+          "severity": "notable"
+        },
+        {
+          "id": "oil_glut",
+          "name": "OPEC oversupply triggers oil glut \u2014 wholesale crude tanks",
+          "description": "An unexpected production hike has flooded the world market with crude. Refiners and downstream chemical plants enjoy reduced feedstock costs for the rest of the year.",
+          "severity": "major"
+        },
+        {
+          "id": "soft_drink_health_scare",
+          "name": "Health study sours public on soft drinks in Eastside",
+          "description": "A widely-shared longitudinal study links daily soft-drink consumption to a basket of metabolic ills. Eastside consumers are reading carefully \u2014 brand awareness takes a hit across the category.",
+          "severity": "notable"
+        },
+        {
+          "id": "tariff_announcement",
+          "name": "Tariff announcement on imported steel \u2014 input costs rise",
+          "description": "A surprise 20% tariff on imported steel slabs takes effect next quarter. Domestic procurement runs dearer through the term of the policy.",
+          "severity": "major"
+        },
+        {
+          "id": "tech_breakthrough",
+          "name": "Lab announces room-temperature superconductor; tech industry abuzz",
+          "description": "Researchers at a private lab claim a stable, scalable room-temperature superconductor. Independent verification is pending, but the press cycle is real.",
+          "severity": "notable"
+        },
+        {
+          "id": "trade_summit_optimism",
+          "name": "Trade summit concludes \u2014 diplomats cautiously upbeat",
+          "description": "A multilateral trade summit wrapped without any concrete deliverables but plenty of warm communiques. Markets steady; nothing material to report.",
+          "severity": "info"
+        },
+        {
+          "id": "viral_ad_spot",
+          "name": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+          "description": "A 30-second spot picked up unexpected social-media traction overnight. Brand recall for soft drinks across Metropolis got a lift across all incumbents.",
+          "severity": "info"
+        },
+        {
+          "id": "wheat_drought",
+          "name": "Wheat-belt drought lifts grain futures",
+          "description": "An unseasonably dry summer in the wheat belt has thinned the harvest. Bakeries and breweries face elevated grain costs for several months.",
+          "severity": "notable"
+        }
+      ],
+      "starterPlans": [
+        {
+          "id": "cornerStore",
+          "label": "Corner store selling soft drinks",
+          "typeId": "convenience_store",
+          "productId": "soft_drink",
+          "price": 2.25,
+          "target": 250000,
+          "citySelector": "largestPopulation"
+        },
+        {
+          "id": "breadAisle",
+          "label": "Supermarket selling bread",
+          "typeId": "supermarket",
+          "productId": "bread",
+          "price": 4.25,
+          "target": 350000,
+          "citySelector": "largestPopulation"
+        },
+        {
+          "id": "warehouseHub",
+          "label": "Warehouse stocking bread",
+          "typeId": "warehouse_small",
+          "productId": "bread",
+          "target": 500000,
+          "citySelector": "largestPopulation"
+        },
+        {
+          "id": "softDrinkLab",
+          "label": "R\u0026D center researching soft drinks",
+          "typeId": "rd_center",
+          "productId": "soft_drink",
+          "citySelector": "largestPopulation"
+        }
+      ],
+      "contentHash": "a54f27fbdb4cdb346556e888dd42d04cd727663113136f94b934695e0b23ed6e"
+    },
+    "revision": 9
+  }
+}

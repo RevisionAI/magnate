@@ -1,0 +1,153 @@
+.whyHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.whyBig {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.whyCaption {
+  font-size: var(--fs-xs);
+  color: var(--c-muted);
+}
+
+.books {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+}
+
+.bsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+@container (max-width: 900px) {
+  .bsGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.bsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-md);
+}
+
+.bsTable td {
+  padding: 7px var(--space-3);
+  border-bottom: 1px solid rgba(160, 196, 218, 0.07);
+  color: var(--c-text2);
+}
+
+.bsTable td:last-child {
+  text-align: right;
+  color: var(--c-text);
+}
+
+.bsTable tr.bsSection td,
+.bsTable tr.bsSection td:last-child {
+  padding-top: var(--space-3);
+  text-align: left;
+  border-bottom: none;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+
+.bsTable tr.bsIndent td:first-child {
+  padding-left: calc(var(--space-3) + 1rem);
+}
+
+.bsTable tr.bsTotal td {
+  border-top: 1px solid var(--c-hairline-strong);
+  border-bottom: 3px double rgba(215, 183, 102, 0.4);
+  font-weight: var(--fw-bold);
+  color: var(--c-text);
+}
+
+.bsTable tr.bsSub td {
+  font-weight: var(--fw-semibold);
+  color: var(--c-text);
+}
+
+.reconcile {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+@container (max-width: 900px) {
+  .reconcile {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.reconcileCell {
+  padding: var(--space-3);
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-hairline);
+  background: rgba(5, 9, 13, 0.25);
+}
+
+.reconcileLabel {
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+}
+
+.reconcileValue {
+  margin-top: 4px;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.reconcileOp {
+  margin-top: 2px;
+  font-size: var(--fs-2xs);
+  color: var(--c-muted);
+}
+
+.historyNote {
+  display: block;
+  max-width: 28rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+}
+
+.ledgerFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.memo {
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+}
+
+.assetMix {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-3) var(--space-3);
+}

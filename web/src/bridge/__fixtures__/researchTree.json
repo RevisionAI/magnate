@@ -1,0 +1,579 @@
+{
+  "method": "researchTree",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "nodes": [
+        {
+          "productId": "coffee_beans",
+          "name": "Coffee Beans",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 6,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "roasted_coffee"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "cotton",
+          "name": "Cotton",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 5,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "cotton_fabric",
+            "denim_fabric"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "crude_oil",
+          "name": "Crude Oil",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 5,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "plastic"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "hops",
+          "name": "Hops",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 6,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "beer"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "iron_ore",
+          "name": "Iron Ore",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 5,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "steel"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "sugarcane",
+          "name": "Sugarcane",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 5,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "sugar"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "wheat",
+          "name": "Wheat",
+          "tier": "raw",
+          "tech": 1,
+          "maxTech": 5,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [],
+          "feedsInto": [
+            "flour",
+            "malt"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "cotton_fabric",
+          "name": "Cotton Fabric",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 8,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "cotton"
+          ],
+          "feedsInto": [
+            "t_shirt"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "denim_fabric",
+          "name": "Denim Fabric",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 9,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "cotton"
+          ],
+          "feedsInto": [
+            "designer_jeans"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "electronic_parts",
+          "name": "Electronic Parts",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 12,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "plastic",
+            "steel"
+          ],
+          "feedsInto": [
+            "car",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "flour",
+          "name": "Flour",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 7,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "wheat"
+          ],
+          "feedsInto": [
+            "bread"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "malt",
+          "name": "Malt",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 7,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "wheat"
+          ],
+          "feedsInto": [
+            "beer"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "plastic",
+          "name": "Plastic",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 10,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "crude_oil"
+          ],
+          "feedsInto": [
+            "electronic_parts",
+            "beer",
+            "car",
+            "coffee_drink",
+            "soft_drink",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "roasted_coffee",
+          "name": "Roasted Coffee",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 8,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "coffee_beans"
+          ],
+          "feedsInto": [
+            "coffee_drink"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "steel",
+          "name": "Steel",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 10,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "iron_ore"
+          ],
+          "feedsInto": [
+            "electronic_parts",
+            "car",
+            "television"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "sugar",
+          "name": "Sugar",
+          "tier": "intermediate",
+          "tech": 1,
+          "maxTech": 7,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "sugarcane"
+          ],
+          "feedsInto": [
+            "soft_drink"
+          ],
+          "affectsRetailDemand": false
+        },
+        {
+          "productId": "beer",
+          "name": "Beer",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 9,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "malt",
+            "hops",
+            "plastic"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "bread",
+          "name": "Bread",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 7,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "flour"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "car",
+          "name": "Car",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 12,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "steel",
+            "plastic",
+            "electronic_parts"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "coffee_drink",
+          "name": "Coffee Drink",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 8,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "roasted_coffee",
+            "plastic"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "designer_jeans",
+          "name": "Designer Jeans",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 10,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "denim_fabric"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "soft_drink",
+          "name": "Soft Drink",
+          "tier": "finished",
+          "tech": 2,
+          "maxTech": 8,
+          "progress": 100,
+          "threshold": 200,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "sugar",
+            "plastic"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "t_shirt",
+          "name": "T-Shirt",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 9,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "cotton_fabric"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        },
+        {
+          "productId": "television",
+          "name": "Television",
+          "tier": "finished",
+          "tech": 1,
+          "maxTech": 12,
+          "progress": 0,
+          "threshold": 100,
+          "researchingSlots": 0,
+          "pointsPerMonth": 0,
+          "blocked": false,
+          "bestRival": {
+            "companyId": 2,
+            "name": "LocalCo",
+            "tech": 1
+          },
+          "inputs": [
+            "electronic_parts",
+            "plastic",
+            "steel"
+          ],
+          "feedsInto": [],
+          "affectsRetailDemand": true
+        }
+      ],
+      "pointsPerSlotPerMonth": 100,
+      "baseThreshold": 100
+    },
+    "revision": 25
+  }
+}

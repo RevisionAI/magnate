@@ -1,0 +1,198 @@
+{
+  "method": "buildings",
+  "args": {
+    "cityId": "metropolis"
+  },
+  "envelope": {
+    "ok": true,
+    "result": [
+      {
+        "id": 1,
+        "typeId": "supermarket",
+        "category": "supermarket",
+        "ownerId": 1,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 1,
+        "capacity": 6,
+        "name": "Supermarket #1",
+        "slotKind": "retail",
+        "status": "operating",
+        "products": [
+          "soft_drink"
+        ],
+        "monthlyOpex": 40000,
+        "cashFlowThisMonth": -111639.8,
+        "netIncomeThisMonth": -111639.8,
+        "topStock": [],
+        "placement": {
+          "px": 47,
+          "pz": 47,
+          "rotation": 270,
+          "source": "engine"
+        },
+        "colorIndex": 0
+      },
+      {
+        "id": 2,
+        "typeId": "factory_small",
+        "category": "factory",
+        "ownerId": 1,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 1,
+        "capacity": 6,
+        "name": "Small Factory #2",
+        "slotKind": "production",
+        "status": "operating",
+        "products": [
+          "flour"
+        ],
+        "monthlyOpex": 45000,
+        "cashFlowThisMonth": -281909.51,
+        "netIncomeThisMonth": -281909.51,
+        "topStock": [
+          {
+            "productId": "flour",
+            "quantity": 2000000
+          }
+        ],
+        "placement": {
+          "px": 72,
+          "pz": 68,
+          "rotation": 270,
+          "source": "engine"
+        },
+        "colorIndex": 0
+      },
+      {
+        "id": 3,
+        "typeId": "warehouse_small",
+        "category": "warehouse",
+        "ownerId": 1,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 1,
+        "capacity": 4,
+        "name": "Small Warehouse #3",
+        "slotKind": "warehouse",
+        "status": "operating",
+        "products": [
+          "bread"
+        ],
+        "monthlyOpex": 20000,
+        "cashFlowThisMonth": -100970.35,
+        "netIncomeThisMonth": -100970.35,
+        "topStock": [
+          {
+            "productId": "bread",
+            "quantity": 20000
+          }
+        ],
+        "placement": {
+          "px": 72,
+          "pz": 66,
+          "rotation": 270,
+          "source": "engine"
+        },
+        "colorIndex": 0
+      },
+      {
+        "id": 4,
+        "typeId": "rd_center",
+        "category": "rd_center",
+        "ownerId": 1,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 1,
+        "capacity": 4,
+        "name": "R\u0026D Center #4",
+        "slotKind": "research",
+        "status": "operating",
+        "products": [
+          "soft_drink"
+        ],
+        "monthlyOpex": 80000,
+        "cashFlowThisMonth": -446824.72,
+        "netIncomeThisMonth": -446824.72,
+        "topStock": [],
+        "placement": {
+          "px": 63,
+          "pz": 70,
+          "rotation": 0,
+          "source": "engine"
+        },
+        "colorIndex": 0
+      },
+      {
+        "id": 5,
+        "typeId": "supermarket",
+        "category": "supermarket",
+        "ownerId": 2,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 4,
+        "capacity": 6,
+        "name": "Supermarket #5",
+        "slotKind": "retail",
+        "status": "operating",
+        "products": [
+          "designer_jeans",
+          "t_shirt",
+          "beer",
+          "coffee_drink"
+        ],
+        "monthlyOpex": 40000,
+        "cashFlowThisMonth": 397469.85,
+        "netIncomeThisMonth": 451288.55,
+        "topStock": [
+          {
+            "productId": "beer",
+            "quantity": 47368.421052631544
+          },
+          {
+            "productId": "coffee_drink",
+            "quantity": 24242.65417005602
+          },
+          {
+            "productId": "t_shirt",
+            "quantity": 5876.460291847456
+          }
+        ],
+        "placement": {
+          "px": 48,
+          "pz": 29,
+          "rotation": 180,
+          "source": "engine"
+        },
+        "colorIndex": 1
+      },
+      {
+        "id": 6,
+        "typeId": "convenience_store",
+        "category": "convenience_store",
+        "ownerId": 1,
+        "cityId": "metropolis",
+        "level": 1,
+        "configuredSlots": 0,
+        "capacity": 3,
+        "name": "Convenience Store #6",
+        "slotKind": "retail",
+        "status": "underConstruction",
+        "products": [],
+        "monthlyOpex": 0,
+        "cashFlowThisMonth": -560290.56,
+        "netIncomeThisMonth": -290.56,
+        "topStock": [],
+        "placement": {
+          "px": 37,
+          "pz": 29,
+          "rotation": 180,
+          "source": "engine"
+        },
+        "colorIndex": 0
+      }
+    ],
+    "revision": 12
+  }
+}

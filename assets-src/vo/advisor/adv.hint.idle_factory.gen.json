@@ -1,0 +1,113 @@
+{
+  "id": "adv.hint.idle_factory",
+  "role": "advisor",
+  "text": "One of our factories is idle. Idle capacity is pure overhead.",
+  "sentText": "One of our factories is idle. Idle capacity is pure overhead.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.724
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:29:09.789Z",
+  "file": "adv.hint.idle_factory.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.76,
+  "speechSec": 5.52,
+  "wpm": 119.6,
+  "syllables": 21,
+  "sylPerSec": 3.8,
+  "paceWpm": 153.2,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 580,
+  "samplePeakDbfs": -3.71,
+  "truePeakDbtp": -3.7,
+  "lufsI": -22.2,
+  "lra": 1.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 480
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "One of our factories is idle. Idle capacity is pure overhead.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.493,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 148,
+      "paceWpm": 189.6,
+      "maxGapMs": 470,
+      "lufsI": -22.4,
+      "cer": 0,
+      "transcript": "One of our factories is idle. Idle capacity is pure overhead.",
+      "score": {
+        "hard": 0,
+        "soft": 2.956,
+        "flags": [
+          "pace 189.6 wpm-eq, 4.71 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.hint.idle_factory/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.7
+      },
+      "wpm": 117.6,
+      "paceWpm": 150.7,
+      "maxGapMs": 600,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "One of our factories is idle. Idle capacity is pure overhead.",
+      "score": {
+        "hard": 0,
+        "soft": 0.568,
+        "flags": []
+      },
+      "file": "_takes/adv.hint.idle_factory/t2.wav"
+    }
+  ],
+  "lineHash": "f7ce671fba8b057b9a8545ba"
+}

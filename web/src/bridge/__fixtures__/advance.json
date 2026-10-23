@@ -1,0 +1,626 @@
+{
+  "method": "advance",
+  "args": {
+    "months": 1,
+    "viewCityId": "metropolis"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "months": 1,
+      "events": [
+        {
+          "kind": "news",
+          "severity": "info",
+          "message": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 37,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "typeId": "viral_ad_spot",
+          "newsSeq": 2,
+          "reason": "info"
+        },
+        {
+          "kind": "buildingSales",
+          "severity": "info",
+          "message": "Supermarket #1 sold $135,000.",
+          "amount": 135000,
+          "buildingId": 1,
+          "cityId": "metropolis",
+          "seq": 38,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 0,
+          "units": 60000
+        },
+        {
+          "kind": "brandMilestone",
+          "severity": "success",
+          "message": "Soft Drink brand awareness in Metropolis passed 30.",
+          "cityId": "metropolis",
+          "productId": "soft_drink",
+          "seq": 39,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "threshold": 30
+        },
+        {
+          "kind": "inputShortage",
+          "severity": "warning",
+          "message": "Small Factory #2 ran short of Wheat and worked at 0% capacity.",
+          "buildingId": 2,
+          "cityId": "metropolis",
+          "productId": "wheat",
+          "seq": 40,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 1,
+          "newValue": 0
+        },
+        {
+          "kind": "goalAchieved",
+          "severity": "success",
+          "message": "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+          "seq": 41,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 3,
+          "goalId": "brand-30"
+        },
+        {
+          "kind": "monthClosed",
+          "severity": "warning",
+          "message": "Aug 2026: revenue $135,000, net income -$1,274,274",
+          "amount": -1274273.83,
+          "seq": 42,
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "priority": 0
+        }
+      ],
+      "snapshot": {
+        "date": {
+          "year": 2026,
+          "month": 8
+        },
+        "monthIndex": 24319,
+        "playerId": 1,
+        "companies": [
+          {
+            "id": 1,
+            "name": "Your Corp",
+            "isPlayer": true,
+            "cash": 157783931.48,
+            "totalAssets": 222082594.26,
+            "equity": 222082594.26,
+            "revenueThisMonth": 135000,
+            "netIncomeThisMonth": -1274273.83,
+            "buildingCount": 5,
+            "color": "#2F7DE1",
+            "corporateValue": 193951929.29,
+            "netIncomeLast12": -3517405.74,
+            "colorIndex": 0
+          },
+          {
+            "id": 2,
+            "name": "LocalCo",
+            "isPlayer": false,
+            "cash": 5625841.97,
+            "totalAssets": 20510143.82,
+            "equity": 20510143.82,
+            "revenueThisMonth": 1688096.74,
+            "netIncomeThisMonth": 307216.42,
+            "buildingCount": 1,
+            "color": "#E69F00",
+            "corporateValue": 17704721.48,
+            "netIncomeLast12": 510143.82,
+            "colorIndex": 1,
+            "aiStrategy": "simple"
+          }
+        ],
+        "scenario": {
+          "id": "tutorial",
+          "name": "Tutorial \u2014 Your First Company",
+          "goals": [
+            {
+              "description": "Open your first store. Press B to open Build, pick Retail \u203A Supermarket and place it on a busy street in Metropolis \u2014 high-traffic plots bring more shoppers. Building costs cash up front and the store becomes an asset on your balance sheet.",
+              "achieved": true,
+              "progress": 1,
+              "detail": "1 / 1",
+              "id": "open-store",
+              "index": 0,
+              "kind": "ownsBuilding",
+              "metric": "ownsBuilding",
+              "current": 1,
+              "target": 1,
+              "unit": "count",
+              "achievedAt": {
+                "year": 2026,
+                "month": 1
+              },
+              "category": "supermarket",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Stock soft drinks. Click your supermarket to open its inspector, add a Soft Drink line and keep the price near the suggested band (around $1.65 a bottle, a little under the going rate). The store buys its stock from the world market automatically.",
+              "achieved": true,
+              "progress": 1,
+              "detail": "configured",
+              "id": "stock-soft-drinks",
+              "index": 1,
+              "kind": "productRetailed",
+              "metric": "productRetailed",
+              "current": 1,
+              "target": 1,
+              "unit": "flag",
+              "achievedAt": {
+                "year": 2026,
+                "month": 1
+              },
+              "productId": "soft_drink",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Earn a profitable month. Let time run (Space, or 1\u20134 for speed) and read the month-close summary. Imported soft drinks leave a thin margin after wages, running costs and depreciation \u2014 that is normal, and the next steps show how to widen it.",
+              "achieved": false,
+              "progress": 0,
+              "detail": "0 / 1 months",
+              "id": "first-profit",
+              "index": 2,
+              "kind": "consecutiveProfitable",
+              "metric": "consecutiveProfitable",
+              "current": 0,
+              "target": 1,
+              "unit": "months",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Advertise. Open Marketing (K) and start a TV campaign for soft drinks in Metropolis. Brand awareness lets you sell more at a better price; the forecast shows how quickly it builds and how fast it fades if you stop paying.",
+              "achieved": true,
+              "progress": 1,
+              "detail": "running",
+              "id": "advertise",
+              "index": 3,
+              "kind": "adCampaignActive",
+              "metric": "adCampaignActive",
+              "current": 1,
+              "target": 1,
+              "unit": "flag",
+              "achievedAt": {
+                "year": 2026,
+                "month": 1
+              },
+              "productId": "soft_drink",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+              "achieved": true,
+              "progress": 1,
+              "detail": "32.8 / 30.0",
+              "id": "brand-30",
+              "index": 4,
+              "kind": "topBrand",
+              "metric": "topBrand",
+              "current": 32.76,
+              "target": 30,
+              "unit": "points",
+              "achievedAt": {
+                "year": 2026,
+                "month": 8
+              },
+              "productId": "soft_drink",
+              "cityId": "metropolis",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Borrow to grow. Open Finance (F) \u203A Bank and take a term loan sized to your next investment. The offer shows the rate your credit rating earns, the monthly payment, and the interest that will appear below operating profit in your income statement.",
+              "achieved": false,
+              "progress": 0,
+              "detail": "0 / 1",
+              "id": "bank-loan",
+              "index": 5,
+              "kind": "loanTaken",
+              "metric": "loansTaken",
+              "current": 0,
+              "target": 1,
+              "unit": "count",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Add a second product line. Use the loan to put bread on a free unit of your supermarket (or open a second store). More lines spread the store\u0027s fixed costs over more sales.",
+              "achieved": false,
+              "progress": 0,
+              "detail": "not yet",
+              "id": "second-line",
+              "index": 6,
+              "kind": "productRetailed",
+              "metric": "productRetailed",
+              "current": 0,
+              "target": 1,
+              "unit": "flag",
+              "productId": "bread",
+              "mode": "reachOnce"
+            },
+            {
+              "description": "Grow company value to $55M. Company value prices your business on its earnings: cash counts at face value, and stores are worth more than their cost only when they earn more than investors require. Check the Reports (R) balance sheet and income statement to see what moves it.",
+              "achieved": true,
+              "progress": 1,
+              "detail": "$193,951,929 / $55,000,000",
+              "id": "company-value",
+              "index": 7,
+              "kind": "corporateValue",
+              "metric": "companyValue",
+              "current": 193951929.29,
+              "target": 55000000,
+              "unit": "usd",
+              "achievedAt": {
+                "year": 2026,
+                "month": 1
+              },
+              "mode": "reachOnce"
+            }
+          ],
+          "goalsAchieved": 5,
+          "nextGoalId": "first-profit"
+        },
+        "revision": 12,
+        "gameId": "405ea8d2326daadf06273f63c3f9a152",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "elapsedMonths": 7,
+        "player": {
+          "companyId": 1,
+          "name": "Your Corp",
+          "cash": 157783931.48,
+          "cashFlowThisMonth": -1551634.94,
+          "revenueThisMonth": 135000,
+          "netIncomeThisMonth": -1274273.83,
+          "netIncomeLast12": -3517405.74,
+          "totalAssets": 222082594.26,
+          "equity": 222082594.26,
+          "corporateValue": 193951929.29,
+          "buildings": 5,
+          "idleBuildings": 1,
+          "activeCampaigns": 1,
+          "cashRunwayMonths": 143.6,
+          "creditRating": "NR"
+        },
+        "outcome": {
+          "status": "playing"
+        },
+        "alerts": {
+          "lowCash": false,
+          "negativeCashMonths": 0,
+          "bankruptcyGraceMonths": 3
+        },
+        "newsSeq": 2,
+        "feedSeq": 42,
+        "faulted": false
+      },
+      "monthSummaries": [
+        {
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "revenue": 135000,
+          "cogs": 73920,
+          "opex": 1052714.94,
+          "netIncome": -1274273.83,
+          "cashStart": 159335566.41,
+          "cashEnd": 157783931.48,
+          "unitsSold": 60000,
+          "exportUnits": 0
+        }
+      ],
+      "playerActivity": [
+        {
+          "buildingId": 1,
+          "cityId": "metropolis",
+          "revenue": 135000,
+          "unitsSold": 60000,
+          "exportUnits": 0,
+          "netIncome": -111639.8
+        },
+        {
+          "buildingId": 2,
+          "cityId": "metropolis",
+          "revenue": 0,
+          "unitsSold": 0,
+          "exportUnits": 0,
+          "netIncome": -281909.51
+        },
+        {
+          "buildingId": 3,
+          "cityId": "metropolis",
+          "revenue": 0,
+          "unitsSold": 0,
+          "exportUnits": 0,
+          "netIncome": -100970.35
+        },
+        {
+          "buildingId": 4,
+          "cityId": "metropolis",
+          "revenue": 0,
+          "unitsSold": 0,
+          "exportUnits": 0,
+          "netIncome": -446824.72
+        },
+        {
+          "buildingId": 6,
+          "cityId": "metropolis",
+          "revenue": 0,
+          "unitsSold": 0,
+          "exportUnits": 0,
+          "netIncome": -290.56
+        }
+      ],
+      "cityView": {
+        "cityId": "metropolis",
+        "revision": 12,
+        "full": true,
+        "buildings": [
+          {
+            "id": 1,
+            "typeId": "supermarket",
+            "category": "supermarket",
+            "slotKind": "retail",
+            "ownerId": 1,
+            "isPlayer": true,
+            "color": "#2F7DE1",
+            "colorIndex": 0,
+            "level": 1,
+            "footprintW": 3,
+            "footprintH": 3,
+            "placement": {
+              "px": 47,
+              "pz": 47,
+              "rotation": 270,
+              "source": "engine"
+            },
+            "status": "operating",
+            "products": [
+              "soft_drink"
+            ],
+            "visualRev": 2064168961
+          },
+          {
+            "id": 2,
+            "typeId": "factory_small",
+            "category": "factory",
+            "slotKind": "production",
+            "ownerId": 1,
+            "isPlayer": true,
+            "color": "#2F7DE1",
+            "colorIndex": 0,
+            "level": 1,
+            "footprintW": 3,
+            "footprintH": 3,
+            "placement": {
+              "px": 72,
+              "pz": 68,
+              "rotation": 270,
+              "source": "engine"
+            },
+            "status": "operating",
+            "products": [
+              "flour"
+            ],
+            "visualRev": 65422386
+          },
+          {
+            "id": 3,
+            "typeId": "warehouse_small",
+            "category": "warehouse",
+            "slotKind": "warehouse",
+            "ownerId": 1,
+            "isPlayer": true,
+            "color": "#2F7DE1",
+            "colorIndex": 0,
+            "level": 1,
+            "footprintW": 2,
+            "footprintH": 2,
+            "placement": {
+              "px": 72,
+              "pz": 66,
+              "rotation": 270,
+              "source": "engine"
+            },
+            "status": "operating",
+            "products": [
+              "bread"
+            ],
+            "visualRev": 1972976547
+          },
+          {
+            "id": 4,
+            "typeId": "rd_center",
+            "category": "rd_center",
+            "slotKind": "research",
+            "ownerId": 1,
+            "isPlayer": true,
+            "color": "#2F7DE1",
+            "colorIndex": 0,
+            "level": 1,
+            "footprintW": 3,
+            "footprintH": 3,
+            "placement": {
+              "px": 63,
+              "pz": 70,
+              "rotation": 0,
+              "source": "engine"
+            },
+            "status": "operating",
+            "products": [
+              "soft_drink"
+            ],
+            "visualRev": 3640583109
+          },
+          {
+            "id": 5,
+            "typeId": "supermarket",
+            "category": "supermarket",
+            "slotKind": "retail",
+            "ownerId": 2,
+            "isPlayer": false,
+            "color": "#E69F00",
+            "colorIndex": 1,
+            "level": 1,
+            "footprintW": 3,
+            "footprintH": 3,
+            "placement": {
+              "px": 48,
+              "pz": 29,
+              "rotation": 180,
+              "source": "engine"
+            },
+            "status": "operating",
+            "products": [
+              "designer_jeans",
+              "t_shirt",
+              "beer",
+              "coffee_drink"
+            ],
+            "visualRev": 2751831901
+          },
+          {
+            "id": 6,
+            "typeId": "convenience_store",
+            "category": "convenience_store",
+            "slotKind": "retail",
+            "ownerId": 1,
+            "isPlayer": true,
+            "color": "#2F7DE1",
+            "colorIndex": 0,
+            "level": 1,
+            "footprintW": 1,
+            "footprintH": 1,
+            "placement": {
+              "px": 37,
+              "pz": 29,
+              "rotation": 180,
+              "source": "engine"
+            },
+            "status": "underConstruction",
+            "products": [],
+            "visualRev": 504105752,
+            "construction": {
+              "started": {
+                "year": 2026,
+                "month": 7
+              },
+              "completesAt": {
+                "year": 2026,
+                "month": 9
+              },
+              "progress": 0.5,
+              "costPaid": 840000,
+              "costRemaining": 560000,
+              "monthsTotal": 2,
+              "monthsRemaining": 1,
+              "nextInstalment": 560000,
+              "cancelRefund": 712492
+            }
+          }
+        ],
+        "removedIds": [],
+        "activity": {
+          "month": {
+            "year": 2026,
+            "month": 8
+          },
+          "ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "revenue": [
+            135000,
+            0,
+            0,
+            0,
+            1688096.74,
+            0
+          ],
+          "unitsSold": [
+            60000,
+            0,
+            0,
+            0,
+            390204.3776963979,
+            0
+          ],
+          "exportUnits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "netIncome": [
+            -111639.8,
+            -281909.51,
+            -100970.35,
+            -446824.72,
+            451288.55,
+            -290.56
+          ],
+          "utilization": [
+            null,
+            0,
+            null,
+            null,
+            null,
+            null
+          ],
+          "transfersIn": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "transfersOut": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "layout": {
+          "layoutRev": 9
+        }
+      },
+      "autosaveDue": false,
+      "engineMs": 7.574,
+      "bridgeMs": 7.481
+    },
+    "revision": 12
+  }
+}

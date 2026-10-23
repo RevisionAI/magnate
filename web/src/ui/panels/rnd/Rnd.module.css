@@ -1,0 +1,126 @@
+.techCell {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rivalCell {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rules {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  color: var(--c-text2);
+}
+
+.race {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.raceRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.raceName {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-text2);
+}
+
+.raceBar {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr) 1.5rem;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+}
+
+.raceLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--c-muted);
+}
+
+.raceTrack {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(160, 196, 218, 0.08);
+}
+
+.raceFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 4px;
+}
+
+.labs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.slot {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(0, 1.2fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid rgba(160, 196, 218, 0.07);
+  font-size: var(--fs-sm);
+}
+
+.slot:last-child {
+  border-bottom: none;
+}
+
+.slotIndex {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--c-hairline-strong);
+  font-size: var(--fs-2xs);
+  color: var(--c-muted);
+}
+
+.slotFree {
+  color: var(--c-dim);
+  font-style: italic;
+}
+
+.labHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--c-hairline);
+}
+
+.licensees {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.grant {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

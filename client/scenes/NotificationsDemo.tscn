@@ -1,0 +1,90 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/NotificationsDemo.cs" id="1_notifdemo"]
+
+[node name="NotificationsDemo" type="Node"]
+script = ExtResource("1_notifdemo")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Notification Framework Demo"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Click buttons to fire toasts — top-right, fade-in/hold/fade-out, stacked."
+horizontal_alignment = 1
+
+[node name="Spacer1" type="Control" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="Grid" type="GridContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+columns = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+
+[node name="InfoButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Show Info"
+
+[node name="SuccessButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Show Success"
+
+[node name="WarningButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Show Warning"
+
+[node name="ErrorButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Show Error"
+
+[node name="ShowAllButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Show All"
+
+[node name="ClearButton" type="Button" parent="Panel/VBox/Grid"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 40)
+text = "Clear All"
+
+[node name="Spacer2" type="Control" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Footer" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="BackButton" type="Button" parent="Panel/VBox/Footer"]
+layout_mode = 2
+text = "Back"

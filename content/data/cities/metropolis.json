@@ -1,0 +1,22 @@
+{
+  "id": "metropolis",
+  "name": "Metropolis",
+  "population": 500000,
+  "demographics": {
+    "low": 0.45,
+    "middle": 0.4,
+    "high": 0.15
+  },
+  "grid": {
+    "width": 80,
+    "height": 80
+  },
+  "geography": {
+    "coastal": true,
+    "arable": true,
+    "mineralRich": false,
+    "oilRich": false
+  },
+  "baseLandPrice": 150.0,
+  "wageIndex": 1.0
+}

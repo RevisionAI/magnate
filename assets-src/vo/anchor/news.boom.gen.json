@@ -1,0 +1,111 @@
+{
+  "id": "news.boom",
+  "role": "anchor",
+  "text": "Consumer spending hits a record high as the boom rolls on.",
+  "sentText": "Consumer spending hits a record high as the boom rolls on.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.287
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:43:15.110Z",
+  "file": "news.boom.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.56,
+  "speechSec": 3.32,
+  "wpm": 198.8,
+  "syllables": 15,
+  "sylPerSec": 4.52,
+  "paceWpm": 154.9,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 250,
+  "samplePeakDbfs": -6.93,
+  "truePeakDbtp": -6.9,
+  "lufsI": -21.8,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 90,
+    "tailTrimmedMs": 300
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Consumer spending hits a record high as the boom rolls on.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.001,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 182.3,
+      "paceWpm": 142.1,
+      "maxGapMs": 270,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "Consumer spending hits a record high as the boom rolls on.",
+      "score": {
+        "hard": 0,
+        "soft": 0.129,
+        "flags": []
+      },
+      "file": "_takes/news.boom/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.302
+      },
+      "wpm": 198.8,
+      "paceWpm": 154.9,
+      "maxGapMs": 260,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Consumer spending hits a record high as the boom rolls on.",
+      "score": {
+        "hard": 0,
+        "soft": 0.001,
+        "flags": []
+      },
+      "file": "_takes/news.boom/t3.wav"
+    }
+  ],
+  "lineHash": "a1020ebebe2f36b133960769"
+}

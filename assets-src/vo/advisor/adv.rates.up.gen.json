@@ -1,0 +1,116 @@
+{
+  "id": "adv.rates.up",
+  "role": "advisor",
+  "text": "Interest rates are climbing. Our variable-rate debt just got pricier.",
+  "sentText": "Interest rates are climbing. Our variable-rate debt just got pricier.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.792
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:19:14.618Z",
+  "file": "adv.rates.up.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.29,
+  "speechSec": 5.05,
+  "wpm": 118.8,
+  "syllables": 19,
+  "sylPerSec": 3.76,
+  "paceWpm": 151.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 480,
+  "samplePeakDbfs": -6.28,
+  "truePeakDbtp": -6.3,
+  "lufsI": -22.3,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 430
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Interest rates are climbing. Our variable rate debt just got pricier.",
+    "wer": 0,
+    "cer": 0,
+    "droppedTail": "There you go."
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.26,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 137.6,
+      "paceWpm": 175.5,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Interest rates are climbing. Our variable rate debt just got pricier.",
+      "score": {
+        "hard": 0,
+        "soft": 1.355,
+        "flags": [
+          "pace 175.5 wpm-eq, 4.36 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rates.up/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.754
+      },
+      "wpm": 112.6,
+      "paceWpm": 143.5,
+      "maxGapMs": 530,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "Interest rates are climbing. Our variable rate debt just got pricier.",
+      "score": {
+        "hard": 0,
+        "soft": 1.115,
+        "flags": [
+          "pace 143.5 wpm-eq, 3.56 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.rates.up/t2.wav"
+    }
+  ],
+  "lineHash": "fa52e043d8ca1e34df23946c"
+}

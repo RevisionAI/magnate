@@ -1,0 +1,113 @@
+{
+  "saveMeta": {
+    "formatVersion": 1,
+    "engineSchemaVersion": 10,
+    "gameId": "405ea8d2326daadf06273f63c3f9a152",
+    "scenarioId": "tutorial",
+    "scenarioName": "Tutorial \u2014 Your First Company",
+    "companyName": "Your Corp",
+    "date": {
+      "year": 2026,
+      "month": 7
+    },
+    "elapsedMonths": 6,
+    "cash": 159335566.41,
+    "startingCapital": 225600000,
+    "corporateValue": 199348879.96,
+    "buildingsByCategory": [
+      {
+        "id": "convenience_store",
+        "count": 1
+      },
+      {
+        "id": "factory",
+        "count": 1
+      },
+      {
+        "id": "rd_center",
+        "count": 1
+      },
+      {
+        "id": "supermarket",
+        "count": 1
+      },
+      {
+        "id": "warehouse",
+        "count": 1
+      }
+    ],
+    "topProducts": [
+      {
+        "productId": "soft_drink",
+        "revenue": 405000
+      }
+    ],
+    "goalsAchieved": 4,
+    "goalsTotal": 8,
+    "outcomeStatus": "playing",
+    "contentHash": "a54f27fbdb4cdb346556e888dd42d04cd727663113136f94b934695e0b23ed6e",
+    "label": "Fixture",
+    "slotKind": "quicksave",
+    "createdAtIso": "2026-10-01T00:00:00Z",
+    "rawBytes": 72944,
+    "compressedBytes": 12542
+  },
+  "inspect": {
+    "meta": {
+      "formatVersion": 1,
+      "engineSchemaVersion": 10,
+      "gameId": "405ea8d2326daadf06273f63c3f9a152",
+      "scenarioId": "tutorial",
+      "scenarioName": "Tutorial \u2014 Your First Company",
+      "companyName": "Your Corp",
+      "date": {
+        "year": 2026,
+        "month": 7
+      },
+      "elapsedMonths": 6,
+      "cash": 159335566.41,
+      "startingCapital": 225600000,
+      "corporateValue": 199348879.96,
+      "buildingsByCategory": [
+        {
+          "id": "convenience_store",
+          "count": 1
+        },
+        {
+          "id": "factory",
+          "count": 1
+        },
+        {
+          "id": "rd_center",
+          "count": 1
+        },
+        {
+          "id": "supermarket",
+          "count": 1
+        },
+        {
+          "id": "warehouse",
+          "count": 1
+        }
+      ],
+      "topProducts": [
+        {
+          "productId": "soft_drink",
+          "revenue": 405000
+        }
+      ],
+      "goalsAchieved": 4,
+      "goalsTotal": 8,
+      "outcomeStatus": "playing",
+      "contentHash": "a54f27fbdb4cdb346556e888dd42d04cd727663113136f94b934695e0b23ed6e",
+      "label": "Fixture",
+      "slotKind": "quicksave",
+      "createdAtIso": "2026-10-01T00:00:00Z",
+      "rawBytes": 72944,
+      "compressedBytes": 12542
+    },
+    "loadable": true,
+    "client": "{\u0022version\u0022:1,\u0022sidecar\u0022:{\u0022version\u0022:1},\u0022thumbnail\u0022:null,\u0022playTimeSec\u0022:30}",
+    "contentChanged": false
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "id": "vo_milestone_10m",
+  "role": "advisor",
+  "text": "Ten million in revenue. The business has real momentum now.",
+  "sentText": "Ten million in revenue. The business has real momentum now.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.801
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 4,
+  "takesConsidered": 4,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:39:18.086Z",
+  "file": "vo_milestone_10m.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.75,
+  "speechSec": 4.51,
+  "wpm": 133,
+  "syllables": 18,
+  "sylPerSec": 3.99,
+  "paceWpm": 160.7,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 520,
+  "samplePeakDbfs": -5.65,
+  "truePeakDbtp": -5.6,
+  "lufsI": -22.2,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 240,
+    "tailTrimmedMs": 435
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "10 million in revenue. The business has real momentum now.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.332,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 148.1,
+      "paceWpm": 179,
+      "maxGapMs": 470,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "10 million in revenue. The business has real momentum now.",
+      "score": {
+        "hard": 0,
+        "soft": 1.79,
+        "flags": [
+          "pace 179 wpm-eq, 4.44 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_10m/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.739
+      },
+      "wpm": 117.2,
+      "paceWpm": 141.6,
+      "maxGapMs": 550,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "10 million in revenue. The business has real momentum now.",
+      "score": {
+        "hard": 0,
+        "soft": 1.374,
+        "flags": [
+          "pace 141.6 wpm-eq, 3.52 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_10m/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.782
+      },
+      "wpm": 121.7,
+      "paceWpm": 147,
+      "maxGapMs": 530,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "10 million in revenue. The business has real momentum now.",
+      "score": {
+        "hard": 0,
+        "soft": 0.73,
+        "flags": [
+          "pace 147 wpm-eq, 3.65 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_10m/t3.wav"
+    }
+  ],
+  "lineHash": "a25343ed00e6e7f464d50e93"
+}

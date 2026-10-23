@@ -1,0 +1,116 @@
+{
+  "id": "vo_building_first_media",
+  "role": "advisor",
+  "text": "Our first media outlet. Let's put it to work building our brand.",
+  "sentText": "Our first media outlet. Let's put it to work building our brand.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.758
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:38:29.303Z",
+  "file": "vo_building_first_media.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.04,
+  "speechSec": 4.8,
+  "wpm": 150,
+  "syllables": 18,
+  "sylPerSec": 3.75,
+  "paceWpm": 151,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 450,
+  "samplePeakDbfs": -5.8,
+  "truePeakDbtp": -5.8,
+  "lufsI": -22.2,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 450
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our first media outlet. Let's put it to work building our brand.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.19,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 183.2,
+      "paceWpm": 184.4,
+      "maxGapMs": 390,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Our first media outlet, let's put it to work building our brand.",
+      "score": {
+        "hard": 0,
+        "soft": 2.209,
+        "flags": [
+          "pace 184.4 wpm-eq, 4.58 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_building_first_media/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.717
+      },
+      "wpm": 143.1,
+      "paceWpm": 144.1,
+      "maxGapMs": 460,
+      "lufsI": -22.2,
+      "cer": 0.06,
+      "transcript": "Our first media outlet. Let's put it to work building our brand. And...",
+      "score": {
+        "hard": 0,
+        "soft": 2.574,
+        "flags": [
+          "pace 144.1 wpm-eq, 3.58 syl/s (target 150–165)",
+          "low-confidence words: And... (p 0.214)"
+        ]
+      },
+      "file": "_takes/vo_building_first_media/t2.wav"
+    }
+  ],
+  "lineHash": "5afc76ef80a290d9c17bc526"
+}

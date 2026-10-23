@@ -1,0 +1,111 @@
+{
+  "id": "news.corporate_bankruptcy",
+  "role": "anchor",
+  "text": "Another corporate bankruptcy rattles investors this morning.",
+  "sentText": "Another corporate bankruptcy rattles investors this morning.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.114
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:46:13.313Z",
+  "file": "news.corporate_bankruptcy.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.01,
+  "speechSec": 3.77,
+  "wpm": 111.4,
+  "syllables": 17,
+  "sylPerSec": 4.51,
+  "paceWpm": 154.6,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 290,
+  "samplePeakDbfs": -5.69,
+  "truePeakDbtp": -5.6,
+  "lufsI": -21.7,
+  "lra": 0.6,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 130,
+    "tailTrimmedMs": 335
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Another corporate bankruptcy rattles investors this morning.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.004,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 118.3,
+      "paceWpm": 164.2,
+      "maxGapMs": 260,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "Another corporate bankruptcy rattles investors this morning.",
+      "score": {
+        "hard": 0,
+        "soft": 0.092,
+        "flags": []
+      },
+      "file": "_takes/news.corporate_bankruptcy/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.124
+      },
+      "wpm": 112,
+      "paceWpm": 155.4,
+      "maxGapMs": 290,
+      "lufsI": -21.6,
+      "cer": 0,
+      "transcript": "Another corporate bankruptcy rattles investors this morning.",
+      "score": {
+        "hard": 0,
+        "soft": 0.004,
+        "flags": []
+      },
+      "file": "_takes/news.corporate_bankruptcy/t3.wav"
+    }
+  ],
+  "lineHash": "0b62011895e9316b5f1a726d"
+}

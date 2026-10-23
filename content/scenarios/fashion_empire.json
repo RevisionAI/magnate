@@ -1,0 +1,65 @@
+{
+  "id": "fashion_empire",
+  "name": "Fashion Empire",
+  "description": "Stitch a premium apparel empire together: cotton fields, denim mills and department-store shelves. Designer jeans carry a brand premium, but only high-income shoppers reach for $130 trousers — price too high and the aisle empties.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 84000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "Couture Co.",
+      "startingCash": 75000000,
+      "strategy": "adaptive"
+    },
+    {
+      "name": "ValueThreads",
+      "startingCash": 54000000,
+      "strategy": "simple"
+    }
+  ],
+  "goals": [
+    {
+      "id": "farms",
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 farms — cotton is the foundation of the chain.",
+      "category": "farm",
+      "count": 2
+    },
+    {
+      "id": "factories",
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 factories — weave denim and cut jeans in-house.",
+      "category": "factory",
+      "count": 2
+    },
+    {
+      "id": "retail",
+      "type": "productRetailed",
+      "description": "Put designer jeans on a shelf — the brand is not real until a customer can buy it.",
+      "product": "designer_jeans"
+    },
+    {
+      "id": "share",
+      "type": "marketShare",
+      "description": "Sell 30% of the designer jeans bought in Metropolis (trailing three months), where high-income shoppers cluster.",
+      "product": "designer_jeans",
+      "city": "metropolis",
+      "threshold": 0.3
+    },
+    {
+      "id": "net-income",
+      "type": "netIncome",
+      "description": "Earn $36M of net income in total — premium margins have to carry the business after depreciation, interest and tax.",
+      "amount": 36000000
+    }
+  ]
+}

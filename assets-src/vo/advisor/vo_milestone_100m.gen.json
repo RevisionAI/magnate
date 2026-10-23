@@ -1,0 +1,113 @@
+{
+  "id": "vo_milestone_100m",
+  "role": "advisor",
+  "text": "A hundred million in revenue. We're a serious player now.",
+  "sentText": "A hundred million in revenue. We're a serious player now.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.7
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:39:35.344Z",
+  "file": "vo_milestone_100m.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.89,
+  "speechSec": 4.65,
+  "wpm": 129,
+  "syllables": 18,
+  "sylPerSec": 3.87,
+  "paceWpm": 155.9,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 460,
+  "samplePeakDbfs": -5.3,
+  "truePeakDbtp": -5.3,
+  "lufsI": -22.5,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 230,
+    "tailTrimmedMs": 505
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "100 million in revenue. We're a serious player now.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.166,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 172.4,
+      "paceWpm": 208.3,
+      "maxGapMs": 380,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "100 million in revenue. We're a serious player now.",
+      "score": {
+        "hard": 0,
+        "soft": 4.838,
+        "flags": [
+          "pace 208.3 wpm-eq, 5.17 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_milestone_100m/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.721
+      },
+      "wpm": 133.3,
+      "paceWpm": 161.1,
+      "maxGapMs": 460,
+      "lufsI": -22.6,
+      "cer": 0,
+      "transcript": "100 million in revenue. We're a serious player now.",
+      "score": {
+        "hard": 0,
+        "soft": 0.186,
+        "flags": []
+      },
+      "file": "_takes/vo_milestone_100m/t3.wav"
+    }
+  ],
+  "lineHash": "bd101e3b6a95283b26d043e8"
+}

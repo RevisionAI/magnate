@@ -1,0 +1,44 @@
+{
+  "id": "brand_monopolist",
+  "name": "Brand Monopolist",
+  "description": "Make your soft drink a household name in three cities. With no rival company in the way, the competition is the local incumbents and the cost of keeping a brand alive: awareness fades every month you stop paying for it.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2031,
+    "month": 12
+  },
+  "player": {
+    "name": "Player",
+    "startingCash": 60000000
+  },
+  "aiCompetitors": [],
+  "goals": [
+    {
+      "id": "brand-metropolis",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for soft drinks in Metropolis.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "id": "brand-eastside",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for soft drinks in Eastside.",
+      "product": "soft_drink",
+      "city": "eastside",
+      "threshold": 70.0
+    },
+    {
+      "id": "brand-riverside",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for soft drinks in Riverside.",
+      "product": "soft_drink",
+      "city": "riverside",
+      "threshold": 70.0
+    }
+  ]
+}

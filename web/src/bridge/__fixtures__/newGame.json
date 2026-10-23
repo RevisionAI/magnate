@@ -1,0 +1,175 @@
+{
+  "method": "newGame",
+  "args": {
+    "scenarioId": "sandbox",
+    "seed": 3,
+    "companyName": "Fixture Corp",
+    "createdAtIso": "2026-10-01T00:00:00Z"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "date": {
+        "year": 2026,
+        "month": 1
+      },
+      "monthIndex": 24312,
+      "playerId": 1,
+      "companies": [
+        {
+          "id": 1,
+          "name": "Fixture Corp",
+          "isPlayer": true,
+          "cash": 90000000,
+          "totalAssets": 90000000,
+          "equity": 90000000,
+          "revenueThisMonth": 0,
+          "netIncomeThisMonth": 0,
+          "buildingCount": 0,
+          "color": "#2F7DE1",
+          "corporateValue": 90000000,
+          "netIncomeLast12": 0,
+          "colorIndex": 0
+        },
+        {
+          "id": 2,
+          "name": "RivalCo",
+          "isPlayer": false,
+          "cash": 75000000,
+          "totalAssets": 75000000,
+          "equity": 75000000,
+          "revenueThisMonth": 0,
+          "netIncomeThisMonth": 0,
+          "buildingCount": 0,
+          "color": "#E69F00",
+          "corporateValue": 75000000,
+          "netIncomeLast12": 0,
+          "colorIndex": 1,
+          "aiStrategy": "adaptive"
+        }
+      ],
+      "scenario": {
+        "id": "sandbox",
+        "name": "Sandbox",
+        "goals": [],
+        "goalsAchieved": 0
+      },
+      "revision": 32,
+      "gameId": "b75c573256db8838f29e30b545f457e6",
+      "startDate": {
+        "year": 2026,
+        "month": 1
+      },
+      "elapsedMonths": 0,
+      "player": {
+        "companyId": 1,
+        "name": "Fixture Corp",
+        "cash": 90000000,
+        "cashFlowThisMonth": 90000000,
+        "revenueThisMonth": 0,
+        "netIncomeThisMonth": 0,
+        "netIncomeLast12": 0,
+        "totalAssets": 90000000,
+        "equity": 90000000,
+        "corporateValue": 90000000,
+        "buildings": 0,
+        "idleBuildings": 0,
+        "activeCampaigns": 0,
+        "creditRating": "NR"
+      },
+      "outcome": {
+        "status": "playing"
+      },
+      "alerts": {
+        "lowCash": false,
+        "negativeCashMonths": 0,
+        "bankruptcyGraceMonths": 3
+      },
+      "newsSeq": -1,
+      "feedSeq": 0,
+      "faulted": false
+    },
+    "revision": 32,
+    "hud": {
+      "date": {
+        "year": 2026,
+        "month": 1
+      },
+      "monthIndex": 24312,
+      "playerId": 1,
+      "companies": [
+        {
+          "id": 1,
+          "name": "Fixture Corp",
+          "isPlayer": true,
+          "cash": 90000000,
+          "totalAssets": 90000000,
+          "equity": 90000000,
+          "revenueThisMonth": 0,
+          "netIncomeThisMonth": 0,
+          "buildingCount": 0,
+          "color": "#2F7DE1",
+          "corporateValue": 90000000,
+          "netIncomeLast12": 0,
+          "colorIndex": 0
+        },
+        {
+          "id": 2,
+          "name": "RivalCo",
+          "isPlayer": false,
+          "cash": 75000000,
+          "totalAssets": 75000000,
+          "equity": 75000000,
+          "revenueThisMonth": 0,
+          "netIncomeThisMonth": 0,
+          "buildingCount": 0,
+          "color": "#E69F00",
+          "corporateValue": 75000000,
+          "netIncomeLast12": 0,
+          "colorIndex": 1,
+          "aiStrategy": "adaptive"
+        }
+      ],
+      "scenario": {
+        "id": "sandbox",
+        "name": "Sandbox",
+        "goals": [],
+        "goalsAchieved": 0
+      },
+      "revision": 32,
+      "gameId": "b75c573256db8838f29e30b545f457e6",
+      "startDate": {
+        "year": 2026,
+        "month": 1
+      },
+      "elapsedMonths": 0,
+      "player": {
+        "companyId": 1,
+        "name": "Fixture Corp",
+        "cash": 90000000,
+        "cashFlowThisMonth": 90000000,
+        "revenueThisMonth": 0,
+        "netIncomeThisMonth": 0,
+        "netIncomeLast12": 0,
+        "totalAssets": 90000000,
+        "equity": 90000000,
+        "corporateValue": 90000000,
+        "buildings": 0,
+        "idleBuildings": 0,
+        "activeCampaigns": 0,
+        "creditRating": "NR"
+      },
+      "outcome": {
+        "status": "playing"
+      },
+      "alerts": {
+        "lowCash": false,
+        "negativeCashMonths": 0,
+        "bankruptcyGraceMonths": 3
+      },
+      "newsSeq": -1,
+      "feedSeq": 0,
+      "faulted": false
+    }
+  }
+}

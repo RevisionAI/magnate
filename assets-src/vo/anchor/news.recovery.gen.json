@@ -1,0 +1,111 @@
+{
+  "id": "news.recovery",
+  "role": "anchor",
+  "text": "Economists say the recession is over as hiring picks up nationwide.",
+  "sentText": "Economists say the recession is over as hiring picks up nationwide.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.032
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:43:05.486Z",
+  "file": "news.recovery.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.78,
+  "speechSec": 4.54,
+  "wpm": 145.4,
+  "syllables": 21,
+  "sylPerSec": 4.63,
+  "paceWpm": 158.6,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 320,
+  "samplePeakDbfs": -5.74,
+  "truePeakDbtp": -5.7,
+  "lufsI": -21.7,
+  "lra": 1,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 140,
+    "tailTrimmedMs": 405
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Economists say the recession is over as hiring picks up nationwide.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.036,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 155.3,
+      "paceWpm": 169.4,
+      "maxGapMs": 260,
+      "lufsI": -21.9,
+      "cer": 0,
+      "transcript": "Economists say the recession is over as hiring picks up nationwide.",
+      "score": {
+        "hard": 0,
+        "soft": 0.144,
+        "flags": []
+      },
+      "file": "_takes/news.recovery/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 1.08
+      },
+      "wpm": 148.6,
+      "paceWpm": 162.2,
+      "maxGapMs": 300,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Economists say the recession is over as hiring picks up nationwide.",
+      "score": {
+        "hard": 0,
+        "soft": 0.072,
+        "flags": []
+      },
+      "file": "_takes/news.recovery/t2.wav"
+    }
+  ],
+  "lineHash": "5aa4e9046dfbd4871ebc405a"
+}

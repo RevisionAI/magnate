@@ -1,0 +1,198 @@
+.button {
+  --btn-h: 2.125rem;
+  --btn-px: 0.875rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: var(--btn-h);
+  padding: 0 var(--btn-px);
+  border-radius: var(--r-sm);
+  border: 1px solid transparent;
+  font-family: var(--font-ui);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out),
+    filter var(--dur-fast) var(--ease-out);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled,
+.button[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.42;
+  filter: saturate(0.4);
+}
+
+.full {
+  width: 100%;
+}
+
+/* ---- sizes */
+.sm {
+  --btn-h: 1.75rem;
+  --btn-px: 0.625rem;
+  font-size: var(--fs-sm);
+  gap: var(--space-1_5);
+}
+
+.lg {
+  --btn-h: 2.75rem;
+  --btn-px: 1.375rem;
+  font-size: 0.9375rem;
+  border-radius: var(--r-md);
+}
+
+.xl {
+  --btn-h: 3.25rem;
+  --btn-px: 1.75rem;
+  font-size: var(--fs-lg);
+  border-radius: var(--r-md);
+  letter-spacing: 0.02em;
+}
+
+/* ---- variants */
+.primary {
+  color: var(--c-gold-ink);
+  background: linear-gradient(180deg, #f0d48c 0%, var(--c-gold) 48%, #b8964a 100%);
+  border-color: #f3da97;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(90, 64, 18, 0.35),
+    0 6px 18px rgba(215, 183, 102, 0.22);
+  text-shadow: 0 1px 0 rgba(255, 240, 200, 0.4);
+}
+
+.primary:hover:not(:disabled) {
+  filter: brightness(1.07);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 0 rgba(90, 64, 18, 0.35),
+    0 8px 26px rgba(215, 183, 102, 0.36);
+}
+
+.secondary {
+  color: var(--c-text);
+  background: linear-gradient(180deg, rgba(160, 200, 225, 0.09), rgba(160, 200, 225, 0.04));
+  border-color: var(--c-hairline-strong);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.secondary:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(160, 200, 225, 0.14), rgba(160, 200, 225, 0.07));
+  border-color: rgba(215, 183, 102, 0.55);
+}
+
+.ghost {
+  color: var(--c-text2);
+  background: transparent;
+}
+
+.ghost:hover:not(:disabled) {
+  color: var(--c-text);
+  background: var(--c-hover);
+}
+
+.danger {
+  color: #f6b2ae;
+  background: linear-gradient(180deg, rgba(223, 111, 106, 0.2), rgba(223, 111, 106, 0.1));
+  border-color: rgba(223, 111, 106, 0.5);
+}
+
+.danger:hover:not(:disabled) {
+  color: #ffd2cf;
+  background: linear-gradient(180deg, rgba(223, 111, 106, 0.32), rgba(223, 111, 106, 0.16));
+  border-color: rgba(240, 140, 135, 0.75);
+}
+
+/* Pressed / selected toggle state (aria-pressed). */
+.button[aria-pressed='true'] {
+  color: var(--c-gold-bright);
+  border-color: rgba(215, 183, 102, 0.7);
+  background: linear-gradient(180deg, rgba(215, 183, 102, 0.2), rgba(215, 183, 102, 0.08));
+  box-shadow: inset 0 0 0 1px rgba(215, 183, 102, 0.18), 0 0 14px rgba(215, 183, 102, 0.18);
+}
+
+/* ---- icon-only */
+.iconOnly {
+  width: var(--btn-h);
+  padding: 0;
+}
+
+.round {
+  border-radius: var(--r-pill);
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.kbd {
+  margin-left: var(--space-1);
+  margin-right: calc(var(--space-1) * -1);
+}
+
+.primary .kbd kbd {
+  border-color: rgba(29, 22, 6, 0.32);
+  background: rgba(29, 22, 6, 0.1);
+  color: var(--c-gold-ink);
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.loading .label,
+.loading .icon {
+  visibility: hidden;
+}
+
+.spinnerSlot {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  opacity: 0.85;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html[data-contrast='high'] .secondary {
+  border-color: rgba(200, 225, 240, 0.55);
+}

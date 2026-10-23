@@ -1,0 +1,153 @@
+{
+  "method": "statsDashboard",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "cash": 153957574.14,
+      "corporateValue": 177190788.58,
+      "totalAssets": 195261066.48,
+      "netIncomeThisMonth": -28095801.61,
+      "corporateValueSeries": {
+        "start": {
+          "year": 2026,
+          "month": 1
+        },
+        "values": [
+          225600000,
+          224022177.42,
+          221311021.5,
+          217355740.38,
+          212488723.83,
+          205648542.05,
+          199562841.08,
+          193951929.29
+        ]
+      },
+      "shareHeatmap": {
+        "cityIds": [
+          "metropolis",
+          "riverside",
+          "eastside",
+          "portbay",
+          "hilltown"
+        ],
+        "productIds": [
+          "bread",
+          "soft_drink"
+        ],
+        "share": [
+          [
+            null,
+            1
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ]
+        ]
+      },
+      "rdLeaderboard": [
+        {
+          "productId": "bread",
+          "maxTech": 7,
+          "rows": [
+            {
+              "companyId": 1,
+              "value": 1
+            },
+            {
+              "companyId": 2,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "productId": "flour",
+          "maxTech": 7,
+          "rows": [
+            {
+              "companyId": 1,
+              "value": 1
+            },
+            {
+              "companyId": 2,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "productId": "soft_drink",
+          "maxTech": 8,
+          "rows": [
+            {
+              "companyId": 1,
+              "value": 2
+            },
+            {
+              "companyId": 2,
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "brandTop": [
+        {
+          "productId": "bread",
+          "rows": []
+        },
+        {
+          "productId": "soft_drink",
+          "rows": [
+            {
+              "companyId": 1,
+              "cityId": "metropolis",
+              "brand": 32.759950250996
+            }
+          ]
+        }
+      ],
+      "topByRevenue": [
+        {
+          "buildingId": 1,
+          "typeId": "supermarket",
+          "cityId": "metropolis",
+          "amount": 135000
+        }
+      ],
+      "topByOpex": [
+        {
+          "buildingId": 2,
+          "typeId": "factory_small",
+          "cityId": "metropolis",
+          "amount": 281909.51
+        },
+        {
+          "buildingId": 1,
+          "typeId": "supermarket",
+          "cityId": "metropolis",
+          "amount": 172719.8
+        },
+        {
+          "buildingId": 6,
+          "typeId": "convenience_store",
+          "cityId": "metropolis",
+          "amount": 290.56
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "adv.market.share_10",
+  "role": "advisor",
+  "text": "We've captured ten percent of this market. That's a real foothold.",
+  "sentText": "We've captured ten percent of this market. That's a real foothold.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.815
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:21:25.616Z",
+  "file": "adv.market.share_10.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.29,
+  "speechSec": 4.05,
+  "wpm": 163,
+  "syllables": 16,
+  "sylPerSec": 3.95,
+  "paceWpm": 159.1,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 410,
+  "samplePeakDbfs": -6.04,
+  "truePeakDbtp": -6,
+  "lufsI": -21.9,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 200,
+    "tailTrimmedMs": 410
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "We've captured 10% of this market. That's a real foothold.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.041,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 166.2,
+      "paceWpm": 162.3,
+      "maxGapMs": 410,
+      "lufsI": -21.8,
+      "cer": 0,
+      "transcript": "We've captured 10% of this market. That's a real foothold.",
+      "score": {
+        "hard": 0,
+        "soft": 0.073,
+        "flags": []
+      },
+      "file": "_takes/adv.market.share_10/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.8
+      },
+      "wpm": 147.3,
+      "paceWpm": 143.8,
+      "maxGapMs": 420,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "We've captured 10% of this market. That's a real foothold.",
+      "score": {
+        "hard": 0,
+        "soft": 0.807,
+        "flags": [
+          "pace 143.8 wpm-eq, 3.57 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.market.share_10/t3.wav"
+    }
+  ],
+  "lineHash": "11e77f5411448a929cde9517"
+}

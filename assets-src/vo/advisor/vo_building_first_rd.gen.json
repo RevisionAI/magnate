@@ -1,0 +1,116 @@
+{
+  "id": "vo_building_first_rd",
+  "role": "advisor",
+  "text": "Our first R&D center. Better technology means better products and margins.",
+  "tts": "Our first R and D center. Better technology means better products and margins.",
+  "sentText": "Our first R and D center. Better technology means better products and margins.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.855
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:38:04.828Z",
+  "file": "vo_building_first_rd.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 5.83,
+  "speechSec": 5.59,
+  "wpm": 139.5,
+  "syllables": 22,
+  "sylPerSec": 3.94,
+  "paceWpm": 158.5,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 520,
+  "samplePeakDbfs": -6.15,
+  "truePeakDbtp": -6.1,
+  "lufsI": -22.4,
+  "lra": 1.4,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 385
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our first R and D Center. Better technology means better products and margins.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.31,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 136.8,
+      "paceWpm": 155.4,
+      "maxGapMs": 520,
+      "lufsI": -22.4,
+      "cer": 0.109,
+      "transcript": "Our first R and D Center. Better technology means better products and margins. Engines.",
+      "score": {
+        "hard": 1,
+        "soft": 2.501,
+        "flags": [
+          "transcript differs (CER 0.109): \"Our first R and D Center. Better technology means better products and margins. Engines.\""
+        ]
+      },
+      "file": "_takes/vo_building_first_rd/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.85
+      },
+      "wpm": 138.8,
+      "paceWpm": 157.6,
+      "maxGapMs": 530,
+      "lufsI": -22.4,
+      "cer": 0.109,
+      "transcript": "Our first R and D Center. Better technology means better products and margins. Engines.",
+      "score": {
+        "hard": 1,
+        "soft": 2.506,
+        "flags": [
+          "transcript differs (CER 0.109): \"Our first R and D Center. Better technology means better products and margins. Engines.\""
+        ]
+      },
+      "file": "_takes/vo_building_first_rd/t3.wav"
+    }
+  ],
+  "lineHash": "31ef8b45431488d1a500dc1f"
+}

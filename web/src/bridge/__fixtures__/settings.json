@@ -1,0 +1,14 @@
+{
+  "method": "settings",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "lowCashThreshold": 1000000,
+      "autosaveEveryMonths": 12,
+      "bankruptcyGraceMonths": 3,
+      "feedCapacity": 2000
+    },
+    "revision": 9
+  }
+}

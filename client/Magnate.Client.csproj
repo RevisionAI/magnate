@@ -1,0 +1,14 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>Magnate.Client</RootNamespace>
+    <!-- The Godot SDK handles build invariants; don't inherit engine-level errors-as-warnings. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\engine\Magnate.Engine\Magnate.Engine.csproj" />
+  </ItemGroup>
+</Project>

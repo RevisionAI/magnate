@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ScenarioPicker.cs" id="1_picker"]
+
+[node name="ScenarioPicker" type="Node"]
+script = ExtResource("1_picker")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Choose a Scenario"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="AutoPlayCheckbox" type="CheckBox" parent="Panel/VBox"]
+layout_mode = 2
+text = "Let AI drive my company (spectator mode — no gameplay controls)"
+
+[node name="FilterBar" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="FilterLabel" type="Label" parent="Panel/VBox/FilterBar"]
+layout_mode = 2
+text = "Difficulty:"
+
+[node name="FilterOption" type="OptionButton" parent="Panel/VBox/FilterBar"]
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScenarioList" type="VBoxContainer" parent="Panel/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

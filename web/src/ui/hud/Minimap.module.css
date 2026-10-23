@@ -1,0 +1,96 @@
+/* Bottom-left dock: the camera navigation cluster stacked on the minimap (both grow upward, e.g. with a legend). */
+.dock {
+  position: absolute;
+  z-index: var(--z-hud);
+  left: calc(var(--hud-rail-width) + var(--hud-gutter) * 2);
+  bottom: var(--hud-gutter);
+  width: var(--hud-minimap-width);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.minimap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-hairline);
+  background: linear-gradient(180deg, rgba(20, 31, 41, 0.88), rgba(11, 18, 25, 0.92));
+  box-shadow: var(--e-2);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 4px 4px var(--space-3);
+  border-bottom: 1px solid var(--c-hairline);
+}
+
+.city {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-text2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.map {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(var(--hud-minimap-height) - 2.25rem);
+  cursor: crosshair;
+}
+
+.map svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.legend {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  display: flex;
+  gap: 8px;
+  font-size: 0.5625rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+  pointer-events: none;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend i {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+}
+
+.ring {
+  border: 1px solid var(--c-gold);
+  background: transparent;
+}
+
+.footprint {
+  cursor: pointer;
+}

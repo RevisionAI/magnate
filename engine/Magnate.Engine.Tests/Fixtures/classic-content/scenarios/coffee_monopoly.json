@@ -1,0 +1,57 @@
+{
+  "id": "coffee_monopoly",
+  "name": "Coffee Monopoly",
+  "description": "One bean, one cup, one vertically-integrated empire. Stand up plantations and roasters, blanket the cities with coffee shops, and export enough roasted beans to fund the next wave. A rival chain is one step ahead — close the gap before month 48.",
+  "startDate": { "year": 2026, "month": 1 },
+  "endDate": { "year": 2029, "month": 12 },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 22000000
+  },
+  "aiCompetitors": [
+    { "name": "BrewHaus", "startingCash": 25000000, "strategy": "adaptive" }
+  ],
+  "goals": [
+    {
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 plantations — the bean supply is the foundation of the chain.",
+      "category": "plantation",
+      "count": 2
+    },
+    {
+      "type": "ownsBuilding",
+      "description": "Operate at least 2 factories — roasting and bottling happen in-house, not on the world market.",
+      "category": "factory",
+      "count": 2
+    },
+    {
+      "type": "productRetailed",
+      "description": "Put coffee_drink on a shelf — the chain isn't real until it reaches a customer.",
+      "product": "coffee_drink"
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 35% share of coffee_drink in Metropolis — the richest demographic drinks the most cups.",
+      "product": "coffee_drink",
+      "city": "metropolis",
+      "threshold": 0.35
+    },
+    {
+      "type": "marketShare",
+      "description": "Reach 30% share of coffee_drink in Eastside — a second city to prove the chain scales.",
+      "product": "coffee_drink",
+      "city": "eastside",
+      "threshold": 0.30
+    },
+    {
+      "type": "exportRevenue",
+      "description": "Bank $4M in cumulative export revenue — the world market is thirsty for roasted beans.",
+      "amount": 4000000
+    },
+    {
+      "type": "netIncome",
+      "description": "Earn $10M in cumulative net income since day one — a monopoly that doesn't print money isn't a monopoly.",
+      "amount": 10000000
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "warehouse_small",
+    "name": "Small Warehouse",
+    "category": "warehouse",
+    "constructionCost": 5000000,
+    "monthlyOperatingCost": 20000,
+    "footprint": {
+      "width": 2,
+      "height": 2
+    },
+    "maxUnits": 4,
+    "targetHeadcount": {
+      "min": 4,
+      "max": 12
+    },
+    "staff": {
+      "fixed": 6,
+      "fixedRole": "production",
+      "perSlot": 4,
+      "slotRole": "production"
+    },
+    "storageValuePerSlot": 5000000,
+    "buildMonths": 3
+  },
+  {
+    "id": "warehouse_large",
+    "name": "Large Warehouse",
+    "category": "warehouse",
+    "constructionCost": 22000000,
+    "monthlyOperatingCost": 55000,
+    "footprint": {
+      "width": 4,
+      "height": 4
+    },
+    "maxUnits": 8,
+    "targetHeadcount": {
+      "min": 15,
+      "max": 40
+    },
+    "staff": {
+      "fixed": 12,
+      "fixedRole": "production",
+      "perSlot": 4,
+      "slotRole": "production"
+    },
+    "storageValuePerSlot": 10000000,
+    "buildMonths": 5
+  },
+  {
+    "id": "seaport",
+    "name": "Seaport",
+    "category": "seaport",
+    "constructionCost": 120000000,
+    "monthlyOperatingCost": 250000,
+    "footprint": {
+      "width": 5,
+      "height": 3
+    },
+    "maxUnits": 8,
+    "targetHeadcount": {
+      "min": 40,
+      "max": 120
+    },
+    "geographyRequirement": {
+      "coastal": true
+    },
+    "staff": {
+      "fixed": 60,
+      "fixedRole": "production",
+      "perSlot": 4,
+      "slotRole": "production"
+    },
+    "storageValuePerSlot": 10000000,
+    "buildMonths": 12
+  }
+]

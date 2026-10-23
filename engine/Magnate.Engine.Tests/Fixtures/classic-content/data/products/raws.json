@@ -1,0 +1,100 @@
+[
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 80.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 400.0
+    }
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 120.0,
+    "priceElasticity": 0.9,
+    "maxTechLevel": 5,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 300.0
+    }
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 250.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "extraction": {
+      "sourceCategory": "farm",
+      "yieldPerSlotPerMonth": 150.0
+    }
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "tier": "raw",
+    "category": "mineral",
+    "unit": "ton",
+    "baseWorldMarketPrice": 60.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 5,
+    "extraction": {
+      "sourceCategory": "mine",
+      "yieldPerSlotPerMonth": 300.0
+    }
+  },
+  {
+    "id": "crude_oil",
+    "name": "Crude Oil",
+    "tier": "raw",
+    "category": "petroleum",
+    "unit": "barrel",
+    "baseWorldMarketPrice": 70.0,
+    "priceElasticity": 0.8,
+    "maxTechLevel": 5,
+    "extraction": {
+      "sourceCategory": "oil_well",
+      "yieldPerSlotPerMonth": 500.0
+    }
+  },
+  {
+    "id": "coffee_beans",
+    "name": "Coffee Beans",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 300.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 6,
+    "extraction": {
+      "sourceCategory": "plantation",
+      "yieldPerSlotPerMonth": 200.0
+    }
+  },
+  {
+    "id": "hops",
+    "name": "Hops",
+    "tier": "raw",
+    "category": "crop",
+    "unit": "ton",
+    "baseWorldMarketPrice": 400.0,
+    "priceElasticity": 1.0,
+    "maxTechLevel": 6,
+    "extraction": {
+      "sourceCategory": "plantation",
+      "yieldPerSlotPerMonth": 150.0
+    }
+  }
+]

@@ -1,0 +1,253 @@
+{
+  "method": "cityView",
+  "args": {
+    "cityId": "metropolis"
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "cityId": "metropolis",
+      "revision": 12,
+      "full": true,
+      "buildings": [
+        {
+          "id": 1,
+          "typeId": "supermarket",
+          "category": "supermarket",
+          "slotKind": "retail",
+          "ownerId": 1,
+          "isPlayer": true,
+          "color": "#2F7DE1",
+          "colorIndex": 0,
+          "level": 1,
+          "footprintW": 3,
+          "footprintH": 3,
+          "placement": {
+            "px": 47,
+            "pz": 47,
+            "rotation": 270,
+            "source": "engine"
+          },
+          "status": "operating",
+          "products": [
+            "soft_drink"
+          ],
+          "visualRev": 2064168961
+        },
+        {
+          "id": 2,
+          "typeId": "factory_small",
+          "category": "factory",
+          "slotKind": "production",
+          "ownerId": 1,
+          "isPlayer": true,
+          "color": "#2F7DE1",
+          "colorIndex": 0,
+          "level": 1,
+          "footprintW": 3,
+          "footprintH": 3,
+          "placement": {
+            "px": 72,
+            "pz": 68,
+            "rotation": 270,
+            "source": "engine"
+          },
+          "status": "operating",
+          "products": [
+            "flour"
+          ],
+          "visualRev": 65422386
+        },
+        {
+          "id": 3,
+          "typeId": "warehouse_small",
+          "category": "warehouse",
+          "slotKind": "warehouse",
+          "ownerId": 1,
+          "isPlayer": true,
+          "color": "#2F7DE1",
+          "colorIndex": 0,
+          "level": 1,
+          "footprintW": 2,
+          "footprintH": 2,
+          "placement": {
+            "px": 72,
+            "pz": 66,
+            "rotation": 270,
+            "source": "engine"
+          },
+          "status": "operating",
+          "products": [
+            "bread"
+          ],
+          "visualRev": 1972976547
+        },
+        {
+          "id": 4,
+          "typeId": "rd_center",
+          "category": "rd_center",
+          "slotKind": "research",
+          "ownerId": 1,
+          "isPlayer": true,
+          "color": "#2F7DE1",
+          "colorIndex": 0,
+          "level": 1,
+          "footprintW": 3,
+          "footprintH": 3,
+          "placement": {
+            "px": 63,
+            "pz": 70,
+            "rotation": 0,
+            "source": "engine"
+          },
+          "status": "operating",
+          "products": [
+            "soft_drink"
+          ],
+          "visualRev": 3640583109
+        },
+        {
+          "id": 5,
+          "typeId": "supermarket",
+          "category": "supermarket",
+          "slotKind": "retail",
+          "ownerId": 2,
+          "isPlayer": false,
+          "color": "#E69F00",
+          "colorIndex": 1,
+          "level": 1,
+          "footprintW": 3,
+          "footprintH": 3,
+          "placement": {
+            "px": 48,
+            "pz": 29,
+            "rotation": 180,
+            "source": "engine"
+          },
+          "status": "operating",
+          "products": [
+            "designer_jeans",
+            "t_shirt",
+            "beer",
+            "coffee_drink"
+          ],
+          "visualRev": 2751831901
+        },
+        {
+          "id": 6,
+          "typeId": "convenience_store",
+          "category": "convenience_store",
+          "slotKind": "retail",
+          "ownerId": 1,
+          "isPlayer": true,
+          "color": "#2F7DE1",
+          "colorIndex": 0,
+          "level": 1,
+          "footprintW": 1,
+          "footprintH": 1,
+          "placement": {
+            "px": 37,
+            "pz": 29,
+            "rotation": 180,
+            "source": "engine"
+          },
+          "status": "underConstruction",
+          "products": [],
+          "visualRev": 504105752,
+          "construction": {
+            "started": {
+              "year": 2026,
+              "month": 7
+            },
+            "completesAt": {
+              "year": 2026,
+              "month": 9
+            },
+            "progress": 0.5,
+            "costPaid": 840000,
+            "costRemaining": 560000,
+            "monthsTotal": 2,
+            "monthsRemaining": 1,
+            "nextInstalment": 560000,
+            "cancelRefund": 712492
+          }
+        }
+      ],
+      "removedIds": [],
+      "activity": {
+        "month": {
+          "year": 2026,
+          "month": 8
+        },
+        "ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "revenue": [
+          135000,
+          0,
+          0,
+          0,
+          1688096.74,
+          0
+        ],
+        "unitsSold": [
+          60000,
+          0,
+          0,
+          0,
+          390204.3776963979,
+          0
+        ],
+        "exportUnits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "netIncome": [
+          -111639.8,
+          -281909.51,
+          -100970.35,
+          -446824.72,
+          451288.55,
+          -290.56
+        ],
+        "utilization": [
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ],
+        "transfersIn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "transfersOut": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "layout": {
+        "layoutRev": 9
+      }
+    },
+    "revision": 12
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "method": "productProfitability",
+  "args": {
+    "period": {
+      "preset": "sinceStart"
+    }
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "period": {
+        "from": {
+          "year": 2026,
+          "month": 1
+        },
+        "to": {
+          "year": 2026,
+          "month": 8
+        },
+        "months": 8,
+        "preset": "sinceStart"
+      },
+      "rows": [
+        {
+          "productId": "soft_drink",
+          "name": "Soft Drink",
+          "revenue": 540000,
+          "cogs": 295680,
+          "grossMargin": 244320,
+          "marketing": 350000,
+          "netMargin": -105680,
+          "netMarginPct": -0.1957037037037037,
+          "unitsSold": 240000
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

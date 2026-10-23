@@ -1,0 +1,91 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ResearchTree.cs" id="1_researchtree"]
+
+[node name="ResearchTree" type="Node"]
+script = ExtResource("1_researchtree")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Research & Technology"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+
+[node name="Body" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox/Body"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="Canvas" type="Control" parent="Panel/VBox/Body/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_minimum_size = Vector2(900, 600)
+
+[node name="Sidebar" type="PanelContainer" parent="Panel/VBox/Body"]
+layout_mode = 2
+size_flags_vertical = 3
+custom_minimum_size = Vector2(280, 0)
+visible = false
+
+[node name="SidebarMargin" type="MarginContainer" parent="Panel/VBox/Body/Sidebar"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="SidebarVBox" type="VBoxContainer" parent="Panel/VBox/Body/Sidebar/SidebarMargin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SidebarTitle" type="Label" parent="Panel/VBox/Body/Sidebar/SidebarMargin/SidebarVBox"]
+layout_mode = 2
+text = "—"
+theme_override_font_sizes/font_size = 18
+
+[node name="SidebarBody" type="RichTextLabel" parent="Panel/VBox/Body/Sidebar/SidebarMargin/SidebarVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+scroll_active = true
+
+[node name="HintLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "←/→ switch tier · ↑/↓ select product · Enter toggle details · Esc back"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+text = "Back"

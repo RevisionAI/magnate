@@ -1,0 +1,2160 @@
+{
+  "date": "2026-10-01T10:29:32.532Z",
+  "out": "assets-src/vo",
+  "roleStatus": {
+    "advisor": {
+      "provider": "kokoro",
+      "fallback": null,
+      "partial": null,
+      "sttModel": "base.en"
+    }
+  },
+  "usage": {
+    "requests": 0,
+    "cachedTakes": 0,
+    "charactersSent": 0,
+    "creditsCharged": 0,
+    "kokoroRenders": 3
+  },
+  "lines": [
+    {
+      "id": "adv.onboard.welcome",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.87
+      },
+      "wpm": 156.9,
+      "paceWpm": 157.9,
+      "sylPerSec": 3.92,
+      "maxGapMs": 320,
+      "lufsI": -22.3,
+      "truePeakDbtp": -6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Welcome aboard. Let's build a company that lasts.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.first_plot",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.914
+      },
+      "wpm": 174.8,
+      "paceWpm": 156.4,
+      "sylPerSec": 3.88,
+      "maxGapMs": 380,
+      "lufsI": -22,
+      "truePeakDbtp": -3.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Pick a plot near busy roads. Traffic brings customers through the door.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.first_store",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.896
+      },
+      "wpm": 167.6,
+      "paceWpm": 157.5,
+      "sylPerSec": 3.91,
+      "maxGapMs": 390,
+      "lufsI": -22.3,
+      "truePeakDbtp": -4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Every empire starts with one good store. Let's place ours.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.set_price",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 190.7,
+      "paceWpm": 157.5,
+      "sylPerSec": 3.91,
+      "maxGapMs": 380,
+      "lufsI": -22.6,
+      "truePeakDbtp": -6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Set a price with a healthy margin, but keep an eye on rivals.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.restock",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.856
+      },
+      "wpm": 169.2,
+      "paceWpm": 157.2,
+      "sylPerSec": 3.9,
+      "maxGapMs": 460,
+      "lufsI": -22.2,
+      "truePeakDbtp": -6.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Empty shelves earn nothing. Set a restock target so we never run dry.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.press_play",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.856
+      },
+      "wpm": 221,
+      "paceWpm": 159.7,
+      "sylPerSec": 3.97,
+      "maxGapMs": 420,
+      "lufsI": -22,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Press play and let a month run. The books will tell the story.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.read_books",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.757
+      },
+      "wpm": 132.5,
+      "paceWpm": 151.1,
+      "sylPerSec": 3.75,
+      "maxGapMs": 380,
+      "lufsI": -22,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Revenue is vanity, profit is sanity, and cash is king.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.first_ad",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.914
+      },
+      "wpm": 151.3,
+      "paceWpm": 157.9,
+      "sylPerSec": 3.92,
+      "maxGapMs": 370,
+      "lufsI": -22.4,
+      "truePeakDbtp": -0.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Nobody buys what they've never heard of. Let's advertise.",
+      "flags": []
+    },
+    {
+      "id": "adv.onboard.complete",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.86
+      },
+      "wpm": 131.4,
+      "paceWpm": 156.8,
+      "sylPerSec": 3.89,
+      "maxGapMs": 420,
+      "lufsI": -22.2,
+      "truePeakDbtp": -1.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "You've got the fundamentals. From here, every decision compounds.",
+      "flags": []
+    },
+    {
+      "id": "adv.build.started",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 167.1,
+      "paceWpm": 158.8,
+      "sylPerSec": 3.94,
+      "maxGapMs": 400,
+      "lufsI": -22,
+      "truePeakDbtp": -4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Ground is broken. That capital is committed, so let's make it earn.",
+      "flags": []
+    },
+    {
+      "id": "adv.build.started_tight",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.967
+      },
+      "wpm": 201.1,
+      "paceWpm": 157.5,
+      "sylPerSec": 3.91,
+      "maxGapMs": 320,
+      "lufsI": -22.3,
+      "truePeakDbtp": -6.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "That build stretches our cache thin. Make sure it pays back fast.",
+      "flags": []
+    },
+    {
+      "id": "adv.build.complete",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.914
+      },
+      "wpm": 183.3,
+      "paceWpm": 156.6,
+      "sylPerSec": 3.89,
+      "maxGapMs": 350,
+      "lufsI": -21.7,
+      "truePeakDbtp": -4.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Construction complete, staff it, stock it, and put it to work.",
+      "flags": []
+    },
+    {
+      "id": "adv.build.factory_complete",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.807
+      },
+      "wpm": 162.9,
+      "paceWpm": 164,
+      "sylPerSec": 4.07,
+      "maxGapMs": 490,
+      "lufsI": -22.1,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The factory is finished. Line up supply so it never sits idle.",
+      "flags": []
+    },
+    {
+      "id": "adv.sales.first",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.88
+      },
+      "wpm": 157.5,
+      "paceWpm": 158.6,
+      "sylPerSec": 3.94,
+      "maxGapMs": 390,
+      "lufsI": -22,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first sale, small number, big moment. Now let's make it repeatable.",
+      "flags": []
+    },
+    {
+      "id": "adv.sales.record_month",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.862
+      },
+      "wpm": 156.7,
+      "paceWpm": 157.7,
+      "sylPerSec": 3.92,
+      "maxGapMs": 400,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Record revenue this month. Watch our margins as we scale.",
+      "flags": []
+    },
+    {
+      "id": "adv.ops.stockout",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.858
+      },
+      "wpm": 136.4,
+      "paceWpm": 155.6,
+      "sylPerSec": 3.86,
+      "maxGapMs": 450,
+      "lufsI": -22.5,
+      "truePeakDbtp": -6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're selling out. Empty shelves send customers straight to competitors.",
+      "flags": []
+    },
+    {
+      "id": "adv.ops.overstock",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 169.6,
+      "paceWpm": 157.6,
+      "sylPerSec": 3.91,
+      "maxGapMs": 450,
+      "lufsI": -22.1,
+      "truePeakDbtp": -6.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Inventory is piling up. That's cash sitting on shelves, not in the bank.",
+      "flags": []
+    },
+    {
+      "id": "adv.cash.runway_low",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.887
+      },
+      "wpm": 165.1,
+      "paceWpm": 157,
+      "sylPerSec": 3.9,
+      "maxGapMs": 440,
+      "lufsI": -22.1,
+      "truePeakDbtp": -5.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our cash runway is getting short, trim costs or line up financing.",
+      "flags": []
+    },
+    {
+      "id": "adv.cash.negative",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.826
+      },
+      "wpm": 136.1,
+      "paceWpm": 157.8,
+      "sylPerSec": 3.92,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "truePeakDbtp": -3.8,
+      "cer": 0,
+      "wer": 0.091,
+      "transcript": "We're overdrawn every month in the red cost's interest and credibility.",
+      "flags": []
+    },
+    {
+      "id": "adv.cash.recovered",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.861
+      },
+      "wpm": 153.5,
+      "paceWpm": 159.2,
+      "sylPerSec": 3.95,
+      "maxGapMs": 330,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Cash is positive again. Nicely done. Let's keep a healthy buffer.",
+      "flags": []
+    },
+    {
+      "id": "adv.loan.approved",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.941
+      },
+      "wpm": 194.4,
+      "paceWpm": 158.5,
+      "sylPerSec": 3.94,
+      "maxGapMs": 360,
+      "lufsI": -22.1,
+      "truePeakDbtp": -6.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Loan approved, borrowed money is a tool, make it earn more than it costs.",
+      "flags": []
+    },
+    {
+      "id": "adv.loan.denied",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.887
+      },
+      "wpm": 163.6,
+      "paceWpm": 155.6,
+      "sylPerSec": 3.86,
+      "maxGapMs": 400,
+      "lufsI": -22.1,
+      "truePeakDbtp": -4.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The bank said no, strengthen our margins and credit, then ask again.",
+      "flags": []
+    },
+    {
+      "id": "adv.loan.repaid",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.146
+      },
+      "wpm": 164.1,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 330,
+      "lufsI": -22.2,
+      "truePeakDbtp": -4.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Loan repaid in full, less interest, stronger balance sheet.",
+      "flags": [
+        "low-confidence words: Loan (p 0.156)"
+      ]
+    },
+    {
+      "id": "adv.credit.downgrade",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.812
+      },
+      "wpm": 126.3,
+      "paceWpm": 161.1,
+      "sylPerSec": 4,
+      "maxGapMs": 490,
+      "lufsI": -21.9,
+      "truePeakDbtp": -6.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our credit rating was downgraded. Borrowing just got more expensive.",
+      "flags": []
+    },
+    {
+      "id": "adv.credit.upgrade",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.897
+      },
+      "wpm": 145,
+      "paceWpm": 158.2,
+      "sylPerSec": 3.93,
+      "maxGapMs": 370,
+      "lufsI": -21.5,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Credit rating upgraded. Lenders like what they see.",
+      "flags": []
+    },
+    {
+      "id": "adv.rates.up",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.792
+      },
+      "wpm": 118.8,
+      "paceWpm": 151.5,
+      "sylPerSec": 3.76,
+      "maxGapMs": 480,
+      "lufsI": -22.3,
+      "truePeakDbtp": -6.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Interest rates are climbing. Our variable rate debt just got pricier.",
+      "flags": []
+    },
+    {
+      "id": "adv.ipo.eligible",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.825
+      },
+      "wpm": 148.8,
+      "paceWpm": 158.1,
+      "sylPerSec": 3.93,
+      "maxGapMs": 490,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We qualify for a public listing. An IPO could fund real growth.",
+      "flags": []
+    },
+    {
+      "id": "adv.ipo.complete",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.809
+      },
+      "wpm": 154.5,
+      "paceWpm": 164.2,
+      "sylPerSec": 4.08,
+      "maxGapMs": 470,
+      "lufsI": -21.7,
+      "truePeakDbtp": -4.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're officially public. From now on, every quarter is a report card.",
+      "flags": []
+    },
+    {
+      "id": "adv.stock.surge",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.759
+      },
+      "wpm": 146.7,
+      "paceWpm": 152.1,
+      "sylPerSec": 3.78,
+      "maxGapMs": 450,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our share price is surging. The market believes in our story.",
+      "flags": []
+    },
+    {
+      "id": "adv.stock.crash",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.87
+      },
+      "wpm": 179.7,
+      "paceWpm": 157.7,
+      "sylPerSec": 3.92,
+      "maxGapMs": 460,
+      "lufsI": -21.9,
+      "truePeakDbtp": -6.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our shares took a beating. Stay calm and let earnings do the talking.",
+      "flags": []
+    },
+    {
+      "id": "adv.dividend.declared",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.854
+      },
+      "wpm": 105,
+      "paceWpm": 158.6,
+      "sylPerSec": 3.94,
+      "maxGapMs": 450,
+      "lufsI": -22.1,
+      "truePeakDbtp": -6.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Dividend declared, shareholders love a steady, reliable return.",
+      "flags": []
+    },
+    {
+      "id": "adv.stock.takeover_threat",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.77
+      },
+      "wpm": 144.9,
+      "paceWpm": 153.9,
+      "sylPerSec": 3.82,
+      "maxGapMs": 460,
+      "lufsI": -22.3,
+      "truePeakDbtp": -6.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Someone is quietly buying up our shares. Watch for a takeover bid.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.competitor_entered",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.802
+      },
+      "wpm": 145,
+      "paceWpm": 157.2,
+      "sylPerSec": 3.9,
+      "maxGapMs": 550,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "A new competitor just entered one of our markets. Expect pressure on price.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.share_10",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.815
+      },
+      "wpm": 163,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 410,
+      "lufsI": -21.9,
+      "truePeakDbtp": -6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We've captured 10% of this market. That's a real foothold.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.share_25",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.748
+      },
+      "wpm": 132,
+      "paceWpm": 153,
+      "sylPerSec": 3.8,
+      "maxGapMs": 510,
+      "lufsI": -22.4,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "A quarter of this market is ours. Competitors will be noticing.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.share_50",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 183.7,
+      "paceWpm": 164.4,
+      "sylPerSec": 4.08,
+      "maxGapMs": 440,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We own half this market now. Defend it with quality and brand.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.leader",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.892
+      },
+      "wpm": 187,
+      "paceWpm": 159.7,
+      "sylPerSec": 3.97,
+      "maxGapMs": 430,
+      "lufsI": -21.4,
+      "truePeakDbtp": -6.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're the market leader here, now the hard part staying there.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.lost_lead",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 151.7,
+      "paceWpm": 157.4,
+      "sylPerSec": 3.91,
+      "maxGapMs": 430,
+      "lufsI": -21.9,
+      "truePeakDbtp": -7.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We've lost market leadership here. Time to review price and quality.",
+      "flags": []
+    },
+    {
+      "id": "adv.market.price_war",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 166,
+      "paceWpm": 162.8,
+      "sylPerSec": 4.04,
+      "maxGapMs": 430,
+      "lufsI": -21.9,
+      "truePeakDbtp": -3.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+      "flags": []
+    },
+    {
+      "id": "adv.rnd.breakthrough",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 5,
+      "settings": {
+        "speed": 0.802
+      },
+      "wpm": 136.4,
+      "paceWpm": 162.7,
+      "sylPerSec": 4.04,
+      "maxGapMs": 390,
+      "lufsI": -21.9,
+      "truePeakDbtp": -1.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Research breakthrough. Our technology just moved up a level.",
+      "flags": []
+    },
+    {
+      "id": "adv.rnd.patent_granted",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.869
+      },
+      "wpm": 142.9,
+      "paceWpm": 159.8,
+      "sylPerSec": 3.97,
+      "maxGapMs": 370,
+      "lufsI": -22.2,
+      "truePeakDbtp": -4.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "patent-granted. For now, that technology is ours alone.",
+      "flags": []
+    },
+    {
+      "id": "adv.rnd.rival_patent",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.827
+      },
+      "wpm": 162.2,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 510,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.8,
+      "cer": 0.019,
+      "wer": 0.154,
+      "transcript": "Arrival patented that technology. We'll need a license or a new path.",
+      "flags": []
+    },
+    {
+      "id": "adv.macro.recession",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 154.2,
+      "paceWpm": 159.9,
+      "sylPerSec": 3.97,
+      "maxGapMs": 450,
+      "lufsI": -22,
+      "truePeakDbtp": -6.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "A recession is here. Conserve cash and protect our core markets.",
+      "flags": []
+    },
+    {
+      "id": "adv.macro.recovery",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.842
+      },
+      "wpm": 140.6,
+      "paceWpm": 157.3,
+      "sylPerSec": 3.91,
+      "maxGapMs": 510,
+      "lufsI": -21.9,
+      "truePeakDbtp": -3.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The economy is recovering. Assets are cheap, a good time to invest.",
+      "flags": []
+    },
+    {
+      "id": "adv.macro.boom",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.823
+      },
+      "wpm": 140.4,
+      "paceWpm": 162.8,
+      "sylPerSec": 4.04,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "truePeakDbtp": -1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The economy is booming. Demand is strong, so let's add capacity.",
+      "flags": []
+    },
+    {
+      "id": "adv.quarter.good",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.925
+      },
+      "wpm": 175.2,
+      "paceWpm": 156.8,
+      "sylPerSec": 3.89,
+      "maxGapMs": 320,
+      "lufsI": -21.7,
+      "truePeakDbtp": -5.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Strong quarter, revenue and profit are both up. The board is pleased.",
+      "flags": []
+    },
+    {
+      "id": "adv.quarter.bad",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.898
+      },
+      "wpm": 185.1,
+      "paceWpm": 155.3,
+      "sylPerSec": 3.86,
+      "maxGapMs": 390,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "A tough quarter, we lost money. Let's find what's dragging us down.",
+      "flags": []
+    },
+    {
+      "id": "adv.quarter.record",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.806
+      },
+      "wpm": 109.4,
+      "paceWpm": 157.3,
+      "sylPerSec": 3.91,
+      "maxGapMs": 390,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Best quarterly profit yet, that's disciplined execution.",
+      "flags": []
+    },
+    {
+      "id": "adv.tax.paid",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.936
+      },
+      "wpm": 203.4,
+      "paceWpm": 159.3,
+      "sylPerSec": 3.95,
+      "maxGapMs": 380,
+      "lufsI": -21.6,
+      "truePeakDbtp": -5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The tax bill is paid. Remember, it's what we keep that counts.",
+      "flags": []
+    },
+    {
+      "id": "adv.bankruptcy.warning",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.159
+      },
+      "wpm": 157.3,
+      "paceWpm": 154.3,
+      "sylPerSec": 3.83,
+      "maxGapMs": 420,
+      "lufsI": -22.6,
+      "truePeakDbtp": -5.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're edging toward bankruptcy. Raise cash now, borrow cut costs or sell assets.",
+      "flags": []
+    },
+    {
+      "id": "adv.bankruptcy.final",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.814
+      },
+      "wpm": 190.2,
+      "paceWpm": 162.5,
+      "sylPerSec": 4.03,
+      "maxGapMs": 330,
+      "lufsI": -22,
+      "truePeakDbtp": -2.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "One more month in the red, and the creditors take control.",
+      "flags": []
+    },
+    {
+      "id": "adv.end.victory",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.964
+      },
+      "wpm": 129.3,
+      "paceWpm": 156.2,
+      "sylPerSec": 3.88,
+      "maxGapMs": 400,
+      "lufsI": -22,
+      "truePeakDbtp": -4.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Every objective met, that's a business built to last. Congratulations.",
+      "flags": []
+    },
+    {
+      "id": "adv.end.defeat_bankrupt",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.803
+      },
+      "wpm": 149.7,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 540,
+      "lufsI": -22.2,
+      "truePeakDbtp": -4.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The creditors have taken over. Every great magnate has a second act.",
+      "magnate": "ok",
+      "flags": []
+    },
+    {
+      "id": "adv.end.defeat_timeup",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 190.2,
+      "paceWpm": 157.1,
+      "sylPerSec": 3.9,
+      "maxGapMs": 320,
+      "lufsI": -21.9,
+      "truePeakDbtp": -6.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Time's up, we missed the targets, but the lessons are ours to keep.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.idle_cash",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.795
+      },
+      "wpm": 131.7,
+      "paceWpm": 152.7,
+      "sylPerSec": 3.79,
+      "maxGapMs": 470,
+      "lufsI": -22.2,
+      "truePeakDbtp": -7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're sitting on idle cash. Money that isn't invested isn't working.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.no_ads",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 158.7,
+      "paceWpm": 164.6,
+      "sylPerSec": 4.09,
+      "maxGapMs": 470,
+      "lufsI": -22.2,
+      "truePeakDbtp": -1.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our brand awareness is fading. A modest ad campaign would help.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.no_rnd",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.801
+      },
+      "wpm": 126.2,
+      "paceWpm": 154,
+      "sylPerSec": 3.82,
+      "maxGapMs": 480,
+      "lufsI": -22.5,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Rivals are out-innovating us. Consider building an R and D center.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.idle_factory",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.724
+      },
+      "wpm": 119.6,
+      "paceWpm": 153.2,
+      "sylPerSec": 3.8,
+      "maxGapMs": 580,
+      "lufsI": -22.2,
+      "truePeakDbtp": -3.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "One of our factories is idle. Idle capacity is pure overhead.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.new_city",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.741
+      },
+      "wpm": 118.3,
+      "paceWpm": 150.9,
+      "sylPerSec": 3.75,
+      "maxGapMs": 490,
+      "lufsI": -22.5,
+      "truePeakDbtp": -3.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "This city is working well. Consider expanding into another one.",
+      "flags": []
+    },
+    {
+      "id": "adv.hint.make_vs_buy",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.817
+      },
+      "wpm": 156.8,
+      "paceWpm": 162.6,
+      "sylPerSec": 4.04,
+      "maxGapMs": 480,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Suppliers are taking a fat margin. Could we make it ourselves?",
+      "flags": []
+    },
+    {
+      "id": "news.intro",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.209
+      },
+      "wpm": 179.8,
+      "paceWpm": 154.1,
+      "sylPerSec": 4.49,
+      "maxGapMs": 180,
+      "lufsI": -21.3,
+      "truePeakDbtp": -6.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Good evening, here's what's moving the markets tonight.",
+      "flags": []
+    },
+    {
+      "id": "news.recession",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.033
+      },
+      "wpm": 131.1,
+      "paceWpm": 158.1,
+      "sylPerSec": 4.61,
+      "maxGapMs": 300,
+      "lufsI": -21.5,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Breaking news, the economy has officially entered a recession.",
+      "flags": []
+    },
+    {
+      "id": "news.recovery",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.032
+      },
+      "wpm": 145.4,
+      "paceWpm": 158.6,
+      "sylPerSec": 4.63,
+      "maxGapMs": 320,
+      "lufsI": -21.7,
+      "truePeakDbtp": -5.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Economists say the recession is over as hiring picks up nationwide.",
+      "flags": []
+    },
+    {
+      "id": "news.boom",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.287
+      },
+      "wpm": 198.8,
+      "paceWpm": 154.9,
+      "sylPerSec": 4.52,
+      "maxGapMs": 250,
+      "lufsI": -21.8,
+      "truePeakDbtp": -6.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Consumer spending hits a record high as the boom rolls on.",
+      "flags": []
+    },
+    {
+      "id": "news.rates_up",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.195
+      },
+      "wpm": 143.6,
+      "paceWpm": 155,
+      "sylPerSec": 4.52,
+      "maxGapMs": 230,
+      "lufsI": -21.6,
+      "truePeakDbtp": -4.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "The central bank has raised interest rates effective immediately.",
+      "flags": []
+    },
+    {
+      "id": "news.rates_down",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.322
+      },
+      "wpm": 185.6,
+      "paceWpm": 141.4,
+      "sylPerSec": 4.12,
+      "maxGapMs": 190,
+      "lufsI": -21.6,
+      "truePeakDbtp": -4.8,
+      "cer": 0,
+      "wer": 0.2,
+      "transcript": "The central bank cuts interest rates to kickstart growth.",
+      "flags": []
+    },
+    {
+      "id": "news.market_crash",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 1,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 170,
+      "paceWpm": 136,
+      "sylPerSec": 3.97,
+      "maxGapMs": 220,
+      "lufsI": -21.4,
+      "truePeakDbtp": -4.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Stocks plunge in heavy trading as panic sweeps the exchange.",
+      "flags": [
+        "pace 136 wpm-eq, 3.97 syl/s (target 140–170)"
+      ]
+    },
+    {
+      "id": "news.market_rally",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.214
+      },
+      "wpm": 189.5,
+      "paceWpm": 156.4,
+      "sylPerSec": 4.56,
+      "maxGapMs": 200,
+      "lufsI": -21.3,
+      "truePeakDbtp": -5.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Stocks close sharply higher in a broad market rally.",
+      "flags": []
+    },
+    {
+      "id": "news.commodity_spike",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.265
+      },
+      "wpm": 143.6,
+      "paceWpm": 155,
+      "sylPerSec": 4.52,
+      "maxGapMs": 210,
+      "lufsI": -21.8,
+      "truePeakDbtp": -6.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Commodity prices spike as supply shortages hit world markets.",
+      "flags": []
+    },
+    {
+      "id": "news.commodity_drop",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.149
+      },
+      "wpm": 145.5,
+      "paceWpm": 155.8,
+      "sylPerSec": 4.55,
+      "maxGapMs": 240,
+      "lufsI": -21.7,
+      "truePeakDbtp": -3.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Commodity prices tumble on a global supply glut.",
+      "flags": []
+    },
+    {
+      "id": "news.ipo_debut",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.043
+      },
+      "wpm": 128.3,
+      "paceWpm": 154.7,
+      "sylPerSec": 4.51,
+      "maxGapMs": 320,
+      "lufsI": -21.7,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "a hotly anticipated newcomer debuts on the exchange today.",
+      "flags": []
+    },
+    {
+      "id": "news.corporate_bankruptcy",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 1.114
+      },
+      "wpm": 111.4,
+      "paceWpm": 154.6,
+      "sylPerSec": 4.51,
+      "maxGapMs": 290,
+      "lufsI": -21.7,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Another corporate bankruptcy rattles investors this morning.",
+      "flags": []
+    },
+    {
+      "id": "news.tech_breakthrough",
+      "role": "anchor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.184
+      },
+      "wpm": 153,
+      "paceWpm": 155.4,
+      "sylPerSec": 4.53,
+      "maxGapMs": 190,
+      "lufsI": -21.4,
+      "truePeakDbtp": -4.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Scientists unveil a breakthrough that could reshape the industry.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_city",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.815
+      },
+      "wpm": 127,
+      "paceWpm": 157.4,
+      "sylPerSec": 3.91,
+      "maxGapMs": 550,
+      "lufsI": -21.9,
+      "truePeakDbtp": -4.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Metropolis, half a million people. The glowing districts are where thirsty customers live.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_speed",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.159
+      },
+      "wpm": 188.7,
+      "paceWpm": 152,
+      "sylPerSec": 3.77,
+      "maxGapMs": 260,
+      "lufsI": -22.2,
+      "truePeakDbtp": -5.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Construction takes time, speed things up while the crane works.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_readstore",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.942
+      },
+      "wpm": 177.7,
+      "paceWpm": 155.9,
+      "sylPerSec": 3.87,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "truePeakDbtp": -3.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Sold against demand. If those numbers ever split, we ran out of stock.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_sharedrop",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.895
+      },
+      "wpm": 173.6,
+      "paceWpm": 158.1,
+      "sylPerSec": 3.93,
+      "maxGapMs": 440,
+      "lufsI": -22.5,
+      "truePeakDbtp": -5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We lost a third of our customers. We can cut price, advertise, or wait.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_loan",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.825
+      },
+      "wpm": 175.6,
+      "paceWpm": 157.1,
+      "sylPerSec": 3.9,
+      "maxGapMs": 310,
+      "lufsI": -22.3,
+      "truePeakDbtp": -4.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Borrowing is fine if the new business earns more than the interest.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_expand",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.132
+      },
+      "wpm": 212.8,
+      "paceWpm": 157.1,
+      "sylPerSec": 3.9,
+      "maxGapMs": 280,
+      "lufsI": -21.9,
+      "truePeakDbtp": -6.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Same store new line, more products share the same rent.",
+      "flags": []
+    },
+    {
+      "id": "vo_t1_almost",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.136
+      },
+      "wpm": 213.5,
+      "paceWpm": 157.6,
+      "sylPerSec": 3.91,
+      "maxGapMs": 250,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Almost there, keep the shelves full and the brand warm.",
+      "flags": []
+    },
+    {
+      "id": "vo_below_cost",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 143.7,
+      "paceWpm": 156.7,
+      "sylPerSec": 3.89,
+      "maxGapMs": 360,
+      "lufsI": -22.1,
+      "truePeakDbtp": -4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're selling below cost, every sale loses money.",
+      "flags": []
+    },
+    {
+      "id": "vo_brand_milestone",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.721
+      },
+      "wpm": 136.4,
+      "paceWpm": 156.9,
+      "sylPerSec": 3.9,
+      "maxGapMs": 0,
+      "lufsI": -22.8,
+      "truePeakDbtp": -5.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "People are starting to recognize our name.",
+      "flags": []
+    },
+    {
+      "id": "vo_brand_household",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.721
+      },
+      "wpm": 186.7,
+      "paceWpm": 161.1,
+      "sylPerSec": 4,
+      "maxGapMs": 0,
+      "lufsI": -22.1,
+      "truePeakDbtp": -6.7,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're a household name in this city.",
+      "flags": []
+    },
+    {
+      "id": "vo_news_major",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.902
+      },
+      "wpm": 208.7,
+      "paceWpm": 157.6,
+      "sylPerSec": 3.91,
+      "maxGapMs": 200,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.5,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Big news, check how it hits our costs.",
+      "flags": []
+    },
+    {
+      "id": "vo_loan_missed",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.833
+      },
+      "wpm": 195.4,
+      "paceWpm": 157.4,
+      "sylPerSec": 3.91,
+      "maxGapMs": 290,
+      "lufsI": -22.2,
+      "truePeakDbtp": -4.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We missed a loan payment, the bank is not amused.",
+      "flags": []
+    },
+    {
+      "id": "vo_goal_generic",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.933
+      },
+      "wpm": 94.5,
+      "paceWpm": 158.5,
+      "sylPerSec": 3.94,
+      "maxGapMs": 0,
+      "lufsI": -21.8,
+      "truePeakDbtp": -4.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Objective complete.",
+      "flags": []
+    },
+    {
+      "id": "vo_deadline_12",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.887
+      },
+      "wpm": 235.3,
+      "paceWpm": 157.9,
+      "sylPerSec": 3.92,
+      "maxGapMs": 0,
+      "lufsI": -21.9,
+      "truePeakDbtp": -7.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "One year left on the clock.",
+      "flags": []
+    },
+    {
+      "id": "vo_deadline_3",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.184
+      },
+      "wpm": 232,
+      "paceWpm": 155.7,
+      "sylPerSec": 3.87,
+      "maxGapMs": 150,
+      "lufsI": -21.8,
+      "truePeakDbtp": -6.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Three months to go, make them count.",
+      "flags": []
+    },
+    {
+      "id": "vo_building_first_retail",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.029
+      },
+      "wpm": 195.8,
+      "paceWpm": 155.3,
+      "sylPerSec": 3.86,
+      "maxGapMs": 320,
+      "lufsI": -22,
+      "truePeakDbtp": -4.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first store, price it smartly and keep those shelves stocked.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_farm",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.808
+      },
+      "wpm": 141.2,
+      "paceWpm": 161.1,
+      "sylPerSec": 4,
+      "maxGapMs": 430,
+      "lufsI": -21.8,
+      "truePeakDbtp": -2.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first farm, growing our own inputs, protects our margins.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_mine_well",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.823
+      },
+      "wpm": 165.3,
+      "paceWpm": 162.1,
+      "sylPerSec": 4.03,
+      "maxGapMs": 480,
+      "lufsI": -22,
+      "truePeakDbtp": -6.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "We're producing our own raw materials now. Price shocks will hurt us less.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_warehouse",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.924
+      },
+      "wpm": 156.9,
+      "paceWpm": 157.9,
+      "sylPerSec": 3.92,
+      "maxGapMs": 440,
+      "lufsI": -22.6,
+      "truePeakDbtp": -4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first warehouse, buffer stock keeps our stores supplied when demand jumps.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_rd",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.855
+      },
+      "wpm": 139.5,
+      "paceWpm": 158.5,
+      "sylPerSec": 3.94,
+      "maxGapMs": 520,
+      "lufsI": -22.4,
+      "truePeakDbtp": -6.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first R and D Center. Better technology means better products and margins.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_media",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.758
+      },
+      "wpm": 150,
+      "paceWpm": 151,
+      "sylPerSec": 3.75,
+      "maxGapMs": 450,
+      "lufsI": -22.2,
+      "truePeakDbtp": -5.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first media outlet. Let's put it to work building our brand.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_building_first_seaport",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.806
+      },
+      "wpm": 165.8,
+      "paceWpm": 161.9,
+      "sylPerSec": 4.02,
+      "maxGapMs": 380,
+      "lufsI": -21.9,
+      "truePeakDbtp": -3.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our own seaport, imported goods now come straight to our door.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_milestone_1m",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.805
+      },
+      "wpm": 159.3,
+      "paceWpm": 160.4,
+      "sylPerSec": 3.98,
+      "maxGapMs": 480,
+      "lufsI": -22.3,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first million in revenue. Now let's make the next one faster.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_milestone_10m",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 4,
+      "settings": {
+        "speed": 0.801
+      },
+      "wpm": 133,
+      "paceWpm": 160.7,
+      "sylPerSec": 3.99,
+      "maxGapMs": 520,
+      "lufsI": -22.2,
+      "truePeakDbtp": -5.6,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "10 million in revenue. The business has real momentum now.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_milestone_100m",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.7
+      },
+      "wpm": 129,
+      "paceWpm": 155.9,
+      "sylPerSec": 3.87,
+      "maxGapMs": 460,
+      "lufsI": -22.5,
+      "truePeakDbtp": -5.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "100 million in revenue. We're a serious player now.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_milestone_1b",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.77
+      },
+      "wpm": 153.8,
+      "paceWpm": 150.2,
+      "sylPerSec": 3.73,
+      "maxGapMs": 440,
+      "lufsI": -22,
+      "truePeakDbtp": -4.3,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "A billion in revenue. That's the mark of a true magnate.",
+      "magnate": "ok",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_upgrade_first",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.821
+      },
+      "wpm": 133.3,
+      "paceWpm": 159.1,
+      "sylPerSec": 3.95,
+      "maxGapMs": 420,
+      "lufsI": -22,
+      "truePeakDbtp": -2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our first upgrade is complete. More capacity, same address.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "vo_tech_max",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.818
+      },
+      "wpm": 164.6,
+      "paceWpm": 161.4,
+      "sylPerSec": 4.01,
+      "maxGapMs": 470,
+      "lufsI": -21.9,
+      "truePeakDbtp": -4.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Our technology is the best on the market. Now let's protect that lead.",
+      "flags": [],
+      "needsReview": true
+    },
+    {
+      "id": "adv.legacy.tutorial_step1",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.871
+      },
+      "wpm": 146.8,
+      "paceWpm": 162.2,
+      "sylPerSec": 4.03,
+      "maxGapMs": 590,
+      "lufsI": -21.9,
+      "truePeakDbtp": -2.4,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Every empire starts with a single store. Open Manage, pick a city, and construct your first supermarket.",
+      "flags": []
+    },
+    {
+      "id": "adv.legacy.tutorial_step2",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.083
+      },
+      "wpm": 190,
+      "paceWpm": 154.4,
+      "sylPerSec": 3.83,
+      "maxGapMs": 470,
+      "lufsI": -22,
+      "truePeakDbtp": -6.2,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Shelves do not fill themselves. Assign soft drinks to your store, set your price, and set a restock target.",
+      "flags": []
+    },
+    {
+      "id": "adv.legacy.tutorial_step3",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 1.061
+      },
+      "wpm": 206.1,
+      "paceWpm": 154.6,
+      "sylPerSec": 3.84,
+      "maxGapMs": 360,
+      "lufsI": -21.9,
+      "truePeakDbtp": -4.8,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Time is your engine. Press play and let three months run. Watch the cache begin to flow.",
+      "flags": []
+    },
+    {
+      "id": "adv.legacy.tutorial_step4",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 2,
+      "settings": {
+        "speed": 0.896
+      },
+      "wpm": 179.1,
+      "paceWpm": 157.8,
+      "sylPerSec": 3.92,
+      "maxGapMs": 530,
+      "lufsI": -21.9,
+      "truePeakDbtp": -5.1,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Nobody buys what they have never heard of. Launch a TV campaign and build your brand.",
+      "flags": []
+    },
+    {
+      "id": "adv.legacy.tutorial_step5",
+      "role": "advisor",
+      "provider": "kokoro",
+      "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+      "take": 3,
+      "settings": {
+        "speed": 0.808
+      },
+      "wpm": 140.6,
+      "paceWpm": 163.6,
+      "sylPerSec": 4.06,
+      "maxGapMs": 480,
+      "lufsI": -22.1,
+      "truePeakDbtp": -5.9,
+      "cer": 0,
+      "wer": 0,
+      "transcript": "Now scale. Grow your corporate value to 20 million dollars. Your rivals are already moving.",
+      "flags": []
+    }
+  ]
+}

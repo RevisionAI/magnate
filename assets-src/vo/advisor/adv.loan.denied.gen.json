@@ -1,0 +1,113 @@
+{
+  "id": "adv.loan.denied",
+  "role": "advisor",
+  "text": "The bank said no. Strengthen our margins and credit, then ask again.",
+  "sentText": "The bank said no. Strengthen our margins and credit, then ask again.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.887
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:18:21.883Z",
+  "file": "adv.loan.denied.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.64,
+  "speechSec": 4.4,
+  "wpm": 163.6,
+  "syllables": 17,
+  "sylPerSec": 3.86,
+  "paceWpm": 155.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 400,
+  "samplePeakDbfs": -4.46,
+  "truePeakDbtp": -4.5,
+  "lufsI": -22.1,
+  "lra": 0.7,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 375
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The bank said no, strengthen our margins and credit, then ask again.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.019,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 156.9,
+      "paceWpm": 149.1,
+      "maxGapMs": 420,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "The bank said no, strengthen our margins and credit, then ask again.",
+      "score": {
+        "hard": 0,
+        "soft": 0.224,
+        "flags": [
+          "pace 149.1 wpm-eq, 3.7 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.loan.denied/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.902
+      },
+      "wpm": 167.4,
+      "paceWpm": 159.2,
+      "maxGapMs": 420,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "The bank said no, strengthen our margins and credit, then ask again.",
+      "score": {
+        "hard": 0,
+        "soft": 0.067,
+        "flags": []
+      },
+      "file": "_takes/adv.loan.denied/t3.wav"
+    }
+  ],
+  "lineHash": "61337321b0b988c16e317f36"
+}

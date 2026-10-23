@@ -1,0 +1,2352 @@
+{
+  "rounds": {
+    "1": {
+      "results": {
+        "advisor": {
+          "eleven_multilingual_v2@0.92": [
+            {
+              "id": "adv.onboard.welcome",
+              "take": 1,
+              "seed": 1066662424,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 2.79,
+              "speechSec": 2.55,
+              "words": 8,
+              "wpm": 188.2,
+              "maxGapMs": 350,
+              "samplePeakDbfs": -4.49,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.5,
+              "lufsI": -23.5,
+              "lra": 0,
+              "noiseFloorDb": -64.6,
+              "headTrimmedMs": -50,
+              "tailTrimmedMs": 186,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard. Let's build a company that lasts.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.627,
+                "flags": [
+                  "pace 188.2 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "HaeuUDdIGUFeqCZe6KuT",
+              "characterCost": 20
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 1,
+              "seed": 1461849170,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.86,
+              "speechSec": 4.62,
+              "words": 11,
+              "wpm": 142.9,
+              "maxGapMs": 380,
+              "samplePeakDbfs": -3.33,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.2,
+              "lufsI": -23.1,
+              "lra": 1.1,
+              "noiseFloorDb": -66.1,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 292,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn, every month in the red costs, interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.856,
+                "flags": [
+                  "pace 142.9 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "a4iRj2EbwMSxB8ApyebV",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 1,
+              "seed": 3774521834,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 3.61,
+              "speechSec": 3.37,
+              "words": 12,
+              "wpm": 213.6,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -2.05,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.1,
+              "lufsI": -20.8,
+              "lra": 1.3,
+              "noiseFloorDb": -61.1,
+              "headTrimmedMs": -40,
+              "tailTrimmedMs": 285,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for public listing and IPO could fund real growth.",
+                "wer": 0.167,
+                "cer": 0.04
+              },
+              "score": {
+                "hard": 0,
+                "soft": 6.221,
+                "flags": [
+                  "pace 213.6 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "Hajc7AIbvCK11JnCemYO",
+              "characterCost": 26
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 1,
+              "seed": 608720488,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.1,
+              "speechSec": 3.86,
+              "words": 12,
+              "wpm": 186.5,
+              "maxGapMs": 230,
+              "samplePeakDbfs": -0.47,
+              "clippedSamples": 0,
+              "truePeakDbtp": -0.4,
+              "lufsI": -20.3,
+              "lra": 2.4,
+              "noiseFloorDb": -57.4,
+              "headTrimmedMs": -40,
+              "tailTrimmedMs": -113,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over, every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.44,
+                "flags": [
+                  "pace 186.5 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "G2UH1YHLixp1glgdBXKh",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 1,
+              "seed": 920493428,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.47,
+              "speechSec": 4.23,
+              "words": 13,
+              "wpm": 184.4,
+              "maxGapMs": 440,
+              "samplePeakDbfs": -1.83,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1.8,
+              "lufsI": -23.5,
+              "lra": 1.2,
+              "noiseFloorDb": -64.6,
+              "headTrimmedMs": -50,
+              "tailTrimmedMs": 224,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.309,
+                "flags": [
+                  "pace 184.4 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "A7I0KK4gRFhfeMdkJnbZ",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.onboard.welcome",
+              "take": 2,
+              "seed": 1066662425,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 3.02,
+              "speechSec": 2.78,
+              "words": 8,
+              "wpm": 172.7,
+              "maxGapMs": 260,
+              "samplePeakDbfs": -6.59,
+              "clippedSamples": 0,
+              "truePeakDbtp": -6.6,
+              "lufsI": -24.7,
+              "lra": 20,
+              "noiseFloorDb": -63.6,
+              "headTrimmedMs": -40,
+              "tailTrimmedMs": 85,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard. Let's build a company that lasts. Yes. Yes.",
+                "wer": 0.25,
+                "cer": 0.154,
+                "lowConf": [
+                  "Yes. (p 0.18)",
+                  "Yes. (p 0.109)"
+                ]
+              },
+              "score": {
+                "hard": 1,
+                "soft": 5.002,
+                "flags": [
+                  "pace 172.7 wpm (target 150–165)",
+                  "transcript differs (CER 0.154): \"Welcome aboard. Let's build a company that lasts. Yes. Yes.\"",
+                  "low-confidence words: Yes. (p 0.18), Yes. (p 0.109)"
+                ]
+              },
+              "requestId": "BZt0DHSoBboZjY3NKHsH",
+              "characterCost": 20
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 2,
+              "seed": 1461849171,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.88,
+              "speechSec": 4.64,
+              "words": 11,
+              "wpm": 142.2,
+              "maxGapMs": 270,
+              "samplePeakDbfs": -4.03,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4,
+              "lufsI": -22.5,
+              "lra": 0.9,
+              "noiseFloorDb": -61.5,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 226,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.933,
+                "flags": [
+                  "pace 142.2 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "9ONh2XyDtG1uRIzusszd",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 2,
+              "seed": 3774521835,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.21,
+              "speechSec": 3.97,
+              "words": 12,
+              "wpm": 181.4,
+              "maxGapMs": 240,
+              "samplePeakDbfs": -4.51,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.4,
+              "lufsI": -22.3,
+              "lra": 1.6,
+              "noiseFloorDb": -63.8,
+              "headTrimmedMs": -20,
+              "tailTrimmedMs": 222,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 1.879,
+                "flags": [
+                  "pace 181.4 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "GKz4HpLboTOLQTKqbbUl",
+              "characterCost": 26
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 2,
+              "seed": 608720489,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.27,
+              "speechSec": 4.03,
+              "words": 12,
+              "wpm": 178.7,
+              "maxGapMs": 410,
+              "samplePeakDbfs": -3.89,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.8,
+              "lufsI": -24.2,
+              "lra": 2.3,
+              "noiseFloorDb": -63.1,
+              "headTrimmedMs": -10,
+              "tailTrimmedMs": 105,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second action.",
+                "wer": 0.083,
+                "cer": 0.055,
+                "lowConf": [
+                  "action. (p 0.251)"
+                ],
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.207,
+                "flags": [
+                  "pace 178.7 wpm (target 150–165)",
+                  "low-confidence words: action. (p 0.251)"
+                ]
+              },
+              "requestId": "bMRmqIMSnGpJXpRTVngQ",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 2,
+              "seed": 920493429,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.31,
+              "speechSec": 4.07,
+              "words": 13,
+              "wpm": 191.6,
+              "maxGapMs": 300,
+              "samplePeakDbfs": -2.52,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.5,
+              "lufsI": -20.5,
+              "lra": 1.7,
+              "noiseFloorDb": -64.8,
+              "headTrimmedMs": -110,
+              "tailTrimmedMs": 258,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.001,
+                "flags": [
+                  "pace 191.6 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "j657V1YnZp4oxnFQZhCv",
+              "characterCost": 28
+            }
+          ],
+          "eleven_v4@0.92": [
+            {
+              "id": "adv.onboard.welcome",
+              "take": 1,
+              "seed": 1066662424,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 3.63,
+              "speechSec": 3.39,
+              "words": 8,
+              "wpm": 141.6,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -0.97,
+              "clippedSamples": 0,
+              "truePeakDbtp": -0.9,
+              "lufsI": -21,
+              "lra": 2.1,
+              "noiseFloorDb": -60.4,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": -30,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard! Let's build a company that lasts.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.999,
+                "flags": [
+                  "pace 141.6 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "39EwrVhC32HBFJIh9XJq",
+              "characterCost": 5
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 1,
+              "seed": 1461849170,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.35,
+              "speechSec": 5.11,
+              "words": 11,
+              "wpm": 129.2,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -4.84,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.8,
+              "lufsI": -22.7,
+              "lra": 1.2,
+              "noiseFloorDb": -57.3,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 100,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.363,
+                "flags": [
+                  "pace 129.2 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "znBlfQh0NOORTsdgAtZ4",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 1,
+              "seed": 3774521834,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.05,
+              "speechSec": 4.81,
+              "words": 12,
+              "wpm": 149.7,
+              "maxGapMs": 320,
+              "samplePeakDbfs": -3.37,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.3,
+              "lufsI": -21.6,
+              "lra": 1.3,
+              "noiseFloorDb": -60.1,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 0,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.108,
+                "flags": [
+                  "pace 149.7 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "hTUAGP6p6hfK6tUUBsYL",
+              "characterCost": 7
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 1,
+              "seed": 608720488,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.35,
+              "speechSec": 5.11,
+              "words": 12,
+              "wpm": 140.9,
+              "maxGapMs": 280,
+              "samplePeakDbfs": -1.37,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1.4,
+              "lufsI": -21.8,
+              "lra": 0.6,
+              "noiseFloorDb": -60.3,
+              "headTrimmedMs": -70,
+              "tailTrimmedMs": 0,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 1.076,
+                "flags": [
+                  "pace 140.9 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "IhSJDrjEUslZamxymUxB",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 1,
+              "seed": 920493428,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.11,
+              "speechSec": 4.87,
+              "words": 13,
+              "wpm": 160.2,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -2.61,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.6,
+              "lufsI": -20.9,
+              "lra": 1.2,
+              "noiseFloorDb": -62.2,
+              "headTrimmedMs": -70,
+              "tailTrimmedMs": 80,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.027,
+                "flags": []
+              },
+              "requestId": "8IGZkeqpg29Luo2m3ilt",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.onboard.welcome",
+              "take": 2,
+              "seed": 1066662425,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 3.55,
+              "speechSec": 3.31,
+              "words": 8,
+              "wpm": 145,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -2.49,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.4,
+              "lufsI": -21.4,
+              "lra": 1.7,
+              "noiseFloorDb": -57.8,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": -30,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard! Let's build a company that lasts. Yes. Yes.",
+                "wer": 0.25,
+                "cer": 0.154,
+                "lowConf": [
+                  "Yes. (p 0.009)",
+                  "Yes. (p 0.278)"
+                ]
+              },
+              "score": {
+                "hard": 1,
+                "soft": 4.705,
+                "flags": [
+                  "pace 145 wpm (target 150–165)",
+                  "transcript differs (CER 0.154): \"Welcome aboard! Let's build a company that lasts. Yes. Yes.\"",
+                  "low-confidence words: Yes. (p 0.009), Yes. (p 0.278)"
+                ]
+              },
+              "requestId": "Jgh6uY5bbV8ssnPt0ENy",
+              "characterCost": 5
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 2,
+              "seed": 1461849171,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.31,
+              "speechSec": 5.07,
+              "words": 11,
+              "wpm": 130.2,
+              "maxGapMs": 440,
+              "samplePeakDbfs": -3.35,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.3,
+              "lufsI": -22.5,
+              "lra": 1.3,
+              "noiseFloorDb": -56,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 50,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility. ability.",
+                "wer": 0.091,
+                "cer": 0.121,
+                "lowConf": [
+                  "ability. (p 0.206)"
+                ]
+              },
+              "score": {
+                "hard": 1,
+                "soft": 5.273,
+                "flags": [
+                  "pace 130.2 wpm (target 150–165)",
+                  "transcript differs (CER 0.121): \"We're overdrawn. Every month in the red costs interest and credibility. ability.\"",
+                  "low-confidence words: ability. (p 0.206)"
+                ]
+              },
+              "requestId": "wN3IoVPLIOYB0CNH6Nnm",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 2,
+              "seed": 3774521835,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.09,
+              "speechSec": 4.85,
+              "words": 12,
+              "wpm": 148.5,
+              "maxGapMs": 310,
+              "samplePeakDbfs": -1.35,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1.3,
+              "lufsI": -21.4,
+              "lra": 1.2,
+              "noiseFloorDb": -58.1,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": -40,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.24,
+                "flags": [
+                  "pace 148.5 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "KlLE3yboaoOPRCF0JAtw",
+              "characterCost": 7
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 2,
+              "seed": 608720489,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.06,
+              "speechSec": 4.82,
+              "words": 12,
+              "wpm": 149.4,
+              "maxGapMs": 280,
+              "samplePeakDbfs": -2.46,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.4,
+              "lufsI": -21.3,
+              "lra": 0.9,
+              "noiseFloorDb": -59.6,
+              "headTrimmedMs": -110,
+              "tailTrimmedMs": 10,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.141,
+                "flags": [
+                  "pace 149.4 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "QuT2gWiRPkPMKIsqBIx4",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 2,
+              "seed": 920493429,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.32,
+              "speechSec": 5.08,
+              "words": 13,
+              "wpm": 153.5,
+              "maxGapMs": 330,
+              "samplePeakDbfs": -2.05,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2,
+              "lufsI": -20.6,
+              "lra": 1.2,
+              "noiseFloorDb": -57,
+              "headTrimmedMs": -70,
+              "tailTrimmedMs": 30,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.04,
+                "flags": []
+              },
+              "requestId": "Fp9nHcfmku05W0nSAkn4",
+              "characterCost": 8
+            }
+          ],
+          "eleven_v4+tags@0.92": [
+            {
+              "id": "adv.onboard.welcome",
+              "take": 1,
+              "seed": 1066662424,
+              "sent": "[warm] Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 3.57,
+              "speechSec": 3.33,
+              "words": 8,
+              "wpm": 144.1,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -5.58,
+              "clippedSamples": 0,
+              "truePeakDbtp": -5.5,
+              "lufsI": -22,
+              "lra": 1.2,
+              "noiseFloorDb": -60.1,
+              "headTrimmedMs": -30,
+              "tailTrimmedMs": -20,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard! Let's build a company that lasts. Yes.",
+                "wer": 0.125,
+                "cer": 0.077,
+                "lowConf": [
+                  "Yes. (p 0.056)"
+                ]
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.764,
+                "flags": [
+                  "pace 144.1 wpm (target 150–165)",
+                  "low-confidence words: Yes. (p 0.056)"
+                ]
+              },
+              "requestId": "2vGHYuFbMJ8kTpZeQQjF",
+              "characterCost": 6
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 1,
+              "seed": 1461849170,
+              "sent": "[serious] We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.05,
+              "speechSec": 4.81,
+              "words": 11,
+              "wpm": 137.2,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -1.61,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1.6,
+              "lufsI": -21.9,
+              "lra": 0.7,
+              "noiseFloorDb": -55.3,
+              "headTrimmedMs": 0,
+              "tailTrimmedMs": 150,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 1.483,
+                "flags": [
+                  "pace 137.2 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "9ECm89eCxIT6TM7Oa3UM",
+              "characterCost": 9
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 1,
+              "seed": 3774521834,
+              "sent": "[enticing] We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.32,
+              "speechSec": 5.08,
+              "words": 12,
+              "wpm": 141.7,
+              "maxGapMs": 340,
+              "samplePeakDbfs": -4.32,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.3,
+              "lufsI": -23.8,
+              "lra": 1.7,
+              "noiseFloorDb": -51.4,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 40,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.988,
+                "flags": [
+                  "pace 141.7 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "NQcZVyTOCHAuqfFt7Ehg",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 1,
+              "seed": 608720488,
+              "sent": "[kind] The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 5.02,
+              "speechSec": 4.78,
+              "words": 12,
+              "wpm": 150.6,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -3.69,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.7,
+              "lufsI": -22.9,
+              "lra": 1.3,
+              "noiseFloorDb": -59.5,
+              "headTrimmedMs": -60,
+              "tailTrimmedMs": 0,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.069,
+                "flags": []
+              },
+              "requestId": "jTLu3046SBZMEkyoA9de",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 1,
+              "seed": 920493428,
+              "sent": "[firm] It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.92
+              },
+              "durationSec": 4.83,
+              "speechSec": 4.59,
+              "words": 13,
+              "wpm": 169.9,
+              "maxGapMs": 190,
+              "samplePeakDbfs": -0.53,
+              "clippedSamples": 0,
+              "truePeakDbtp": -0.5,
+              "lufsI": -17.5,
+              "lra": 0.7,
+              "noiseFloorDb": -56.5,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 50,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.614,
+                "flags": [
+                  "pace 169.9 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "KWeuzRaxUkHNGraYZJ6A",
+              "characterCost": 9
+            }
+          ]
+        },
+        "anchor": {
+          "eleven_multilingual_v2@1.0": [
+            {
+              "id": "news.intro",
+              "take": 1,
+              "seed": 2697239579,
+              "sent": "Good evening. Here's what's moving the markets tonight.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 3.08,
+              "speechSec": 2.84,
+              "words": 8,
+              "wpm": 169,
+              "maxGapMs": 570,
+              "samplePeakDbfs": -9.42,
+              "clippedSamples": 0,
+              "truePeakDbtp": -9.3,
+              "lufsI": -23.1,
+              "lra": 20,
+              "noiseFloorDb": -88,
+              "headTrimmedMs": -30,
+              "tailTrimmedMs": 201,
+              "stt": {
+                "model": "base.en",
+                "text": "Good evening. Here's what's moving the markets tonight.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.465,
+                "flags": []
+              },
+              "requestId": "0qg3NCYKYLCkvDKU5cDy",
+              "characterCost": 22
+            },
+            {
+              "id": "news.recession",
+              "take": 1,
+              "seed": 2400155170,
+              "sent": "Breaking news: the economy has officially entered a recession.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 4.44,
+              "speechSec": 4.2,
+              "words": 9,
+              "wpm": 128.6,
+              "maxGapMs": 500,
+              "samplePeakDbfs": -5.45,
+              "clippedSamples": 0,
+              "truePeakDbtp": -5.4,
+              "lufsI": -23,
+              "lra": 0.6,
+              "noiseFloorDb": -87.7,
+              "headTrimmedMs": -20,
+              "tailTrimmedMs": 178,
+              "stt": {
+                "model": "base.en",
+                "text": "Breaking news, the economy has officially entered a recession.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.254,
+                "flags": [
+                  "pace 128.6 wpm (target 155–175)"
+                ]
+              },
+              "requestId": "31vGOZUoRctF8WaNQhZj",
+              "characterCost": 25
+            },
+            {
+              "id": "news.commodity_spike",
+              "take": 1,
+              "seed": 1553653460,
+              "sent": "Commodity prices spike as supply shortages hit world markets.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 4.42,
+              "speechSec": 4.18,
+              "words": 9,
+              "wpm": 129.2,
+              "maxGapMs": 240,
+              "samplePeakDbfs": -5.59,
+              "clippedSamples": 0,
+              "truePeakDbtp": -5.5,
+              "lufsI": -24.1,
+              "lra": 0.9,
+              "noiseFloorDb": -87.3,
+              "headTrimmedMs": -50,
+              "tailTrimmedMs": 135,
+              "stt": {
+                "model": "base.en",
+                "text": "Commodity prices spike as supply shortages hit world markets.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.938,
+                "flags": [
+                  "pace 129.2 wpm (target 155–175)"
+                ]
+              },
+              "requestId": "11DI669gTzco50iN3UCW",
+              "characterCost": 24
+            }
+          ],
+          "eleven_v4@1.0": [
+            {
+              "id": "news.intro",
+              "take": 1,
+              "seed": 2697239579,
+              "sent": "Good evening. Here's what's moving the markets tonight.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 3.16,
+              "speechSec": 2.92,
+              "words": 8,
+              "wpm": 164.4,
+              "maxGapMs": 430,
+              "samplePeakDbfs": -3.49,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.5,
+              "lufsI": -20.4,
+              "lra": 20,
+              "noiseFloorDb": -86.6,
+              "headTrimmedMs": -30,
+              "tailTrimmedMs": -10,
+              "stt": {
+                "model": "base.en",
+                "text": "Good evening. Here's what's moving the markets tonight.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.081,
+                "flags": []
+              },
+              "requestId": "sUW4WX9YBEGfz8gKcJ7S",
+              "characterCost": 6
+            },
+            {
+              "id": "news.recession",
+              "take": 1,
+              "seed": 2400155170,
+              "sent": "Breaking news: the economy has officially entered a recession.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 4.44,
+              "speechSec": 4.2,
+              "words": 9,
+              "wpm": 128.6,
+              "maxGapMs": 430,
+              "samplePeakDbfs": -2.14,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.1,
+              "lufsI": -19.8,
+              "lra": 0.7,
+              "noiseFloorDb": -85.4,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 50,
+              "stt": {
+                "model": "base.en",
+                "text": "Breaking news. The economy has officially entered the recession.",
+                "wer": 0.111,
+                "cer": 0.058
+              },
+              "score": {
+                "hard": 0,
+                "soft": 4.239,
+                "flags": [
+                  "pace 128.6 wpm (target 155–175)"
+                ]
+              },
+              "requestId": "74VHzJ81TApVJ8BGBgkM",
+              "characterCost": 7
+            },
+            {
+              "id": "news.commodity_spike",
+              "take": 1,
+              "seed": 1553653460,
+              "sent": "Commodity prices spike as supply shortages hit world markets.",
+              "settings": {
+                "stability": 0.65,
+                "similarity_boost": 0.8,
+                "style": 0.1,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 4.63,
+              "speechSec": 4.39,
+              "words": 9,
+              "wpm": 123,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -2.67,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.7,
+              "lufsI": -20.3,
+              "lra": 2.4,
+              "noiseFloorDb": -65.4,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 10,
+              "stt": {
+                "model": "base.en",
+                "text": "Commodity prices spike as supply shortages hit world markets.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.62,
+                "flags": [
+                  "pace 123 wpm (target 155–175)"
+                ]
+              },
+              "requestId": "xkr30vFu7Lpd5DfwEwTD",
+              "characterCost": 7
+            }
+          ]
+        }
+      },
+      "summary": {
+        "advisor": {
+          "eleven_multilingual_v2@0.92": {
+            "model": "eleven_multilingual_v2",
+            "speed": 0.92,
+            "tags": false,
+            "takes": 10,
+            "meanWpm": 178.2,
+            "inBand": 0,
+            "meanWpmOutsideBand": 19.2,
+            "maxPauseMs": 440,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -22.5,
+            "lufsStd": 1.48,
+            "meanCer": 0.025,
+            "exactTranscripts": 7,
+            "transcriptsDiffering": 1,
+            "lowConfidenceWords": 3,
+            "magnate": [
+              "ok",
+              "ok"
+            ],
+            "hardFlags": 1,
+            "meanScore": 2.848,
+            "creditsCharged": 260,
+            "charactersSent": 652
+          },
+          "eleven_v4@0.92": {
+            "model": "eleven_v4",
+            "speed": 0.92,
+            "tags": false,
+            "takes": 10,
+            "meanWpm": 144.8,
+            "inBand": 2,
+            "meanWpmOutsideBand": 6.6,
+            "maxPauseMs": 440,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -21.5,
+            "lufsStd": 0.63,
+            "meanCer": 0.028,
+            "exactTranscripts": 8,
+            "transcriptsDiffering": 2,
+            "lowConfidenceWords": 3,
+            "magnate": [
+              "ok",
+              "ok"
+            ],
+            "hardFlags": 2,
+            "meanScore": 1.497,
+            "creditsCharged": 72,
+            "charactersSent": 652
+          },
+          "eleven_v4+tags@0.92": {
+            "model": "eleven_v4",
+            "speed": 0.92,
+            "tags": true,
+            "takes": 5,
+            "meanWpm": 148.7,
+            "inBand": 1,
+            "meanWpmOutsideBand": 6.4,
+            "maxPauseMs": 340,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -21.6,
+            "lufsStd": 2.17,
+            "meanCer": 0.015,
+            "exactTranscripts": 4,
+            "transcriptsDiffering": 0,
+            "lowConfidenceWords": 1,
+            "magnate": [
+              "ok"
+            ],
+            "hardFlags": 0,
+            "meanScore": 1.184,
+            "creditsCharged": 40,
+            "charactersSent": 368
+          }
+        },
+        "anchor": {
+          "eleven_multilingual_v2@1.0": {
+            "model": "eleven_multilingual_v2",
+            "speed": 1,
+            "tags": false,
+            "takes": 3,
+            "meanWpm": 142.3,
+            "inBand": 1,
+            "meanWpmOutsideBand": 17.4,
+            "maxPauseMs": 570,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -23.4,
+            "lufsStd": 0.5,
+            "meanCer": 0,
+            "exactTranscripts": 3,
+            "transcriptsDiffering": 0,
+            "lowConfidenceWords": 0,
+            "magnate": [],
+            "hardFlags": 0,
+            "meanScore": 2.219,
+            "creditsCharged": 71,
+            "charactersSent": 178
+          },
+          "eleven_v4@1.0": {
+            "model": "eleven_v4",
+            "speed": 1,
+            "tags": false,
+            "takes": 3,
+            "meanWpm": 138.7,
+            "inBand": 1,
+            "meanWpmOutsideBand": 19.5,
+            "maxPauseMs": 430,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -20.2,
+            "lufsStd": 0.26,
+            "meanCer": 0.019,
+            "exactTranscripts": 2,
+            "transcriptsDiffering": 0,
+            "lowConfidenceWords": 0,
+            "magnate": [],
+            "hardFlags": 0,
+            "meanScore": 2.647,
+            "creditsCharged": 20,
+            "charactersSent": 178
+          }
+        }
+      }
+    },
+    "2": {
+      "results": {
+        "advisor": {
+          "eleven_multilingual_v2@0.82": [
+            {
+              "id": "adv.onboard.welcome",
+              "take": 1,
+              "seed": 1066662424,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 3.34,
+              "speechSec": 3.1,
+              "words": 8,
+              "wpm": 154.8,
+              "maxGapMs": 310,
+              "samplePeakDbfs": -4.61,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.6,
+              "lufsI": -23.4,
+              "lra": 20.3,
+              "noiseFloorDb": -63.7,
+              "headTrimmedMs": -50,
+              "tailTrimmedMs": 193,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard. Let's build a company that lasts.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.027,
+                "flags": []
+              },
+              "requestId": "LoPlDYEK0GXZLv3wbCYo",
+              "characterCost": 20
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 1,
+              "seed": 1461849170,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 5.81,
+              "speechSec": 5.57,
+              "words": 11,
+              "wpm": 118.5,
+              "maxGapMs": 380,
+              "samplePeakDbfs": -10.24,
+              "clippedSamples": 0,
+              "truePeakDbtp": -10.2,
+              "lufsI": -26.2,
+              "lra": 2.1,
+              "noiseFloorDb": -64.9,
+              "headTrimmedMs": -10,
+              "tailTrimmedMs": 51,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn every month in the red costs, interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.54,
+                "flags": [
+                  "pace 118.5 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "GS7bYR7iiH2jumuXEnRu",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 1,
+              "seed": 3774521834,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 4.35,
+              "speechSec": 4.11,
+              "words": 12,
+              "wpm": 175.2,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -4.05,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.1,
+              "lufsI": -21.5,
+              "lra": 0.6,
+              "noiseFloorDb": -61.8,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 328,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing and IPO could fund real growth.",
+                "wer": 0.083,
+                "cer": 0.02
+              },
+              "score": {
+                "hard": 0,
+                "soft": 1.597,
+                "flags": [
+                  "pace 175.2 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "xKyCIoiElUnLHAlxvPeo",
+              "characterCost": 26
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 1,
+              "seed": 608720488,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 4.68,
+              "speechSec": 4.44,
+              "words": 12,
+              "wpm": 162.2,
+              "maxGapMs": 240,
+              "samplePeakDbfs": -4.2,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.2,
+              "lufsI": -23,
+              "lra": 1.7,
+              "noiseFloorDb": -64.9,
+              "headTrimmedMs": -20,
+              "tailTrimmedMs": 30,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.047,
+                "flags": []
+              },
+              "requestId": "13COusFoyDyfRu6k0Zmi",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 1,
+              "seed": 920493428,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 5.26,
+              "speechSec": 5.02,
+              "words": 13,
+              "wpm": 155.4,
+              "maxGapMs": 410,
+              "samplePeakDbfs": -2.27,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.2,
+              "lufsI": -22.8,
+              "lra": 1.5,
+              "noiseFloorDb": -67.6,
+              "headTrimmedMs": -120,
+              "tailTrimmedMs": 247,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.046,
+                "flags": []
+              },
+              "requestId": "S7RaLLe5Mfd9zZwjVY3D",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.onboard.welcome",
+              "take": 2,
+              "seed": 1066662425,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 3.49,
+              "speechSec": 3.25,
+              "words": 8,
+              "wpm": 147.7,
+              "maxGapMs": 240,
+              "samplePeakDbfs": -4.67,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.7,
+              "lufsI": -23.3,
+              "lra": 1.2,
+              "noiseFloorDb": -64.8,
+              "headTrimmedMs": -120,
+              "tailTrimmedMs": 206,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard. Let's build a company that lasts",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.328,
+                "flags": [
+                  "pace 147.7 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "5b0Bwva0FUHoXWzJpzFE",
+              "characterCost": 20
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 2,
+              "seed": 1461849171,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 5.57,
+              "speechSec": 5.33,
+              "words": 11,
+              "wpm": 123.8,
+              "maxGapMs": 600,
+              "samplePeakDbfs": -8.14,
+              "clippedSamples": 0,
+              "truePeakDbtp": -8.1,
+              "lufsI": -24,
+              "lra": 1.5,
+              "noiseFloorDb": -63.7,
+              "headTrimmedMs": -30,
+              "tailTrimmedMs": 219,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 3.457,
+                "flags": [
+                  "pace 123.8 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "0f9IuCPhcTK1C2ny0RWF",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 2,
+              "seed": 3774521835,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 4.9,
+              "speechSec": 4.66,
+              "words": 12,
+              "wpm": 154.5,
+              "maxGapMs": 540,
+              "samplePeakDbfs": -3.47,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.5,
+              "lufsI": -21.7,
+              "lra": 0.8,
+              "noiseFloorDb": -63.5,
+              "headTrimmedMs": -10,
+              "tailTrimmedMs": 218,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing, and IPO could fund real growth.",
+                "wer": 0.083,
+                "cer": 0.02
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.78,
+                "flags": []
+              },
+              "requestId": "SY7iClVO1uP6LK3T7M1o",
+              "characterCost": 26
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 2,
+              "seed": 608720489,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 5.21,
+              "speechSec": 4.97,
+              "words": 12,
+              "wpm": 144.9,
+              "maxGapMs": 430,
+              "samplePeakDbfs": -4.94,
+              "clippedSamples": 0,
+              "truePeakDbtp": -4.9,
+              "lufsI": -22.1,
+              "lra": 0.9,
+              "noiseFloorDb": -61,
+              "headTrimmedMs": -20,
+              "tailTrimmedMs": -82,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act with",
+                "wer": 0.083,
+                "cer": 0.073,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.171,
+                "flags": [
+                  "pace 144.9 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "sGlD2HZXdtxBBmu9jz6y",
+              "characterCost": 28
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 2,
+              "seed": 920493429,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 0.82
+              },
+              "durationSec": 5.22,
+              "speechSec": 4.98,
+              "words": 13,
+              "wpm": 156.6,
+              "maxGapMs": 330,
+              "samplePeakDbfs": -6.21,
+              "clippedSamples": 0,
+              "truePeakDbtp": -6.1,
+              "lufsI": -24.3,
+              "lra": 2.7,
+              "noiseFloorDb": -64.9,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": 61,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.009,
+                "flags": []
+              },
+              "requestId": "esW7cCh7CtnbWu8wWSKx",
+              "characterCost": 28
+            }
+          ],
+          "eleven_v4@1.0": [
+            {
+              "id": "adv.onboard.welcome",
+              "take": 1,
+              "seed": 1066662424,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 3.63,
+              "speechSec": 3.39,
+              "words": 8,
+              "wpm": 141.6,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -1,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1,
+              "lufsI": -21,
+              "lra": 2,
+              "noiseFloorDb": -58.6,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": -30,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard! Let's build a company that lasts.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.999,
+                "flags": [
+                  "pace 141.6 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "NRwv4Qc01B6o7IOpDYkf",
+              "characterCost": 5
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 1,
+              "seed": 1461849170,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.36,
+              "speechSec": 5.12,
+              "words": 11,
+              "wpm": 128.9,
+              "maxGapMs": 180,
+              "samplePeakDbfs": -6.19,
+              "clippedSamples": 0,
+              "truePeakDbtp": -6.2,
+              "lufsI": -23,
+              "lra": 1,
+              "noiseFloorDb": -55.9,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 90,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.396,
+                "flags": [
+                  "pace 128.9 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "AQSfFioZCzxpYBq6ab0R",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 1,
+              "seed": 3774521834,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.04,
+              "speechSec": 4.8,
+              "words": 12,
+              "wpm": 150,
+              "maxGapMs": 340,
+              "samplePeakDbfs": -3.24,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.2,
+              "lufsI": -21.7,
+              "lra": 1.4,
+              "noiseFloorDb": -59.8,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 10,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.075,
+                "flags": []
+              },
+              "requestId": "uQURHi6NakKs2iwR9vRp",
+              "characterCost": 7
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 1,
+              "seed": 608720488,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.31,
+              "speechSec": 5.07,
+              "words": 12,
+              "wpm": 142,
+              "maxGapMs": 380,
+              "samplePeakDbfs": -3.27,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.2,
+              "lufsI": -21.6,
+              "lra": 0.7,
+              "noiseFloorDb": -60.1,
+              "headTrimmedMs": -40,
+              "tailTrimmedMs": 10,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.955,
+                "flags": [
+                  "pace 142 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "eW3lqERTp5IL5eb1oNlb",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 1,
+              "seed": 920493428,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.1,
+              "speechSec": 4.86,
+              "words": 13,
+              "wpm": 160.5,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -1.72,
+              "clippedSamples": 0,
+              "truePeakDbtp": -1.7,
+              "lufsI": -20.8,
+              "lra": 1.2,
+              "noiseFloorDb": -62.4,
+              "headTrimmedMs": -70,
+              "tailTrimmedMs": 90,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.03,
+                "flags": []
+              },
+              "requestId": "G45uFTF213E6CPlOwsbw",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.onboard.welcome",
+              "take": 2,
+              "seed": 1066662425,
+              "sent": "Welcome aboard. Let's build a company that lasts.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 3.55,
+              "speechSec": 3.31,
+              "words": 8,
+              "wpm": 145,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -1.97,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2,
+              "lufsI": -21.2,
+              "lra": 1.6,
+              "noiseFloorDb": -58.4,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": -30,
+              "stt": {
+                "model": "base.en",
+                "text": "Welcome aboard! Let's build a company that lasts. in the past. And that's what I'm going to do in the past. And that's what I'm going to do",
+                "wer": 2.5,
+                "cer": 1.641,
+                "lowConf": [
+                  "in (p 0.025)",
+                  "past. (p 0.141)"
+                ]
+              },
+              "score": {
+                "hard": 1,
+                "soft": 34.445,
+                "flags": [
+                  "pace 145 wpm (target 150–165)",
+                  "transcript differs (CER 1.641): \"Welcome aboard! Let's build a company that lasts. in the past. And that's what I'm going to do in the past. And that's what I'm going to do\"",
+                  "low-confidence words: in (p 0.025), past. (p 0.141)"
+                ]
+              },
+              "requestId": "r3lw7fbwQwnRs5wPoYfX",
+              "characterCost": 5
+            },
+            {
+              "id": "adv.cash.negative",
+              "take": 2,
+              "seed": 1461849171,
+              "sent": "We're overdrawn. Every month in the red costs interest and credibility.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.33,
+              "speechSec": 5.09,
+              "words": 11,
+              "wpm": 129.7,
+              "maxGapMs": 350,
+              "samplePeakDbfs": -3.65,
+              "clippedSamples": 0,
+              "truePeakDbtp": -3.6,
+              "lufsI": -22.5,
+              "lra": 1.3,
+              "noiseFloorDb": -56.9,
+              "headTrimmedMs": -90,
+              "tailTrimmedMs": 40,
+              "stt": {
+                "model": "base.en",
+                "text": "We're overdrawn. Every month in the red costs interest and credibility.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 2.308,
+                "flags": [
+                  "pace 129.7 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "fD8Y20Zs3mgzefq7ahAo",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.ipo.eligible",
+              "take": 2,
+              "seed": 3774521835,
+              "sent": "We qualify for a public listing. An I.P.O. could fund real growth.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.09,
+              "speechSec": 4.85,
+              "words": 12,
+              "wpm": 148.5,
+              "maxGapMs": 270,
+              "samplePeakDbfs": -2.07,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2,
+              "lufsI": -21.3,
+              "lra": 1.1,
+              "noiseFloorDb": -58.8,
+              "headTrimmedMs": -80,
+              "tailTrimmedMs": -50,
+              "stt": {
+                "model": "base.en",
+                "text": "We qualify for a public listing. An IPO could fund real growth.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.24,
+                "flags": [
+                  "pace 148.5 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "VJNAoupH9h9OAf0kLbSG",
+              "characterCost": 7
+            },
+            {
+              "id": "adv.end.defeat_bankrupt",
+              "take": 2,
+              "seed": 608720489,
+              "sent": "The creditors have taken over. Every great mag-nate has a second act.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.06,
+              "speechSec": 4.82,
+              "words": 12,
+              "wpm": 149.4,
+              "maxGapMs": 230,
+              "samplePeakDbfs": -2.7,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.7,
+              "lufsI": -21.3,
+              "lra": 0.9,
+              "noiseFloorDb": -61,
+              "headTrimmedMs": -100,
+              "tailTrimmedMs": 0,
+              "stt": {
+                "model": "base.en",
+                "text": "The creditors have taken over. Every great magnate has a second act.",
+                "wer": 0,
+                "cer": 0,
+                "magnate": "ok"
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.141,
+                "flags": [
+                  "pace 149.4 wpm (target 150–165)"
+                ]
+              },
+              "requestId": "tjtrKAF0PFbOU41jBkyf",
+              "characterCost": 8
+            },
+            {
+              "id": "adv.market.price_war",
+              "take": 2,
+              "seed": 920493429,
+              "sent": "It's a price war. Protect our margins; winning at a loss isn't winning.",
+              "settings": {
+                "stability": 0.5,
+                "similarity_boost": 0.75,
+                "style": 0.2,
+                "use_speaker_boost": true,
+                "speed": 1
+              },
+              "durationSec": 5.37,
+              "speechSec": 5.13,
+              "words": 13,
+              "wpm": 152,
+              "maxGapMs": 0,
+              "samplePeakDbfs": -2.23,
+              "clippedSamples": 0,
+              "truePeakDbtp": -2.2,
+              "lufsI": -20.5,
+              "lra": 1.2,
+              "noiseFloorDb": -58.2,
+              "headTrimmedMs": -70,
+              "tailTrimmedMs": -20,
+              "stt": {
+                "model": "base.en",
+                "text": "It's a price war. Protect our margins. Winning at a loss isn't winning.",
+                "wer": 0,
+                "cer": 0
+              },
+              "score": {
+                "hard": 0,
+                "soft": 0.055,
+                "flags": []
+              },
+              "requestId": "3gsn53RUsgV1HIeN7VBD",
+              "characterCost": 8
+            }
+          ]
+        },
+        "anchor": {}
+      },
+      "summary": {
+        "advisor": {
+          "eleven_multilingual_v2@0.82": {
+            "model": "eleven_multilingual_v2",
+            "speed": 0.82,
+            "tags": false,
+            "takes": 10,
+            "meanWpm": 149.4,
+            "inBand": 5,
+            "meanWpmOutsideBand": 7.5,
+            "maxPauseMs": 600,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -23.2,
+            "lufsStd": 1.32,
+            "meanCer": 0.011,
+            "exactTranscripts": 7,
+            "transcriptsDiffering": 0,
+            "lowConfidenceWords": 0,
+            "magnate": [
+              "ok",
+              "ok"
+            ],
+            "hardFlags": 0,
+            "meanScore": 1.2,
+            "creditsCharged": 260,
+            "charactersSent": 652
+          },
+          "eleven_v4@1.0": {
+            "model": "eleven_v4",
+            "speed": 1,
+            "tags": false,
+            "takes": 10,
+            "meanWpm": 144.8,
+            "inBand": 3,
+            "meanWpmOutsideBand": 6.5,
+            "maxPauseMs": 380,
+            "takesWithPauseOver600": 0,
+            "lufsMean": -21.5,
+            "lufsStd": 0.72,
+            "meanCer": 0.164,
+            "exactTranscripts": 9,
+            "transcriptsDiffering": 1,
+            "lowConfidenceWords": 2,
+            "magnate": [
+              "ok",
+              "ok"
+            ],
+            "hardFlags": 1,
+            "meanScore": 4.164,
+            "creditsCharged": 72,
+            "charactersSent": 652
+          },
+          "eleven_v4+tags@1.0": {
+            "model": "eleven_v4",
+            "speed": 1,
+            "tags": true,
+            "skipped": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 6 credits are required for this request."
+          }
+        },
+        "anchor": {
+          "eleven_multilingual_v2@1.1": {
+            "model": "eleven_multilingual_v2",
+            "speed": 1.1,
+            "tags": false,
+            "skipped": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 25 credits are required for this request."
+          },
+          "eleven_v4@1.1": {
+            "model": "eleven_v4",
+            "speed": 1.1,
+            "tags": false,
+            "skipped": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 7 credits are required for this request."
+          }
+        }
+      }
+    }
+  },
+  "date": "2026-10-01T02:28:08.227Z",
+  "method": "Objective proxies only (no listening): pace vs the role band (advisor 150–165 wpm, anchor 155–175), longest internal pause (> 600 ms rejects), loudness spread (LUFS-I std across lines), transcript CER vs the script (faster-whisper base.en, no prompt), low-confidence transcript words, and the \"magnate\" check. Same seeds (crc32(id)+take) for every model.",
+  "lines": {
+    "advisor": [
+      "adv.onboard.welcome",
+      "adv.cash.negative",
+      "adv.ipo.eligible",
+      "adv.end.defeat_bankrupt",
+      "adv.market.price_war"
+    ],
+    "anchor": [
+      "news.intro",
+      "news.recession",
+      "news.commodity_spike"
+    ]
+  }
+}

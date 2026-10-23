@@ -1,0 +1,71 @@
+{
+  "method": "ledger",
+  "args": {
+    "limit": 5
+  },
+  "envelope": {
+    "ok": true,
+    "result": {
+      "total": 146,
+      "offset": 0,
+      "rows": [
+        {
+          "seq": 208,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "category": "assetSale",
+          "amount": 3111331.66,
+          "memo": "sale of warehouse_small (B3)",
+          "buildingId": 3
+        },
+        {
+          "seq": 207,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "category": "assetSale",
+          "amount": 189724,
+          "memo": "demolition of rd_center (B4)",
+          "buildingId": 4
+        },
+        {
+          "seq": 206,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "category": "upgradeCost",
+          "amount": -6000000,
+          "memo": "upgrade supermarket (B1) to L2",
+          "buildingId": 1
+        },
+        {
+          "seq": 205,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "category": "constructionPayment",
+          "amount": -280000,
+          "memo": "construction deposit convenience_store in metropolis",
+          "buildingId": 8
+        },
+        {
+          "seq": 204,
+          "date": {
+            "year": 2026,
+            "month": 8
+          },
+          "category": "landPurchase",
+          "amount": -306726,
+          "memo": "land for convenience_store at (40,27) rot 0 in metropolis",
+          "buildingId": 8
+        }
+      ]
+    },
+    "revision": 25
+  }
+}

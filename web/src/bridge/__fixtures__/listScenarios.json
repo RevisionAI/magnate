@@ -1,0 +1,1303 @@
+{
+  "method": "listScenarios",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": [
+      {
+        "id": "tutorial",
+        "name": "Tutorial \u2014 Your First Company",
+        "description": "Learn the core loop in Metropolis: open a supermarket, stock it with imported soft drinks, and watch the first months\u0027 books. Imported goods bought at world prices leave a thin margin; advertising, a second product line and a well-judged bank loan are the levers that turn a small store into a growing company. There is no deadline, and the advisor (H) walks you through every step.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "playerName": "Your Corp",
+        "startingCash": 45000000,
+        "competitors": [
+          {
+            "name": "LocalCo",
+            "startingCash": 30000000,
+            "strategy": "simple"
+          }
+        ],
+        "goals": [
+          "Open your first store. Press B to open Build, pick Retail \u203A Supermarket and place it on a busy street in Metropolis \u2014 high-traffic plots bring more shoppers. Building costs cash up front and the store becomes an asset on your balance sheet.",
+          "Stock soft drinks. Click your supermarket to open its inspector, add a Soft Drink line and keep the price near the suggested band (around $1.65 a bottle, a little under the going rate). The store buys its stock from the world market automatically.",
+          "Earn a profitable month. Let time run (Space, or 1\u20134 for speed) and read the month-close summary. Imported soft drinks leave a thin margin after wages, running costs and depreciation \u2014 that is normal, and the next steps show how to widen it.",
+          "Advertise. Open Marketing (K) and start a TV campaign for soft drinks in Metropolis. Brand awareness lets you sell more at a better price; the forecast shows how quickly it builds and how fast it fades if you stop paying.",
+          "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+          "Borrow to grow. Open Finance (F) \u203A Bank and take a term loan sized to your next investment. The offer shows the rate your credit rating earns, the monthly payment, and the interest that will appear below operating profit in your income statement.",
+          "Add a second product line. Use the loan to put bread on a free unit of your supermarket (or open a second store). More lines spread the store\u0027s fixed costs over more sales.",
+          "Grow company value to $55M. Company value prices your business on its earnings: cash counts at face value, and stores are worth more than their cost only when they earn more than investors require. Check the Reports (R) balance sheet and income statement to see what moves it."
+        ],
+        "difficulty": 2,
+        "difficultyBucket": "easy",
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "open-store",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Open your first store. Press B to open Build, pick Retail \u203A Supermarket and place it on a busy street in Metropolis \u2014 high-traffic plots bring more shoppers. Building costs cash up front and the store becomes an asset on your balance sheet.",
+            "target": 1,
+            "unit": "count",
+            "category": "supermarket",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "stock-soft-drinks",
+            "index": 1,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Stock soft drinks. Click your supermarket to open its inspector, add a Soft Drink line and keep the price near the suggested band (around $1.65 a bottle, a little under the going rate). The store buys its stock from the world market automatically.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "soft_drink",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "first-profit",
+            "index": 2,
+            "kind": "consecutiveProfitable",
+            "metric": "consecutiveProfitable",
+            "description": "Earn a profitable month. Let time run (Space, or 1\u20134 for speed) and read the month-close summary. Imported soft drinks leave a thin margin after wages, running costs and depreciation \u2014 that is normal, and the next steps show how to widen it.",
+            "target": 1,
+            "unit": "months",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "advertise",
+            "index": 3,
+            "kind": "adCampaignActive",
+            "metric": "adCampaignActive",
+            "description": "Advertise. Open Marketing (K) and start a TV campaign for soft drinks in Metropolis. Brand awareness lets you sell more at a better price; the forecast shows how quickly it builds and how fast it fades if you stop paying.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "soft_drink",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "brand-30",
+            "index": 4,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 30 brand awareness for soft drinks in Metropolis. Keep the campaign running in the city where you actually sell \u2014 brand only pays where your shelves are.",
+            "target": 30,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "bank-loan",
+            "index": 5,
+            "kind": "loanTaken",
+            "metric": "loansTaken",
+            "description": "Borrow to grow. Open Finance (F) \u203A Bank and take a term loan sized to your next investment. The offer shows the rate your credit rating earns, the monthly payment, and the interest that will appear below operating profit in your income statement.",
+            "target": 1,
+            "unit": "count",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "second-line",
+            "index": 6,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Add a second product line. Use the loan to put bread on a free unit of your supermarket (or open a second store). More lines spread the store\u0027s fixed costs over more sales.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "bread",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "company-value",
+            "index": 7,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $55M. Company value prices your business on its earnings: cash counts at face value, and stores are worth more than their cost only when they earn more than investors require. Check the Reports (R) balance sheet and income statement to see what moves it.",
+            "target": 55000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 0,
+        "briefing": "You start with $45,000,000. One rival, LocalCo, starts with $30,000,000. Achieve 8 goals; each counts once reached. There is no deadline. If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "sandbox",
+        "name": "Sandbox",
+        "description": "Free play with no victory conditions. One well-funded rival runs its own chain; build whatever you like, borrow when it pays, and keep an eye on your credit rating \u2014 bankruptcy still ends the company.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "playerName": "Your Corp",
+        "startingCash": 90000000,
+        "competitors": [
+          {
+            "name": "RivalCo",
+            "startingCash": 75000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [],
+        "difficulty": 1,
+        "difficultyBucket": "easy",
+        "isSandbox": true,
+        "goalDetails": [],
+        "sortKey": 100,
+        "briefing": "You start with $90,000,000. One rival, RivalCo, starts with $75,000,000. There are no victory conditions. There is no deadline. If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "brand_monopolist",
+        "name": "Brand Monopolist",
+        "description": "Make your soft drink a household name in three cities. With no rival company in the way, the competition is the local incumbents and the cost of keeping a brand alive: awareness fades every month you stop paying for it.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2031,
+          "month": 12
+        },
+        "playerName": "Player",
+        "startingCash": 60000000,
+        "competitors": [],
+        "goals": [
+          "Reach 70 brand awareness for soft drinks in Metropolis.",
+          "Reach 70 brand awareness for soft drinks in Eastside.",
+          "Reach 70 brand awareness for soft drinks in Riverside."
+        ],
+        "difficulty": 1,
+        "difficultyBucket": "easy",
+        "durationMonths": 72,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "brand-metropolis",
+            "index": 0,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for soft drinks in Metropolis.",
+            "target": 70,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "brand-eastside",
+            "index": 1,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for soft drinks in Eastside.",
+            "target": 70,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "eastside",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "brand-riverside",
+            "index": 2,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for soft drinks in Riverside.",
+            "target": 70,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "riverside",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 210,
+        "briefing": "You start with $60,000,000. You have the market to yourself. Achieve 3 goals; each counts once reached. You have until Dec 2031 (72 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "export_tycoon",
+        "name": "Export Tycoon",
+        "description": "You start with a modest treasury and a mandate to conquer the world market. Stand up farms and factories, sell their output abroad, and earn $125M of export revenue inside five years. The world market is deep but not bottomless: every extra unit you export fetches a little less.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "Player",
+        "startingCash": 24000000,
+        "competitors": [],
+        "goals": [
+          "Earn $125M of export revenue in total within five years \u2014 about two well-run export lines. Turn on export for a factory in its inspector."
+        ],
+        "difficulty": 1,
+        "difficultyBucket": "easy",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "exports",
+            "index": 0,
+            "kind": "exportRevenue",
+            "metric": "exportRevenue",
+            "description": "Earn $125M of export revenue in total within five years \u2014 about two well-run export lines. Turn on export for a factory in its inspector.",
+            "target": 125000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 210,
+        "briefing": "You start with $24,000,000. You have the market to yourself. Achieve 1 goal; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "tech_titan_clash",
+        "name": "Tech Titan Clash",
+        "description": "A premium-brand rival with twice your capital is flooding the high-income aisles with flagship televisions and cars, priced well above the market. Out-engineer them in the Eastside car market, out-sell them on Metropolis televisions, and still be standing \u2014 and worth more \u2014 when the five years are up.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "NovaTech",
+        "startingCash": 75000000,
+        "competitors": [
+          {
+            "name": "Zenith Labs",
+            "startingCash": 150000000,
+            "strategy": "techLeader"
+          }
+        ],
+        "goals": [
+          "Sell 30% of the cars bought in Eastside (trailing three months) \u2014 the rival\u0027s first stronghold.",
+          "Sell 25% of the televisions bought in Metropolis \u2014 deny the titan a clean sweep of the densest market.",
+          "Be worth at least $125M when the scenario ends in December 2030 \u2014 survive the spending war and come out ahead."
+        ],
+        "difficulty": 1,
+        "difficultyBucket": "easy",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "share-car",
+            "index": 0,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 30% of the cars bought in Eastside (trailing three months) \u2014 the rival\u0027s first stronghold.",
+            "target": 0.3,
+            "unit": "ratio",
+            "productId": "car",
+            "cityId": "eastside",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-tv",
+            "index": 1,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 25% of the televisions bought in Metropolis \u2014 deny the titan a clean sweep of the densest market.",
+            "target": 0.25,
+            "unit": "ratio",
+            "productId": "television",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value-at-deadline",
+            "index": 2,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Be worth at least $125M when the scenario ends in December 2030 \u2014 survive the spending war and come out ahead.",
+            "target": 125000000,
+            "unit": "usd",
+            "mode": "holdAtDeadline"
+          }
+        ],
+        "sortKey": 210,
+        "briefing": "You start with $75,000,000. One rival, Zenith Labs, starts with $150,000,000. Achieve 3 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "first_hundred_million",
+        "name": "The Quarter-Billion Club",
+        "description": "Grow a startup into a company worth a quarter of a billion dollars within five years, against an incumbent with three times your capital. Borrowing is allowed \u2014 and lenders will grade you for it.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "Startup Inc",
+        "startingCash": 45000000,
+        "competitors": [
+          {
+            "name": "BigCo",
+            "startingCash": 150000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [
+          "Grow company value to $250M. Value rewards earnings, not size: a store earning less than investors require is worth less than it cost.",
+          "Earn an investment-grade credit rating (BBB or better). Ratings are reviewed every quarter once the company is a year old; interest cover, debt against earnings and company size all count."
+        ],
+        "difficulty": 2,
+        "difficultyBucket": "easy",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "value",
+            "index": 0,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $250M. Value rewards earnings, not size: a store earning less than investors require is worth less than it cost.",
+            "target": 250000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "investment-grade",
+            "index": 1,
+            "kind": "creditRating",
+            "metric": "ratingNotch",
+            "description": "Earn an investment-grade credit rating (BBB or better). Ratings are reviewed every quarter once the company is a year old; interest cover, debt against earnings and company size all count.",
+            "target": 9,
+            "unit": "rating",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 220,
+        "briefing": "You start with $45,000,000. One rival, BigCo, starts with $150,000,000. Achieve 2 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "fashion_empire",
+        "name": "Fashion Empire",
+        "description": "Stitch a premium apparel empire together: cotton fields, denim mills and department-store shelves. Designer jeans carry a brand premium, but only high-income shoppers reach for $130 trousers \u2014 price too high and the aisle empties.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 84000000,
+        "competitors": [
+          {
+            "name": "Couture Co.",
+            "startingCash": 75000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "ValueThreads",
+            "startingCash": 54000000,
+            "strategy": "simple"
+          }
+        ],
+        "goals": [
+          "Operate at least 2 farms \u2014 cotton is the foundation of the chain.",
+          "Operate at least 2 factories \u2014 weave denim and cut jeans in-house.",
+          "Put designer jeans on a shelf \u2014 the brand is not real until a customer can buy it.",
+          "Sell 30% of the designer jeans bought in Metropolis (trailing three months), where high-income shoppers cluster.",
+          "Earn $36M of net income in total \u2014 premium margins have to carry the business after depreciation, interest and tax."
+        ],
+        "difficulty": 3,
+        "difficultyBucket": "normal",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "farms",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least 2 farms \u2014 cotton is the foundation of the chain.",
+            "target": 2,
+            "unit": "count",
+            "category": "farm",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "factories",
+            "index": 1,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least 2 factories \u2014 weave denim and cut jeans in-house.",
+            "target": 2,
+            "unit": "count",
+            "category": "factory",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail",
+            "index": 2,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put designer jeans on a shelf \u2014 the brand is not real until a customer can buy it.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "designer_jeans",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share",
+            "index": 3,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 30% of the designer jeans bought in Metropolis (trailing three months), where high-income shoppers cluster.",
+            "target": 0.3,
+            "unit": "ratio",
+            "productId": "designer_jeans",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "net-income",
+            "index": 4,
+            "kind": "netIncome",
+            "metric": "netIncome",
+            "description": "Earn $36M of net income in total \u2014 premium margins have to carry the business after depreciation, interest and tax.",
+            "target": 36000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 230,
+        "briefing": "You start with $84,000,000. 2 rivals start with $129,000,000 between them. Achieve 5 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "patent_race",
+        "name": "Patent Race",
+        "description": "A short technology sprint. A rival is pouring every spare dollar into car research and flanking with televisions. Put both products on your shelves, crack the Eastside car market, and finish ahead on value before the end of 2029.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2029,
+          "month": 12
+        },
+        "playerName": "Player",
+        "startingCash": 60000000,
+        "competitors": [
+          {
+            "name": "Vanguard R\u0026D",
+            "startingCash": 120000000,
+            "strategy": "techLeader"
+          }
+        ],
+        "goals": [
+          "Put televisions on a shelf \u2014 an electronics supply chain is the price of admission.",
+          "Put cars on a shelf \u2014 meet the rival\u0027s flagship product head to head.",
+          "Sell 20% of the cars bought in Eastside (trailing three months) \u2014 the high-income stronghold the rival prices at a premium.",
+          "Grow company value to $90M \u2014 finish ahead on value, not just on shelves.",
+          "Stay in the race for 42 months \u2014 patents and brand take time to pay off."
+        ],
+        "difficulty": 3,
+        "difficultyBucket": "normal",
+        "durationMonths": 48,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "retail-tv",
+            "index": 0,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put televisions on a shelf \u2014 an electronics supply chain is the price of admission.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "television",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail-car",
+            "index": 1,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put cars on a shelf \u2014 meet the rival\u0027s flagship product head to head.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "car",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-car",
+            "index": 2,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 20% of the cars bought in Eastside (trailing three months) \u2014 the high-income stronghold the rival prices at a premium.",
+            "target": 0.2,
+            "unit": "ratio",
+            "productId": "car",
+            "cityId": "eastside",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 3,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $90M \u2014 finish ahead on value, not just on shelves.",
+            "target": 90000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "stay-the-course",
+            "index": 4,
+            "kind": "elapsedMonths",
+            "metric": "elapsedMonths",
+            "description": "Stay in the race for 42 months \u2014 patents and brand take time to pay off.",
+            "target": 42,
+            "unit": "months",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 230,
+        "briefing": "You start with $60,000,000. One rival, Vanguard R\u0026D, starts with $120,000,000. Achieve 5 goals; each counts once reached. You have until Dec 2029 (48 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "soft_drink_war",
+        "name": "Soft Drink War",
+        "description": "Capture the Metropolis soft-drink market while growing a valuable company. Two rivals want the same aisle: one reacts to every price you set, the other undercuts on volume. Share counts real bottles sold over the last three months, so a cheap price that leaves shelves empty will not get you there.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "Acme Beverages",
+        "startingCash": 90000000,
+        "competitors": [
+          {
+            "name": "RivalCo",
+            "startingCash": 75000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "MegaMart",
+            "startingCash": 60000000,
+            "strategy": "simple"
+          }
+        ],
+        "goals": [
+          "Sell 55% of all soft drinks bought in Metropolis (trailing three months). Combine several well-placed stores, a strong brand and competitive prices.",
+          "Grow company value to $150M. Market share bought with losses does not count toward value \u2014 the business has to earn more than its cost of capital."
+        ],
+        "difficulty": 3,
+        "difficultyBucket": "normal",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "share",
+            "index": 0,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 55% of all soft drinks bought in Metropolis (trailing three months). Combine several well-placed stores, a strong brand and competitive prices.",
+            "target": 0.55,
+            "unit": "ratio",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 1,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $150M. Market share bought with losses does not count toward value \u2014 the business has to earn more than its cost of capital.",
+            "target": 150000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 230,
+        "briefing": "You start with $90,000,000. 2 rivals start with $135,000,000 between them. Achieve 2 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "tech_race",
+        "name": "Tech Race",
+        "description": "A rival with twice your capital is sprinting toward the electronics future. Out-research them: run two R\u0026D centres, put televisions and cars on your shelves, and win the biggest share of the Metropolis television market \u2014 while keeping the company worth more than you started with.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "NovaTech",
+        "startingCash": 90000000,
+        "competitors": [
+          {
+            "name": "ApexLabs",
+            "startingCash": 180000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [
+          "Operate at least 2 R\u0026D centres \u2014 research compounds across labs.",
+          "Put televisions on a shelf \u2014 electronic parts, plastic and steel all have to come together.",
+          "Put cars on a shelf \u2014 the flagship product, sold at a premium.",
+          "Run an advertising campaign for televisions (Marketing, K) \u2014 brand awareness compounds.",
+          "Sell 35% of the televisions bought in Metropolis (trailing three months) \u2014 your technology lead has to show up in sales.",
+          "Be worth at least $100M when the scenario ends in December 2030 \u2014 research spending has to pay its way."
+        ],
+        "difficulty": 4,
+        "difficultyBucket": "hard",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "labs",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least 2 R\u0026D centres \u2014 research compounds across labs.",
+            "target": 2,
+            "unit": "count",
+            "category": "rd_center",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail-tv",
+            "index": 1,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put televisions on a shelf \u2014 electronic parts, plastic and steel all have to come together.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "television",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail-car",
+            "index": 2,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put cars on a shelf \u2014 the flagship product, sold at a premium.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "car",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "advertise-tv",
+            "index": 3,
+            "kind": "adCampaignActive",
+            "metric": "adCampaignActive",
+            "description": "Run an advertising campaign for televisions (Marketing, K) \u2014 brand awareness compounds.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "television",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-tv",
+            "index": 4,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 35% of the televisions bought in Metropolis (trailing three months) \u2014 your technology lead has to show up in sales.",
+            "target": 0.35,
+            "unit": "ratio",
+            "productId": "television",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value-at-deadline",
+            "index": 5,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Be worth at least $100M when the scenario ends in December 2030 \u2014 research spending has to pay its way.",
+            "target": 100000000,
+            "unit": "usd",
+            "mode": "holdAtDeadline"
+          }
+        ],
+        "sortKey": 240,
+        "briefing": "You start with $90,000,000. One rival, ApexLabs, starts with $180,000,000. Achieve 6 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "monopolist",
+        "name": "The Monopolist",
+        "description": "You inherit a beverage operation and a mandate: build a dominant, profitable, internationally known soft-drink company. Beat the domestic leader FizzCorp on brand, export enough to fund the expansion, and stay profitable for two full years running.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2031,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 75000000,
+        "competitors": [
+          {
+            "name": "FizzCorp",
+            "startingCash": 120000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [
+          "Reach 70 brand awareness for soft drinks in Metropolis \u2014 become the household name.",
+          "Earn $150M of export revenue in total \u2014 roughly two bottling lines selling abroad for most of the six years.",
+          "Post 24 consecutive months of positive net income \u2014 monopolists compound, they do not spike.",
+          "Grow company value to $125M \u2014 the capstone on a finished empire."
+        ],
+        "difficulty": 4,
+        "difficultyBucket": "hard",
+        "durationMonths": 72,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "brand",
+            "index": 0,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for soft drinks in Metropolis \u2014 become the household name.",
+            "target": 70,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "exports",
+            "index": 1,
+            "kind": "exportRevenue",
+            "metric": "exportRevenue",
+            "description": "Earn $150M of export revenue in total \u2014 roughly two bottling lines selling abroad for most of the six years.",
+            "target": 150000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "profit-streak",
+            "index": 2,
+            "kind": "consecutiveProfitable",
+            "metric": "consecutiveProfitable",
+            "description": "Post 24 consecutive months of positive net income \u2014 monopolists compound, they do not spike.",
+            "target": 24,
+            "unit": "months",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 3,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $125M \u2014 the capstone on a finished empire.",
+            "target": 125000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 240,
+        "briefing": "You start with $75,000,000. One rival, FizzCorp, starts with $120,000,000. Achieve 4 goals; each counts once reached. You have until Dec 2031 (72 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "vertical_showdown",
+        "name": "Vertical Showdown",
+        "description": "A rival with more than twice your capital is building its own supply chain from farm to shelf. You cannot outspend it, so out-manoeuvre it: build a two-tier chain of your own, win the Metropolis television aisle, and keep the company growing for four years.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2030,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 60000000,
+        "competitors": [
+          {
+            "name": "ChainLink Industries",
+            "startingCash": 135000000,
+            "strategy": "verticalIntegrator"
+          }
+        ],
+        "goals": [
+          "Operate at least one factory \u2014 own the conversion step instead of paying world-market prices for every television.",
+          "Operate at least one farm \u2014 a raw-material source of your own makes the chain two tiers deep.",
+          "Put televisions on a shelf \u2014 prove the chain reaches the customer.",
+          "Sell 30% of the televisions bought in Metropolis (trailing three months) \u2014 a chain that does not sell is a cost centre.",
+          "Grow company value to $90M.",
+          "Stay in business for 48 months \u2014 endurance matters when the rival out-banks you."
+        ],
+        "difficulty": 4,
+        "difficultyBucket": "hard",
+        "durationMonths": 60,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "factory",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least one factory \u2014 own the conversion step instead of paying world-market prices for every television.",
+            "target": 1,
+            "unit": "count",
+            "category": "factory",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "farm",
+            "index": 1,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least one farm \u2014 a raw-material source of your own makes the chain two tiers deep.",
+            "target": 1,
+            "unit": "count",
+            "category": "farm",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail-tv",
+            "index": 2,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put televisions on a shelf \u2014 prove the chain reaches the customer.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "television",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-tv",
+            "index": 3,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 30% of the televisions bought in Metropolis (trailing three months) \u2014 a chain that does not sell is a cost centre.",
+            "target": 0.3,
+            "unit": "ratio",
+            "productId": "television",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 4,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $90M.",
+            "target": 90000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "endurance",
+            "index": 5,
+            "kind": "elapsedMonths",
+            "metric": "elapsedMonths",
+            "description": "Stay in business for 48 months \u2014 endurance matters when the rival out-banks you.",
+            "target": 48,
+            "unit": "months",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 240,
+        "briefing": "You start with $60,000,000. One rival, ChainLink Industries, starts with $135,000,000. Achieve 6 goals; each counts once reached. You have until Dec 2030 (60 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "coffee_monopoly",
+        "name": "Coffee Monopoly",
+        "description": "One bean, one cup, one vertically integrated empire. Stand up plantations and roasters, put coffee on shelves in two cities, and export enough roasted coffee to fund the next wave. A rival chain starts one step ahead \u2014 close the gap before the end of 2029.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2029,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 66000000,
+        "competitors": [
+          {
+            "name": "BrewHaus",
+            "startingCash": 75000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [
+          "Operate at least 2 plantations \u2014 the bean supply is the foundation of the chain.",
+          "Operate at least 2 factories \u2014 roast and bottle in-house instead of paying world-market prices.",
+          "Put coffee drinks on a shelf \u2014 the chain is not real until it reaches a customer.",
+          "Sell 35% of the coffee drinks bought in Metropolis (trailing three months).",
+          "Sell 30% of the coffee drinks bought in Eastside \u2014 proof the chain scales.",
+          "Earn $100M of export revenue in total \u2014 roughly two roasting lines selling to the world market for most of the scenario. Export prices fall as you flood the world market, so watch the margin.",
+          "Earn $30M of net income in total since the start \u2014 after depreciation, interest and tax."
+        ],
+        "difficulty": 5,
+        "difficultyBucket": "hard",
+        "durationMonths": 48,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "plantations",
+            "index": 0,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least 2 plantations \u2014 the bean supply is the foundation of the chain.",
+            "target": 2,
+            "unit": "count",
+            "category": "plantation",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "factories",
+            "index": 1,
+            "kind": "ownsBuilding",
+            "metric": "ownsBuilding",
+            "description": "Operate at least 2 factories \u2014 roast and bottle in-house instead of paying world-market prices.",
+            "target": 2,
+            "unit": "count",
+            "category": "factory",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "retail",
+            "index": 2,
+            "kind": "productRetailed",
+            "metric": "productRetailed",
+            "description": "Put coffee drinks on a shelf \u2014 the chain is not real until it reaches a customer.",
+            "target": 1,
+            "unit": "flag",
+            "productId": "coffee_drink",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-metropolis",
+            "index": 3,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 35% of the coffee drinks bought in Metropolis (trailing three months).",
+            "target": 0.35,
+            "unit": "ratio",
+            "productId": "coffee_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-eastside",
+            "index": 4,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 30% of the coffee drinks bought in Eastside \u2014 proof the chain scales.",
+            "target": 0.3,
+            "unit": "ratio",
+            "productId": "coffee_drink",
+            "cityId": "eastside",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "exports",
+            "index": 5,
+            "kind": "exportRevenue",
+            "metric": "exportRevenue",
+            "description": "Earn $100M of export revenue in total \u2014 roughly two roasting lines selling to the world market for most of the scenario. Export prices fall as you flood the world market, so watch the margin.",
+            "target": 100000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "net-income",
+            "index": 6,
+            "kind": "netIncome",
+            "metric": "netIncome",
+            "description": "Earn $30M of net income in total since the start \u2014 after depreciation, interest and tax.",
+            "target": 30000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 250,
+        "briefing": "You start with $66,000,000. One rival, BrewHaus, starts with $75,000,000. Achieve 7 goals; each counts once reached. You have until Dec 2029 (48 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "four_archetype_melee",
+        "name": "Four-Archetype Melee",
+        "description": "Metropolis, five companies, four playbooks. A discounter undercuts on price, an adaptive rival counters every move, a vertical integrator squeezes costs with a farm-to-shelf chain, and a technology leader bets on quality and brand at a premium. Top the brand charts in soft drinks and cars, grind out 18 profitable months in a row, and still be worth $100M when the seven years are up.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2032,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 90000000,
+        "competitors": [
+          {
+            "name": "BasicCo",
+            "startingCash": 90000000,
+            "strategy": "simple"
+          },
+          {
+            "name": "Adapta Holdings",
+            "startingCash": 90000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "ChainLink Inc",
+            "startingCash": 90000000,
+            "strategy": "verticalIntegrator"
+          },
+          {
+            "name": "Zenith Labs",
+            "startingCash": 90000000,
+            "strategy": "techLeader"
+          }
+        ],
+        "goals": [
+          "Reach 70 brand awareness for soft drinks in Metropolis \u2014 the volume aisle everyone fights over.",
+          "Reach 70 brand awareness for cars in Metropolis \u2014 the technology leader\u0027s home turf.",
+          "Post 18 consecutive months of positive net income \u2014 melee survivors earn, they do not just spend.",
+          "Be worth at least $100M when the scenario ends in December 2032. This goal is checked at the deadline, so the company has to last the whole melee."
+        ],
+        "difficulty": 5,
+        "difficultyBucket": "hard",
+        "durationMonths": 84,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "brand-soft-drink",
+            "index": 0,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for soft drinks in Metropolis \u2014 the volume aisle everyone fights over.",
+            "target": 70,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "brand-car",
+            "index": 1,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 70 brand awareness for cars in Metropolis \u2014 the technology leader\u0027s home turf.",
+            "target": 70,
+            "unit": "points",
+            "productId": "car",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "profit-streak",
+            "index": 2,
+            "kind": "consecutiveProfitable",
+            "metric": "consecutiveProfitable",
+            "description": "Post 18 consecutive months of positive net income \u2014 melee survivors earn, they do not just spend.",
+            "target": 18,
+            "unit": "months",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value-at-deadline",
+            "index": 3,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Be worth at least $100M when the scenario ends in December 2032. This goal is checked at the deadline, so the company has to last the whole melee.",
+            "target": 100000000,
+            "unit": "usd",
+            "mode": "holdAtDeadline"
+          }
+        ],
+        "sortKey": 250,
+        "briefing": "You start with $90,000,000. 4 rivals start with $360,000,000 between them. Achieve 4 goals; each counts once reached. You have until Dec 2032 (84 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "multi_city_mogul",
+        "name": "Multi-City Mogul",
+        "description": "Not content with one town? Prove you can run three markets at once. Win a controlling share of bread in three of the cities while growing a serious company \u2014 two rival chains will fight you in every aisle.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2032,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 75000000,
+        "competitors": [
+          {
+            "name": "GoliathMart",
+            "startingCash": 105000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "PennyGrocer",
+            "startingCash": 60000000,
+            "strategy": "simple"
+          }
+        ],
+        "goals": [
+          "Sell 40% of the bread bought in Metropolis (trailing three months) \u2014 the flagship market.",
+          "Sell 40% of the bread bought in Riverside \u2014 the mid-sized suburb.",
+          "Sell 40% of the bread bought in Portbay \u2014 the coastal working-class town.",
+          "Grow company value to $100M \u2014 a chain that wins share at a loss is not an empire."
+        ],
+        "difficulty": 5,
+        "difficultyBucket": "hard",
+        "durationMonths": 84,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "share-metropolis",
+            "index": 0,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 40% of the bread bought in Metropolis (trailing three months) \u2014 the flagship market.",
+            "target": 0.4,
+            "unit": "ratio",
+            "productId": "bread",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-riverside",
+            "index": 1,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 40% of the bread bought in Riverside \u2014 the mid-sized suburb.",
+            "target": 0.4,
+            "unit": "ratio",
+            "productId": "bread",
+            "cityId": "riverside",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share-portbay",
+            "index": 2,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 40% of the bread bought in Portbay \u2014 the coastal working-class town.",
+            "target": 0.4,
+            "unit": "ratio",
+            "productId": "bread",
+            "cityId": "portbay",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 3,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $100M \u2014 a chain that wins share at a loss is not an empire.",
+            "target": 100000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 250,
+        "briefing": "You start with $75,000,000. 2 rivals start with $165,000,000 between them. Achieve 4 goals; each counts once reached. You have until Dec 2032 (84 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      },
+      {
+        "id": "three_way_melee",
+        "name": "Three-Way Melee",
+        "description": "Three rivals, one city, one prize. Metropolis is the densest market on the map and every company wants the soft-drink aisle. Become the best-known brand, hold a commanding share, and prove it is no fluke by stringing together a year of profits.",
+        "startDate": {
+          "year": 2026,
+          "month": 1
+        },
+        "endDate": {
+          "year": 2032,
+          "month": 12
+        },
+        "playerName": "Your Corp",
+        "startingCash": 75000000,
+        "competitors": [
+          {
+            "name": "ApexBev",
+            "startingCash": 105000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "Harbor Brands",
+            "startingCash": 90000000,
+            "strategy": "adaptive"
+          },
+          {
+            "name": "Pinnacle Co",
+            "startingCash": 120000000,
+            "strategy": "adaptive"
+          }
+        ],
+        "goals": [
+          "Reach 75 brand awareness for soft drinks in Metropolis \u2014 top of mind in a four-way fight.",
+          "Sell 40% of the soft drinks bought in Metropolis over three months \u2014 a clear plurality in a four-company race.",
+          "Post 12 consecutive months of positive net income (after depreciation, interest and tax).",
+          "Grow company value to $140M \u2014 spoils worthy of winning the melee."
+        ],
+        "difficulty": 5,
+        "difficultyBucket": "hard",
+        "durationMonths": 84,
+        "isSandbox": false,
+        "goalDetails": [
+          {
+            "id": "brand",
+            "index": 0,
+            "kind": "topBrand",
+            "metric": "topBrand",
+            "description": "Reach 75 brand awareness for soft drinks in Metropolis \u2014 top of mind in a four-way fight.",
+            "target": 75,
+            "unit": "points",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "share",
+            "index": 1,
+            "kind": "marketShare",
+            "metric": "realisedShare3m",
+            "description": "Sell 40% of the soft drinks bought in Metropolis over three months \u2014 a clear plurality in a four-company race.",
+            "target": 0.4,
+            "unit": "ratio",
+            "productId": "soft_drink",
+            "cityId": "metropolis",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "profit-streak",
+            "index": 2,
+            "kind": "consecutiveProfitable",
+            "metric": "consecutiveProfitable",
+            "description": "Post 12 consecutive months of positive net income (after depreciation, interest and tax).",
+            "target": 12,
+            "unit": "months",
+            "mode": "reachOnce"
+          },
+          {
+            "id": "value",
+            "index": 3,
+            "kind": "corporateValue",
+            "metric": "companyValue",
+            "description": "Grow company value to $140M \u2014 spoils worthy of winning the melee.",
+            "target": 140000000,
+            "unit": "usd",
+            "mode": "reachOnce"
+          }
+        ],
+        "sortKey": 250,
+        "briefing": "You start with $75,000,000. 3 rivals start with $315,000,000 between them. Achieve 4 goals; each counts once reached. You have until Dec 2032 (84 months). If your cash stays negative for more than 3 months after it first dips below zero, you go bankrupt."
+      }
+    ],
+    "revision": 9
+  }
+}

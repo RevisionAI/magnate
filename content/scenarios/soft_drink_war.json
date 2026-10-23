@@ -1,0 +1,45 @@
+{
+  "id": "soft_drink_war",
+  "name": "Soft Drink War",
+  "description": "Capture the Metropolis soft-drink market while growing a valuable company. Two rivals want the same aisle: one reacts to every price you set, the other undercuts on volume. Share counts real bottles sold over the last three months, so a cheap price that leaves shelves empty will not get you there.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2030,
+    "month": 12
+  },
+  "player": {
+    "name": "Acme Beverages",
+    "startingCash": 90000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "RivalCo",
+      "startingCash": 75000000,
+      "strategy": "adaptive"
+    },
+    {
+      "name": "MegaMart",
+      "startingCash": 60000000,
+      "strategy": "simple"
+    }
+  ],
+  "goals": [
+    {
+      "id": "share",
+      "type": "marketShare",
+      "description": "Sell 55% of all soft drinks bought in Metropolis (trailing three months). Combine several well-placed stores, a strong brand and competitive prices.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 0.55
+    },
+    {
+      "id": "value",
+      "type": "corporateValue",
+      "description": "Grow company value to $150M. Market share bought with losses does not count toward value — the business has to earn more than its cost of capital.",
+      "threshold": 150000000
+    }
+  ]
+}

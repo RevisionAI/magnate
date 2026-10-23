@@ -1,0 +1,239 @@
+/* ---------------------------------------------------------------- Progress */
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.progressHead {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--c-muted);
+}
+
+.progressValue {
+  color: var(--c-text2);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--fw-semibold);
+}
+
+.bar {
+  position: relative;
+  height: 6px;
+  border-radius: var(--r-pill);
+  background: rgba(5, 9, 13, 0.55);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(160, 196, 218, 0.08);
+  overflow: hidden;
+}
+
+.barSm {
+  height: 4px;
+}
+
+.barLg {
+  height: 10px;
+}
+
+.barFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  transition: width var(--dur-slow) var(--ease-out);
+}
+
+/* ---------------------------------------------------------------- Meter (segmented)
+   Declared before the .fill-* tones: .segment and .fill-* have the same specificity, so the
+   later rule wins and a lit segment must take the fill's background (U2 request). */
+.meter {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 2px;
+  width: 100%;
+  min-width: 4rem;
+}
+
+.segment {
+  flex: 1;
+  height: 8px;
+  border-radius: 1.5px;
+  background: rgba(160, 196, 218, 0.1);
+}
+
+.fill-gold {
+  background: linear-gradient(90deg, #a8863f, #d7b766 60%, #f0d38a);
+  box-shadow: 0 0 10px rgba(215, 183, 102, 0.45);
+}
+
+.fill-info {
+  background: linear-gradient(90deg, #3d7fae, #5aa7d8);
+}
+
+.fill-success {
+  background: linear-gradient(90deg, #3f9a6c, #61c28f);
+}
+
+.fill-warning {
+  background: linear-gradient(90deg, #b88a22, #e8b63a);
+}
+
+.fill-danger {
+  background: linear-gradient(90deg, #b14f4a, #df6f6a);
+}
+
+.fill-neutral {
+  background: linear-gradient(90deg, #5f7480, #9fb2bd);
+}
+
+.striped .barFill {
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.18) 0 6px, transparent 6px 12px), linear-gradient(90deg, #a8863f, #d7b766);
+  background-size: 17px 17px, 100% 100%;
+  animation: stripes 900ms linear infinite;
+}
+
+@keyframes stripes {
+  to {
+    background-position: 17px 0, 0 0;
+  }
+}
+
+.indeterminate .barFill {
+  width: 35% !important;
+  animation: sweep 1.3s var(--ease-in-out) infinite;
+}
+
+@keyframes sweep {
+  0% {
+    left: -35%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Meter: lit segments (base rules above the fill tones). */
+.segmentOn.fill-gold {
+  box-shadow: none;
+}
+
+/* ---------------------------------------------------------------- Stat / KPI */
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.statTile {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-hairline);
+  background: linear-gradient(180deg, rgba(160, 200, 225, 0.06), rgba(160, 200, 225, 0.02));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.statLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  white-space: nowrap;
+}
+
+.statLabel svg {
+  color: var(--c-dim);
+}
+
+.statRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.statValue {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  color: var(--c-text);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.sm .statValue {
+  font-size: var(--fs-lg);
+}
+
+.lg .statValue {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.02em;
+}
+
+.statFoot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 1rem;
+  font-size: var(--fs-xs);
+  color: var(--c-muted);
+}
+
+.statSpark {
+  margin-top: 4px;
+}
+
+.tone-pos {
+  color: var(--c-pos);
+}
+
+.tone-neg {
+  color: var(--c-neg);
+}
+
+.tone-gold {
+  color: var(--c-gold-bright);
+}
+
+.tone-warn {
+  color: var(--c-amber);
+}
+
+/* ---------------------------------------------------------------- Delta */
+.delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.deltaUp {
+  color: var(--c-pos);
+}
+
+.deltaDown {
+  color: var(--c-neg);
+}
+
+.deltaFlat {
+  color: var(--c-muted);
+}
+
+.arrow {
+  font-size: 0.75em;
+  line-height: 1;
+}
+
+.money {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

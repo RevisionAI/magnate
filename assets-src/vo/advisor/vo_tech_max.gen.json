@@ -1,0 +1,115 @@
+{
+  "id": "vo_tech_max",
+  "role": "advisor",
+  "text": "Our technology is the best on the market. Now let's protect that lead.",
+  "sentText": "Our technology is the best on the market. Now let's protect that lead.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.818
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:40:46.195Z",
+  "file": "vo_tech_max.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.98,
+  "speechSec": 4.74,
+  "wpm": 164.6,
+  "syllables": 19,
+  "sylPerSec": 4.01,
+  "paceWpm": 161.4,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 470,
+  "samplePeakDbfs": -4.9,
+  "truePeakDbtp": -4.9,
+  "lufsI": -21.9,
+  "lra": 1.2,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 410
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our technology is the best on the market. Now let's protect that lead.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.214,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 169.6,
+      "paceWpm": 166.3,
+      "maxGapMs": 460,
+      "lufsI": -22,
+      "cer": 0,
+      "transcript": "Our technology is the best on the market. Now let's protect that lead.",
+      "score": {
+        "hard": 0,
+        "soft": 0.368,
+        "flags": [
+          "pace 166.3 wpm-eq, 4.13 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_tech_max/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.796
+      },
+      "wpm": 151.8,
+      "paceWpm": 148.9,
+      "maxGapMs": 490,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Our technology is the best on the market. Now let's protect that lead.",
+      "score": {
+        "hard": 0,
+        "soft": 0.421,
+        "flags": [
+          "pace 148.9 wpm-eq, 3.7 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/vo_tech_max/t2.wav"
+    }
+  ],
+  "lineHash": "b69a2347a1725cceb398423f"
+}

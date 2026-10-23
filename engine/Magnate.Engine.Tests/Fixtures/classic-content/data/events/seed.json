@@ -1,0 +1,112 @@
+[
+  {
+    "id": "cocoa_blight",
+    "name": "Cocoa blight strikes Riverside — wholesale prices spike",
+    "description": "A fungal blight tearing through Riverside's plantation belt has wholesalers scrambling. Coffee-bean futures are up sharply for the next two quarters.",
+    "weight": 6,
+    "severity": "Notable",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "price_multiplier", "productId": "coffee_beans", "multiplier": 1.5, "durationMonths": 6 }
+    ]
+  },
+  {
+    "id": "oil_glut",
+    "name": "OPEC oversupply triggers oil glut — wholesale crude tanks",
+    "description": "An unexpected production hike has flooded the world market with crude. Refiners and downstream chemical plants enjoy reduced feedstock costs for the rest of the year.",
+    "weight": 5,
+    "severity": "Major",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "price_multiplier", "productId": "crude_oil", "multiplier": 0.7, "durationMonths": 9 }
+    ]
+  },
+  {
+    "id": "viral_ad_spot",
+    "name": "Viral ad campaign boosts soft-drink awareness in Metropolis",
+    "description": "A 30-second spot picked up unexpected social-media traction overnight. Brand recall for soft drinks across Metropolis got a lift across all incumbents.",
+    "weight": 8,
+    "severity": "Info",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "brand_shift", "productId": "soft_drink", "cityId": "metropolis", "delta": 10 }
+    ]
+  },
+  {
+    "id": "tariff_announcement",
+    "name": "Tariff announcement on imported steel — input costs rise",
+    "description": "A surprise 20% tariff on imported steel slabs takes effect next quarter. Domestic procurement runs dearer through the term of the policy.",
+    "weight": 4,
+    "severity": "Major",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "price_multiplier", "productId": "steel", "multiplier": 1.2, "durationMonths": 12 }
+    ]
+  },
+  {
+    "id": "tech_breakthrough",
+    "name": "Lab announces room-temperature superconductor; tech industry abuzz",
+    "description": "Researchers at a private lab claim a stable, scalable room-temperature superconductor. Independent verification is pending, but the press cycle is real.",
+    "weight": 3,
+    "severity": "Notable",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "headline" }
+    ]
+  },
+  {
+    "id": "cotton_harvest_bumper",
+    "name": "Bumper cotton harvest crashes textile feedstock prices",
+    "description": "Favourable rains and a quiet pest season produced an exceptional cotton crop. Apparel makers expect cheaper denim and tee runs through year-end.",
+    "weight": 4,
+    "severity": "Notable",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "price_multiplier", "productId": "cotton", "multiplier": 0.75, "durationMonths": 8 }
+    ]
+  },
+  {
+    "id": "soft_drink_health_scare",
+    "name": "Health study sours public on soft drinks in Eastside",
+    "description": "A widely-shared longitudinal study links daily soft-drink consumption to a basket of metabolic ills. Eastside consumers are reading carefully — brand awareness takes a hit across the category.",
+    "weight": 4,
+    "severity": "Notable",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "brand_shift", "productId": "soft_drink", "cityId": "eastside", "delta": -8 }
+    ]
+  },
+  {
+    "id": "wheat_drought",
+    "name": "Wheat-belt drought lifts grain futures",
+    "description": "An unseasonably dry summer in the wheat belt has thinned the harvest. Bakeries and breweries face elevated grain costs for several months.",
+    "weight": 5,
+    "severity": "Notable",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "price_multiplier", "productId": "wheat", "multiplier": 1.35, "durationMonths": 7 }
+    ]
+  },
+  {
+    "id": "trade_summit_optimism",
+    "name": "Trade summit concludes — diplomats cautiously upbeat",
+    "description": "A multilateral trade summit wrapped without any concrete deliverables but plenty of warm communiques. Markets steady; nothing material to report.",
+    "weight": 6,
+    "severity": "Info",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "headline" }
+    ]
+  },
+  {
+    "id": "consumer_electronics_craze",
+    "name": "TV-buying craze sweeps Metropolis as new model debuts",
+    "description": "An aggressive launch campaign by an unnamed retailer (and three suspiciously well-dressed influencers) has Metropolis household electronics flying off shelves.",
+    "weight": 4,
+    "severity": "Info",
+    "trigger": { "type": "random" },
+    "effects": [
+      { "type": "brand_shift", "productId": "television", "cityId": "metropolis", "delta": 12 }
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "id": "news.commodity_drop",
+  "role": "anchor",
+  "text": "Commodity prices tumble on a global supply glut.",
+  "sentText": "Commodity prices tumble on a global supply glut.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "bm_george",
+    "name": "bm_george"
+  },
+  "settings": {
+    "speed": 1.149
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 2,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:45:29.979Z",
+  "file": "news.commodity_drop.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 3.54,
+  "speechSec": 3.3,
+  "wpm": 145.5,
+  "syllables": 15,
+  "sylPerSec": 4.55,
+  "paceWpm": 155.8,
+  "paceTarget": {
+    "wpmMin": 140,
+    "wpmMax": 170,
+    "refSpw": 1.75
+  },
+  "maxGapMs": 240,
+  "samplePeakDbfs": -3.62,
+  "truePeakDbtp": -3.6,
+  "lufsI": -21.7,
+  "lra": 0.9,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 100,
+    "tailTrimmedMs": 310
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Commodity prices tumble on a global supply glut.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.008,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 23 credits are required for this request.",
+    "at": "2026-10-01T06:06:29.447Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 1.18
+      },
+      "wpm": 148.6,
+      "paceWpm": 159.2,
+      "maxGapMs": 240,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Commodity prices tumble on a global supply glut.",
+      "score": {
+        "hard": 0,
+        "soft": 0.042,
+        "flags": []
+      },
+      "file": "_takes/news.commodity_drop/t1.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 1.134
+      },
+      "wpm": 142,
+      "paceWpm": 152.2,
+      "maxGapMs": 260,
+      "lufsI": -21.7,
+      "cer": 0,
+      "transcript": "Commodity prices tumble on a global supply glut.",
+      "score": {
+        "hard": 0,
+        "soft": 0.028,
+        "flags": []
+      },
+      "file": "_takes/news.commodity_drop/t3.wav"
+    }
+  ],
+  "lineHash": "455dcaab828167d3bf227586"
+}

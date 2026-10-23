@@ -1,0 +1,115 @@
+{
+  "id": "adv.build.factory_complete",
+  "role": "advisor",
+  "text": "The factory is finished. Line up supply so it never sits idle.",
+  "sentText": "The factory is finished. Line up supply so it never sits idle.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.807
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 3,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:16:49.518Z",
+  "file": "adv.build.factory_complete.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.66,
+  "speechSec": 4.42,
+  "wpm": 162.9,
+  "syllables": 18,
+  "sylPerSec": 4.07,
+  "paceWpm": 164,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 490,
+  "samplePeakDbfs": -5.3,
+  "truePeakDbtp": -5.3,
+  "lufsI": -22.1,
+  "lra": 0.8,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 190,
+    "tailTrimmedMs": 425
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "The factory is finished. Line up supply so it never sits idle.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.29,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 1,
+      "seed": null,
+      "settings": {
+        "speed": 0.84
+      },
+      "wpm": 169.4,
+      "paceWpm": 170.5,
+      "maxGapMs": 470,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "The factory is finished. Line up supply so it never sits idle.",
+      "score": {
+        "hard": 0,
+        "soft": 0.855,
+        "flags": [
+          "pace 170.5 wpm-eq, 4.24 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.build.factory_complete/t1.wav"
+    },
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.776
+      },
+      "wpm": 144.6,
+      "paceWpm": 145.5,
+      "maxGapMs": 520,
+      "lufsI": -22.3,
+      "cer": 0,
+      "transcript": "The factory is finished. Line up supply so it never sits idle.",
+      "score": {
+        "hard": 0,
+        "soft": 0.87,
+        "flags": [
+          "pace 145.5 wpm-eq, 3.61 syl/s (target 150–165)"
+        ]
+      },
+      "file": "_takes/adv.build.factory_complete/t2.wav"
+    }
+  ],
+  "lineHash": "10b8b58a9d4ede3b767fbffa"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "adv.hint.no_ads",
+  "role": "advisor",
+  "text": "Our brand awareness is fading. A modest ad campaign would help.",
+  "sentText": "Our brand awareness is fading. A modest ad campaign would help.",
+  "provider": "kokoro",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX (fp32)",
+  "voice": {
+    "id": "af_heart",
+    "name": "af_heart"
+  },
+  "settings": {
+    "speed": 0.84
+  },
+  "outputFormat": "kokoro f32 24 kHz",
+  "seed": null,
+  "take": 1,
+  "takesConsidered": 3,
+  "requestId": null,
+  "historyItemId": null,
+  "characterCost": null,
+  "generatedAt": "2026-10-01T05:28:19.659Z",
+  "file": "adv.hint.no_ads.wav",
+  "format": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitDepth": 16,
+    "mastered": false
+  },
+  "durationSec": 4.4,
+  "speechSec": 4.16,
+  "wpm": 158.7,
+  "syllables": 17,
+  "sylPerSec": 4.09,
+  "paceWpm": 164.6,
+  "paceTarget": {
+    "wpmMin": 150,
+    "wpmMax": 165,
+    "refSpw": 1.49
+  },
+  "maxGapMs": 470,
+  "samplePeakDbfs": -1.49,
+  "truePeakDbtp": -1.5,
+  "lufsI": -22.2,
+  "lra": 1.5,
+  "trim": {
+    "padMs": 120,
+    "fadeMs": 10,
+    "headTrimmedMs": 210,
+    "tailTrimmedMs": 390
+  },
+  "stt": {
+    "model": "base.en",
+    "text": "Our brand awareness is fading. A modest ad campaign would help.",
+    "wer": 0,
+    "cer": 0
+  },
+  "score": {
+    "hard": 0,
+    "soft": 0.246,
+    "flags": []
+  },
+  "flags": [],
+  "fallback": {
+    "from": "elevenlabs",
+    "to": "kokoro",
+    "reason": "ElevenLabs unavailable (401 quota_exceeded): This request exceeds your quota of 55533. You have 0 credits remaining, while 28 credits are required for this request.",
+    "at": "2026-10-01T05:52:44.155Z"
+  },
+  "rejected": [
+    {
+      "take": 2,
+      "seed": null,
+      "settings": {
+        "speed": 0.804
+      },
+      "wpm": 151.4,
+      "paceWpm": 157,
+      "maxGapMs": 520,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Our brand awareness is fading. A modest ad campaign would help.",
+      "score": {
+        "hard": 0,
+        "soft": 0.305,
+        "flags": []
+      },
+      "file": "_takes/adv.hint.no_ads/t2.wav"
+    },
+    {
+      "take": 3,
+      "seed": null,
+      "settings": {
+        "speed": 0.809
+      },
+      "wpm": 153.1,
+      "paceWpm": 158.8,
+      "maxGapMs": 520,
+      "lufsI": -22.1,
+      "cer": 0,
+      "transcript": "Our brand awareness is fading. A modest ad campaign would help.",
+      "score": {
+        "hard": 0,
+        "soft": 0.313,
+        "flags": []
+      },
+      "file": "_takes/adv.hint.no_ads/t3.wav"
+    }
+  ],
+  "lineHash": "bce609c6bf0f0e57660c0e5a"
+}

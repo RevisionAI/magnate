@@ -1,0 +1,76 @@
+/* L3 overlay host: the city dims and blurs behind; the top bar and rail stay usable. */
+.overlayLayer {
+  position: absolute;
+  z-index: var(--z-overlay);
+  top: calc(var(--hud-top-bar-height) + var(--hud-gutter));
+  left: calc(var(--hud-rail-width) + var(--hud-gutter) * 2);
+  right: var(--hud-gutter);
+  bottom: var(--hud-gutter);
+  display: flex;
+  pointer-events: auto;
+}
+
+.scrim {
+  position: absolute;
+  z-index: calc(var(--z-overlay) - 1);
+  inset: 0;
+  pointer-events: auto;
+  background: radial-gradient(1400px 900px at 55% 45%, rgba(5, 9, 13, 0.5), rgba(5, 9, 13, 0.78));
+  backdrop-filter: blur(5px) saturate(0.75);
+  -webkit-backdrop-filter: blur(5px) saturate(0.75);
+  animation: scrimIn var(--dur-slow) var(--ease-out);
+}
+
+.scrimClosing {
+  animation: scrimOut var(--dur-base) var(--ease-in-out) forwards;
+}
+
+@keyframes scrimIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes scrimOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* L2 drawer host: right side, below the top bar. */
+.drawerLayer {
+  position: absolute;
+  z-index: var(--z-drawer);
+  top: calc(var(--hud-top-bar-height) + var(--hud-gutter));
+  right: var(--hud-gutter);
+  bottom: calc(var(--hud-ticker-height) + var(--hud-gutter) * 2);
+  width: min(var(--hud-drawer-width), calc(100vw - var(--hud-rail-width) - 3rem));
+  display: flex;
+  pointer-events: auto;
+}
+
+.fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-hairline);
+  background: rgba(12, 19, 26, 0.9);
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  width: 100%;
+  height: 100%;
+  padding: var(--space-6);
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(223, 111, 106, 0.4);
+  background: rgba(12, 19, 26, 0.95);
+  color: var(--c-text2);
+  text-align: center;
+}

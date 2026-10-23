@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+; The overlay builds its own UI in code (GuidedTutorial.BuildUi), so this scene is
+; a thin wrapper: a CanvasLayer carrying the script. Attach at runtime via
+; GuidedTutorial.TryAttach(parent), or instance this scene directly in the editor.
+
+[ext_resource type="Script" path="res://scripts/GuidedTutorial.cs" id="1_guided"]
+
+[node name="GuidedTutorial" type="CanvasLayer"]
+layer = 50
+script = ExtResource("1_guided")

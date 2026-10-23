@@ -1,0 +1,193 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--c-hairline);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--rival) 16%, transparent), transparent 70%);
+}
+
+.cardTitle {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  line-height: 1.1;
+  color: var(--c-text);
+}
+
+.cardType {
+  margin-top: 3px;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rival);
+}
+
+.cardValue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: var(--fs-lg);
+  font-variant-numeric: tabular-nums;
+}
+
+.blurb {
+  margin: 0;
+  padding: var(--space-3) var(--space-4) 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-base);
+  line-height: 1.45;
+  color: var(--c-text2);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.section {
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid rgba(160, 196, 218, 0.07);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+
+.threat {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.06em;
+  color: var(--c-muted);
+}
+
+.threat > div {
+  width: 70px;
+}
+
+.chipShared {
+  border-color: rgba(47, 125, 225, 0.55);
+}
+
+.contested {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contestRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 110px 7.5rem;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px 6px;
+  border: none;
+  border-radius: var(--r-sm);
+  background: none;
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: var(--c-text2);
+  text-align: left;
+  cursor: pointer;
+}
+
+.contestRow:hover {
+  background: var(--c-hover);
+}
+
+.contestName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shareBar {
+  display: flex;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgba(160, 196, 218, 0.1);
+}
+
+.contestNums {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.moves {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.moves li {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 1.75rem;
+  font-size: var(--fs-sm);
+}
+
+.moveDate {
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-dim);
+}
+
+.moveText {
+  color: var(--c-text2);
+}
+
+.cardFoot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--c-hairline);
+  background: rgba(5, 9, 13, 0.2);
+}

@@ -1,0 +1,70 @@
+{
+  "id": "four_archetype_melee",
+  "name": "Four-Archetype Melee",
+  "description": "Metropolis, five companies, four playbooks. A discounter undercuts on price, an adaptive rival counters every move, a vertical integrator squeezes costs with a farm-to-shelf chain, and a technology leader bets on quality and brand at a premium. Top the brand charts in soft drinks and cars, grind out 18 profitable months in a row, and still be worth $100M when the seven years are up.",
+  "startDate": {
+    "year": 2026,
+    "month": 1
+  },
+  "endDate": {
+    "year": 2032,
+    "month": 12
+  },
+  "player": {
+    "name": "Your Corp",
+    "startingCash": 90000000
+  },
+  "aiCompetitors": [
+    {
+      "name": "BasicCo",
+      "startingCash": 90000000,
+      "strategy": "simple"
+    },
+    {
+      "name": "Adapta Holdings",
+      "startingCash": 90000000,
+      "strategy": "adaptive"
+    },
+    {
+      "name": "ChainLink Inc",
+      "startingCash": 90000000,
+      "strategy": "verticalIntegrator"
+    },
+    {
+      "name": "Zenith Labs",
+      "startingCash": 90000000,
+      "strategy": "techLeader"
+    }
+  ],
+  "goals": [
+    {
+      "id": "brand-soft-drink",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for soft drinks in Metropolis — the volume aisle everyone fights over.",
+      "product": "soft_drink",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "id": "brand-car",
+      "type": "topBrand",
+      "description": "Reach 70 brand awareness for cars in Metropolis — the technology leader's home turf.",
+      "product": "car",
+      "city": "metropolis",
+      "threshold": 70.0
+    },
+    {
+      "id": "profit-streak",
+      "type": "consecutiveProfitable",
+      "description": "Post 18 consecutive months of positive net income — melee survivors earn, they do not just spend.",
+      "months": 18
+    },
+    {
+      "id": "value-at-deadline",
+      "type": "corporateValue",
+      "mode": "holdAtDeadline",
+      "description": "Be worth at least $100M when the scenario ends in December 2032. This goal is checked at the deadline, so the company has to last the whole melee.",
+      "threshold": 100000000
+    }
+  ]
+}

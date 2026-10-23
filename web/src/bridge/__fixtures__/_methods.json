@@ -1,0 +1,382 @@
+[
+  {
+    "name": "activityFeed",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "adCampaigns",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "advance",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "advisor",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "balanceSheet",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "buildStarterPlan",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "building",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "buildings",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "buyLand",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "buybackShares",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "cancelAdCampaign",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "cancelConstruction",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "cashFlow",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "catalog",
+    "mutates": false,
+    "requiresGame": false
+  },
+  {
+    "name": "cityView",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "clearSlot",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "companies",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "configureSlot",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "construct",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "creditProfile",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "debugStats",
+    "mutates": false,
+    "requiresGame": false
+  },
+  {
+    "name": "demolishBuilding",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "explainNetIncome",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "exportEngineJson",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "exports",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "goals",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "grantLicense",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "history",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "holdings",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "incomeStatement",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "init",
+    "mutates": true,
+    "requiresGame": false
+  },
+  {
+    "name": "ipo",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "issueShares",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "ledger",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "listScenarios",
+    "mutates": false,
+    "requiresGame": false
+  },
+  {
+    "name": "loadGame",
+    "mutates": true,
+    "requiresGame": false
+  },
+  {
+    "name": "loanOffers",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "loans",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "macro",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "marketDetail",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "marketIntel",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "marketOpportunities",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "monthlyReport",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "newGame",
+    "mutates": true,
+    "requiresGame": false
+  },
+  {
+    "name": "news",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "parcels",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "patents",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "ping",
+    "mutates": false,
+    "requiresGame": false
+  },
+  {
+    "name": "previewAdCampaign",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "previewBuild",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "previewDisposal",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "productProfitability",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "repayLoan",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "researchTree",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "revokeLicense",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "saveGame",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "sellBuilding",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "sellLand",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setAdCampaign",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setAutoExport",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setAutopilot",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setDividend",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setRestockTarget",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setRetailPrice",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "setWarehouseTarget",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "settings",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "snapshot",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "statsDashboard",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "stockMarket",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "suggestPrice",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "supplyFlows",
+    "mutates": false,
+    "requiresGame": true
+  },
+  {
+    "name": "takeLoan",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "tradeShares",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "updateSettings",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "upgradeBuilding",
+    "mutates": true,
+    "requiresGame": true
+  },
+  {
+    "name": "worldMap",
+    "mutates": false,
+    "requiresGame": true
+  }
+]

@@ -1,0 +1,24 @@
+.hud {
+  --drawer-offset: 0px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  font-family: var(--font-ui);
+  color: var(--c-text);
+}
+
+.withDrawer {
+  --drawer-offset: calc(min(var(--hud-drawer-width), calc(100vw - var(--hud-rail-width) - 3rem)) + var(--hud-gutter));
+}
+
+/* Subtle vignette framing the city (cinematic, keeps HUD text legible on bright terrain). */
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(7, 12, 17, 0.38) 0%, rgba(7, 12, 17, 0) 14%),
+    linear-gradient(0deg, rgba(7, 12, 17, 0.42) 0%, rgba(7, 12, 17, 0) 18%),
+    radial-gradient(130% 120% at 50% 50%, transparent 62%, rgba(7, 12, 17, 0.35) 100%);
+}

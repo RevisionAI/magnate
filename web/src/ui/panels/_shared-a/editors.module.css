@@ -1,0 +1,201 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.priceHead {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.priceValue {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+  color: var(--c-gold-bright);
+  letter-spacing: -0.01em;
+}
+
+.priceCompact .priceValue {
+  font-size: var(--fs-xl);
+}
+
+.priceMargin {
+  font-size: var(--fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.priceWas {
+  font-size: var(--fs-xs);
+  color: var(--c-dim);
+  text-decoration: line-through;
+}
+
+.pos {
+  color: var(--c-pos);
+}
+
+.neg {
+  color: var(--c-neg);
+}
+
+.dim {
+  color: var(--c-dim);
+}
+
+.outlook {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: var(--fs-sm);
+  line-height: 1.45;
+  color: var(--c-text2);
+}
+
+.outlook svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--c-blue);
+}
+
+.outlook strong {
+  font-weight: var(--fw-semibold);
+  color: var(--c-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: var(--r-sm);
+  font-size: var(--fs-sm);
+}
+
+.warnDanger {
+  color: #f4a19c;
+  background: var(--c-red-wash);
+}
+
+.warnAmber {
+  color: #f2cf7a;
+  background: var(--c-amber-wash);
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.customRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+}
+
+.customRow input {
+  width: 9rem;
+}
+
+.stockFacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+  font-size: var(--fs-sm);
+  color: var(--c-muted);
+}
+
+.stockFacts strong {
+  color: var(--c-text);
+  font-weight: var(--fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.stockBasis {
+  font-size: var(--fs-xs);
+  line-height: 1.45;
+  color: var(--c-dim);
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: 7px 9px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-hairline);
+  background: rgba(160, 200, 225, 0.03);
+  color: var(--c-text);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-out), background var(--dur-fast);
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--c-hairline-strong);
+  background: var(--c-hover);
+}
+
+.option:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.optionOn {
+  border-color: rgba(215, 183, 102, 0.6) !important;
+  background: var(--c-gold-wash) !important;
+  box-shadow: inset 0 0 0 1px rgba(215, 183, 102, 0.18);
+}
+
+.optionNone {
+  border-style: dashed;
+}
+
+.optionBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 1px;
+}
+
+.optionName {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+}
+
+.optionMeta {
+  font-size: var(--fs-xs);
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.optionTag {
+  flex: none;
+}
+
+.optionCheck {
+  display: grid;
+  place-items: center;
+  width: 1rem;
+  flex: none;
+  color: var(--c-gold-bright);
+}

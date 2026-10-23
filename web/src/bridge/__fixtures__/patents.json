@@ -1,0 +1,14 @@
+{
+  "method": "patents",
+  "args": {},
+  "envelope": {
+    "ok": true,
+    "result": {
+      "mine": [],
+      "rivals": [],
+      "royaltyRate": 0.05,
+      "durationMonths": 24
+    },
+    "revision": 25
+  }
+}
